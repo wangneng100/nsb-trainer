@@ -313,6 +313,12 @@
     return out;
   }
 
+  if (typeof window !== 'undefined' && window.t) {
+    CATS.forEach(c => {
+      c.zh = window.t(c.zh);
+      if (c.tip) c.tip = window.t(c.tip);
+    });
+  }
   const C = { CATS, CAT, family, makeDict, makeCalc, tagsOf, distinct, shuffle, pick, ri };
   G.NSBC = C;
   if (typeof module !== 'undefined' && module.exports) module.exports = C;

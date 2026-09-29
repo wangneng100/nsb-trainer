@@ -1044,7 +1044,7 @@
     const ed = e.target.closest('[data-edit]'); if (ed) { openEdit(ed.dataset.edit); return; }
     const sv = e.target.closest('[data-save-q]'); if (sv) { saveEdit(sv.dataset.saveQ || null); return; }
     const del = e.target.closest('[data-del]');
-    if (del) { const q = qById(del.dataset.del); if (q && confirm('删除这道题？')) { S.bank = S.bank.filter(x => x.id !== q.id); save(); route(); } return; }
+    if (del) { const q = qById(del.dataset.del); if (q && confirm(window.t ? window.t('删除这道题？') : '删除这道题？')) { S.bank = S.bank.filter(x => x.id !== q.id); save(); route(); } return; }
     const pr = e.target.closest('[data-practice]'); if (pr) { startSession({ kind: 'bank', bankIds: [pr.dataset.practice], len: 1 }); return; }
     const rm = e.target.closest('[data-rm-mistake]'); if (rm) { S.mistakes.splice(+rm.dataset.rmMistake, 1); save(); route(); return; }
     const a = e.target.closest('[data-act]');
@@ -1069,7 +1069,7 @@
         S.bank.unshift(...add); save(); closeModal(); imp = null; toast(`✓ 加入 ${add.length} 道 Math 题`); route();
       },
       'test-voice': () => playToks(E.speak(E.parse('(xy)^2 - x y^2'))),
-      reset: () => { if (confirm('清空所有练习记录（题库保留）？此操作不能撤销。')) { Object.assign(S, { cats: {}, log: [], mistakes: [], bstats: {}, streak: { n: 0, last: null } }); save(); closeModal(); hud(); route(); } },
+      reset: () => { if (confirm(window.t ? window.t('清空所有练习记录（题库保留）？此操作不能撤销。') : '清空所有练习记录（题库保留）？此操作不能撤销。')) { Object.assign(S, { cats: {}, log: [], mistakes: [], bstats: {}, streak: { n: 0, last: null } }); save(); closeModal(); hud(); route(); } },
     }[act] || (() => { }))();
   });
   function contrast(btn) {

@@ -14,17 +14,18 @@
 </head>
 <body>
 <header class="topbar">
-  <a class="logo" href="#home"><span class="logo-mark">🎧</span><span class="logo-text">NSB <b>听题训练</b></span></a>
+  <a class="logo" href="#home"><span class="logo-mark">🎧</span><span class="logo-text">NSB <b data-i18n>听题训练</b></span></a>
   <div class="hud" id="hud"></div>
+  <button class="btn sm ghost" onclick="toggleLang()" style="margin-left: 8px;" data-i18n>English/中文</button>
 </header>
 <nav class="nav" id="nav">
-  <a href="#home" data-v="home">🏠 首页</a>
-  <a href="#dict" data-v="dict">👂 听写</a>
-  <a href="#calc" data-v="calc">🔔 听算</a>
-  <a href="#bank" data-v="bank">📚 题库</a>
-  <a href="#stats" data-v="stats">📊 统计</a>
-  <a href="#mistakes" data-v="mistakes">📕 错题</a>
-  <a href="#guide" data-v="guide">📖 读法</a>
+  <a href="#home" data-v="home" data-i18n>🏠 首页</a>
+  <a href="#dict" data-v="dict" data-i18n>👂 听写</a>
+  <a href="#calc" data-v="calc" data-i18n>🔔 听算</a>
+  <a href="#bank" data-v="bank" data-i18n>📚 题库</a>
+  <a href="#stats" data-v="stats" data-i18n>📊 统计</a>
+  <a href="#mistakes" data-v="mistakes" data-i18n>📕 错题</a>
+  <a href="#guide" data-v="guide" data-i18n>📖 读法</a>
 </nav>
 <main id="main" class="main"></main>
 <div id="modal" class="modal" hidden><div class="modal-box" id="modal-box" role="dialog" aria-modal="true"></div></div>
@@ -32,6 +33,13 @@
 <div id="tip" class="viz-tip" hidden></div>
 
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="js/i18n.js?v=4"></script>
+<script>
+  document.title = t(document.title);
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.textContent);
+  });
+</script>
 <script src="js/expr.js"></script>
 <script src="js/cats.js"></script>
 <script src="js/textmath.js"></script>
