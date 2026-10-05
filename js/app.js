@@ -125,7 +125,10 @@
   }
   function stopAudio() {
     if (player) { player.cancel(); player = null; }
-    $$('.say.playing').forEach(b => b.classList.remove('playing'));
+    $$('.say.playing').forEach(b => {
+      b.classList.remove('playing');
+      if (b.dataset.orig) b.innerHTML = b.dataset.orig;
+    });
   }
   let actx;
   function sfx(kind) {
@@ -383,9 +386,18 @@
   const isTossup = it => it.mode === 'calc' || (it.mode === 'bank' && it.q.type === 'tossup');
   function afterReading(it) {
     if (it.mode === 'dict') { sess.phase = 'answer'; renderStage(); startTicker(); return; }
-    if (isTossup(it)) { sess.phase = 'window'; renderStage(); startCountdown(S.settings.buzz, () => conclude(it, { ok: false, timeout: true, gotText: '（没有抢答）' })); return; }
+    if (isTossup(it)) { sess.phase = 'window'; renderStage(); startCountdown(S.settings.buzz, () => conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（没有抢答）') : '（没有抢答）' })); return; }
     sess.phase = 'answering'; renderStage(); startTicker();
-    startCountdown(S.settings.bonus, () => { const v = ($('#ans') || {}).value; if (v && v.trim()) submitTyped(true); else conclude(it, { ok: false, timeout: true, gotText: '（超时）' }); });
+    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
+      const inp = $('#ans'); if (inp) inp.disabled = true;
+      const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
+      if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
+      rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
+      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
+      rec.start();
+    }
+    startCountdown(S.settings.bonus, () => { const v = ($('#ans') || {}).value; if (v && v.trim()) submitTyped(true); else conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（超时）') : '（超时）' }); });
   }
   function buzz() {
     const it = sess && sess.item;
@@ -395,6 +407,21 @@
     if (it.interrupt) stopAudio();
     stopTimers(); sfx('buzz');
     sess.phase = 'answering'; renderStage(); startTicker();
+
+    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
+      const inp = $('#ans'); if (inp) inp.disabled = true;
+      const team = ['A', 'B'][Math.floor(Math.random() * 2)];
+      const num = 1;
+      const recVoice = TTS.play([`Team ${team}, ${team} ${num}`], { rate: 1, pause: 0, voice: S.settings.voice });
+      recVoice.done.then(() => {
+        const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
+        if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
+        rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
+        rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
+        rec.start();
+      });
+    }
   }
   function replay() {
     const it = sess && sess.item;
@@ -558,9 +585,15 @@
       h += listenHTML(it, ph);
       if (it.mode === 'dict') h += dictAnswerHTML(it, ph);
       else if (ph === 'answering') h += answerHTML(it);
-      else if (isTossup(it)) h += `<div class="buzz-wrap"><button class="buzz" data-act="buzz"><b>BUZZ</b><small>空格 / 点按</small></button>
+      else if (isTossup(it)) h += `<div class="buzz-wrap"><button class="buzz" data-act="buzz"><b>BUZZ</b><small>${window.tH ? window.tH('空格 / 点按') : '空格 / 点按'}</small></button>
           ${ph === 'window' ? `<div class="count" id="count"><span>${S.settings.buzz}</span></div>` : ''}</div>`;
-      else h += `<p class="muted" style="margin-top:14px">Bonus 不用抢答，念完后有 ${S.settings.bonus} 秒作答。</p>`;
+      else h += `<p class="muted" style="margin-top:14px">${window.tH ? window.tH('Bonus 不用抢答，念完后有 ') : 'Bonus 不用抢答，念完后有 '}${S.settings.bonus}${window.tH ? window.tH(' 秒作答。') : ' 秒作答。'}</p>`;
+      
+      const peekContent = it.mode === 'bank' ? `<div class="qtext small">${T.toHTML(it.q.text)}</div>${choicesHTML(it.q)}` : `<div class="m" style="margin:10px 0">${texN(it.target)}</div>`;
+      h += `<div style="margin-top: 20px; border-top: 1px solid var(--bd); padding-top: 10px;">
+              <button class="btn sm ghost" onclick="this.nextElementSibling.hidden = !this.nextElementSibling.hidden">${window.tH ? window.tH('👁️ 偷看原题 (Peek)') : '👁️ 偷看原题 (Peek)'}</button>
+              <div hidden style="margin-top: 10px">${peekContent}</div>
+            </div>`;
     }
     el.innerHTML = h;
     const inp = $('#ans');
@@ -1006,23 +1039,42 @@
       <label class="field">智能训练每组题数</label>${segHTML('settings.len', st.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
       <label class="field">Toss-up 抢答时间（念完后）</label>${segHTML('settings.buzz', st.buzz, [[3, '3 秒'], [5, '5 秒（比赛）'], [8, '8 秒']])}
       <label class="field">Bonus 作答时间</label>${segHTML('settings.bonus', st.bonus, [[10, '10 秒'], [20, '20 秒（比赛）'], [30, '30 秒']])}
-      <label class="field">主题</label>${segHTML('settings.theme', st.theme, [['auto', '跟随系统'], ['light', '浅色'], ['dark', '深色']])}
+      <label class="field">主题</label>${segHTML('settings.theme', st.theme, [['auto', window.tH ? window.tH('跟随系统') : '跟随系统'], ['light', window.tH ? window.tH('浅色') : '浅色'], ['dark', window.tH ? window.tH('深色') : '深色']])}
       <div style="margin-top:12px;display:grid;gap:8px">
-        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> 听写时朗读中就显示选项（入门用；比赛没有纸面）</label>
-        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> 朗读时显示字幕（想“只听不看”就关掉）</label>
-        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> 音效</label>
+        <label><input type="checkbox" id="st-mic" ${st.mic ? 'checked' : ''}> 🎤 ${window.tH ? window.tH('模拟比赛抢答（播报队伍名并开启麦克风作答）') : '模拟比赛抢答（播报队伍名并开启麦克风作答）'}</label>
+        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> ${window.tH ? window.tH('听写时朗读中就显示选项（入门用；比赛没有纸面）') : '听写时朗读中就显示选项（入门用；比赛没有纸面）'}</label>
+        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> ${window.tH ? window.tH('朗读时显示字幕（想“只听不看”就关掉）') : '朗读时显示字幕（想“只听不看”就关掉）'}</label>
+        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> ${window.tH ? window.tH('音效') : '音效'}</label>
       </div>
-      <div class="row" style="margin-top:16px"><button class="btn sm danger" data-act="reset">清空练习记录</button><span class="spacer"></span><button class="btn" data-close>完成</button></div>`);
+      <div class="row" style="margin-top:16px"><button class="btn sm danger" data-act="reset">${window.tH ? window.tH('清空练习记录') : '清空练习记录'}</button><span class="spacer"></span><button class="btn" data-close>${window.tH ? window.tH('完成') : '完成'}</button></div>`);
     $('#st-voice').addEventListener('change', e => { st.voice = e.target.value; save(); });
     $('#st-rate').addEventListener('input', e => { st.rate = +e.target.value; $('#rate-v').textContent = st.rate.toFixed(2); save(); });
     $('#st-pause').addEventListener('input', e => { st.pause = +e.target.value; $('#pause-v').textContent = st.pause; save(); });
-    ['showOpts', 'captions', 'sfx'].forEach(k => $('#st-' + k).addEventListener('change', e => { st[k] = e.target.checked; save(); }));
+    ['mic', 'showOpts', 'captions', 'sfx'].forEach(k => $('#st-' + k).addEventListener('change', e => { st[k] = e.target.checked; save(); }));
   }
 
   // ───────── global clicks ─────────
   document.addEventListener('click', e => {
     const say = e.target.closest('[data-say]');
-    if (say) { e.preventDefault(); const toks = sayReg.get(say.dataset.say); if (toks) { const p = playToks(toks); say.classList.add('playing'); p.done.then(() => say.classList.remove('playing')); } return; }
+    if (say) { 
+      e.preventDefault(); 
+      if (say.classList.contains('playing')) {
+        stopAudio();
+        return;
+      }
+      const toks = sayReg.get(say.dataset.say); 
+      if (toks) { 
+        const p = playToks(toks); 
+        say.classList.add('playing'); 
+        if (!say.dataset.orig) say.dataset.orig = say.innerHTML;
+        say.innerHTML = window.tH ? window.tH('🛑 停止') : '🛑 停止';
+        p.done.then(() => { 
+          say.classList.remove('playing'); 
+          if (say.dataset.orig) say.innerHTML = say.dataset.orig;
+        }); 
+      } 
+      return; 
+    }
     const st = e.target.closest('[data-start]');
     if (st) {
       closeModal();

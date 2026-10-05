@@ -13,6 +13,7 @@ window.NSB_I18N = {
     "English/中文": "中/EN",
     "空格": "Space",
     "空格 / 点按": "Space / Tap",
+    "🛑 停止": "🛑 Cancel",
 
     // categories
     "积的乘方": "Power of a Product",
@@ -319,6 +320,12 @@ window.NSB_I18N = {
     "清空练习记录": "Clear Drill History",
     "完成": "Done",
     "清空所有练习记录（题库保留）？此操作不能撤销。": "Clear all drill history (bank preserved)? This cannot be undone.",
+    "模拟比赛抢答（播报队伍名并开启麦克风作答）": "Simulate competition buzzer (Announce team and answer via Mic)",
+    "正在倾听 (Listening...)": "Listening...",
+    "未听到声音，请手动输入": "No voice heard, please type manually",
+    "👁️ 偷看原题 (Peek)": "👁️ Peek at Question",
+    "Bonus 不用抢答，念完后有 ": "Bonus requires no buzz, answer within ",
+    " 秒作答。": "s after reading.",
 
     // importer
     "：找到 ": ": Found ",
