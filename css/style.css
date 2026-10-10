@@ -229,6 +229,7 @@ input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--brand); ve
 .tip { font-size: 14px; color: var(--muted); padding: 10px 14px; border-left: 3px solid var(--brand); background: var(--panel-2); border-radius: 0 12px 12px 0; margin-top: 10px; }
 .say { border: 1px solid var(--line); background: var(--panel); border-radius: 10px; padding: 4px 10px; font-size: 14px; font-weight: 800; white-space: nowrap; }
 .say.playing { border-color: var(--brand); background: var(--brand-soft); }
+.say.counting { border-color: var(--warn); background: var(--warn-soft); color: var(--warn); font-variant-numeric: tabular-nums; }
 .qtext { font-size: 16.5px; line-height: 1.7; }
 .choices { display: grid; gap: 4px; margin: 8px 0 0; padding: 0; list-style: none; }
 .choices li { display: flex; gap: 10px; }

@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const E = window.NSBE, C = window.NSBC, T = window.NSBT, I = window.NSBI, TTS = window.NSBTTS, SEED = window.NSB_SEED;
+  const E = window.NSBE, C = window.NSBC, T = window.NSBT, I = window.NSBI, TTS = window.NSBTTS;
   const { W, PAUSE } = E;
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -31,33 +31,56 @@
   const KEY = 'nsb-trainer-v1';
   const defaults = () => ({
     settings: { voice: '', rate: 0.95, pause: 380, len: 10, buzz: 5, bonus: 20, showOpts: false, captions: false, sfx: true, theme: 'auto' },
-    prefs: { dict: { cats: [], lvl: 'auto', style: 'choice', len: 10 }, calc: { src: 'gen', cats: [], lvl: 'auto', type: 'all', len: 10 } },
-    cats: {}, log: [], mistakes: [], bank: [], seeded: [], bstats: {}, streak: { n: 0, last: null },
+    prefs: { dict: { cats: [], lvl: 'auto', style: 'choice', len: 10 }, calc: { src: 'gen', cats: [], lvl: 'auto', type: 'all', len: 10, years: [], rounds: [] }, bank: { years: [] } },
+    cats: {}, log: [], mistakes: [], customBank: [], deletedIds: [], bstats: {}, streak: { n: 0, last: null },
   });
   function load() {
     try {
       const s = JSON.parse(localStorage.getItem(KEY));
       if (!s) return defaults();
       const d = defaults();
-      return { ...d, ...s, settings: { ...d.settings, ...s.settings }, prefs: { dict: { ...d.prefs.dict, ...(s.prefs || {}).dict }, calc: { ...d.prefs.calc, ...(s.prefs || {}).calc } } };
+      
+      // Migration from older v1 version:
+      // If `s.bank` exists, move anything not from the original seed into customBank.
+      if (s.bank && !s.customBank) {
+          s.customBank = s.bank.filter(q => !q.id.startsWith('seed-'));
+      }
+      
+      return { ...d, ...s, settings: { ...d.settings, ...s.settings }, prefs: { 
+          dict: { ...d.prefs.dict, ...(s.prefs || {}).dict }, 
+          calc: { ...d.prefs.calc, ...(s.prefs || {}).calc },
+          bank: { ...d.prefs.bank, ...(s.prefs || {}).bank } 
+      } };
     } catch (e) { return defaults(); }
   }
   let S = load();
   let saveWarned = false;
   function save() {
-    try { localStorage.setItem(KEY, JSON.stringify(S)); }
+    try { localStorage.setItem(KEY, JSON.stringify(S, (k, v) => k === 'bank' ? undefined : v)); }
     catch (e) { if (!saveWarned) { saveWarned = true; toast('⚠️ 浏览器存储已满或被禁用，进度可能保存不了。可以在题库页导出备份。'); } }
   }
-  function mergeSeed() {
-    let added = 0;
-    for (const q of SEED) {
-      if (S.seeded.includes(q.id)) continue;
-      S.bank.push({ ...q, tags: T.tagsOfText(q.text, ...Object.values(q.choices || {})), added: Date.now() });
-      S.seeded.push(q.id); added++;
-    }
-    if (added) save();
+
+  // ───────── Dynamic Banks ─────────
+  const YEARS = ['2016', '2017', '2018', '2019', '2020', '2021', '2022'];
+  const ROUNDS = Array.from({length: 17}, (_, i) => String(i + 1));
+  let loadedBanks = [];
+  S.bank = []; // in-memory
+  
+  async function loadBanks() {
+    try {
+      const promises = YEARS.map(y => fetch(`banks/${y}.json`).then(r => r.json()).catch(() => []));
+      const arrays = await Promise.all(promises);
+      loadedBanks = arrays.flat();
+      applyBank();
+      route();
+    } catch (e) { console.error('Failed to load banks', e); }
   }
-  mergeSeed();
+  
+  function applyBank() {
+    S.bank = [...loadedBanks.filter(q => !(S.deletedIds || []).includes(q.id)), ...(S.customBank || [])];
+  }
+  loadBanks();
+  
   const qById = id => S.bank.find(q => q.id === id);
 
   // ───────── stats model ─────────
@@ -245,6 +268,12 @@
   const catChips = (key, sel) => `<div class="chips" data-chips="${key}">
     <button class="chip ${sel.length ? '' : 'on'}" data-cat="">全部（薄弱优先）</button>
     ${C.CATS.map(c => `<button class="chip ${sel.includes(c.id) ? 'on' : ''}" data-cat="${c.id}">${esc(c.zh)}</button>`).join('')}</div>`;
+  const yearChips = (key, sel) => `<div class="chips" data-chips="${key}">
+    <button class="chip ${sel.length ? '' : 'on'}" data-year="">全部年份</button>
+    ${YEARS.map(y => `<button class="chip ${sel.includes(y) ? 'on' : ''}" data-year="${y}">${y}</button>`).join('')}</div>`;
+  const roundChips = (key, sel) => `<div class="chips" data-chips="${key}">
+    <button class="chip ${sel.length ? '' : 'on'}" data-round="">全部轮次</button>
+    ${ROUNDS.map(r => `<button class="chip ${sel.includes(r) ? 'on' : ''}" data-round="${r}">${r}</button>`).join('')}</div>`;
   VIEWS.dict = () => {
     const P = S.prefs.dict;
     main.innerHTML = `
@@ -275,6 +304,8 @@
           <label class="field">类别</label>${catChips('calc', P.cats)}
           <label class="field">难度</label>${segHTML('calc.lvl', P.lvl, [['auto', '自动'], [1, 'L1'], [2, 'L2'], [3, 'L3']])}` : `
           <label class="field">题型</label>${segHTML('calc.type', P.type, [['all', '全部'], ['tossup', '只练 toss-up'], ['bonus', '只练 bonus']])}
+          <label class="field">年份</label>${yearChips('calc', P.years)}
+          <label class="field">轮次 (Round)</label>${roundChips('calc', P.rounds || [])}
           <p class="muted small">没做过的和做错过的题优先。想挑特定的题，到 <a href="#bank">题库</a> 筛选后点“练这些”。</p>`}
         <label class="field">题数</label>${segHTML('calc.len', P.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
         <div class="row" style="margin-top:18px"><button class="btn big" data-go="calc">开始 ▶</button></div>
@@ -300,6 +331,18 @@
       if (!id) P.cats = []; else P.cats = P.cats.includes(id) ? P.cats.filter(x => x !== id) : [...P.cats, id];
       save(); route(); return;
     }
+    const yChip = e.target.closest('[data-chips] [data-year]');
+    if (yChip) {
+      const grp = yChip.parentElement.dataset.chips, P = S.prefs[grp], id = yChip.dataset.year;
+      if (!id) P.years = []; else P.years = P.years.includes(id) ? P.years.filter(x => x !== id) : [...P.years, id];
+      save(); route(); return;
+    }
+    const rChip = e.target.closest('[data-chips] [data-round]');
+    if (rChip) {
+      const grp = rChip.parentElement.dataset.chips, P = S.prefs[grp], id = rChip.dataset.round;
+      if (!id) P.rounds = []; else P.rounds = (P.rounds || []).includes(id) ? P.rounds.filter(x => x !== id) : [...(P.rounds || []), id];
+      save(); route(); return;
+    }
   });
 
   // ───────── sessions ─────────
@@ -308,7 +351,7 @@
   function startSession(o) {
     stopAudio();
     sess = { kind: o.kind, cats: o.cats || [], lvl: o.lvl || 'auto', style: o.style || 'choice', bankIds: o.bankIds || null, btype: o.btype || 'all',
-      len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
+      years: o.years || [], rounds: o.rounds || [], len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
     if (location.hash === '#drill') route(); else location.hash = '#drill';
   }
   function endSession() { stopAudio(); stopTimers(); sess = null; }
@@ -319,6 +362,8 @@
     let pool = S.bank.filter(q => q.subject === 'math');
     if (sess.bankIds) pool = pool.filter(q => sess.bankIds.includes(q.id));
     if (sess.btype !== 'all') pool = pool.filter(q => q.type === sess.btype);
+    if (sess.years && sess.years.length) pool = pool.filter(q => sess.years.includes(q.year));
+    if (sess.rounds && sess.rounds.length) pool = pool.filter(q => q.src && sess.rounds.includes(String(q.src.round)));
     return pool.filter(q => !sess.seen.has(q.id));
   }
   function pickBank(pool) {
@@ -387,17 +432,8 @@
   function afterReading(it) {
     if (it.mode === 'dict') { sess.phase = 'answer'; renderStage(); startTicker(); return; }
     if (isTossup(it)) { sess.phase = 'window'; renderStage(); startCountdown(S.settings.buzz, () => conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（没有抢答）') : '（没有抢答）' })); return; }
-    sess.phase = 'answering'; renderStage(); startTicker();
-    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
-      const inp = $('#ans'); if (inp) inp.disabled = true;
-      const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-      const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
-      if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
-      rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
-      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
-      rec.start();
-    }
-    startCountdown(S.settings.bonus, () => { const v = ($('#ans') || {}).value; if (v && v.trim()) submitTyped(true); else conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（超时）') : '（超时）' }); });
+    sess.phase = 'bonus_window'; renderStage();
+    startCountdown(S.settings.bonus, () => conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（超时）') : '（超时）' }));
   }
   function buzz() {
     const it = sess && sess.item;
@@ -421,6 +457,22 @@
         rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
         rec.start();
       });
+    }
+  }
+  function answerBonus() {
+    const it = sess && sess.item;
+    if (!it || isTossup(it) || sess.phase !== 'bonus_window') return;
+    stopTimers();
+    sess.phase = 'answering'; renderStage(); startTicker();
+
+    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
+      const inp = $('#ans'); if (inp) inp.disabled = true;
+      const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
+      if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
+      rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
+      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
+      rec.start();
     }
   }
   function replay() {
@@ -587,7 +639,14 @@
       else if (ph === 'answering') h += answerHTML(it);
       else if (isTossup(it)) h += `<div class="buzz-wrap"><button class="buzz" data-act="buzz"><b>BUZZ</b><small>${window.tH ? window.tH('空格 / 点按') : '空格 / 点按'}</small></button>
           ${ph === 'window' ? `<div class="count" id="count"><span>${S.settings.buzz}</span></div>` : ''}</div>`;
-      else h += `<p class="muted" style="margin-top:14px">${window.tH ? window.tH('Bonus 不用抢答，念完后有 ') : 'Bonus 不用抢答，念完后有 '}${S.settings.bonus}${window.tH ? window.tH(' 秒作答。') : ' 秒作答。'}</p>`;
+      else {
+        if (ph === 'reading') {
+          h += `<p class="muted" style="margin-top:14px">${window.tH ? window.tH('Bonus 不用抢答，念完后有 ') : 'Bonus 不用抢答，念完后有 '}${S.settings.bonus}${window.tH ? window.tH(' 秒作答。') : ' 秒作答。'}</p>`;
+        } else if (ph === 'bonus_window') {
+          h += `<div class="buzz-wrap"><button class="buzz" data-act="answer-bonus" style="background:var(--ok);border-color:var(--ok-hard);color:white"><b>ANSWER</b><small>${window.tH ? window.tH('点击作答') : '点击作答'}</small></button>
+              <div class="count" id="count"><span>${S.settings.bonus}</span></div></div>`;
+        }
+      }
       
       const peekContent = it.mode === 'bank' ? `<div class="qtext small">${T.toHTML(it.q.text)}</div>${choicesHTML(it.q)}` : `<div class="m" style="margin:10px 0">${texN(it.target)}</div>`;
       h += `<div style="margin-top: 20px; border-top: 1px solid var(--bd); padding-top: 10px;">
@@ -610,8 +669,8 @@
     return `<div class="opts ${visible ? '' : 'hidden'}">${it.options.map((o, i) => `<button class="opt" data-opt="${i}" ${ready ? '' : 'disabled'}><span class="L">${LETTERS[i]}</span><span class="m">${texN(o)}</span></button>`).join('')}</div>${controls}`;
   }
   function answerHTML(it) {
-    const timer = `<div class="controls"><span class="muted small">${it.interrupt ? '⚡ 你打断了朗读——答错在比赛里要扣 4 分' : it.buzzAt ? `抢答用时 ${sec(it.buzzAt - it.t0)}` : `Bonus：${S.settings.bonus} 秒内作答`}</span><span class="spacer"></span>
-      ${it.mode === 'bank' && it.q.type === 'bonus' ? `<div class="count" id="count" style="width:60px;height:60px;font-size:15px"><span>${S.settings.bonus}</span></div>` : '<span class="timer" id="tick">0.0s</span>'}</div>`;
+    const timer = `<div class="controls"><span class="muted small">${it.interrupt ? '⚡ 你打断了朗读——答错在比赛里要扣 4 分' : it.buzzAt ? `抢答用时 ${sec(it.buzzAt - it.t0)}` : `开始作答…`}</span><span class="spacer"></span>
+      <span class="timer" id="tick">0.0s</span></div>`;
     if (it.mode === 'bank' && it.q.format === 'mc') {
       return `<div class="letters">${LETTERS.map(L => `<button class="opt" data-letter="${L}">${L}</button>`).join('')}</div>${timer}`;
     }
@@ -705,13 +764,15 @@
   }
 
   // ───────── bank ─────────
-  const bankF = { q: '', type: 'all', src: 'all', tag: 'all', missed: false, shown: 30 };
+  const bankF = { q: '', type: 'all', src: 'all', tag: 'all', year: 'all', round: 'all', missed: false, shown: 30 };
   const srcName = q => q.src && q.src.file ? q.src.file + (q.src.round ? ` · R${q.src.round}` : '') : '手动添加';
   function filteredBank() {
     const s = bankF.q.trim().toLowerCase();
     return S.bank.filter(q => q.subject === 'math'
       && (bankF.type === 'all' || q.type === bankF.type)
       && (bankF.src === 'all' || srcName(q) === bankF.src)
+      && (bankF.year === 'all' || q.year === bankF.year)
+      && (bankF.round === 'all' || (q.src && String(q.src.round) === bankF.round))
       && (bankF.tag === 'all' || (bankF.tag === 'none' ? !(q.tags || []).length : (q.tags || []).includes(bankF.tag)))
       && (!bankF.missed || (S.bstats[q.id] && S.bstats[q.id].ok < S.bstats[q.id].n))
       && (!s || (q.text + ' ' + q.answer).toLowerCase().includes(s)));
@@ -737,9 +798,11 @@
       <div class="card">
         <div class="row"><h2 style="margin:0">📚 题库</h2><span class="spacer"></span>
           <button class="btn" data-act="import">📄 导入 PDF / 文本</button><button class="btn ghost" data-act="new-q">＋ 新题</button></div>
-        <p class="muted small">共 ${math.length} 道 Math 题 · 原创练习 ${math.filter(q => /^seed-/.test(q.id)).length} · 导入 ${math.filter(q => !/^seed-/.test(q.id)).length}。导入 NSB PDF 时会自动挑出 Math 题，其他科目跳过。</p>
+        <p class="muted small">共 ${math.length} 道 Math 题 · 自定义 ${math.filter(q => q.src && !q.src.file).length} · 历年真题 ${math.filter(q => q.year).length}。导入 NSB PDF 时会自动挑出 Math 题，其他科目跳过。</p>
         <div class="toolbar">
           <input type="search" id="bq" placeholder="搜索题目或答案" value="${esc(bankF.q)}">
+          <select data-bf="year">${opt('all', '全部年份', bankF.year)}${YEARS.map(y => opt(y, y, bankF.year)).join('')}</select>
+          <select data-bf="round">${opt('all', '全部轮次', bankF.round)}${ROUNDS.map(r => opt(r, 'Round ' + r, bankF.round)).join('')}</select>
           <select data-bf="type">${opt('all', '全部题型', bankF.type)}${opt('tossup', 'Toss-up', bankF.type)}${opt('bonus', 'Bonus', bankF.type)}</select>
           <select data-bf="src">${opt('all', '全部来源', bankF.src)}${srcs.map(s => opt(s, s, bankF.src)).join('')}</select>
           <select data-bf="tag">${opt('all', '全部结构', bankF.tag)}${C.CATS.map(c => opt(c.id, c.zh, bankF.tag)).join('')}${opt('none', '（没有标记）', bankF.tag)}</select>
@@ -760,7 +823,7 @@
   });
 
   function exportData() {
-    const blob = new Blob([JSON.stringify({ app: 'nsb-trainer', v: 1, exported: new Date().toISOString(), data: S }, null, 1)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify({ app: 'nsb-trainer', v: 1, exported: new Date().toISOString(), data: S }, (k, v) => k === 'bank' ? undefined : v, 1)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob); a.download = `nsb-trainer-${dayStr()}.json`;
     document.body.appendChild(a); a.click(); a.remove();
@@ -775,7 +838,11 @@
         if (!confirm(`用备份（${j.exported ? j.exported.slice(0, 10) : '未知日期'}）覆盖当前的题库和练习记录？`)) return;
         const d = defaults();
         S = { ...d, ...j.data, settings: { ...d.settings, ...j.data.settings } };
-        mergeSeed(); save(); applyTheme(); hud(); route(); toast('✓ 已恢复备份');
+        // Migration if restoring old backup
+        if (S.bank && !S.customBank) {
+            S.customBank = S.bank.filter(q => !q.id.startsWith('seed-'));
+        }
+        applyBank(); save(); applyTheme(); hud(); route(); toast('✓ 已恢复备份');
       } catch (err) { toast('⚠️ 导入失败：' + esc(err.message)); }
     };
     inp.click();
@@ -886,7 +953,22 @@
     if (!d.text) return toast('题目不能是空的');
     if (d.format === 'mc' && !d.letter) return toast('选择题要选一个正确字母');
     d.tags = T.tagsOfText(d.text, ...Object.values(d.choices || {}));
-    if (id) S.bank[S.bank.findIndex(q => q.id === id)] = d; else S.bank.unshift(d);
+    if (id) {
+      const idx = (S.customBank || []).findIndex(q => q.id === id);
+      if (idx >= 0) {
+        S.customBank[idx] = d;
+      } else {
+        // Editing a built-in question: clone it to customBank and mark original as deleted
+        if (!S.customBank) S.customBank = [];
+        S.customBank.unshift(d);
+        if (!S.deletedIds) S.deletedIds = [];
+        S.deletedIds.push(id);
+      }
+    } else {
+      if (!S.customBank) S.customBank = [];
+      S.customBank.unshift(d);
+    }
+    applyBank();
     save(); closeModal(); route(); toast('✓ 已保存');
   }
 
@@ -1058,6 +1140,13 @@
     const say = e.target.closest('[data-say]');
     if (say) { 
       e.preventDefault(); 
+      if (say.dataset.cdIntv) {
+        clearInterval(say.dataset.cdIntv);
+        delete say.dataset.cdIntv;
+        say.classList.remove('counting');
+        if (say.dataset.orig) say.innerHTML = say.dataset.orig;
+        return;
+      }
       if (say.classList.contains('playing')) {
         stopAudio();
         return;
@@ -1068,8 +1157,37 @@
         say.classList.add('playing'); 
         if (!say.dataset.orig) say.dataset.orig = say.innerHTML;
         say.innerHTML = window.tH ? window.tH('🛑 停止') : '🛑 停止';
-        p.done.then(() => { 
+        p.done.then((completed) => { 
           say.classList.remove('playing'); 
+          if (!completed) {
+            if (say.dataset.orig) say.innerHTML = say.dataset.orig;
+            return;
+          }
+          const qcard = say.closest('.qcard');
+          if (qcard) {
+            const q = (S.customBank || []).concat(S.bank || []).find(x => x.id === qcard.dataset.qid);
+            if (q) {
+              const secs = q.type === 'tossup' ? S.settings.buzz : S.settings.bonus;
+              let left = secs;
+              say.classList.add('counting');
+              say.innerHTML = `⏳ ${left.toFixed(1)}s`;
+              const t0 = performance.now();
+              const intv = setInterval(() => {
+                left = secs - (performance.now() - t0)/1000;
+                if (left <= 0) {
+                  clearInterval(intv);
+                  delete say.dataset.cdIntv;
+                  say.classList.remove('counting');
+                  if (say.dataset.orig) say.innerHTML = say.dataset.orig;
+                  sfx('no');
+                } else {
+                  say.innerHTML = `⏳ ${left.toFixed(1)}s`;
+                }
+              }, 100);
+              say.dataset.cdIntv = intv;
+              return;
+            }
+          }
           if (say.dataset.orig) say.innerHTML = say.dataset.orig;
         }); 
       } 
@@ -1086,7 +1204,7 @@
     const go = e.target.closest('[data-go]');
     if (go) {
       if (go.dataset.go === 'dict') { const P = S.prefs.dict; startSession({ kind: 'dict', cats: P.cats, lvl: P.lvl, style: P.style, len: P.len }); }
-      else { const P = S.prefs.calc; startSession(P.src === 'bank' ? { kind: 'bank', btype: P.type, len: P.len } : { kind: 'calc', cats: P.cats, lvl: P.lvl, len: P.len }); }
+      else { const P = S.prefs.calc; startSession(P.src === 'bank' ? { kind: 'bank', btype: P.type, len: P.len, years: P.years, rounds: P.rounds } : { kind: 'calc', cats: P.cats, lvl: P.lvl, len: P.len }); }
       return;
     }
     const opt = e.target.closest('[data-opt]'); if (opt) { choose(+opt.dataset.opt); return; }
@@ -1096,7 +1214,16 @@
     const ed = e.target.closest('[data-edit]'); if (ed) { openEdit(ed.dataset.edit); return; }
     const sv = e.target.closest('[data-save-q]'); if (sv) { saveEdit(sv.dataset.saveQ || null); return; }
     const del = e.target.closest('[data-del]');
-    if (del) { const q = qById(del.dataset.del); if (q && confirm(window.t ? window.t('删除这道题？') : '删除这道题？')) { S.bank = S.bank.filter(x => x.id !== q.id); save(); route(); } return; }
+    if (del) { 
+      const q = qById(del.dataset.del); 
+      if (q && confirm(window.t ? window.t('删除这道题？') : '删除这道题？')) { 
+        S.customBank = (S.customBank || []).filter(x => x.id !== q.id);
+        if (!S.deletedIds) S.deletedIds = [];
+        S.deletedIds.push(q.id);
+        applyBank(); save(); route(); 
+      } 
+      return; 
+    }
     const pr = e.target.closest('[data-practice]'); if (pr) { startSession({ kind: 'bank', bankIds: [pr.dataset.practice], len: 1 }); return; }
     const rm = e.target.closest('[data-rm-mistake]'); if (rm) { S.mistakes.splice(+rm.dataset.rmMistake, 1); save(); route(); return; }
     const a = e.target.closest('[data-act]');
@@ -1106,7 +1233,7 @@
     ({
       settings: openSettings,
       quit: () => { if (sess && sess.results.some(r => r.res && !r.pending)) finish(); else location.hash = '#home'; },
-      buzz, replay, next: () => { if (sess && !sess.item.pending) nextItem(); },
+      buzz, 'answer-bonus': answerBonus, replay, next: () => { if (sess && !sess.item.pending) nextItem(); },
       submit: () => submitTyped(false),
       again: () => startSession(sess.opts),
       import: openImport, 'new-q': () => openEdit(null), export: exportData, restore: restoreData,
@@ -1118,7 +1245,8 @@
       'imp-none': () => { imp.items.forEach(x => x.on = false); renderImport(); },
       'imp-add': () => {
         const add = imp.items.filter(x => x.on).map(x => x.item);
-        S.bank.unshift(...add); save(); closeModal(); imp = null; toast(`✓ 加入 ${add.length} 道 Math 题`); route();
+        if (!S.customBank) S.customBank = [];
+        S.customBank.unshift(...add); applyBank(); save(); closeModal(); imp = null; toast(`✓ 加入 ${add.length} 道 Math 题`); route();
       },
       'test-voice': () => playToks(E.speak(E.parse('(xy)^2 - x y^2'))),
       reset: () => { if (confirm(window.t ? window.t('清空所有练习记录（题库保留）？此操作不能撤销。') : '清空所有练习记录（题库保留）？此操作不能撤销。')) { Object.assign(S, { cats: {}, log: [], mistakes: [], bstats: {}, streak: { n: 0, last: null } }); save(); closeModal(); hud(); route(); } },
@@ -1156,7 +1284,7 @@
       if (idx >= 0) { e.preventDefault(); choose(idx); }
       return;
     }
-    if (e.key === ' ') { e.preventDefault(); buzz(); return; }
+    if (e.key === ' ') { e.preventDefault(); if (isTossup(sess.item)) buzz(); else answerBonus(); return; }
     if (it.mode === 'bank' && it.q.format === 'mc' && ph === 'answering' && 'wxyz'.includes(k) && k) { e.preventDefault(); chooseLetter(k.toUpperCase()); }
   });
 

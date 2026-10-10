@@ -328,6 +328,11 @@ window.NSB_I18N = {
     " 秒作答。": "s after reading.",
 
     // importer
+    "全部年份": "All Years",
+    "全部轮次": "All Rounds",
+    "轮次 (Round)": "Round",
+    "历年真题": "Official",
+    "自定义": "Custom",
     "：找到 ": ": Found ",
     " 题（": " Qs (",
     "），其中 Math ": "), of which Math is ",

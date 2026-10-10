@@ -1,0 +1,1092 @@
+[
+  {
+    "id": "qmuuki9dji0b02",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "$x/2 + x/4$ is what percent of $x$?",
+    "choices": null,
+    "answer": "75",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9dj40xtj",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Solve the following equation for $x$: open parenthesis $7x - 6$ close parenthesis squared = 64.",
+    "choices": null,
+    "answer": "$-2/7$ OR 2 (must give both answers)",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9djk57uh",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "A trapezoid has height 6 and one base of length 16. If the area is 72, what is the length of the other base?",
+    "choices": null,
+    "answer": "8",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9djzpz8f",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Express the following in scientific notation rounded to two significant digits: the fraction with numerator $5.7 * 10 ^5$ and denominator $8.9 * 10^(-4)$ .",
+    "choices": null,
+    "answer": "$6.4 * 10^8$",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9dj8u9ov",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the slope of a line perpendicular to the line with equation $9x + 4y = 36$?",
+    "choices": null,
+    "answer": "$4/9$",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9djuwayp",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the volume of a circular cone formed by rotating a right triangular region with legs of length 13 and 9 about its longer leg?",
+    "choices": null,
+    "answer": "$351π$",
+    "letter": "",
+    "src": {
+      "file": "Set-1-MS-2021",
+      "round": "1",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1791163509751,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9effijoj",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the slope of a line perpendicular to the line that contains the points $(4, 4)$ and $(10, 11)$?",
+    "choices": null,
+    "answer": "$-6/7$",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9ef2l4kn",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What are the coordinates of the image of the point $(-2, 5)$ when rotated 180 degrees about the point $(6, -8)$?",
+    "choices": null,
+    "answer": "$(14, -21)$ (ACCEPT: $x = 14$ AND $y = -21$)",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9efy6l8w",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is $35 ^2 - 33 ^2$ ?",
+    "choices": null,
+    "answer": "136",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9ef2u1nj",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "The first term of a geometric sequence is one, and the second is $3/4$. When the sum of the first 5 terms of the sequence is written as a mixed fraction, what is the fractional part?",
+    "choices": null,
+    "answer": "$13/256$",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9efdzd7h",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "In the set of integers from 1 through 21, inclusive, let A be the set of those that are odd, and let $B$ be the set of those that are multiples of 5. How many elements are in A union $B$?",
+    "choices": null,
+    "answer": "13",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9ef47m6p",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A 3-by$-3$-by$-3$ cube is made of 14 red unit cubes and 13 blue unit cubes pasted together. What is the minimum possible visible surface area of the large cube that is colored red?",
+    "choices": null,
+    "answer": "20",
+    "letter": "",
+    "src": {
+      "file": "Set-10-MS-2021",
+      "round": "10",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509783,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fcydohv",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What value of $x$ produces the smallest value of $x^2 - 22x + 121$?",
+    "choices": null,
+    "answer": "11",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fc72bdb",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A student club sells tickets to a school play. They sell 226 tickets, averaging 5.8 tickets per member, rounded to the nearest tenth. How many members are in the club?",
+    "choices": null,
+    "answer": "39",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fcbk4w6",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the product of the two radical expressions $6√2$ and $7√2$?",
+    "choices": null,
+    "answer": "84",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fcbegal",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "From a point 40 feet from the base of a tree, the angle of elevation to the top is 60 degrees. To the nearest foot, what is the height of the tree?",
+    "choices": null,
+    "answer": "69",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fc8wvto",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the remainder when 88 is divided by 13?",
+    "choices": null,
+    "answer": "10",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9fci9wvv",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Three blue marbles, 3 green marbles, and 5 red marbles are in a jar. Two marbles are selected without replacement. What is the probability that the two marbles are the same color?",
+    "choices": null,
+    "answer": "$16/55$",
+    "letter": "",
+    "src": {
+      "file": "Set-2-MS-2021",
+      "round": "2",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509816,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g5ol0h2",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What fraction is halfway between $1/8$ and $1/12$?",
+    "choices": null,
+    "answer": "$5/48$",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g5wg09v",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A triangle has two exterior angles that have degree measures of 156 and 129, respectively. What is the degree measure of their common remote interior angle?",
+    "choices": null,
+    "answer": "105",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g58j68a",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the surface area of a cube with edges of length $3/4$?",
+    "choices": null,
+    "answer": "$27/8$ (ACCEPT: $3 3/8$, 3.375)",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g57hgg9",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "The mean number of weekly work hours for 16 part-time employees at a store is 17. The mean number of hours for 9 of these employees is 14. To the nearest whole number, what is the mean number of hours for the rest of the 16 employees?",
+    "choices": null,
+    "answer": "21",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g5er4gf",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the area of a right triangle with legs of lengths 13 and 14?",
+    "choices": null,
+    "answer": "91",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9g58r1sl",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A cell phone plan costs a fixed rate per month plus a charge per text message. One month, Sally had 300 texts and her total bill was ＄58. The next month, she had 700 texts and her total bill was ＄90. In dollars, what is the fixed rate per month?",
+    "choices": null,
+    "answer": "34",
+    "letter": "",
+    "src": {
+      "file": "Set-3-MS-2021",
+      "round": "3",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1791163509845,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gz3vapo",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "If the intercepts of a line are $(8, 0)$ and $(0, -8)$, what is the slope-intercept equation of the line?",
+    "choices": null,
+    "answer": "$y = x - 8$",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gz8kw3c",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Solve the following equation for $x$: $x^2 + 17x - 480 = 0$.",
+    "choices": null,
+    "answer": "$-32$, 15 (must give both answers)",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gz0ij2b",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Giving your answer as a decimal, decreasing a number by 54% is equivalent to multiplying it by what?",
+    "choices": null,
+    "answer": "0.46 (ACCEPT: .46)",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gzyop0t",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the volume of a rectangular pyramid with base dimensions 13 and 9 and height 15?",
+    "choices": null,
+    "answer": "585",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gzvqvye",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Simplify the following expression: $21 - 5$ times 3",
+    "choices": null,
+    "answer": "6",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9gz98qw9",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the largest prime factor of 2385?",
+    "choices": null,
+    "answer": "53",
+    "letter": "",
+    "src": {
+      "file": "Set-4-MS-2021",
+      "round": "4",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1791163509875,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9ht1hi7q",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Let a be the number 4 times $10 ^9$ . Expressing your answer in scientific notation with one significant figure, what is the square root of a?",
+    "choices": null,
+    "answer": "6 TIMES $10^4$",
+    "letter": "",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509905,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9htv2o6i",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the radius of the circle with equation $x^2 + y^2 + 12x - 6y + 16 = 0$?",
+    "choices": null,
+    "answer": "$√29$",
+    "letter": "",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1791163509905,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9hu46qgw",
+    "subject": "math",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is not a root of the polynomial $x^3 + x^2 - 2x$?",
+    "choices": {
+      "W": "$-2$",
+      "X": "$-1$",
+      "Y": "0",
+      "Z": "1"
+    },
+    "answer": "X) –1",
+    "letter": "X",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509906,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9hurjhup",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "To the nearest degree, what is the measure of an exterior angle in a regular polygon with 39 sides?",
+    "choices": null,
+    "answer": "9 (do not accept: 189)",
+    "letter": "",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1791163509906,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9huqwb8v",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "How many faces does an octagonal pyramid have?",
+    "choices": null,
+    "answer": "9",
+    "letter": "",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509906,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9hupkruo",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "According to Descartes' [day-KARTZ] rule of signs, what are the possible numbers of negative real zeroes the polynomial $x^5 + 3x^4 - 3x^3 - 2x^2 + 7x - 12$ may have?",
+    "choices": null,
+    "answer": "2 AND 0 (must give both answers)",
+    "letter": "",
+    "src": {
+      "file": "Set-5-MS-2021",
+      "round": "5",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1791163509906,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iu6hh0a",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the second-smallest positive multiple of 13 with at least three digits?",
+    "choices": null,
+    "answer": "117",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iuqr8rf",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Find the y-coordinates of all points of intersection of the parabola $y = x^2 - 2x - 15$ and the line $y = 2x - 3$.",
+    "choices": null,
+    "answer": "$-7$ AND 9",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iup7gqa",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "For the function $f$ of $x = -6x + 5$, what is $f$ inverse of $-43$?",
+    "choices": null,
+    "answer": "8",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iu99req",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "How many positive integers less than 1,000 can be formed using some or all of the digits 1, 2, 3, 4, and 5, at most once each?",
+    "choices": null,
+    "answer": "85",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iuxd85o",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Two triangles have identical corresponding angle measures. The larger triangle has sides of lengths 9, 11, and 16. The smaller triangle has smallest side of length 5. What is the perimeter of the smaller triangle?",
+    "choices": null,
+    "answer": "20",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9iu63jbt",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the polynomial in the variable $x$ with least degree, integer coefficients, and leading coefficient one that has $-3 + √7$ as a zero?",
+    "choices": null,
+    "answer": "$x^2 + 6x + 2$",
+    "letter": "",
+    "src": {
+      "file": "Set-6-MS-2021",
+      "round": "6",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1791163509942,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l39w7ms",
+    "subject": "math",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is a negation of the statement “A is a subset of $B$”?",
+    "choices": {
+      "W": "$B$ is a subset of A",
+      "X": "All elements of A are in $B$",
+      "Y": "No elements of A are in $B$",
+      "Z": "Some elements of A are not in $B$"
+    },
+    "answer": "$Z$) SOME ELEMENTS OF A ARE NOT IN $B$",
+    "letter": "Z",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l3r86na",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "If $z$ varies directly as $x$ and inversely as $y$, and $z = 4$ when $x = 10$ and $y = 7$, what is $z$ when $x = 2$ and $y = 9$?",
+    "choices": null,
+    "answer": "$28/45$",
+    "letter": "",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l304mwa",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "If the minute hand on your clock is 15 centimeters long, how many centimeters is the angular distance its tip travels in 48 minutes?",
+    "choices": null,
+    "answer": "$24π$",
+    "letter": "",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l3g9uh3",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "In the arithmetic sequence with second term $-5$ and fourth term 7, what is the 221st term?",
+    "choices": null,
+    "answer": "1309",
+    "letter": "",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l3qka86",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "One night, Jane started reading at the top of page 146 in her latest science fiction book and finished at the bottom of page 279. How many pages did she read?",
+    "choices": null,
+    "answer": "134",
+    "letter": "",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9l3kupt7",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "How many three-digit integers are multiples of 23?",
+    "choices": null,
+    "answer": "39",
+    "letter": "",
+    "src": {
+      "file": "Set-7-MS-2021",
+      "round": "7",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1791163510023,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2u1v6e",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Charlie has a rectangular pool in his backyard, with sides of lengths 12 and 8. He wants to add a concrete sidewalk of width 2 around the pool. When he is finished, what is the total area of the sidewalk?",
+    "choices": null,
+    "answer": "96",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2m9e36",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "If the graph of $y$ equals the second-degree polynomial $p$ of $x$ contains the 3 points $(0, 0)$, $(4, -24)$, and $(6, 0)$, what is $p$ of $x$?",
+    "choices": null,
+    "answer": "$3x^2 - 18x$ (ACCEPT: $y = 3x^2 - 18x$)",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2pynyt",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The rate at which a factory packs boxes is proportional to the square of the number of people working. If one person packs 8 boxes an hour, how many boxes will 3 people pack in one hour?",
+    "choices": null,
+    "answer": "72",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2xgsjf",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the largest integer $n$ such that 7 to the nth power divides 50 factorial?",
+    "choices": null,
+    "answer": "8",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2wxxtv",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The point $(-5, 3)$ is reflected through the line $y = x$ and then reflected through the y-axis. What are the coordinates of the resulting point?",
+    "choices": null,
+    "answer": "$(-3, -5)$ (ACCEPT: $x = -3$ AND $y = -5$)",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9m2hflc9",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the area of a circle that circumscribes a rectangle with sides of lengths 12 and 14?",
+    "choices": null,
+    "answer": "$85π$",
+    "letter": "",
+    "src": {
+      "file": "Set-8-MS-2021",
+      "round": "8",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1791163510058,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9mydrdw3",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the coefficient of the bc term in the trinomial expansion of open parenthesis $7a + 3b - 6c$ close parenthesis squared?",
+    "choices": null,
+    "answer": "$-36$",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9myexy1t",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "How many 9-digit positive integers use each of the digits 1 through 9 exactly once, and alternate even and odd digits?",
+    "choices": null,
+    "answer": "2880",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9my7b5gp",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "If a number is decreased by 30%, by what percent is its square decreased?",
+    "choices": null,
+    "answer": "51",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9mytwptd",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "How many numbers from 1 to 100, inclusive, are divisible by neither 6 nor 7?",
+    "choices": null,
+    "answer": "72",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9mywq9vb",
+    "subject": "math",
+    "type": "tossup",
+    "format": "sa",
+    "text": "A prism with 26 faces has how many edges?",
+    "choices": null,
+    "answer": "72",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  },
+  {
+    "id": "qmuuki9my8pcht",
+    "subject": "math",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A Fibonacci-type sequence has the property that every term starting with the third is the sum of the previous two terms. If the seventh term is 50 and the tenth term is 212, what is the fifth term?",
+    "choices": null,
+    "answer": "19",
+    "letter": "",
+    "src": {
+      "file": "Set-9-MS-2021",
+      "round": "9",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1791163510090,
+    "year": "2021"
+  }
+]
