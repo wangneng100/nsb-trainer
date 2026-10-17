@@ -1,12 +1,191 @@
 [
   {
+    "id": "qmvcnxeyyvpyt5",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What part of the mammalian female reproductive tract is responsible for making gametes [GAM-eets]?",
+    "choices": {
+      "W": "Ovary",
+      "X": "Oviduct",
+      "Y": "Uterine horn",
+      "Z": "Uterine body"
+    },
+    "answer": "$W$) OVARY",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646858,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyy30dtz",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What enzyme is responsible for transcribing DNA to RNA in bacteria?",
+    "choices": null,
+    "answer": "RNA POLYMERASE (ACCEPT: RNAP; do not accept: RNA polymerase II)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646858,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyyog8cq",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Consider a graph with the mass of a sample on the y-axis and the sample volume on the x-axis. Which of the following substances would have the steepest slope on this graph?",
+    "choices": {
+      "W": "Snow",
+      "X": "Ice",
+      "Y": "Rain",
+      "Z": "Steam"
+    },
+    "answer": "$Y$) RAIN",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646858,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyyjkr5s",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Barium will form an ionic compound in a one-to-one ratio with which of the following elements?",
+    "choices": {
+      "W": "Titanium",
+      "X": "Arsenic",
+      "Y": "Sulfur",
+      "Z": "Iodine"
+    },
+    "answer": "$Y$) SULFUR",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646858,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyzc3j7x",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following stars is located closest to the north celestial pole?",
+    "choices": {
+      "W": "Polaris",
+      "X": "Vega [VAY-ga]",
+      "Y": "Regulus [REGG-yoo-lus]",
+      "Z": "Rigel [RYE-jel]"
+    },
+    "answer": "$W$) POLARIS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646859,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyztkspn",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "White dwarfs are found in which of the following regions of the H-R diagram?",
+    "choices": {
+      "W": "Top right",
+      "X": "Top left",
+      "Y": "Bottom right",
+      "Z": "Bottom left"
+    },
+    "answer": "$Z$) BOTTOM LEFT",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646859,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyzp4xzm",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Oak Ridge National Lab are searching for enzymes that can break down lignin. Lignin is found in the highest quantities in what plant tissue?",
+    "choices": {
+      "W": "Wood",
+      "X": "Leaf",
+      "Y": "Fruit",
+      "Z": "Seed"
+    },
+    "answer": "$W$) WOOD",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646859,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeyzkkaeo",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Fermi National Accelerator Lab have measured the magnetic moment of the muon to high precision. Their value exceeded the prediction of theorists by 3.3 standard deviations. Which of the following percentages is closest to the probability of obtaining a value at least this large by chance, assuming that the theoretical value is in fact correct and the measurement error is normally distributed?",
+    "choices": {
+      "W": "0.05",
+      "X": "0.5",
+      "Y": "2",
+      "Z": "10"
+    },
+    "answer": "W) 0.05",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646859,
+    "year": "2022"
+  },
+  {
     "id": "qmuuki9o2bjb4z",
     "subject": "math",
     "type": "tossup",
     "format": "sa",
     "text": "What is the square of the binomial $x + 12$?",
     "choices": null,
-    "answer": "$x^2 + 24x + 144$",
+    "answer": "$x2 + 24x + 144$",
     "letter": "",
     "src": {
       "file": "2022-MS-1",
@@ -14,7 +193,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646860,
     "year": "2022"
   },
   {
@@ -32,7 +211,212 @@
       "num": 5
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez0st9uj",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following best describes why objects dropped in a vacuum on Earth will all fall with the same acceleration?",
+    "choices": {
+      "W": "The balance of air resistance with gravity imposes a terminal velocity",
+      "X": "Gravitational force does not depend on mass",
+      "Y": "Buoyancy balances the force of gravity",
+      "Z": "Gravitational force is proportional to mass while acceleration is inversely proportional to mass"
+    },
+    "answer": "$Z$) GRAVITATIONAL FORCE IS PROPORTIONAL TO MASS WHILE ACCELERATION IS INVERSELY PROPORTIONAL TO MASS",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez0d59nn",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following quantities would have the same units as pressure?",
+    "choices": {
+      "W": "Energy times time",
+      "X": "Force per area",
+      "Y": "Volume times temperature",
+      "Z": "Mass per volume"
+    },
+    "answer": "$X$) FORCE PER AREA",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez01hn6j",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for the protective caps at the end of eukaryotic chromosomes that tend to shorten as the cell divides?",
+    "choices": null,
+    "answer": "TELOMERES",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez09j148",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Botanists successfully created viable offspring between two different bamboos that live in the same forest, but noticed that these two species flower during different seasons. Which of the following types of isolation is occurring?",
+    "choices": {
+      "W": "Behavioral",
+      "X": "Mechanical",
+      "Y": "Geographic",
+      "Z": "Temporal"
+    },
+    "answer": "$Z$) TEMPORAL",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez02zw5z",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What type of reaction combines an acid and a base to form a salt and water?",
+    "choices": {
+      "W": "Decomposition",
+      "X": "Neutralization",
+      "Y": "Single replacement",
+      "Z": "Redox"
+    },
+    "answer": "$X$) NEUTRALIZATION",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646860,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez1fswyf",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "To the nearest gram, what is the mass of one-half mole of sodium chloride?",
+    "choices": null,
+    "answer": "29",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646861,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez12dwh2",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What moon is known for its thick nitrogen atmosphere and methane lakes?",
+    "choices": {
+      "W": "Ganymede [GAN-ih-meed]",
+      "X": "Titan",
+      "Y": "Io [EYE-oh]",
+      "Z": "Charon [KAIR-on]"
+    },
+    "answer": "$X$) TITAN",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646861,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez1ipc3e",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What greenhouse gas is primarily responsible for the runaway greenhouse effect on Venus?",
+    "choices": null,
+    "answer": "CARBON DIOXIDE (ACCEPT: CO ) 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646861,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez13zmn1",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Lawrence Livermore National Lab have validated the possibility that planets composed primarily of hydrogen and helium may experience helium rain. One of the planets in our solar system thought to experience this phenomenon is what gas giant that is home to the great red spot superstorm?",
+    "choices": null,
+    "answer": "JUPITER",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646861,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez1htur7",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Pacific Northwest National Lab scientists are utilizing magnetic nanoparticles to extract a metal from brine water. What is this valuable, lightweight metal, known for its use in modern battery technology?",
+    "choices": null,
+    "answer": "LITHIUM",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646861,
     "year": "2022"
   },
   {
@@ -50,7 +434,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646861,
     "year": "2022"
   },
   {
@@ -68,7 +452,207 @@
       "num": 11
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2knboa",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is the term for the phenomenon in which light striking a metal ejects electrons from its atoms?",
+    "choices": {
+      "W": "Work function",
+      "X": "Semiconductivity",
+      "Y": "Photoelectric effect",
+      "Z": "Brownian motion"
+    },
+    "answer": "$Y$) PHOTOELECTRIC EFFECT",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2drwpj",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "In joules, what is the kinetic energy of a 50-gram object at rest?",
+    "choices": null,
+    "answer": "0",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2ctvb9",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What general process allows a plant to convert solar energy into chemical energy?",
+    "choices": null,
+    "answer": "PHOTOSYNTHESIS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2jl7uk",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three organelles that are present in both eukaryotes and prokaryotes [PRO-care-ee-oats]: 1) Nuclei; 2) Ribosomes; 3) Mitochondria.",
+    "choices": null,
+    "answer": "2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2oz4ej",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following atoms has the largest atomic radius?",
+    "choices": {
+      "W": "Potassium",
+      "X": "Carbon",
+      "Y": "Hydrogen",
+      "Z": "Fluorine"
+    },
+    "answer": "$W$) POTASSIUM",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2jwegj",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three elements in order of increasing valence electron counts: 1) Boron; 2) Sulfur; 3) Silicon.",
+    "choices": null,
+    "answer": "1, 3, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2v4tyx",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "The Geodynamo model is used to explain which of the following aspects of the Earth system?",
+    "choices": {
+      "W": "Tectonic plates",
+      "X": "Ocean circulation",
+      "Y": "Magnetic field",
+      "Z": "Ozone layer"
+    },
+    "answer": "$Y$) MAGNETIC FIELD",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2p6ccl",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following best describes how geysers form?",
+    "choices": {
+      "W": "Spontaneous eruption from a pressurized, confined aquifer",
+      "X": "Separation of water-rich magma from molten rock as it cools and crystallizes",
+      "Y": "Superheating of groundwater by a nearby magma chamber",
+      "Z": "Squeezing of groundwater out of fractured rock by tectonic forces"
+    },
+    "answer": "$Y$) SUPERHEATING OF GROUNDWATER BY A NEARBY MAGMA CHAMBER",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2nxlns",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Brookhaven National Lab scientists are developing mathematical models of COVID$-19$ transmission in society. The goal of mass vaccination is to achieve what threshold, at which the immunized population is sufficiently large to shield the susceptible population?",
+    "choices": null,
+    "answer": "HERD IMMUNITY",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646862,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez2c97ts",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at SLAC National Accelerator Lab are studying particles with different values of quantum mechanical spin. Identify all of the following three values that are possible values for the spin quantum number of an electron: 1) Negative one-half; 2) Zero; 3) One-half.",
+    "choices": null,
+    "answer": "1, 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646862,
     "year": "2022"
   },
   {
@@ -86,7 +670,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646862,
     "year": "2022"
   },
   {
@@ -104,7 +688,48 @@
       "num": 17
     },
     "tags": [],
-    "added": 1791163510130,
+    "added": 1792257646863,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez3h6dyl",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following materials is an electric conductor?",
+    "choices": {
+      "W": "Ceramic",
+      "X": "Quartz",
+      "Y": "Plastic",
+      "Z": "Steel"
+    },
+    "answer": "$Z$) STEEL",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646863,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez4cgv3c",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A car is traveling forwards at 20 meters per second when it begins accelerating forwards at 2.5 meters per second squared. In meters per second, what will its speed be after 15 seconds?",
+    "choices": null,
+    "answer": "57.5 (ACCEPT: 57½, $115/2$) Before we leave, let’s confirm the team’s score. What score does the Official Scorekeeper have? And what is the final score in the Chat Box? Does anyone disagree? I’d like to remind the Scorekeeper to submit the official scoresheet. Best of luck to the team and thanks for competing in today’s event.",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-1",
+      "round": "1",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646864,
     "year": "2022"
   },
   {
@@ -112,7 +737,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is the coefficent of $x^2$ in the expansion of open parenthesis $5x - 6$ close parenthesis squared?",
+    "text": "What is the coefficent of x2 in the expansion of open parenthesis $5x - 6$ close parenthesis squared?",
     "choices": null,
     "answer": "25",
     "letter": "",
@@ -122,7 +747,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646864,
     "year": "2022"
   },
   {
@@ -140,7 +765,227 @@
       "num": 1
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5afqip",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following modes of heat transfer is responsible for the heating of Earth’s surface by the sun?",
+    "choices": {
+      "W": "Radiation",
+      "X": "Evaporation",
+      "Y": "Conduction",
+      "Z": "Convection"
+    },
+    "answer": "$W$) RADIATION",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5d69s3",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following laws could be used to calculate the current flowing through a resistor when it is connected to a battery?",
+    "choices": {
+      "W": "Coulomb’s law",
+      "X": "Ohm’s law",
+      "Y": "Faraday’s law",
+      "Z": "Gauss’s law"
+    },
+    "answer": "$X$) OHM’S LAW",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez52vbt8",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "The action of the sodium-potassium pump is an example of which of the following types of transport?",
+    "choices": {
+      "W": "Active transport",
+      "X": "Cotransport",
+      "Y": "Simple diffusion",
+      "Z": "Facilitated diffusion"
+    },
+    "answer": "$W$) ACTIVE TRANSPORT",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5j109n",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Decarboxylation [dee-car-box-ill-AYshun] occurs in two steps of the citric acid cycle. What gaseous molecule is released during these steps?",
+    "choices": null,
+    "answer": "CARBON DIOXIDE (ACCEPT: CO ) 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5pstzb",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the chemical formula of ammonia?",
+    "choices": null,
+    "answer": "NH 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5403ag",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Neon has an atomic mass of 20.19 amu. Which of the following explains why this is?",
+    "choices": {
+      "W": "Each atom of neon has a mass of 20.19 amu",
+      "X": "Neon likely has a true atomic mass of 20 amu, but mass spectrometry is not precise enough to determine its exact mass",
+      "Y": "Neon can have a variable number of protons and therefore a range of masses",
+      "Z": "Neon has three naturally abundant isotopes, but the most common is neon$-20$"
+    },
+    "answer": "$Z$) NEON HAS THREE NATURALLY ABUNDANT ISOTOPES, BUT THE MOST COMMON IS NEON$-20$",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5zqu3o",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following nuclear reactions is the dominant source of energy in the Sun?",
+    "choices": {
+      "W": "Fission",
+      "X": "Fusion",
+      "Y": "Alpha decay",
+      "Z": "Beta decay"
+    },
+    "answer": "$X$) FUSION",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez584iuy",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Hubble’s law relates the distance to a galaxy to what other characteristic?",
+    "choices": {
+      "W": "Luminosity [loo-min-AW-sih-tee]",
+      "X": "Mass",
+      "Y": "Velocity",
+      "Z": "Angular momentum"
+    },
+    "answer": "$Y$) VELOCITY",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5y2mzu",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists supported by the Department of Energy are using machine learning to classify bound systems of stars into spiral, elliptical, or irregular. What is the term for these systems?",
+    "choices": {
+      "W": "Nebulae [NEB-yoo-lee]",
+      "X": "Galaxies",
+      "Y": "Superclusters",
+      "Z": "Globular [GLAW-byoo-lur] clusters"
+    },
+    "answer": "$X$) GALAXIES",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez55awct",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Researchers at Oak Ridge National Lab are developing microbes that turn waste into the organic acid itaconic [IT-AH-CONIC] acid. Which of the following pH ranges best describes an aqueous solution of one-molar itaconic acid?",
+    "choices": {
+      "W": "Less than 1",
+      "X": "Between 1 and 7",
+      "Y": "Between 7 and 13",
+      "Z": "Greater than 13"
+    },
+    "answer": "$X$) BETWEEN 1 AND 7",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646865,
     "year": "2022"
   },
   {
@@ -158,7 +1003,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646865,
     "year": "2022"
   },
   {
@@ -176,7 +1021,207 @@
       "num": 7
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5verb9",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Alex is riding his bicycle at a speed of 3 meters per second. If he accelerates in the same direction as his motion at 2 meters per second squared for 2 seconds, then, in meters per second, what is his final speed?",
+    "choices": null,
+    "answer": "7",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646865,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez5d2kia",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following types of decay occurs when a neutron is converted into a proton and an electron?",
+    "choices": {
+      "W": "Alpha",
+      "X": "Beta",
+      "Y": "Gamma",
+      "Z": "Delta"
+    },
+    "answer": "$X$) BETA",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6q9x7i",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What taxonomic rank is shared by a group of species that are closely related, and is part of an organism's binomial name?",
+    "choices": null,
+    "answer": "GENUS (ACCEPT: GENERA)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6qs4cc",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for the maximum number of individuals in a species that an environment can support?",
+    "choices": null,
+    "answer": "CARRYING CAPACITY",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6c03fo",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What is the term for mixtures that are not uniform throughout?",
+    "choices": {
+      "W": "Homogeneous",
+      "X": "Heterogeneous [hetero-JEE-nee-us]",
+      "Y": "Solution",
+      "Z": "Dissolved"
+    },
+    "answer": "$X$) HETEROGENEOUS",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez626umu",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "To the nearest degree Celsius, what temperature is absolute zero?",
+    "choices": null,
+    "answer": "$-273$",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6zeemd",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Which type of seismic wave would arrive first at a seismometer recording a distant earthquake?",
+    "choices": null,
+    "answer": "P-WAVE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6rzx2q",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Crater Lake is not really a crater, but a remnant of what igneous structure?",
+    "choices": {
+      "W": "Cinder cone",
+      "X": "Lava dome",
+      "Y": "Caldera [call-DAIR-ah]",
+      "Z": "Parasitic cone"
+    },
+    "answer": "$Y$) CALDERA",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6td5zv",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Lawrence Berkeley National Lab researchers use high-energy charged particles to generate materials with unique properties. What is the term for a particle or molecule that has an electric charge?",
+    "choices": {
+      "W": "Hydride",
+      "X": "Electrode",
+      "Y": "Enantiomer [en-AN-tee-oh-mur]",
+      "Z": "Ion"
+    },
+    "answer": "Z) ION",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6wmwpe",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Brookhaven National Lab scientists are using low-energy ion-scattering spectroscopy to examine the surfaces of bismuth vanadate [VAN-ah-date] electrodes used for the water-splitting reaction. This technique involves bombarding the analyte with atoms that consist of 2 protons, 2 neutrons, and 1 electron. What atomic species does this represent?",
+    "choices": null,
+    "answer": "HELIUM PLUS (ACCEPT: SINGLY IONIZED HELIUM, He+; do not accept: helium)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646866,
     "year": "2022"
   },
   {
@@ -194,7 +1239,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646866,
     "year": "2022"
   },
   {
@@ -202,7 +1247,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Give one of the linear factors of $x^2 + 11x - 80$.",
+    "text": "Give one of the linear factors of $x2 + 11x - 80$.",
     "choices": null,
     "answer": "$x - 5$ OR $x + 16$ (must give at least one)",
     "letter": "",
@@ -212,7 +1257,309 @@
       "num": 13
     },
     "tags": [],
-    "added": 1791163510166,
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez67zt1l",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "If the mass of an object is doubled, by what factor is its gravitational potential energy multiplied?",
+    "choices": {
+      "W": "$1/4$",
+      "X": "$1/2$",
+      "Y": "2",
+      "Z": "4"
+    },
+    "answer": "Y) 2",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6mal8b",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "A photovoltaic cell converts between two different kinds of energy. Which of the following are the input and output forms of energy, respectively?",
+    "choices": {
+      "W": "Electric, chemical",
+      "X": "Chemical, thermal",
+      "Y": "Mechanical, radiant",
+      "Z": "Radiant, electric"
+    },
+    "answer": "$Z$) RADIANT, ELECTRIC",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6z89rc",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What cellular organelle is responsible for post-translational modification of secreted proteins?",
+    "choices": null,
+    "answer": "GOLGI (ACCEPT: GOLGI BODY, GOLGI APPARATUS, GOLGI COMPLEX)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6xdtw2",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Antibiotics are completely ineffective at treating the causative agent of which of the following diseases?",
+    "choices": {
+      "W": "Strep throat",
+      "X": "Syphilis",
+      "Y": "Influenza",
+      "Z": "Tuberculosis"
+    },
+    "answer": "$Y$) INFLUENZA",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6k7c8w",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What type of reaction is Na $S + 2$HCl yields 2NaCl + H S an example of? 2 2",
+    "choices": {
+      "W": "Double replacement",
+      "X": "Single replacement",
+      "Y": "Decomposition",
+      "Z": "Combustion"
+    },
+    "answer": "$W$) DOUBLE REPLACEMENT",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez628lv4",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following substances has the highest heat of vaporization?",
+    "choices": {
+      "W": "Ethanol",
+      "X": "Water",
+      "Y": "Mercury",
+      "Z": "Hexane"
+    },
+    "answer": "$X$) WATER",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6brogg",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "On what planet is the solar system’s largest volcano?",
+    "choices": null,
+    "answer": "MARS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6vbx80",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Mars’s seasonal polar ice caps are primarily composed of what molecule?",
+    "choices": {
+      "W": "Carbon monoxide",
+      "X": "Carbon dioxide",
+      "Y": "Methane",
+      "Z": "Water"
+    },
+    "answer": "$W$) CARBON DIOXIDE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez6yq8lt",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Brookhaven National Lab scientists are studying how sunlight can cause trace gases in the atmosphere to form aerosol particles, which can then seed the formation of clouds. What is the term for these particles?",
+    "choices": {
+      "W": "Fusion nuclei",
+      "X": "Condensation nuclei",
+      "Y": "Liquid crystal seeds",
+      "Z": "Soot"
+    },
+    "answer": "$X$) CONDENSATION NUCLEI",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646866,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez7ipsyu",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Argonne National Lab researchers are studying the release of carbon dioxide from the largest permafrost region found at temperate latitudes. Which of the following locations are they studying?",
+    "choices": {
+      "W": "Appalachian Mountains",
+      "X": "Tibetan Plateau",
+      "Y": "Great Plains",
+      "Z": "Sahara Desert"
+    },
+    "answer": "$X$) TIBETAN PLATEAU Before we leave, let’s confirm the team’s score. What score does the Official Scorekeeper have? And what is the final score in the Chat Box? Does anyone disagree? I’d like to remind the Scorekeeper to submit the official scoresheet. Best of luck to the team and thanks for competing in today’s event.",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-2",
+      "round": "2",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646867,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez70849y",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What is the name of the point directly overhead for an observer viewing the night sky?",
+    "choices": {
+      "W": "Zenith",
+      "X": "Nadir [NAY-der]",
+      "Y": "Horizon",
+      "Z": "Ecliptic"
+    },
+    "answer": "$W$) ZENITH",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646867,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez79q44x",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three planets that have rings: 1) Jupiter; 2) Neptune; 3) Uranus.",
+    "choices": null,
+    "answer": "ALL",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646867,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez7elly4",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at SLAC National Accelerator Laboratory are studying particles called tetraquarks. How many constituent quarks are in a tetraquark?",
+    "choices": null,
+    "answer": "4",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646867,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8gsih3",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Fermi National Accelerator Lab working on the Dark Energy Survey have measured a cosmological quantity to be 0.776, with a standard error of 0.017. Assuming normality, which of the following best describes their claim?",
+    "choices": {
+      "W": "The value of the quantity definitely lies between 0.759 and 0.793",
+      "X": "Throughout the universe, the value of the quantity fluctuates between 0.759 and 0.793",
+      "Y": "With a probability of 68%, the value of the quantity lies between 0.759 and 0.793",
+      "Z": "Their instruments recorded a value of 0.776, but they know the instrument can make errors of up to 0.017"
+    },
+    "answer": "$Y$) WITH A PROBABILITY OF 68%, THE VALUE OF THE QUANTITY LIES BETWEEN 0.759 AND 0.793",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646868,
     "year": "2022"
   },
   {
@@ -220,7 +1567,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is the leading coefficient of the polynomial $6x^3 - 2x^2 + 7x - 9$?",
+    "text": "What is the leading coefficient of the polynomial $6x3 - 2x2 + 7x - 9$?",
     "choices": null,
     "answer": "6",
     "letter": "",
@@ -230,7 +1577,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646868,
     "year": "2022"
   },
   {
@@ -248,7 +1595,227 @@
       "num": 3
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez83yfnl",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following types of quantities appears in a free-body diagram?",
+    "choices": {
+      "W": "Energy",
+      "X": "Force",
+      "Y": "Momentum",
+      "Z": "Acceleration"
+    },
+    "answer": "$X$) FORCE",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8bpa83",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "The specific gravity of a substance is most directly related to which of the following properties?",
+    "choices": {
+      "W": "Density",
+      "X": "Volume",
+      "Y": "Mass",
+      "Z": "Moment of inertia [in-UR-shah]"
+    },
+    "answer": "$W$) DENSITY",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8j02l3",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Looking at a picture of all of the chromosomes in a cell can help in the identification of mutations and abnormalities. What is this type of picture called?",
+    "choices": {
+      "W": "Pedigree",
+      "X": "DNA fingerprint",
+      "Y": "Genotype",
+      "Z": "Karyotype"
+    },
+    "answer": "$Z$) KARYOTYPE",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8qwx1d",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for the middle portion of the arthropod body to which the wings are usually attached?",
+    "choices": null,
+    "answer": "THORAX",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8fdvfv",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Mendeleev [mendah-LAY-ev] organized the elements according to their reactivity. Which of the following elements would be grouped with lithium?",
+    "choices": {
+      "W": "Magnesium",
+      "X": "Chlorine",
+      "Y": "Sodium",
+      "Z": "Calcium"
+    },
+    "answer": "$Y$) SODIUM",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez83ga2m",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the empirical formula of the compound formed by aluminum and chlorine?",
+    "choices": null,
+    "answer": "AlCl 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8e8t7e",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Gas giant planets are primarily composed of what two elements?",
+    "choices": {
+      "W": "Hydrogen and nitrogen",
+      "X": "Hydrogen and helium",
+      "Y": "Helium and nitrogen",
+      "Z": "Hydrogen and oxygen"
+    },
+    "answer": "$X$) HYDROGEN AND HELIUM",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez84izdw",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "A lunar eclipse will occur when which of the following happens?",
+    "choices": {
+      "W": "The moon blocks light from the sun",
+      "X": "The side of the moon facing Earth is completely dark",
+      "Y": "The full moon moves through Earth’s shadow",
+      "Z": "The moon is fully lit by the sun"
+    },
+    "answer": "$Y$) THE FULL MOON MOVES THROUGH EARTH’S SHADOW",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8w60wn",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Princeton Plasma Physics Lab are studying $B$ fields in plasma. What is the more common term for a B field?",
+    "choices": {
+      "W": "Electric field",
+      "X": "Magnetic field",
+      "Y": "Strong field",
+      "Z": "Weak field"
+    },
+    "answer": "$X$) MAGNETIC FIELD",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8w7luu",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Lab are studying the element that is most abundant by mass in Earth’s core. What is this element?",
+    "choices": {
+      "W": "Oxygen",
+      "X": "Silicon",
+      "Y": "Magnesium",
+      "Z": "Iron"
+    },
+    "answer": "$Z$) IRON",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646868,
     "year": "2022"
   },
   {
@@ -266,7 +1833,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646868,
     "year": "2022"
   },
   {
@@ -284,7 +1851,227 @@
       "num": 9
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8s0iwr",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What is the SI base unit of temperature?",
+    "choices": {
+      "W": "Kelvin",
+      "X": "Celsius",
+      "Y": "Fahrenheit",
+      "Z": "Rankine"
+    },
+    "answer": "$W$) KELVIN",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez81rsvh",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for a process in which two or more atomic nuclei are combined to form a single atomic nucleus?",
+    "choices": null,
+    "answer": "NUCLEAR FUSION (ACCEPT: FUSION)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez88ih7z",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "In Earth's history, there have been several instances in which a sizable fraction of the species on Earth have suddenly died out. What is the term for these events?",
+    "choices": null,
+    "answer": "MASS EXTINCTIONS (ACCEPT: EXTINCTION EVENT, BIOTIC CRISIS)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez8cmokw",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "A biologist identifies a new unicellular species lacking a nucleus that can undergo both transcription and translation concurrently on the same strand of mRNA. Which of the following groups of organisms could this cell be a member of?",
+    "choices": {
+      "W": "Plants",
+      "X": "Protozoa",
+      "Y": "Fungi",
+      "Z": "Bacteria"
+    },
+    "answer": "$Z$) BACTERIA",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646868,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9qjnh9",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What term is used to describe the number density of water vapor in the air?",
+    "choices": {
+      "W": "Condensation",
+      "X": "Humidity",
+      "Y": "Salinity",
+      "Z": "Telemetry [tel-EM-eh-tree]"
+    },
+    "answer": "$X$) HUMIDITY",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez96uomy",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following molecules has a tetrahedral geometry?",
+    "choices": {
+      "W": "Methane",
+      "X": "Water",
+      "Y": "Carbon dioxide",
+      "Z": "Hydrogen sulfide"
+    },
+    "answer": "$W$) METHANE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez974err",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following units is not used to measure atmospheric pressure?",
+    "choices": {
+      "W": "Pounds",
+      "X": "Millibars",
+      "Y": "Kilopascals",
+      "Z": "Atmospheres"
+    },
+    "answer": "$W$) POUNDS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9xfjhu",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What is the name of the ductile [DUK-til] region of Earth's mantle that is solid but is so mechanically weak that it can flow?",
+    "choices": {
+      "W": "Lithosphere",
+      "X": "Asthenosphere [ass-THEN-oh-sfeer]",
+      "Y": "Hot spot",
+      "Z": "Moho"
+    },
+    "answer": "$X$) ASTHENOSPHERE",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9gx3vo",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Researchers at SLAC National Accelerator Lab are using an x-ray free-electron laser to study changes molecules undergo when interacting with light. Which of the following biological processes depends most strongly on the interaction of light with molecules?",
+    "choices": {
+      "W": "Respiration",
+      "X": "Mitosis",
+      "Y": "Citric acid cycle",
+      "Z": "Photosynthesis"
+    },
+    "answer": "$Z$) PHOTOSYNTHESIS",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9gbtom",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at SLAC National Accelerator Laboratory are studying new ways to measure the Hubble constant. Which of the following best describes what the Hubble constant represents?",
+    "choices": {
+      "W": "Rate of expansion of the universe",
+      "X": "Ideal mirror angle for telescopes",
+      "Y": "Number of stars in the Milky Way",
+      "Z": "Velocity required to enter Earth orbit"
+    },
+    "answer": "$W$) RATE OF EXPANSION OF THE UNIVERSE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646869,
     "year": "2022"
   },
   {
@@ -302,7 +2089,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646869,
     "year": "2022"
   },
   {
@@ -310,7 +2097,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "If $f$ of $x = x^3 - 3x^2 -7x + 4$, what is $f$ of $-2$?",
+    "text": "If $f$ of $x = x3 - 3x2 -7x + 4$, what is $f$ of $-2$?",
     "choices": null,
     "answer": "$-2$",
     "letter": "",
@@ -320,7 +2107,325 @@
       "num": 15
     },
     "tags": [],
-    "added": 1791163510201,
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9x9mtu",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following sets of laws describes how planets orbit stars?",
+    "choices": {
+      "W": "Kirchoff’s [KEER-koffs] laws",
+      "X": "Amonton’s [AM-on-tuns] laws",
+      "Y": "Maxwell’s laws",
+      "Z": "Kepler’s laws"
+    },
+    "answer": "$Z$) KEPLER’S LAWS",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9lnydo",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following is closest to the speed of light in kilometers per second?",
+    "choices": {
+      "W": "100,000",
+      "X": "200,000",
+      "Y": "300,000",
+      "Z": "400,000"
+    },
+    "answer": "Y) 300,000",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez956bpm",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What organelles in plant cells contain chlorophyll?",
+    "choices": null,
+    "answer": "CHLOROPLASTS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9io5u5",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "The chordae tendineae [KOR-day tendin-EE-ah], which are colloquially known as the heartstrings, attach what set of structures within the heart to the heart wall?",
+    "choices": null,
+    "answer": "VALVES (ACCEPT: ATRIOVENTRICULAR VALVES)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez912ew2",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following elements is NOT a metalloid [MET-ah-loid]?",
+    "choices": {
+      "W": "Silicon",
+      "X": "Germanium [jer-MAYN-ee-um]",
+      "Y": "Carbon",
+      "Z": "Tellurium [te-LOOR-ee-um]"
+    },
+    "answer": "$Y$) CARBON",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxez9cs8qi",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "You dip a piece of pH paper into a one-molar solution of hydrochloric acid. What color does it turn?",
+    "choices": {
+      "W": "Yellow",
+      "X": "Indigo",
+      "Y": "Red",
+      "Z": "Green"
+    },
+    "answer": "Y) RED Before we leave, let’s confirm the team’s score. What score does the Official Scorekeeper have? And what is the final score in the Chat Box? Does anyone disagree? I’d like to remind the Scorekeeper to submit the official scoresheet. Best of luck to the team and thanks for competing in today’s event.",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-3",
+      "round": "3",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646869,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaiev53",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What phenomenon results in sound waves bending away from the hot ground on a warm day?",
+    "choices": null,
+    "answer": "REFRACTION",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaa9mom",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A container full of water to the brim weighs 25 pounds. If an 8-pound block of balsa wood is added to the container, and the water that spills out is removed, what will the final weight of the container-water-wood system be?",
+    "choices": null,
+    "answer": "25",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezak9eo2",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is most likely to be true of a sessile animal?",
+    "choices": {
+      "W": "It moves very rapidly",
+      "X": "It reproduces asexually",
+      "Y": "It is a filter feeder",
+      "Z": "It is highly cephalized"
+    },
+    "answer": "$Y$) IT IS A FILTER FEEDER",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezas8dxw",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Newborn salmon learn the chemical composition of the water in which they hatch so they can return to the same stream when it is time for them to spawn. This is an example of what type of learning?",
+    "choices": null,
+    "answer": "IMPRINTING",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezapzu1i",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The kinetic energies of particles in a gas tend to exhibit what distribution?",
+    "choices": null,
+    "answer": "MAXWELL-BOLTZMANN (ACCEPT: BOLTZMANN)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeza6i72t",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three substances that are more acidic than distilled water: 1) Lemon juice; 2) Milk; 3) Ammonia.",
+    "choices": null,
+    "answer": "1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaimey6",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "A rock formation is subjected to compressional forces at depths where ductile deformation occurs. Which of the following features will likely form?",
+    "choices": {
+      "W": "Normal fault",
+      "X": "Thrust fault",
+      "Y": "Folds",
+      "Z": "Thinning"
+    },
+    "answer": "$Y$) FOLDS",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaujb86",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Place the following three organic materials in order of increasing metamorphic grade: 1) Peat; 2) Bituminous coal; 3) Lignite.",
+    "choices": null,
+    "answer": "1, 3, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaog25s",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Lab are making DNA origami. What two purines are found in DNA origami?",
+    "choices": null,
+    "answer": "GUANINE AND ADENINE (ACCEPT: A AND $G$)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaiwgyg",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Lawrence Berkeley National Lab are studying protoplanets. Identify all of the following three solar system bodies that are thought to be protoplanets that never became planets: 1) Ceres; 2) Deimos; 3) Ganymede.",
+    "choices": null,
+    "answer": "1",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646870,
     "year": "2022"
   },
   {
@@ -338,7 +2443,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646870,
     "year": "2022"
   },
   {
@@ -356,7 +2461,212 @@
       "num": 6
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezam1fjm",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "An ant is walking on the ground following a curving path. The magnitude of its velocity remains constant. John is tracking its speed in the $x$ direction, while Poorvi is tracking its speed in the $y$ direction. Which of the following functions of John and Poorvi’s measurements will remain constant?",
+    "choices": {
+      "W": "The sum",
+      "X": "The sum of the squares",
+      "Y": "The difference of the squares",
+      "Z": "The absolute value of the sum"
+    },
+    "answer": "$X$) THE SUM OF THE SQUARES",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaq0tpu",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Consider a plot showing the temperature of water on the x-axis and its density on the y-axis. At what temperature, in degrees Celsius, does the diagram have a local maximum?",
+    "choices": {
+      "W": "0",
+      "X": "4",
+      "Y": "32",
+      "Z": "100"
+    },
+    "answer": "X) 4",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezakbhql",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Integral membrane proteins are firmly associated with the cell membrane lipid bilayer and are only removable by agents that interfere with what type of interactions?",
+    "choices": {
+      "W": "Hydrophobic",
+      "X": "Hydrophilic",
+      "Y": "Covalent",
+      "Z": "Ionic"
+    },
+    "answer": "$W$) HYDROPHOBIC",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeza7e0t9",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for the microscopic blood vessels across which gas and nutrient exchange occurs?",
+    "choices": null,
+    "answer": "CAPILLARIES",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezaz7mk7",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Benzene’s stability can be ascribed to delocalized electrons in what type of molecular orbital?",
+    "choices": null,
+    "answer": "PI",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646870,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbb1ot0",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for a molecule that can act as both a Bronsted-Lowry acid and base?",
+    "choices": null,
+    "answer": "AMPHIPROTIC (ACCEPT: AMPHOTERIC)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbcjfuv",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The intertropical convergence zone, or ITCZ, is found in the area where what set of prevailing winds converge?",
+    "choices": null,
+    "answer": "TRADE WINDS (ACCEPT: TROPICAL EASTERLIES)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezb4p5wi",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Radon, an element that causes lung cancer, may seep into homes and buildings and concentrate in re-circulated air. Which of the following best describes the source of most radon?",
+    "choices": {
+      "W": "Chrysotile asbestos used for insulation releases radon when disturbed",
+      "X": "Sulfuric acid in groundwater reacts with home building materials to produce radon",
+      "Y": "Garden pesticides release radon when reacting with home building materials",
+      "Z": "Uranium in surrounding rocks produces radon through radioactive decay"
+    },
+    "answer": "$Z$) URANIUM IN SURROUNDING ROCKS PRODUCES RADON THROUGH RADIOACTIVE DECAY",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbhdebg",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying mycorrhizae. These structures are an example of what type of symbiosis in which both organisms benefit?",
+    "choices": null,
+    "answer": "MUTUALISM",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezba9o2z",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Laboratory are studying spintronic devices. Which of the following is a difference between electronics, which relies on electric charge, and spintronics, which relies on the quantum-mechanical spin of electrons?",
+    "choices": {
+      "W": "Spintronics can only be used in quantum computers",
+      "X": "Electronics produces less heat than spintronics",
+      "Y": "Electrons do not need to move for spintronics",
+      "Z": "Spintronic devices must be superconducting"
+    },
+    "answer": "$Y$) ELECTRONS DO NOT NEED TO MOVE FOR SPINTRONICS",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646871,
     "year": "2022"
   },
   {
@@ -374,7 +2684,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646871,
     "year": "2022"
   },
   {
@@ -392,7 +2702,202 @@
       "num": 12
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezb5g3k8",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What derived SI unit is used to measure force?",
+    "choices": null,
+    "answer": "NEWTON (ACCEPT: KILOGRAM-METERS PER SECOND SQUARED)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezb1pgvk",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "If sound A is 1000 times as intense as sound $B$, then, in decibels, how much louder is sound A than sound $B$?",
+    "choices": null,
+    "answer": "30",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbu78ou",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What organelle reads mRNA transcripts to produce proteins?",
+    "choices": null,
+    "answer": "RIBOSOME",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezb2vsma",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What is the term for the site on an enzyme that a substrate binds to?",
+    "choices": {
+      "W": "Allosteric site",
+      "X": "Inhibitory site",
+      "Y": "Activated complex",
+      "Z": "Active site"
+    },
+    "answer": "$Z$) ACTIVE SITE",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezb92iad",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the SI unit for amount of substance?",
+    "choices": null,
+    "answer": "MOLE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbzpxxf",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three elements in order of increasing atomic radius: 1) Magnesium; 2) Silicon; 3) Chlorine.",
+    "choices": null,
+    "answer": "3, 2, 1",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbfi6u3",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Why are tropical regions of Earth warmer than polar regions?",
+    "choices": {
+      "W": "The atmosphere's circulation transports heat from polar regions to tropical regions",
+      "X": "The ocean's circulation transports heat from polar regions to tropical regions",
+      "Y": "Earth's spherical shape means that tropical regions are closer to the Sun than polar regions",
+      "Z": "Earth's spherical shape means that tropical regions receive more direct solar radiation than polar regions"
+    },
+    "answer": "$Z$) EARTH'S SPHERICAL SHAPE MEANS THAT TROPICAL REGIONS RECEIVE MORE DIRECT SOLAR RADIATION THAN POLAR REGIONS",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezbbomns",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following statements regarding ocean acidification is TRUE?",
+    "choices": {
+      "W": "The primary cause of falling seawater pH is acid precipitation",
+      "X": "The average pH of the global surface ocean is expected to fall below 6 by the year 2050",
+      "Y": "The average pH of the global surface ocean is currently less than 7",
+      "Z": "Ocean acidification is harmful to calcifying marine organisms"
+    },
+    "answer": "$Z$) OCEAN ACIDIFICATION IS HARMFUL TO CALCIFYING MARINE ORGANISMS",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646871,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezc7cq8r",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Laboratory have built an electron cooling system, which lowers the temperature in their ion beams by injecting cool electrons to mix with the warm ions. What is the name of the law that implies that heat can only flow spontaneously from a hotter body to a colder body?",
+    "choices": null,
+    "answer": "SECOND LAW OF THERMODYNAMICS (ACCEPT: NEWTON’S LAW OF COOLING)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646872,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezcrxu9l",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Pacific Northwest National Lab are utilizing nanoparticles with a magnetite core that could be used to extract valuable elements from wastewater. Given that the iron in magnetite has an average oxidation state of +2 and $2/3$, what is the empirical formula of magnetite?",
+    "choices": null,
+    "answer": "Fe O 3 4",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-4",
+      "round": "4",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646872,
     "year": "2022"
   },
   {
@@ -410,7 +2915,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646872,
     "year": "2022"
   },
   {
@@ -428,7 +2933,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1791163510233,
+    "added": 1792257646872,
     "year": "2022"
   },
   {
@@ -446,7 +2951,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646873,
     "year": "2022"
   },
   {
@@ -464,7 +2969,202 @@
       "num": 1
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdfhwmp",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Given that middle $C$ is 261.63 hertz, then, in hertz, what is the frequency of the next overtone of $C$?",
+    "choices": {
+      "W": "130.31",
+      "X": "523.26",
+      "Y": "1046.5",
+      "Z": "2093.0"
+    },
+    "answer": "X) 523.26",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdyd3kq",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A wave has a wavelength of 2 meters and a frequency of 6 hertz. In meters per second, what is its speed?",
+    "choices": null,
+    "answer": "12",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdiyrfm",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "One reason that the gene for sickle-cell disease has become fixed in the population is that it offers protection against what parasitic disease?",
+    "choices": null,
+    "answer": "MALARIA",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdgw3up",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What bacterial enzymes recognize specific DNA sequences and introduce a double-stranded break?",
+    "choices": null,
+    "answer": "RESTRICTION ENZYMES (ACCEPT: RESTRICTION ENDONUCLEASES)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezd72pm2",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the adjective for a reaction that results in an energy transfer from the surroundings to the system?",
+    "choices": null,
+    "answer": "ENDOTHERMIC",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdj6zid",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Consider a chemical reaction with a standard enthalpy change of 10 kilojoules per mole and a standard entropy change of 10 joules per mole kelvin. When is this reaction spontaneous?",
+    "choices": {
+      "W": "At all temperatures",
+      "X": "Above 1000 kelvins",
+      "Y": "Below 1000 kelvins",
+      "Z": "Never"
+    },
+    "answer": "$X$) ABOVE 1000 KELVINS",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdbtb19",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The fan-shaped feature that is formed where a river meets the sea is known as what?",
+    "choices": null,
+    "answer": "DELTA",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdw3dah",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following best describes the thermocline present in most of the world's oceans?",
+    "choices": {
+      "W": "Temperature increases with salinity",
+      "X": "Temperature decreases with salinity",
+      "Y": "Temperature increases with depth",
+      "Z": "Temperature decreases with depth"
+    },
+    "answer": "$Z$) TEMPERATURE DECREASES WITH DEPTH",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdknsug",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying the structures that connect muscle to bone. What is the name of these structures?",
+    "choices": null,
+    "answer": "TENDONS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdu5t2a",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Oak Ridge National Lab are developing new methods to train statistical learning systems that are based on a collection of connected units that transmit signals to one another. What is the general term for this system?",
+    "choices": null,
+    "answer": "NEURAL NETWORK (ACCEPT: ARTIFICIAL NEURAL NETWORKS)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646873,
     "year": "2022"
   },
   {
@@ -482,7 +3182,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646873,
     "year": "2022"
   },
   {
@@ -505,7 +3205,207 @@
       "num": 7
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezd43gnd",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for the tendency of objects to resist changes in motion?",
+    "choices": null,
+    "answer": "INERTIA",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdjdenu",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What phase change is characterized by evaporation below the surface of a liquid?",
+    "choices": null,
+    "answer": "BOILING",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezdvu2jq",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Decompression sickness, also called \"the bends\", is primarily the result of what dissolved blood gas coming out of solution?",
+    "choices": null,
+    "answer": "NITROGEN (ACCEPT: DINITROGEN, NITROGEN GAS, N ) 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezds4v32",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What is the term for the process of programmed cell death that helps structures develop shape during development?",
+    "choices": {
+      "W": "Necrosis",
+      "X": "Apoptosis",
+      "Y": "Cytokinesis",
+      "Z": "Telophase"
+    },
+    "answer": "$X$) APOPTOSIS",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezd8vj93",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "In a galvanic cell, what is the term for the electrode at which reduction occurs?",
+    "choices": null,
+    "answer": "CATHODE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646873,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeze7fumv",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three factors that can introduce random errors to an experiment: 1) Uncontrolled variables; 2) Noisy measurement tools; 3) Truncating the measurements to two significant figures.",
+    "choices": null,
+    "answer": "1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeze5gohx",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Lunar terrae are another name for what surface feature?",
+    "choices": {
+      "W": "Maria",
+      "X": "Impact craters",
+      "Y": "Highlands",
+      "Z": "Mountainous terrain"
+    },
+    "answer": "$Y$) HIGHLANDS",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezetz1ef",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What is the densest layer of the Sun’s atmosphere?",
+    "choices": {
+      "W": "Corona",
+      "X": "Solar wind",
+      "Y": "Photosphere",
+      "Z": "Transition zone"
+    },
+    "answer": "$Y$) PHOTOSPHERE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeze2z2f3",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying the two bands closest to the Fermi level. One of these bands is called the valence band, while the other band is called what?",
+    "choices": null,
+    "answer": "CONDUCTION BAND",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezerf5x6",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Laboratory are studying particle-collision processes that create pairs of Higgs bosons. Which of the following pairs of particles could form from a single photon?",
+    "choices": {
+      "W": "Proton and neutron",
+      "X": "Up quark and down quark",
+      "Y": "$W$ boson and $Z$ boson",
+      "Z": "Electron and positron"
+    },
+    "answer": "$Z$) ELECTRON AND POSITRON",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646874,
     "year": "2022"
   },
   {
@@ -523,7 +3423,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646874,
     "year": "2022"
   },
   {
@@ -541,7 +3441,233 @@
       "num": 13
     },
     "tags": [],
-    "added": 1791163510263,
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezedno3x",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What principle states that the buoyant force on an object is equal to the weight of the liquid it displaces?",
+    "choices": null,
+    "answer": "ARCHIMEDES’ PRINCIPLE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezecdu2a",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Vince is standing halfway between the center and the outer edge of a merry-go-round, while Jan is standing at the outer edge. By what factor must Vince’s tangential speed be multiplied to get Jan’s tangential speed?",
+    "choices": null,
+    "answer": "2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezeer71i",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The role of cristae is to increase the surface area of the inner membrane of what eukaryotic organelle?",
+    "choices": null,
+    "answer": "MITOCHONDRIA (ACCEPT: MITOCHONDRION)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezela26p",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Lettuce wilts when it loses water, which reduces pressure exerted against the cell wall. What is the term for this pressure, caused by the osmotic flow of water that pushes the cell membrane against the cell wall?",
+    "choices": null,
+    "answer": "TURGOR",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezew74nc",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Identify all of the following three mixtures that are considered heterogeneous mixtures: 1) Foam; 2) Alloy; 3) Air.",
+    "choices": null,
+    "answer": "1",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezevrqgq",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three elements in order of increasing first ionization energy: 1) Carbon; 2) Neon; 3) Sodium.",
+    "choices": null,
+    "answer": "3, 1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezefpwsh",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "The triple alpha process is primarily responsible for directly producing which of the following?",
+    "choices": {
+      "W": "Carbon$-12$",
+      "X": "Beryllium$-9$",
+      "Y": "Lithium$-6$",
+      "Z": "Helium$-3$"
+    },
+    "answer": "$W$) CARBON$-12$",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezeandj5",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Venus has the highest albedo of any planet largely due to the presence of what atmospheric component?",
+    "choices": null,
+    "answer": "SULFURIC ACID (ACCEPT: $H$ SO ) 2 4",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeze28n7w",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Lab are studying particles called neutral pions. Which of the following best explains why they are called neutral?",
+    "choices": {
+      "W": "They do not interact with other particles",
+      "X": "They have zero mass",
+      "Y": "They form from the decay of neutrons",
+      "Z": "They have no net electric charge"
+    },
+    "answer": "$Z$) THEY HAVE NO NET ELECTRIC CHARGE",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezewd477",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Lab are researching metallic catalysts that accelerate the water-gas shift reaction. What nickel-group metal, which has the lowest reactivity on the reactivity series, is the catalyst they are studying?",
+    "choices": null,
+    "answer": "PLATINUM",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-5",
+      "round": "5",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646874,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezf5d69j",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Oak Ridge National Lab are researching methods to program bacteria to convert citric acid into itaconic acid, which involves the loss of a carboxyl group. What gas is produced as a byproduct of this reaction?",
+    "choices": null,
+    "answer": "CARBON DIOXIDE (ACCEPT: CO ) 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646875,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezf6l2tj",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Argonne National Lab are using density functional theory to model the properties of hafnia, also known as hafnium dioxide. Identify all of the following three properties that this compound is expected to have: 1) Low melting point; 2) High electrical conductivity; 3) Chemically inert.",
+    "choices": null,
+    "answer": "3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646875,
     "year": "2022"
   },
   {
@@ -549,7 +3675,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Identify a linear factor of $x^2 + 4x - 96$.",
+    "text": "Identify a linear factor of $x2 + 4x - 96$.",
     "choices": null,
     "answer": "$x + 12$ (ACCEPT: $x - 8$)",
     "letter": "",
@@ -559,7 +3685,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646876,
     "year": "2022"
   },
   {
@@ -567,7 +3693,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What are the coordinates of the vertex of the parabola with equation $y = x^2 + 18x + 31$?",
+    "text": "What are the coordinates of the vertex of the parabola with equation $y = x2 + 18x + 31$?",
     "choices": null,
     "answer": "$(-9, -50)$ (ACCEPT: $x = -9$, $y = -50$)",
     "letter": "",
@@ -577,7 +3703,207 @@
       "num": 2
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgbmn84",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "A particle is moving along a circular path with a constant speed. What is the term for the force that pulls the particle inwards towards the center of the circle?",
+    "choices": {
+      "W": "Centripetal force",
+      "X": "Centrifugal force",
+      "Y": "Tensional force",
+      "Z": "Torque"
+    },
+    "answer": "$W$) CENTRIPETAL FORCE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg0asj9",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three regions of the electromagnetic spectrum in order of increasing energy: 1) Infrared; 2) Gamma; 3) Ultraviolet.",
+    "choices": null,
+    "answer": "1, 3, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg5zjwd",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "In a clinical trial, a pharmacologicallyinactive substance is often given as a substitute for an active substance to match as closely as possible the experience of a comparison group with that of a treatment group. This inactive substance is more commonly known as what?",
+    "choices": null,
+    "answer": "PLACEBO",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg1ks1t",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the classes of biomacromolecules has the highest energy density per unit mass?",
+    "choices": {
+      "W": "Fats",
+      "X": "Carbohydrates",
+      "Y": "Proteins",
+      "Z": "Nucleic acids"
+    },
+    "answer": "$W$) FATS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezglixv3",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What is the term for the heat content of a system?",
+    "choices": {
+      "W": "Entropy",
+      "X": "Enthalpy",
+      "Y": "Lattice energy",
+      "Z": "Bond dissociation energy"
+    },
+    "answer": "$X$) ENTHALPY",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgmjzsj",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three substances in order of increasing absolute entropy at STP: 1) Ethane; 2) Water; 3) Graphite.",
+    "choices": null,
+    "answer": "3, 2, 1",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg0r338",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following bodies does NOT have an atmosphere composed predominantly of nitrogen?",
+    "choices": {
+      "W": "Venus",
+      "X": "Titan",
+      "Y": "Earth",
+      "Z": "Pluto"
+    },
+    "answer": "$W$) VENUS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgjqb23",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three moons that are tidally locked to their planets: 1) Earth’s moon; 2) Phobos; 3) Deimos.",
+    "choices": null,
+    "answer": "ALL",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg3zxyx",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Lab are developing technologies to detect dopamine in the brain. What disease is caused by the death of dopaminergic neurons in the substantia nigra?",
+    "choices": null,
+    "answer": "PARKINSON’S DISEASE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg17922",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying biopolymers. Identify all of the following three molecules that are examples of biopolymers: 1) Silk; 2) DNA; 3) Polyethylene.",
+    "choices": null,
+    "answer": "1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646876,
     "year": "2022"
   },
   {
@@ -595,7 +3921,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646876,
     "year": "2022"
   },
   {
@@ -618,7 +3944,202 @@
       "num": 8
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg0x2tv",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for the positively charged nucleon?",
+    "choices": null,
+    "answer": "PROTON",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgc6p5a",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A 1000-kilogram plane is cruising at constant velocity. Its engines are exerting a constant thrust of 90,000 newtons. In meters per second squared, what is the acceleration of the plane?",
+    "choices": null,
+    "answer": "0",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgi8zq3",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What phylum are humans part of?",
+    "choices": null,
+    "answer": "CHORDATA (ACCEPT: CHORDATES)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg8q2v2",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What polysaccharide is the major component of the fungal cell wall?",
+    "choices": null,
+    "answer": "CHITIN",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgm822w",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for a chemical half-reaction that results in a gain of electrons?",
+    "choices": null,
+    "answer": "REDUCTION",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg9nqy3",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Methoxyethane is an example of what class of organic molecule?",
+    "choices": {
+      "W": "Alkane",
+      "X": "Alkyne",
+      "Y": "Ketone",
+      "Z": "Ether"
+    },
+    "answer": "$Z$) ETHER",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg2wm8a",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "In years, which of the following is closest to the age of Earth?",
+    "choices": {
+      "W": "1.2 billion",
+      "X": "3.3 billion",
+      "Y": "4.5 billion",
+      "Z": "6.2 billion"
+    },
+    "answer": "Y) 4.5 BILLION",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgt9bpr",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "You find an igneous rock that has large, coarse crystals in its structure. Identify all of the following three statements that are reasonable conclusions about this rock: 1) It is felsic; 2) It is mafic; 3) It cooled in Earth’s interior.",
+    "choices": null,
+    "answer": "3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezgazcv0",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists are using the Atmospheric Radiation Measurement facility to study a cloud type that covers vast areas of the ocean. What is this cloud type?",
+    "choices": null,
+    "answer": "STRATOCUMULUS (ACCEPT: CUMULOSTRATUS, TWAIN)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646876,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezg6qpqi",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Laboratory are colliding fully-ionized gold atoms. Which of the following is true regarding ionization energies on the periodic table?",
+    "choices": {
+      "W": "They decrease from left to right",
+      "X": "They increase from top to bottom",
+      "Y": "They are greatest for alkali metals",
+      "Z": "They are greatest for noble gases"
+    },
+    "answer": "$Z$) THEY ARE GREATEST FOR NOBLE GASES",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646876,
     "year": "2022"
   },
   {
@@ -636,7 +4157,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646877,
     "year": "2022"
   },
   {
@@ -654,7 +4175,274 @@
       "num": 14
     },
     "tags": [],
-    "added": 1791163510293,
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhmvt2k",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is an example of a longitudinal wave?",
+    "choices": {
+      "W": "Pressure wave",
+      "X": "Radio wave",
+      "Y": "Light",
+      "Z": "Shear wave"
+    },
+    "answer": "$W$) PRESSURE WAVE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezh6nv2w",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What principle states that if two waves overlap, their displacements are added?",
+    "choices": null,
+    "answer": "SUPERPOSITION",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhgv4hn",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What biochemical process converts glucose to two molecules of pyruvate?",
+    "choices": null,
+    "answer": "GLYCOLYSIS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezha3bv4",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the term for the rhythmic muscle contractions that move food through the human digestive system?",
+    "choices": null,
+    "answer": "PERISTALSIS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhmgddr",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the empirical formula of ammonium sulfate?",
+    "choices": null,
+    "answer": "(NH )SO 4 4",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhgjgt5",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the complete electron configuration for neutral boron?",
+    "choices": null,
+    "answer": "$1S22S22P1$",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezh368zl",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the process in Earth's mantle in which hot rock rises and cool rock sinks, driving circulation of fluid material similar to the flow of water in a heated pot?",
+    "choices": null,
+    "answer": "CONVECTION",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhankj3",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "In which of the following types of rocks would you be most likely to find a fossil?",
+    "choices": {
+      "W": "Shale",
+      "X": "Basalt",
+      "Y": "Andesite",
+      "Z": "Gneiss"
+    },
+    "answer": "$W$) SHALE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-6",
+      "round": "6",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhier4x",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for $a 50/50$ mixture of enantiomers [en-AN-tee-oh-murs]?",
+    "choices": null,
+    "answer": "RACEMIC MIXTURE (ACCEPT: RACEMATE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhq3dhl",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three factors that can affect the rate of a chemical reaction: 1) Changing the temperature; 2) Changing the concentration of the reactants; 3) Adding a catalyst.",
+    "choices": null,
+    "answer": "ALL",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhub0yk",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Proteus and Nereid [Nair-eeid] are moons of what planet?",
+    "choices": null,
+    "answer": "NEPTUNE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhincep",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Early refractor telescopes were hindered by distortion because light rays of different colors are refracted to different focal points. This effect is known as what?",
+    "choices": null,
+    "answer": "CHROMATIC ABERRATION",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezhfmzdd",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Argonne National Lab are developing solar cells made from perovskite [purr-OFF-skite] materials. Currently, most commercial solar cells are made from what material?",
+    "choices": {
+      "W": "Gallium [GAL-ee-um] arsenide",
+      "X": "Silicon",
+      "Y": "Cadmium telluride",
+      "Z": "Calcium titanate [TIE-ten-ate]"
+    },
+    "answer": "$X$) SILICON",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646877,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezh0q27v",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at the Thomas Jefferson National Accelerator Facility are studying pions [PIE-ons]. Pions are formed from what two flavors of quarks?",
+    "choices": null,
+    "answer": "UP AND DOWN (ACCEPT IN EITHER ORDER)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646877,
     "year": "2022"
   },
   {
@@ -672,7 +4460,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1791163510328,
+    "added": 1792257646878,
     "year": "2022"
   },
   {
@@ -690,7 +4478,207 @@
       "num": 4
     },
     "tags": [],
-    "added": 1791163510328,
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezin4fsf",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following physical quantities is equal to the rate of change of momentum?",
+    "choices": {
+      "W": "Energy",
+      "X": "Acceleration",
+      "Y": "Force",
+      "Z": "Torque [tork]"
+    },
+    "answer": "$Y$) FORCE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeziqskl6",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A fixed amount of an ideal gas originally has a temperature of 300 kelvins, a volume of 20 liters, and a pressure of 1 atmosphere. If its pressure is increased to 3 atmospheres and its volume is decreased to 5 liters, then in kelvins, what will be the new temperature of the gas?",
+    "choices": null,
+    "answer": "225",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezihphyq",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Thermoregulation in mammals is primarily carried out by what part of the brain?",
+    "choices": null,
+    "answer": "HYPOTHALAMUS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezi8w5zl",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "From what primary germ layer does the lens of the mammalian eye develop?",
+    "choices": null,
+    "answer": "ECTODERM",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezirsymu",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Based on their bond-dissociation energies, which of the following bonds is strongest?",
+    "choices": {
+      "W": "$C$ triple bond $C$",
+      "X": "$H$ single bond $F$",
+      "Y": "$N$ triple bond $N$",
+      "Z": "$C$ triple bond $N$"
+    },
+    "answer": "Y) N TRIPLE BOND $N$",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeziogu47",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Born-Haber cycles are an application of what law that states that a series of reactions can be combined to determine the enthalpy change of a reaction in question?",
+    "choices": null,
+    "answer": "HESS’S LAW",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezif9xr9",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Short-period comets originate beyond the orbit of Neptune in what region of the solar system?",
+    "choices": null,
+    "answer": "KUIPER BELT",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeziur2au",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "A star has a temperature of 2500 kelvins. Which of the following best categorizes the peak emission wavelength of the star?",
+    "choices": {
+      "W": "Yellow light",
+      "X": "Orange light",
+      "Y": "Red light",
+      "Z": "Infrared light"
+    },
+    "answer": "$Z$) INFRARED LIGHT",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezia4nx1",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at the Thomas Jefferson National Accelerator Facility are studying a particle decay process that involves neutrino oscillations [OSS-ih-LAY-shuns]. Which of the following could physicists infer when they discovered neutrino oscillations?",
+    "choices": {
+      "W": "Neutrinos are sterile",
+      "X": "Neutrinos have mass",
+      "Y": "Neutrinos are baryons",
+      "Z": "Neutrinos are tachyons [TAK-ee-ons]"
+    },
+    "answer": "$X$) NEUTRINOS HAVE MASS",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646878,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezi4kcus",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Argonne National Lab scientists are using machine learning to understand the behavior of heat-resistant materials at very high temperatures. Place the following three materials in increasing order of melting point: 1) Stainless steel; 2) Alumina; 3) Cast iron.",
+    "choices": null,
+    "answer": "3, 1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646878,
     "year": "2022"
   },
   {
@@ -698,7 +4686,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "mc",
-    "text": "Which of the following values is NOT in the range of $f$ of $x = e ^x - 2$?",
+    "text": "Which of the following values is NOT in the range of $f$ of $x$ = ex $- 2$?",
     "choices": {
       "W": "$-2$",
       "X": "$-1$",
@@ -713,7 +4701,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1791163510329,
+    "added": 1792257646878,
     "year": "2022"
   },
   {
@@ -731,7 +4719,202 @@
       "num": 10
     },
     "tags": [],
-    "added": 1791163510329,
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjseelq",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following laws is most useful for calculating the electrical field generated by a stationary point charge at a particular distance?",
+    "choices": {
+      "W": "Coulomb's Law",
+      "X": "Biot-Savart [BEE-oh-suh-VAR] Law",
+      "Y": "Ampere's Law",
+      "Z": "Faraday's Law"
+    },
+    "answer": "$W$) COULOMB'S LAW",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjtaeb1",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Rank the following three substances in order of increasing speed of sound in that substance at STP: 1) Iron; 2) Sea water; 3) Air.",
+    "choices": null,
+    "answer": "3, 2, 1",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjexwzz",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following organisms is most likely to be a primary consumer in a lake ecosystem?",
+    "choices": {
+      "W": "Zooplankton [ZOH-oh-plank-ton]",
+      "X": "Cyanobacteria",
+      "Y": "Predatory fish",
+      "Z": "Detritus [deh-TRY-tus]-eating crayfish"
+    },
+    "answer": "$W$) ZOOPLANKTON",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjszhns",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Instead of lungs, many bony fish possess what homologous [ha-MAWL-uh-gus] gas-filled organ that allows for adjustment of buoyancy?",
+    "choices": null,
+    "answer": "SWIM BLADDER (ACCEPT: GAS BLADDER, AIR BLADDER, FISH MAW)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezj45dio",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What rule states that electrons will half-fill orbitals before pairing up?",
+    "choices": null,
+    "answer": "HUND’S RULE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjx4k6f",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following molecules contains carbon-carbon bonds with the most s-character?",
+    "choices": {
+      "W": "Ethane",
+      "X": "Ethene",
+      "Y": "Ethyne [ETH-eye-n]",
+      "Z": "Propane"
+    },
+    "answer": "$Y$) ETHYNE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjwxhlh",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "A brine pool containing sulfate and calcium is undergoing evaporation. What mineral will most likely result from this process?",
+    "choices": null,
+    "answer": "GYPSUM",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjbm6ex",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Denitrification [dee-ny-trihfih-KAY-shun] by bacteria in very low oxygen environments can lead to the production of what potent greenhouse gas?",
+    "choices": null,
+    "answer": "NITROUS OXIDE (ACCEPT: N O, DINITROGEN 2 MONOXIDE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjtdzir",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Oak Ridge National Lab are fabricating silicon chips doped with vanadium [vah-NAY-dee-um] dioxide. What is the formal oxidation state of vanadium in vanadium dioxide?",
+    "choices": null,
+    "answer": "+4 (ACCEPT: 4)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjoifuq",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are developing materials to serve as artificial connections between muscle and bone. What is the term for the natural version of these structures?",
+    "choices": null,
+    "answer": "TENDONS",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646879,
     "year": "2022"
   },
   {
@@ -749,7 +4932,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1791163510329,
+    "added": 1792257646879,
     "year": "2022"
   },
   {
@@ -757,7 +4940,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Let $f$ of $x$ be the fraction with numerator $2x + 8$ and denominator $x^2 + x - 12$. How many horizontal asymptotes and how many vertical asymptotes does the graph of $f$ have?",
+    "text": "Let $f$ of $x$ be the fraction with numerator $2x + 8$ and denominator $x2 + x - 12$. How many horizontal asymptotes and how many vertical asymptotes does the graph of $f$ have?",
     "choices": null,
     "answer": "ONE HORIZONTAL AND ONE VERTICAL (ACCEPT: ONE OF EACH)",
     "letter": "",
@@ -767,7 +4950,253 @@
       "num": 16
     },
     "tags": [],
-    "added": 1791163510329,
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezj8czkt",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "If the distance between two gravitationally-bound bodies is tripled, by what factor is the gravitational force between them multiplied?",
+    "choices": null,
+    "answer": "$1/9$",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjt6ea2",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Two electrons within the same orbital of an atom must have opposite spins. Which of the following principles most directly explains this phenomenon?",
+    "choices": {
+      "W": "Aufbau [AUWF-bouw] principle",
+      "X": "Uncertainty principle",
+      "Y": "Hund's rule",
+      "Z": "Pauli exclusion principle"
+    },
+    "answer": "$Z$) PAULI EXCLUSION PRINCIPLE",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezjc64dj",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What type of transmembrane protein is typically involved in attaching epithelial [eh-pih-THEEL-ee-ul] cells to the extracellular matrix?",
+    "choices": null,
+    "answer": "INTEGRIN",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646879,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezkya6rx",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three organisms that are chondrichthyans [kon-DRIK-thee-ans]: 1) Sharks; 2) Rays; 3) Hagfish.",
+    "choices": null,
+    "answer": "1, 2 Before we leave, let’s confirm the team’s score. What score does the Official Scorekeeper have? And what is the final score in the Chat Box? Does anyone disagree? I’d like to remind the Scorekeeper to submit the official scoresheet. Best of luck to the team and thanks for competing in today’s event.",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-7",
+      "round": "7",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646880,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezk8mj2f",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "During intense periods of exercise, the blood may not be able to provide sufficient oxygen to the muscles to support aerobic respiration. Under these conditions, pyruvate is converted by fermentation into what molecule?",
+    "choices": null,
+    "answer": "LACTIC ACID (ACCEPT: LACTATE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646880,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezkk3rls",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What is the term for the structure that implants into the endometrium during mammalian development?",
+    "choices": {
+      "W": "Blastocyst",
+      "X": "Gastrula",
+      "Y": "Chorionic villus",
+      "Z": "Fetus"
+    },
+    "answer": "$W$) BLASTOCYST",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646880,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl0ixxf",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following is the best strategy to compensate for random errors during an experiment in an unbiased manner?",
+    "choices": {
+      "W": "Making repeated independent measurements",
+      "X": "Switching measurement devices",
+      "Y": "Using machine learning to model error",
+      "Z": "Apply a filter to reduce noise"
+    },
+    "answer": "$W$) MAKING REPEATED INDEPENDENT MEASUREMENTS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl30nzc",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Biopolymers are, in general, what type of polymer?",
+    "choices": {
+      "W": "Polyamide",
+      "X": "Condensation",
+      "Y": "Polyether",
+      "Z": "Thermal"
+    },
+    "answer": "$X$) CONDENSATION",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl4niui",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following statements about rivers is true?",
+    "choices": {
+      "W": "Point bars occur where river velocity reaches a maximum",
+      "X": "Water flow velocity is typically fastest near the headwaters",
+      "Y": "Oxbow lakes are the remnants of former river channels",
+      "Z": "Channel slopes tend to increase towards the river mouth"
+    },
+    "answer": "$Y$) OXBOW LAKES ARE THE REMNANTS OF FORMER RIVER CHANNELS",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl1fimq",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three plant nutrients that can originate from the atmosphere: 1) Carbon; 2) Phosphorus; 3) Nitrogen.",
+    "choices": null,
+    "answer": "1, 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl3fwpc",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Argonne National Lab scientists are utilizing lasers and levitation to improve the creation of refractory oxides such as hafnium (IV) oxide. These refractory materials are useful because of which of their properties?",
+    "choices": {
+      "W": "Heat resistance",
+      "X": "Extensive malleability",
+      "Y": "High electrical conductivity",
+      "Z": "High neutron cross section"
+    },
+    "answer": "$W$) HEAT RESISTANCE",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezlzm5eq",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying the most common catecholamine neurotransmitter in the brain. What is the name of this compound?",
+    "choices": null,
+    "answer": "DOPAMINE",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 4
+    },
+    "tags": [],
+    "added": 1792257646881,
     "year": "2022"
   },
   {
@@ -785,7 +5214,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1791163510365,
+    "added": 1792257646881,
     "year": "2022"
   },
   {
@@ -803,7 +5232,217 @@
       "num": 5
     },
     "tags": [],
-    "added": 1791163510365,
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezlyox5q",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following best describes the difference between resistance and resistivity?",
+    "choices": {
+      "W": "They are synonymous",
+      "X": "Resistivity is intrinsic, while resistance is extrinsic",
+      "Y": "Resistivity is used for fluids, and resistance is used for solids",
+      "Z": "Superconductors have zero resistance but nonzero resistivity"
+    },
+    "answer": "$X$) RESISTIVITY IS INTRINSIC, WHILE RESISTANCE IS EXTRINSIC",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezll1m9d",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Liam is test driving a new car. Starting from rest, he presses the gas pedal for 5 seconds, causing the car to move with a constant acceleration of 8 meters per second squared. In meters, how far does Liam travel over these 5 seconds?",
+    "choices": null,
+    "answer": "100",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezlx5585",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What gaseous plant hormone is commonly used to accelerate ripening after shipping and transport of fruit?",
+    "choices": null,
+    "answer": "ETHYLENE (ACCEPT: ETHENE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezlcbwxb",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Individuals with a thymine at position 478 in the $MC1R$ gene will have red hair and freckles, whereas other individuals may have a cytosine at this nucleotide position. What is the term for such genetic variants that are determined by one base change?",
+    "choices": null,
+    "answer": "SINGLE NUCLEOTIDE POLYMORPHISM (ACCEPT: SNP, “SNIP”)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezl22j02",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What type of bond is formed in the reaction of a Lewis acid with a Lewis base?",
+    "choices": {
+      "W": "Ionic",
+      "X": "Hydrogen",
+      "Y": "Dative",
+      "Z": "Nonpolar covalent"
+    },
+    "answer": "$Y$) DATIVE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezlmimtb",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "The mass spectrum for a compound has a parent peak at $80 M$ over $Z$ and another peak at $65 M$ over $Z$. This indicates that what species is present in the compound?",
+    "choices": {
+      "W": "Hydroxyl",
+      "X": "Carboxyl",
+      "Y": "Acetyl",
+      "Z": "Methyl"
+    },
+    "answer": "$Z$) METHYL",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646881,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmqbns8",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Earth reflects approximately 30% of the light it receives from the Sun back into space. Which of the following components of Earth is responsible for the predominant portion of this reflectivity?",
+    "choices": {
+      "W": "Clouds",
+      "X": "Atmospheric gasses",
+      "Y": "Land surface",
+      "Z": "Ocean surface"
+    },
+    "answer": "$W$) CLOUDS",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmdnbqa",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following is a key characteristic of a protostar?",
+    "choices": {
+      "W": "It is performing hydrogen fusion",
+      "X": "It is performing helium fusion",
+      "Y": "It is surrounded by an opaque envelope",
+      "Z": "It is at least one solar mass"
+    },
+    "answer": "$Y$) IT IS SURROUNDED BY AN OPAQUE ENVELOPE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmpkr0k",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Laboratory are searching for bound states of gluons. Which of the following particles are bound together by gluons?",
+    "choices": {
+      "W": "Proton",
+      "X": "Electron",
+      "Y": "Muon",
+      "Z": "Higgs boson"
+    },
+    "answer": "$W$) PROTON",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmjy3dq",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are making batteries based on the metal produced by the Hall-Heroult process. What is this metal?",
+    "choices": null,
+    "answer": "ALUMINUM (ACCEPT: Al)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 10
+    },
+    "tags": [],
+    "added": 1792257646882,
     "year": "2022"
   },
   {
@@ -821,7 +5460,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1791163510365,
+    "added": 1792257646882,
     "year": "2022"
   },
   {
@@ -839,7 +5478,212 @@
       "num": 11
     },
     "tags": [],
-    "added": 1791163510365,
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezm8sw0b",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "A 80-kilogram man is standing on the left end of a 200-kilogram rowboat, which is floating in calm water. He then walks 1 meter to the other side of the rowboat. To the nearest centimeter, by what distance does the center of mass of the man and rowboat move while the man walks?",
+    "choices": null,
+    "answer": "0",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmggyrl",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "In meters to two significant figures, what is the wavelength of a sound wave produced by a 225-hertz tuning fork?",
+    "choices": null,
+    "answer": "1.5",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmzx5zz",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following complexes breaks the central dogma of molecular biology?",
+    "choices": {
+      "W": "DNA polymerase",
+      "X": "RNA polymerase",
+      "Y": "Reverse transcriptase",
+      "Z": "Ribosome"
+    },
+    "answer": "$Y$) REVERSE TRANSCRIPTASE",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmjjp8f",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "In which of the following situations would it be most helpful for a patient to take an antihistamine?",
+    "choices": {
+      "W": "After getting a papercut",
+      "X": "During an allergic reaction",
+      "Y": "After getting scratched by a rusty nail",
+      "Z": "During a surgical procedure"
+    },
+    "answer": "$X$) DURING AN ALLERGIC REACTION",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmwmzg1",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for the state at which the rate of the forward reaction is equal to the rate of the reverse reaction?",
+    "choices": null,
+    "answer": "EQUILIBRIUM (ACCEPT: DYNAMIC EQUILIBRIUM)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmwlu1q",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "In which of the following compounds does hydrogen have an oxidation state that is NOT +1?",
+    "choices": {
+      "W": "NH 3",
+      "X": "CH COOH 3",
+      "Y": "HF",
+      "Z": "NaH"
+    },
+    "answer": "$Z$) NaH",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezmtupp4",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "What type of unconformity occurs when rocks are tiled and eroded before younger rocks are deposited?",
+    "choices": {
+      "W": "Angular unconformity",
+      "X": "Disconformity",
+      "Y": "Nonconformity",
+      "Z": "Oblique unconformity"
+    },
+    "answer": "$W$) ANGULAR UNCONFORMITY",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezm29nis",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following statements is FALSE regarding sea and land breezes?",
+    "choices": {
+      "W": "They result from the differential heating of sea and land",
+      "X": "Sea breezes typically occur at night",
+      "Y": "Land breezes blow from land to sea",
+      "Z": "They are paired with a compensatory high-altitude wind blowing in the opposite direction"
+    },
+    "answer": "X) SEA BREEZES TYPICALLY OCCUR AT NIGHT",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezm2ulci",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists supported by the Department of Energy are studying hexokinase, an enzyme that adds a phosphate group to glucose by taking it from what compound?",
+    "choices": null,
+    "answer": "ATP (ACCEPT: ADENOSINE TRIPHOSPHATE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646882,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznombda",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Princeton Plasma Physics Lab are studying magnetic reconnection events. Identify all of the following three processes that are caused by magnetic reconnection: 1) Solar flare; 2) Coronal mass ejection; 3) Aurora borealis.",
+    "choices": null,
+    "answer": "1, 2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 16
+    },
+    "tags": [],
+    "added": 1792257646883,
     "year": "2022"
   },
   {
@@ -857,7 +5701,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1791163510365,
+    "added": 1792257646883,
     "year": "2022"
   },
   {
@@ -865,7 +5709,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What are the radius and the coordinates of the center of the circle with equation $x^2 + y^2 + 10x - 4y - 11 = 0$?",
+    "text": "What are the radius and the coordinates of the center of the circle with equation $x2 + y2 + 10x - 4y - 11 = 0$?",
     "choices": null,
     "answer": "RADIUS $2√10$, CENTER $(-5, 2)$ (ACCEPT: $x = -5$ AND $y = 2$ FOR CENTER)",
     "letter": "",
@@ -875,7 +5719,156 @@
       "num": 17
     },
     "tags": [],
-    "added": 1791163510366,
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznykmw9",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Van travels a distance of 360 kilometers in 240 minutes. In kilometers per hour, what was his average speed?",
+    "choices": null,
+    "answer": "90",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezn7m8p4",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following quantities has the same units as angular momentum per time?",
+    "choices": {
+      "W": "Force",
+      "X": "Angular velocity",
+      "Y": "Moment of inertia",
+      "Z": "Torque"
+    },
+    "answer": "$Z$) TORQUE",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-8",
+      "round": "8",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznjvycs",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What bi-elemental compound has the most ionic character?",
+    "choices": null,
+    "answer": "CsF (ACCEPT: CESIUM FLUORIDE)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznvrl7h",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three elements that can commonly be found in coal: 1) Carbon; 2) Oxygen; 3) Sulfur.",
+    "choices": null,
+    "answer": "ALL",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 1
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznfsuib",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "sa",
+    "text": "The Trojan asteroids orbit around the Sun with approximately the same orbital period as what planet?",
+    "choices": null,
+    "answer": "JUPITER",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxeznc4rg6",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three characteristics that are true of all achondrites: 1) They are primarily composed of iron; 2) They are differentiated; 3) They have undergone melting.",
+    "choices": null,
+    "answer": "2, 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 2
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezny6fqq",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Lab are researching how atmospheric reactions can generate solid particulates, which form a homogeneous mixture with the surrounding air. What is the term for this class of colloids?",
+    "choices": null,
+    "answer": "AEROSOL (ACCEPT: SOLID AEROSOL)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646883,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezn1xutu",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Lawrence Berkeley National Lab are studying metals that do not have a defined crystalline structure. What is the adjective for this type of metal?",
+    "choices": null,
+    "answer": "AMORPHOUS (ACCEPT: GLASSY)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 3
+    },
+    "tags": [],
+    "added": 1792257646883,
     "year": "2022"
   },
   {
@@ -898,7 +5891,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646883,
     "year": "2022"
   },
   {
@@ -916,7 +5909,217 @@
       "num": 4
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezofroqx",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Which of the following characteristics of water best explains why the flow from a faucet gets narrower as it falls?",
+    "choices": {
+      "W": "High density",
+      "X": "Incompressibility",
+      "Y": "Cohesion",
+      "Z": "Surface tension"
+    },
+    "answer": "$X$) INCOMPRESSIBILITY",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezopk298",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A 500-kilogram boxcar is traveling with an initial speed $v$ when it collides with a 1500-kilogram cart that is at rest. If the boxcar and the cart stick together after the collision, then, in terms of $v$, what is the final speed of the system?",
+    "choices": null,
+    "answer": "$v/4$ (ACCEPT: $(1/4)v$, $0.25v$)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 5
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezob8sl0",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "In 1979, the World Health Organization declared which infectious disease eradicated?",
+    "choices": null,
+    "answer": "SMALLPOX (ACCEPT: VARIOLA)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezo3pew6",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following is the primary reason for a cell to undergo arrest at the $G2-M$ checkpoint of the cell cycle?",
+    "choices": {
+      "W": "Lack of nutrients",
+      "X": "Incompletely-replicated DNA",
+      "Y": "Nuclear membrane still intact",
+      "Z": "Chromosomes not attached to spindle fibers"
+    },
+    "answer": "$X$) INCOMPLETELY-REPLICATED DNA",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 6
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezoaoehi",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "mc",
+    "text": "The organic molecule found in vinegar is an example of what class of organic molecule?",
+    "choices": {
+      "W": "Amine",
+      "X": "Hydrocarbon",
+      "Y": "Carboxylic acid",
+      "Z": "Alcohol"
+    },
+    "answer": "$Y$) CARBOXYLIC ACID",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezotg1xe",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "mc",
+    "text": "What functional group can be found in acetyl-salicylic acid that is not found in salicylic acid?",
+    "choices": {
+      "W": "Carboxyl",
+      "X": "Aryl",
+      "Y": "Carbonyl",
+      "Z": "Ester"
+    },
+    "answer": "$Z$) ESTER",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 7
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezosw3fl",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "At any given moment, which of the following water resources holds the largest fraction of North America's freshwater?",
+    "choices": {
+      "W": "Rivers and streams",
+      "X": "Lakes",
+      "Y": "Clouds and precipitation",
+      "Z": "Groundwater"
+    },
+    "answer": "$Z$) GROUNDWATER",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezoeyagx",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "An observer standing on the island of Bermuda measures easterly winds during a hurricane. Assuming geostrophic flow, in what cardinal compass direction, relative to the observer, is the hurricane's eye located?",
+    "choices": null,
+    "answer": "SOUTH",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 8
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezo1y2aj",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Scientists at Brookhaven National Laboratory are planning to use the High Luminosity Large Hadron Collider to study the Higgs boson. In this context, which of the following best describes the meaning of luminosity?",
+    "choices": {
+      "W": "Particle beam energy",
+      "X": "Rate of photon production",
+      "Y": "Rate of particle collisions",
+      "Z": "Radioactivity exposure risk"
+    },
+    "answer": "$Y$) RATE OF PARTICLE COLLISIONS",
+    "letter": "Y",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezobd23z",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Brookhaven National Lab are developing new anodes for lithium-ion batteries. The traditional anodes are made of carbon in what VSEPR hybridization state?",
+    "choices": null,
+    "answer": "sp2",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 9
+    },
+    "tags": [],
+    "added": 1792257646884,
     "year": "2022"
   },
   {
@@ -934,7 +6137,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646884,
     "year": "2022"
   },
   {
@@ -942,7 +6145,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "According to the rational root theorem, how many different numbers are possible rational roots of the equation $4x^5 - 5x^4 + 3x^2 + 10 = 0$?",
+    "text": "According to the rational root theorem, how many different numbers are possible rational roots of the equation $4x5 - 5x4 + 3x2 + 10 = 0$?",
     "choices": null,
     "answer": "16",
     "letter": "",
@@ -952,7 +6155,197 @@
       "num": 10
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezo9zt31",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Jan travels at 40 kilometers per hour for 45 minutes. In kilometers, what distance does she cover in this time?",
+    "choices": null,
+    "answer": "30",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezorqc22",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Elizabeth is trying to tune her violin. If she doubles the tension of a string, then, to two significant figures, by what factor will the pitch of the fundamental frequency of that string be multiplied?",
+    "choices": null,
+    "answer": "1.4",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 11
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezovpd81",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "mc",
+    "text": "Strawberry plants can often be found with runners or stolons. Which of the following is the primary purpose of these structures?",
+    "choices": {
+      "W": "Defense against pathogens",
+      "X": "Nutrient absorption",
+      "Y": "Sexual reproduction",
+      "Z": "Asexual reproduction"
+    },
+    "answer": "$Z$) ASEXUAL REPRODUCTION",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezo38s2q",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Identify all of the following three population-limiting factors that are density-independent: 1) Climate; 2) Predation; 3) Local proclivity to wildfire.",
+    "choices": null,
+    "answer": "1, 3",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 12
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezo1qf7f",
+    "subject": "chem",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the chemical formula of the conjugate base of carbonic acid?",
+    "choices": null,
+    "answer": "$HCO - 3$",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646884,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezpxr4p6",
+    "subject": "chem",
+    "type": "bonus",
+    "format": "sa",
+    "text": "What is the oxidation state of chromium in $K$ Cr $O$ ? 2 2 7",
+    "choices": null,
+    "answer": "+6 (ACCEPT: 6, 6+)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 13
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezp9cml7",
+    "subject": "earth",
+    "type": "tossup",
+    "format": "mc",
+    "text": "In millions of years, how long ago are the lunar maria thought to have solidified?",
+    "choices": {
+      "W": "3",
+      "X": "30",
+      "Y": "300",
+      "Z": "3000"
+    },
+    "answer": "Z) 3000",
+    "letter": "Z",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezpd3wgk",
+    "subject": "earth",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Giving your answer to the nearest whole degree, what is the angular diameter of the circle traced out by Earth’s axial precession?",
+    "choices": null,
+    "answer": "47",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 14
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezp1mtad",
+    "subject": "energy",
+    "type": "tossup",
+    "format": "sa",
+    "text": "Scientists at Lawrence Berkeley National Lab are studying amoebas. Of what domain are amoebas a part?",
+    "choices": null,
+    "answer": "EUKARYOTA (ACCEPT: EUKARYOTES, EUKARYA)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezpv0pc0",
+    "subject": "energy",
+    "type": "bonus",
+    "format": "sa",
+    "text": "Scientists at Pacific Northwest National Lab are studying fluorescent crystals that, when they are in close proximity to a donor chromophore, can transfer energy through dipole-dipole coupling. What is the term for this phenomenon?",
+    "choices": null,
+    "answer": "FRET (ACCEPT: FORSTER RESONANCE ENERGY TRANSFER, FLUORESCENCE RESONANCE ENERGY TRANSFER)",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 15
+    },
+    "tags": [],
+    "added": 1792257646885,
     "year": "2022"
   },
   {
@@ -970,7 +6363,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646885,
     "year": "2022"
   },
   {
@@ -988,7 +6381,89 @@
       "num": 16
     },
     "tags": [],
-    "added": 1791163510396,
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezp9mg9a",
+    "subject": "phys",
+    "type": "tossup",
+    "format": "mc",
+    "text": "X-ray diffraction is a technique typically used to study the structure of what phase of matter?",
+    "choices": {
+      "W": "Plasma",
+      "X": "Solid",
+      "Y": "Liquid",
+      "Z": "Gas"
+    },
+    "answer": "$X$) SOLID",
+    "letter": "X",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezpnv1xn",
+    "subject": "phys",
+    "type": "bonus",
+    "format": "sa",
+    "text": "A three-meter pipe is closed at one end and open at the other. In meters, what is the wavelength of the lowest-frequency standing wave that could form in this pipe?",
+    "choices": null,
+    "answer": "12",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 17
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezpblo02",
+    "subject": "bio",
+    "type": "tossup",
+    "format": "sa",
+    "text": "What is the term for animals that are most active during the daytime?",
+    "choices": null,
+    "answer": "DIURNAL",
+    "letter": "",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646885,
+    "year": "2022"
+  },
+  {
+    "id": "qmvcnxezprp651",
+    "subject": "bio",
+    "type": "bonus",
+    "format": "mc",
+    "text": "Which of the following best describes the purpose of down feathers?",
+    "choices": {
+      "W": "Trapping a layer of air to act as insulation",
+      "X": "Secreting oil",
+      "Y": "Waterproofing the outer layer of the bird",
+      "Z": "Providing contouring to make the bird more aerodynamic"
+    },
+    "answer": "$W$) TRAPPING A LAYER OF AIR TO ACT AS INSULATION",
+    "letter": "W",
+    "src": {
+      "file": "2022-MS-9",
+      "round": "9",
+      "num": 18
+    },
+    "tags": [],
+    "added": 1792257646885,
     "year": "2022"
   }
 ]

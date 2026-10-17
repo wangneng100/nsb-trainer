@@ -1,4 +1,4 @@
-/* NSB 听题训练 — question text: "$…$" math spans inside prose.
+/* NSB Trainer — question text: "$…$" math spans inside prose.
  * Renders to HTML, reads aloud with NSB conventions, finds math in imported plain text,
  * and checks typed answers against an official NSB answer line. */
 (function (G) {

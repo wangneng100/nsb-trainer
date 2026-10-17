@@ -1,4 +1,4 @@
-/* NSB 听题训练 — confusable-structure categories and item generators.
+/* NSB Math Trainer — confusable-structure categories and item generators.
  * Each category builds a "family": expressions that differ only in structure, so they read
  * almost the same aloud but have different values — (xy)² / xy² / x²y.  A dictation item asks
  * which member was read; a hear-&-answer item gives values and asks for the number, and a
@@ -29,8 +29,8 @@
 
   const CATS = [
     {
-      id: 'pow-prod', zh: '积的乘方', eg: '(xy)^2 vs xy^2',
-      tip: '只有 “the quantity … ,” 包住的整体才被乘方；没有 quantity 时，squared 只管紧挨着的那个字母。',
+      id: 'pow-prod', name: 'Power of a Product', zh: 'Power of a Product', eg: '(xy)^2 vs xy^2',
+      tip: "Only the entire term enclosed by 'the quantity...' is raised to the power; without 'quantity', 'squared' applies only to the immediately preceding letter.",
       L: [[
         T(() => { const [u, v] = vs(), e = e23(); return [pow(mul(u, v), e), mul(u, pow(v, e)), mul(pow(u, e), v)]; }),
         T(() => { const [u] = vs(), c = k(2, 5), e = e23(); return [pow(mul(c, u), e), mul(c, pow(u, e)), pow(add(c, u), e)]; }),
@@ -39,8 +39,8 @@
       ]],
     },
     {
-      id: 'sum-pow', zh: '和的乘方', eg: '(x+y)^2 vs x+y^2',
-      tip: '“the quantity x plus y, squared” 是整体平方；“x plus y squared” 只有 y 平方。',
+      id: 'sum-pow', name: 'Power of a Sum', zh: 'Power of a Sum', eg: '(x+y)^2 vs x+y^2',
+      tip: "'the quantity x plus y, squared' squares the whole sum; 'x plus y squared' only squares y.",
       L: [[
         T(() => { const [u, v] = vs(), e = e23(); return [pow(add(u, v), e), add(u, pow(v, e)), add(pow(u, e), pow(v, e)), add(pow(u, e), v)]; }),
       ], [
@@ -49,8 +49,8 @@
       ]],
     },
     {
-      id: 'num-scope', zh: '分子范围', eg: '(a+b)/c vs a+b/c',
-      tip: '“the quantity a plus b, over c” 整个和做分子；“a plus b over c” 只有 b 被除。',
+      id: 'num-scope', name: 'Numerator Scope', zh: 'Numerator Scope', eg: '(a+b)/c vs a+b/c',
+      tip: "'the quantity a plus b, over c' makes the entire sum the numerator; 'a plus b over c' only divides b.",
       L: [[
         T(() => { const [u, v, w] = vs(); return [div(add(u, v), w), add(u, div(v, w)), add(div(u, w), v)]; }),
       ], [
@@ -58,8 +58,8 @@
       ]],
     },
     {
-      id: 'den-scope', zh: '分母范围', eg: 'a/(b+c) vs a/b+c',
-      tip: '“over the quantity b plus c” 整个和做分母；“over b, plus c” 停顿后加 c。“over b c” 分母是积。',
+      id: 'den-scope', name: 'Denominator Scope', zh: 'Denominator Scope', eg: 'a/(b+c) vs a/b+c',
+      tip: "'over the quantity b plus c' makes the sum the denominator; 'over b, plus c' adds c after a pause. 'over b c' makes the denominator a product.",
       L: [[
         T(() => { const [u, v, w] = vs(); return [div(u, add(v, w)), add(div(u, v), w), div(u, mul(v, w)), mul(div(u, v), w)]; }),
       ], [
@@ -67,8 +67,8 @@
       ]],
     },
     {
-      id: 'neg-pow', zh: '负号与乘方', eg: '(-3)^2 vs -3^2',
-      tip: '“negative 3 squared” = −9：先平方再取负。只有 “the quantity negative 3, squared” 才是 9。',
+      id: 'neg-pow', name: 'Negative Sign and Power', zh: 'Negative Sign and Power', eg: '(-3)^2 vs -3^2',
+      tip: "'negative 3 squared' = −9: square first, then negate. Only 'the quantity negative 3, squared' is 9.",
       L: [[
         T(() => { const [u] = vs(), c = k(2, 6); return [pow(neg(u), 2), neg(pow(u, 2)), pow(sub(c, u), 2), sub(c, pow(u, 2))]; }, { neg: true }),
         T(() => { const c = k(2, 9); return [pow(neg(c), 2), neg(pow(c, 2)), pow(neg(c), 3)]; }),
@@ -77,8 +77,8 @@
       ]],
     },
     {
-      id: 'root-scope', zh: '根号范围', eg: '√(x+1) vs √x+1',
-      tip: '“the square root of the quantity x plus 1” 整体开方；“the square root of x, plus 1” 停顿后再加。',
+      id: 'root-scope', name: 'Radical Scope', zh: 'Radical Scope', eg: '√(x+1) vs √x+1',
+      tip: "'the square root of the quantity x plus 1' roots the whole sum; 'the square root of x, plus 1' adds 1 after a pause.",
       L: [[
         T(() => { const [u] = vs(), c = k(2, 9); return [root(add(u, c)), add(root(u), c), root(mul(c, u)), mul(c, root(u))]; }),
       ], [
@@ -86,8 +86,8 @@
       ]],
     },
     {
-      id: 'exp-scope', zh: '指数范围', eg: '2^(x+1) vs 2^x+1',
-      tip: '“to the x plus 1 power” —— power 在最后，中间都是指数；“to the x power, plus 1” 指数只有 x。',
+      id: 'exp-scope', name: 'Exponent Scope', zh: 'Exponent Scope', eg: '2^(x+1) vs 2^x+1',
+      tip: "'to the x plus 1 power' — 'power' is at the end, so everything in between is the exponent; 'to the x power, plus 1' means the exponent is only x.",
       L: [[
         T(() => { const [u] = vs(), b = k(2, 5), m = k(1, 3); return [pow(b, add(u, m)), add(pow(b, u), m), pow(b, mul(m.v === 1 ? N(2) : m, u)), mul(m.v === 1 ? N(2) : m, pow(b, u))]; }),
       ], [
@@ -95,8 +95,8 @@
       ]],
     },
     {
-      id: 'pow-tower', zh: '幂的幂', eg: '(2^3)^2 vs 2^(3^2)',
-      tip: '“the quantity 2 cubed, squared” = 2⁶；“2 to the 3 squared power” = 2⁹。',
+      id: 'pow-tower', name: 'Power of a Power', zh: 'Power of a Power', eg: '(2^3)^2 vs 2^(3^2)',
+      tip: "'the quantity 2 cubed, squared' = 2⁶; '2 to the 3 squared power' = 2⁹.",
       L: [[
         T(() => { const b = k(2, 3), [a, c] = twoDiff().map(N); return [pow(pow(b, a), c), pow(b, pow(a, c)), mul(pow(b, a), pow(b, c)), mul(pow(b, a), c)]; }),
       ], [
@@ -104,8 +104,8 @@
       ]],
     },
     {
-      id: 'frac-pow', zh: '分式的乘方', eg: '(x/y)^2 vs x^2/y vs x/y^2',
-      tip: '“the quantity x over y, squared” 分子分母都平方；“x squared over y” 与 “x over y squared” 只平方一边。',
+      id: 'frac-pow', name: 'Power of a Fraction', zh: 'Power of a Fraction', eg: '(x/y)^2 vs x^2/y vs x/y^2',
+      tip: "'the quantity x over y, squared' squares both numerator and denominator; 'x squared over y' and 'x over y squared' only square one side.",
       L: [[
         T(() => { const [u, v] = vs(), e = e23(); return [pow(div(u, v), e), div(pow(u, e), v), div(u, pow(v, e))]; }),
         T(() => { const [a, b] = properPair(); return [pow(div(a, b), 2), div(pow(a, 2), b), div(a, pow(b, 2))]; }),
@@ -114,8 +114,8 @@
       ]],
     },
     {
-      id: 'implied-div', zh: '系数与分数', eg: '1/(2x) vs ½x',
-      tip: '“1 over 2 x” 分母是 2x；“one-half x” 是 x 的一半。NSB 念分数常用 one-half、two-thirds。',
+      id: 'implied-div', name: 'Coefficient and Fraction', zh: 'Coefficient and Fraction', eg: '1/(2x) vs ½x',
+      tip: "'1 over 2 x' has 2x as the denominator; 'one-half x' is half of x. NSB often reads fractions as one-half, two-thirds.",
       L: [[
         T(() => { const [u] = vs(), m = k(2, 9); return [div(1, mul(m, u)), mul(div(1, m), u), div(m, u), div(1, add(m, u))]; }),
       ], [
@@ -123,8 +123,8 @@
       ]],
     },
     {
-      id: 'fn-arg', zh: '函数作用范围', eg: 'f(x+1) vs f(x)+1',
-      tip: '“f of the quantity x plus 1” 自变量是 x+1；“f of x, plus 1” 停顿后才加 1。“2 sine of x” ≠ “sine of 2x”。',
+      id: 'fn-arg', name: 'Function Scope', zh: 'Function Scope', eg: 'f(x+1) vs f(x)+1',
+      tip: "'f of the quantity x plus 1' has x+1 as the argument; 'f of x, plus 1' adds 1 after a pause. '2 sine of x' ≠ 'sine of 2x'.",
       L: [[
         T(() => { const c = k(1, 4), m = k(2, 3), x = V('x'); return [fn('f', add(x, c)), add(fn('f', x), c), fn('f', mul(m, x)), mul(m, fn('f', x))]; }, { f: true }),
       ], [
@@ -133,8 +133,8 @@
       ]],
     },
     {
-      id: 'fn-pow', zh: '函数的幂', eg: 'sin²x vs sin(x²)',
-      tip: '“sine squared of x” 是 (sin x)²；“sine of x squared” 是 sin(x²)。log 同理。',
+      id: 'fn-pow', name: 'Power of a Function', zh: 'Power of a Function', eg: 'sin²x vs sin(x²)',
+      tip: "'sine squared of x' is (sin x)²; 'sine of x squared' is sin(x²). Same applies to log.",
       L: [[
         T(() => { const [u] = vs(), f = pick(TRIG); return [fn(f, u, { p: 2 }), fn(f, pow(u, 2)), fn(f, mul(2, u)), mul(2, fn(f, u))]; }, { calc: false }),
       ], [
@@ -142,8 +142,8 @@
       ]],
     },
     {
-      id: 'abs-scope', zh: '绝对值范围', eg: '|x−3| vs |x|−3',
-      tip: '“the absolute value of the quantity x minus 3” 整体取绝对值；“the absolute value of x, minus 3” 停顿后再减。',
+      id: 'abs-scope', name: 'Absolute Value Scope', zh: 'Absolute Value Scope', eg: '|x−3| vs |x|−3',
+      tip: "'the absolute value of the quantity x minus 3' takes the absolute value of the whole; 'the absolute value of x, minus 3' subtracts after a pause.",
       L: [[
         T(() => { const [u] = vs(), c = k(2, 7); return [abs(sub(u, c)), sub(abs(u), c), abs(add(u, c)), add(abs(u), c)]; }, { neg: true }),
       ], [
@@ -151,8 +151,8 @@
       ]],
     },
     {
-      id: 'fact-scope', zh: '阶乘范围', eg: '(n+1)! vs n+1!',
-      tip: '“the quantity n plus 1, factorial” 是 (n+1)!；“n plus 1 factorial” 是 n + 1!。',
+      id: 'fact-scope', name: 'Factorial Scope', zh: 'Factorial Scope', eg: '(n+1)! vs n+1!',
+      tip: "'the quantity n plus 1, factorial' is (n+1)!; 'n plus 1 factorial' is n + 1!.",
       L: [[
         T(() => { const [u] = vs(), c = k(1, 3), m = k(2, 3); return [fact(add(u, c)), add(u, fact(c)), fact(mul(m, u)), mul(m, fact(u))]; }),
         T(() => { const a = k(2, 3), b = N(pick([2, 3, 4].filter(x => x !== a.v))); return [fact(add(a, b)), add(a, fact(b)), fact(mul(a, b)), mul(a, fact(b))]; }),
@@ -161,8 +161,8 @@
       ]],
     },
     {
-      id: 'minus-scope', zh: '减号作用范围', eg: 'a−(b+c) vs a−b+c',
-      tip: '“minus the quantity b plus c” 要把 b+c 整个减掉；没有 quantity 就只减 b。',
+      id: 'minus-scope', name: 'Minus Sign Scope', zh: 'Minus Sign Scope', eg: 'a−(b+c) vs a−b+c',
+      tip: "'minus the quantity b plus c' subtracts the whole b+c; without 'quantity', it only subtracts b.",
       L: [[
         T(() => { const [u, v, w] = vs(); return [sub(u, add(v, w)), add(sub(u, v), w), mul(sub(u, v), w), sub(u, mul(v, w))]; }),
       ], [
@@ -311,13 +311,6 @@
     (n.terms || []).forEach(t => tagsOf(t.x, out));
     (n.fs || n.xs || []).forEach(f => tagsOf(f, out));
     return out;
-  }
-
-  if (typeof window !== 'undefined' && window.t) {
-    CATS.forEach(c => {
-      c.zh = window.t(c.zh);
-      if (c.tip) c.tip = window.t(c.tip);
-    });
   }
   const C = { CATS, CAT, family, makeDict, makeCalc, tagsOf, distinct, shuffle, pick, ri };
   G.NSBC = C;

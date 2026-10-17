@@ -1,4 +1,4 @@
-/* NSB 听题训练 — import NSB question sets (PDF or pasted text) and keep the Math questions.
+/* NSB Trainer — import NSB question sets (PDF or pasted text) and keep the Math questions.
  * PDF text comes from pdf.js; raised/lowered small text is rebuilt as ^(…) / _(…) so x² survives
  * extraction. The parser follows the DOE layout: "TOSS-UP / 1) MATH Short Answer …",
  * W) X) Y) Z) choices, and "ANSWER: …". Other subjects are counted, not kept. */
@@ -8,7 +8,7 @@
 
   const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
   function loadScript(src) {
-    return new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = () => fail(new Error('无法加载 pdf.js（需要联网）')); document.head.appendChild(s); });
+    return new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = () => fail(new Error('Failed to load pdf.js (internet connection required)')); document.head.appendChild(s); });
   }
   // The worker script is loaded as a plain <script> (it defines globalThis.pdfjsWorker), so pdf.js parses on
   // the main thread instead of spawning a Worker from the CDN — which a page opened as file:// can't do.
@@ -119,7 +119,7 @@
       const subj = subjectOf(h.subj);
       counts[subj.name] = (counts[subj.name] || 0) + 1;
       const ai = body.search(/\bANSWER\s*:/i);
-      if (ai < 0) { warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num}（${subj.name}）没有找到 ANSWER，已跳过`); return; }
+      if (ai < 0) { warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num} (${subj.name}) No ANSWER found, skipped`); return; }
       let stem = body.slice(0, ai);
       const ans = clean(body.slice(ai).replace(/^ANSWER\s*:\s*/i, ''));
       const isMC = /multiple/i.test(h.fmt);
@@ -127,7 +127,7 @@
       if (isMC) {
         const cm = /(?:^|\s)W\)\s*([\s\S]*?)\s+X\)\s*([\s\S]*?)\s+Y\)\s*([\s\S]*?)\s+Z\)\s*([\s\S]*)$/.exec(stem);
         if (cm) { choices = { W: clean(cm[1]), X: clean(cm[2]), Y: clean(cm[3]), Z: clean(cm[4]) }; stem = stem.slice(0, cm.index); }
-        else warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num} 标为选择题，但没找到 W) X) Y) Z)`);
+        else warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num} marked as multiple choice, but no W) X) Y) Z) options found`);
       }
       const letter = isMC ? ((/^\(?([WXYZ])\b/.exec(ans) || [])[1] || '') : '';
       out.push({ subject: subj.key, subjectName: subj.name, type, num: h.num, format: isMC && choices ? 'mc' : 'sa', stem: clean(stem), choices, answer: ans, letter, src: { file: meta.file || '', round: meta.round || '' } });

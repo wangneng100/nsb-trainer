@@ -8,7 +8,7 @@
   const main = $('#main');
   const LETTERS = ['W', 'X', 'Y', 'Z'];
   const DAY = 864e5;
-  const MODE = { dict: '👂 听写', calc: '🔔 听算', bank: '🎙 真题' };
+  const MODE = { dict: '👂 Dictation', calc: '🔔 Math', bank: '🎙 Official' };
   const RT_TARGET = { dict: 3000, calc: 6000, bank: 9000 }; // ms after the reading ends
   const median = a => { if (!a.length) return null; const s = a.slice().sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
   const sec = ms => ms == null ? '—' : (ms / 1000).toFixed(1) + 's';
@@ -23,7 +23,7 @@
   const texN = n => K(E.tex(n));
   const egHTML = eg => eg.split(' vs ').map(p => { const a = E.tryParse(p); return a ? texN(a) : esc(p); }).join(' <span class="muted">vs</span> ');
   function trHTML(toks) {
-    return toks.map((t, i) => t.p ? (i && /[,.;:?!]$/.test(toks[i - 1].w || '') ? '' : '<i class="pz" title="停顿">‖</i>')
+    return toks.map((t, i) => t.p ? (i && /[,.;:?!]$/.test(toks[i - 1].w || '') ? '' : '<i class="pz" title="pause">‖</i>')
       : t.c ? `<b class="cue">${esc(t.w)}</b>` : esc(t.w)).filter(Boolean).join(' ').replace(/ ([,.;:?!])/g, '$1');
   }
 
@@ -57,12 +57,23 @@
   let saveWarned = false;
   function save() {
     try { localStorage.setItem(KEY, JSON.stringify(S, (k, v) => k === 'bank' ? undefined : v)); }
-    catch (e) { if (!saveWarned) { saveWarned = true; toast('⚠️ 浏览器存储已满或被禁用，进度可能保存不了。可以在题库页导出备份。'); } }
+    catch (e) { if (!saveWarned) { saveWarned = true; toast('⚠️ Browser storage full or disabled. Progress may not be saved. You can export backup from the Bank page.'); } }
   }
 
   // ───────── Dynamic Banks ─────────
   const YEARS = ['2016', '2017', '2018', '2019', '2020', '2021', '2022'];
   const ROUNDS = Array.from({length: 17}, (_, i) => String(i + 1));
+  const SUBJECTS = [
+    { id: 'all', name: 'All Subjects' },
+    { id: 'math', name: 'Math' },
+    { id: 'phys', name: 'Physics' },
+    { id: 'chem', name: 'Chemistry' },
+    { id: 'bio', name: 'Biology' },
+    { id: 'earth', name: 'Earth & Space' },
+    { id: 'energy', name: 'Energy' },
+    { id: 'gen', name: 'General Science' },
+  ];
+  const subjName = id => (SUBJECTS.find(s => s.id === id) || {}).name || id;
   let loadedBanks = [];
   S.bank = []; // in-memory
   
@@ -112,9 +123,9 @@
     const good = h.filter(x => x.ok && !x.rp);
     const fast = median(good.map(x => x.rt / RT_TARGET[x.m]));
     if (r.lvl < 3 && h.length >= 6 && good.length >= h.length - 1 && fast != null && fast <= 1) {
-      r.lvl++; toast(`⬆️ ${cat.zh} 升到 L${r.lvl}`); sfx('up');
+      r.lvl++; toast(`⬆️ ${cat.zh} leveled up to L${r.lvl}`); sfx('up');
     } else if (r.lvl > 1 && h.length >= 5 && h.filter(x => x.ok).length <= h.length / 2) {
-      r.lvl--; toast(`${cat.zh} 回到 L${r.lvl}，先把这一级练稳`);
+      r.lvl--; toast(`${cat.zh} dropped to L${r.lvl}, practice this level first`);
     }
   }
   function todayStats() {
@@ -133,7 +144,7 @@
   let player = null;
   const sayReg = new Map();
   let sayN = 0;
-  const sayBtn = (toks, label = '🔊') => { const id = 's' + (++sayN); sayReg.set(id, toks); return `<button class="say" data-say="${id}" title="听">${label}</button>`; };
+  const sayBtn = (toks, label = '🔊') => { const id = 's' + (++sayN); sayReg.set(id, toks); return `<button class="say" data-say="${id}" title="Listen">${label}</button>`; };
   const silentMode = () => !TTS.available();
   function chunkPairs(toks) {
     const out = [{ s: [], w: [] }];
@@ -191,9 +202,9 @@
   function hud() {
     const td = todayStats();
     $('#hud').innerHTML = `
-      <span class="pill fire" title="连续练习天数">🔥 ${streakNow()}</span>
-      <span class="pill" title="今天做了多少题">今日 ${td.n}</span>
-      <button class="pill icon-btn" data-act="settings" title="设置">⚙️</button>`;
+      <span class="pill fire" title="Streak Days">🔥 ${streakNow()}</span>
+      <span class="pill" title="Questions practiced today">Today ${td.n}</span>
+      <button class="pill icon-btn" data-act="settings" title="Settings">⚙️</button>`;
   }
 
   // ───────── router ─────────
@@ -214,50 +225,50 @@
   // ───────── home ─────────
   const heatClass = i => i.n < 3 || i.acc == null ? '' : i.acc < .6 ? 'a1' : i.acc < .75 ? 'a2' : i.acc < .9 ? 'a3' : 'a4';
   function whyWeak(i) {
-    if (i.n < 4) return '还没怎么练过';
-    if (i.acc != null && i.acc < .85) return `最近正确率 ${pct(i.acc)}`;
+    if (i.n < 4) return 'Hardly practiced';
+    if (i.acc != null && i.acc < .85) return `Recent Acc ${pct(i.acc)}`;
     const rt = i.rtCalc && i.rtCalc > RT_TARGET.calc ? i.rtCalc : i.rtDict;
-    if (rt && rt > RT_TARGET.dict) return `反应偏慢（${sec(rt)}）`;
-    return '保持手感';
+    if (rt && rt > RT_TARGET.dict) return `Slow reaction (${sec(rt)}）`;
+    return 'Keep in touch';
   }
   VIEWS.home = () => {
     const infos = C.CATS.map(c => ({ c, ...catInfo(c.id) }));
     const weak = infos.slice().sort((a, b) => b.score - a.score).slice(0, 3);
     const td = todayStats();
     main.innerHTML = `
-      ${silentMode() ? '<div class="banner">⚠️ 这个浏览器不支持语音朗读，练习会改用字幕显示。推荐用 Chrome 或 Safari。</div>' : ''}
+      ${silentMode() ? '<div class="banner">⚠️ This browser does not support TTS. Falling back to subtitles. Chrome or Safari is recommended.</div>' : ''}
       <div class="hero">
         <div class="card">
-          <h1>先听清结构，再算答案</h1>
-          <p class="lead">用 NSB 的标准读法念式子和题目。“the quantity … ,” 和停顿决定了括号在哪里——听错一个括号，算得再快也白搭。</p>
-          <div class="row"><button class="btn big" data-start="smart">⚡ 智能训练 · ${S.settings.len} 题</button><span class="muted small">薄弱类别优先 · 听写 + 听算混合</span></div>
+          <h1>Hear the structure first, calculate later</h1>
+          <p class="lead">Uses standard NSB read alouds. 'the quantity ... ,' and pauses dictate parentheses. Mishearing a parenthesis makes fast calculation useless.</p>
+          <div class="row"><button class="btn big" data-start="smart">⚡ Smart Drill · ${S.settings.len} Qs</button><span class="muted small">Weaknesses First · Mixed Dictation & Math</span></div>
         </div>
         <div class="card">
           <div class="today">
-            <div><b>${td.n}</b><span>今日题数</span></div>
-            <div><b>${td.n ? pct(td.ok / td.n) : '—'}</b><span>今日正确率</span></div>
-            <div><b>${streakNow()}</b><span>连续天数 🔥</span></div>
+            <div><b>${td.n}</b><span>Today Qs</span></div>
+            <div><b>${td.n ? pct(td.ok / td.n) : '—'}</b><span>Today Acc</span></div>
+            <div><b>${streakNow()}</b><span>Streak 🔥</span></div>
           </div>
-          <p class="muted small" style="margin:14px 0 0">题库 ${S.bank.length} 题 · 累计练习 ${S.log.length} 次</p>
+          <p class="muted small" style="margin:14px 0 0">Bank ${S.bank.length} Qs · Total Drills ${S.log.length} times</p>
         </div>
       </div>
       <div class="modes">
-        <a class="mode-card" href="#dict"><div class="ic">👂</div><b>听写</b><span>听一个式子，选出（或写出）它的样子。只练“听”。</span></a>
-        <a class="mode-card" href="#calc"><div class="ic">🔔</div><b>听算</b><span>听完抢答：给数值算结果，toss-up 5 秒规则。</span></a>
-        <a class="mode-card" href="#bank"><div class="ic">📚</div><b>题库真题</b><span>导入 NSB 真题 PDF，自动挑出 Math 题来练。</span></a>
+        <a class="mode-card" href="#dict"><div class="ic">👂</div><b>Dictation</b><span>Hear an expression, choose (or write) its form. Practice 'hearing' only.</span></a>
+        <a class="mode-card" href="#calc"><div class="ic">🔔</div><b>Competition Drill</b><span>Hear and buzz: Practice official questions and algebraic structures with toss-up & bonus timers.</span></a>
+        <a class="mode-card" href="#bank"><div class="ic">📚</div><b>Official Questions</b><span>Practice official NSB questions across Math, Physics, Chemistry, Biology, Earth & Space, Energy, and General Science.</span></a>
       </div>
       <div class="card">
-        <h3>今天该练</h3>
+        <h3>Today's Focus</h3>
         <div class="weak">${weak.map(i => `
           <div class="weak-item">
             <div><div class="nm">${esc(i.c.zh)} <span class="lvl small">L${i.lvl}</span></div><div class="why">${esc(whyWeak(i))} · ${egHTML(i.c.eg)}</div></div>
-            <span class="spacer"></span><button class="btn sm" data-start="smart" data-cats="${i.id}">专练</button>
+            <span class="spacer"></span><button class="btn sm" data-start="smart" data-cats="${i.id}">Drill</button>
           </div>`).join('')}</div>
       </div>
       <div class="card">
-        <div class="row"><h3 style="margin:0">15 类易混结构</h3><span class="spacer"></span><span class="muted small">底色越深 = 最近正确率越高 · 点一下专练</span></div>
+        <div class="row"><h3 style="margin:0">15 Confusable Structures</h3><span class="spacer"></span><span class="muted small">Darker bg = higher recent accuracy · Click to drill</span></div>
         <div class="heat" style="margin-top:12px">${infos.map(i => `
-          <button class="${heatClass(i)}" data-start="smart" data-cats="${i.id}" data-tip="${esc(i.c.zh)} · 练过 ${i.n} 次 · 最近正确率 ${pct(i.acc)}">
+          <button class="${heatClass(i)}" data-start="smart" data-cats="${i.id}" data-tip="${esc(i.c.zh)} · Practiced ${i.n} times · Recent Acc ${pct(i.acc)}">
             <div class="nm">${esc(i.c.zh)}</div><div class="eg">${egHTML(i.c.eg)}</div><span class="v">${i.n >= 3 ? pct(i.acc) : '—'}</span>
           </button>`).join('')}</div>
       </div>`;
@@ -266,54 +277,58 @@
   // ───────── setup pages ─────────
   const segHTML = (key, cur, opts) => `<div class="seg" data-seg="${key}">${opts.map(([v, l]) => `<button data-val="${v}" class="${String(cur) === String(v) ? 'on' : ''}">${l}</button>`).join('')}</div>`;
   const catChips = (key, sel) => `<div class="chips" data-chips="${key}">
-    <button class="chip ${sel.length ? '' : 'on'}" data-cat="">全部（薄弱优先）</button>
+    <button class="chip ${sel.length ? '' : 'on'}" data-cat="">All (Weakness First)</button>
     ${C.CATS.map(c => `<button class="chip ${sel.includes(c.id) ? 'on' : ''}" data-cat="${c.id}">${esc(c.zh)}</button>`).join('')}</div>`;
   const yearChips = (key, sel) => `<div class="chips" data-chips="${key}">
-    <button class="chip ${sel.length ? '' : 'on'}" data-year="">全部年份</button>
+    <button class="chip ${sel.length ? '' : 'on'}" data-year="">All Years</button>
     ${YEARS.map(y => `<button class="chip ${sel.includes(y) ? 'on' : ''}" data-year="${y}">${y}</button>`).join('')}</div>`;
   const roundChips = (key, sel) => `<div class="chips" data-chips="${key}">
-    <button class="chip ${sel.length ? '' : 'on'}" data-round="">全部轮次</button>
+    <button class="chip ${sel.length ? '' : 'on'}" data-round="">All Rounds</button>
     ${ROUNDS.map(r => `<button class="chip ${sel.includes(r) ? 'on' : ''}" data-round="${r}">${r}</button>`).join('')}</div>`;
+  const subjectChips = (key, sel) => `<div class="chips" data-chips="${key}">
+    <button class="chip ${(!sel || !sel.length || sel.includes('all')) ? 'on' : ''}" data-subj="all">All Subjects</button>
+    ${SUBJECTS.filter(s => s.id !== 'all').map(s => `<button class="chip ${sel && sel.includes(s.id) ? 'on' : ''}" data-subj="${s.id}">${esc(s.name)}</button>`).join('')}</div>`;
   VIEWS.dict = () => {
     const P = S.prefs.dict;
     main.innerHTML = `
       <div class="card">
-        <h2>👂 听写：听式子，认结构</h2>
-        <p class="muted">只听不看。朗读结束后才出现选项，选出你听到的式子（或者自己写出来）。这一步只管“听对”，不用算。</p>
-        <label class="field">类别</label>${catChips('dict', P.cats)}
-        <label class="field">难度</label>${segHTML('dict.lvl', P.lvl, [['auto', '自动'], [1, 'L1'], [2, 'L2'], [3, 'L3 套在式子里']])}
-        <label class="field">作答方式</label>${segHTML('dict.style', P.style, [['choice', '选择 W/X/Y/Z'], ['type', '自己写出来']])}
-        <label class="field">题数</label>${segHTML('dict.len', P.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
-        <div class="row" style="margin-top:18px"><button class="btn big" data-go="dict">开始 ▶</button></div>
+        <h2>👂 Dictation: Hear expressions, recognize structures</h2>
+        <p class="muted">Listen only. Options appear after reading. Pick (or write) what you heard. Just 'hear it right', no calculation.</p>
+        <label class="field">Category</label>${catChips('dict', P.cats)}
+        <label class="field">Difficulty</label>${segHTML('dict.lvl', P.lvl, [['auto', 'Auto'], [1, 'L1'], [2, 'L2'], [3, 'L3 Embedded']])}
+        <label class="field">Answer Mode</label>${segHTML('dict.style', P.style, [['choice', 'Choice W/X/Y/Z'], ['type', 'Type it out']])}
+        <label class="field">Questions</label>${segHTML('dict.len', P.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
+        <div class="row" style="margin-top:18px"><button class="btn big" data-go="dict">Start ▶</button></div>
       </div>
       <div class="card flat small">
-        <h3>键盘</h3>
-        <p><kbd>W</kbd> <kbd>X</kbd> <kbd>Y</kbd> <kbd>Z</kbd>（或 <kbd>1</kbd>–<kbd>4</kbd>）选答案 · <kbd>R</kbd> 重听（会记下来） · <kbd>Enter</kbd> 下一题 · <kbd>Esc</kbd> 结束</p>
-        <p class="muted">“自己写出来”：用键盘输入，例如 <code>(xy)^2</code>、<code>sqrt(x+1)</code>、<code>1/(2x)</code>、<code>|x-3|</code>、<code>(n+1)!</code>、<code>log_2(x)</code>、<code>sin^2(x)</code>。写法不同但相等也算对。</p>
+        <h3>Keyboard</h3>
+        <p><kbd>W</kbd> <kbd>X</kbd> <kbd>Y</kbd> <kbd>Z</kbd>(or <kbd>1</kbd>–<kbd>4</kbd>) pick answer · <kbd>R</kbd> Replay (recorded) · <kbd>Enter</kbd> Next · <kbd>Esc</kbd> Quit</p>
+        <p class="muted">'Type it out': Type with keyboard, e.g. <code>(xy)^2</code>、<code>sqrt(x+1)</code>、<code>1/(2x)</code>、<code>|x-3|</code>、<code>(n+1)!</code>、<code>log_2(x)</code>、<code>sin^2(x)</code>. Different but equivalent expressions are accepted.</p>
       </div>`;
   };
   VIEWS.calc = () => {
     const P = S.prefs.calc;
-    const tagged = S.bank.filter(q => q.subject === 'math').length;
+    const totalQ = S.bank.length;
     main.innerHTML = `
       <div class="card">
-        <h2>🔔 听算：听完即答</h2>
-        <p class="muted">模拟比赛：toss-up 念完后 ${S.settings.buzz} 秒内按 <kbd>空格</kbd> 抢答，可以提前打断；bonus 念完后 ${S.settings.bonus} 秒内作答。答错时会告诉你是不是把结构听错了。</p>
-        <label class="field">题目来源</label>${segHTML('calc.src', P.src, [['gen', '结构专练（自动出题）'], ['bank', `题库真题（${tagged}）`]])}
+        <h2>🔔 Competition Drill</h2>
+        <p class="muted">Simulate competition: ${S.settings.buzz} seconds after toss-up reading to press <kbd>Space</kbd> to buzz, can interrupt early; ${S.settings.bonus} seconds to answer bonus.</p>
+        <label class="field">Source</label>${segHTML('calc.src', P.src, [['gen', 'Math Structure Drill (Algebraic)'], ['bank', `Official Questions (${totalQ})`]])}
         ${P.src === 'gen' ? `
-          <label class="field">类别</label>${catChips('calc', P.cats)}
-          <label class="field">难度</label>${segHTML('calc.lvl', P.lvl, [['auto', '自动'], [1, 'L1'], [2, 'L2'], [3, 'L3']])}` : `
-          <label class="field">题型</label>${segHTML('calc.type', P.type, [['all', '全部'], ['tossup', '只练 toss-up'], ['bonus', '只练 bonus']])}
-          <label class="field">年份</label>${yearChips('calc', P.years)}
-          <label class="field">轮次 (Round)</label>${roundChips('calc', P.rounds || [])}
-          <p class="muted small">没做过的和做错过的题优先。想挑特定的题，到 <a href="#bank">题库</a> 筛选后点“练这些”。</p>`}
-        <label class="field">题数</label>${segHTML('calc.len', P.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
-        <div class="row" style="margin-top:18px"><button class="btn big" data-go="calc">开始 ▶</button></div>
+          <label class="field">Category</label>${catChips('calc', P.cats)}
+          <label class="field">Difficulty</label>${segHTML('calc.lvl', P.lvl, [['auto', 'Auto'], [1, 'L1'], [2, 'L2'], [3, 'L3']])}` : `
+          <label class="field">Subject</label>${subjectChips('calc', P.subjects || ['all'])}
+          <label class="field">Type</label>${segHTML('calc.type', P.type, [['all', 'All'], ['tossup', 'Toss-up Only'], ['bonus', 'Bonus Only']])}
+          <label class="field">Year</label>${yearChips('calc', P.years)}
+          <label class="field">Round</label>${roundChips('calc', P.rounds || [])}
+          <p class="muted small">Prioritizes unattempted and missed questions. To pick specific questions, go to <a href="#bank">Bank</a> filter and click 'Drill These'.</p>`}
+        <label class="field">Questions</label>${segHTML('calc.len', P.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
+        <div class="row" style="margin-top:18px"><button class="btn big" data-go="calc">Start ▶</button></div>
       </div>
       <div class="card flat small">
-        <h3>键盘</h3>
-        <p><kbd>空格</kbd> 抢答 · 输入答案后 <kbd>Enter</kbd> 提交 · 选择题按 <kbd>W</kbd>/<kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> · <kbd>Enter</kbd> 下一题</p>
-        <p class="muted">答案可以写分数 <code>3/4</code>、小数、负数、<code>2sqrt(3)</code>，也可以写代数式（如 <code>8x</code>）。</p>
+        <h3>Keyboard</h3>
+        <p><kbd>Space</kbd> Buzz · Type answer then <kbd>Enter</kbd> Submit · MCQs press <kbd>W</kbd>/<kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> · <kbd>Enter</kbd> Next</p>
+        <p class="muted">Answers can be short numbers/words, fractions <code>3/4</code>, decimals, or algebraic expressions (e.g. <code>8x</code>).</p>
       </div>`;
   };
   document.addEventListener('click', e => {
@@ -343,6 +358,17 @@
       if (!id) P.rounds = []; else P.rounds = (P.rounds || []).includes(id) ? P.rounds.filter(x => x !== id) : [...(P.rounds || []), id];
       save(); route(); return;
     }
+    const sChip = e.target.closest('[data-chips] [data-subj]');
+    if (sChip) {
+      const grp = sChip.parentElement.dataset.chips, P = S.prefs[grp], id = sChip.dataset.subj;
+      if (!id || id === 'all') P.subjects = ['all'];
+      else {
+        let cur = (P.subjects || []).filter(x => x !== 'all');
+        cur = cur.includes(id) ? cur.filter(x => x !== id) : [...cur, id];
+        P.subjects = cur.length ? cur : ['all'];
+      }
+      save(); route(); return;
+    }
   });
 
   // ───────── sessions ─────────
@@ -351,6 +377,7 @@
   function startSession(o) {
     stopAudio();
     sess = { kind: o.kind, cats: o.cats || [], lvl: o.lvl || 'auto', style: o.style || 'choice', bankIds: o.bankIds || null, btype: o.btype || 'all',
+      subjects: o.subjects || (S.prefs.calc && S.prefs.calc.subjects) || ['all'],
       years: o.years || [], rounds: o.rounds || [], len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
     if (location.hash === '#drill') route(); else location.hash = '#drill';
   }
@@ -359,7 +386,10 @@
   const allIds = () => C.CATS.map(c => c.id);
 
   function bankPool() {
-    let pool = S.bank.filter(q => q.subject === 'math');
+    let pool = S.bank.slice();
+    if (sess.subjects && sess.subjects.length && !sess.subjects.includes('all')) {
+      pool = pool.filter(q => sess.subjects.includes(q.subject));
+    }
     if (sess.bankIds) pool = pool.filter(q => sess.bankIds.includes(q.id));
     if (sess.btype !== 'all') pool = pool.filter(q => q.type === sess.btype);
     if (sess.years && sess.years.length) pool = pool.filter(q => sess.years.includes(q.year));
@@ -374,7 +404,8 @@
     return pool[pool.length - 1];
   }
   function bankToks(q) {
-    const out = [W(q.type === 'bonus' ? 'Bonus.' : 'Toss-up.'), PAUSE, W('Math,'), W(q.format === 'mc' ? 'multiple choice.' : 'short answer.'), PAUSE, ...T.speakText(q.text)];
+    const subjLabel = subjName(q.subject);
+    const out = [W(q.type === 'bonus' ? 'Bonus.' : 'Toss-up.'), PAUSE, W(subjLabel + ','), W(q.format === 'mc' ? 'multiple choice.' : 'short answer.'), PAUSE, ...T.speakText(q.text)];
     if (q.format === 'mc' && q.choices) for (const L of LETTERS) out.push(PAUSE, W(L + ')', L), ...T.speakText(q.choices[L] || ''));
     return E.tidy(out);
   }
@@ -407,7 +438,7 @@
     if (sess.item && sess.item.res) sess.i++;
     if (sess.i >= sess.len) return finish();
     const it = makeItem();
-    if (!it) { if (!sess.results.length) { toast('题库里没有符合条件的题'); location.hash = '#bank'; return; } return finish(); }
+    if (!it) { if (!sess.results.length) { toast('No matching questions in the bank'); location.hash = '#bank'; return; } return finish(); }
     it.replays = 0;
     sess.item = it;
     sess.phase = 'reading';
@@ -431,9 +462,9 @@
   const isTossup = it => it.mode === 'calc' || (it.mode === 'bank' && it.q.type === 'tossup');
   function afterReading(it) {
     if (it.mode === 'dict') { sess.phase = 'answer'; renderStage(); startTicker(); return; }
-    if (isTossup(it)) { sess.phase = 'window'; renderStage(); startCountdown(S.settings.buzz, () => conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（没有抢答）') : '（没有抢答）' })); return; }
+    if (isTossup(it)) { sess.phase = 'window'; renderStage(); startCountdown(S.settings.buzz, () => conclude(it, { ok: false, timeout: true, gotText: "(No buzz)" })); return; }
     sess.phase = 'bonus_window'; renderStage();
-    startCountdown(S.settings.bonus, () => conclude(it, { ok: false, timeout: true, gotText: window.tH ? window.tH('（超时）') : '（超时）' }));
+    startCountdown(S.settings.bonus, () => conclude(it, { ok: false, timeout: true, gotText: "(Timeout)" }));
   }
   function buzz() {
     const it = sess && sess.item;
@@ -452,9 +483,9 @@
       recVoice.done.then(() => {
         const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
         const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
-        if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
+        if (inp) inp.placeholder = "Listening...";
         rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
-        rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
+        rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = "No voice heard, please type manually"; $('#ans').focus(); } };
         rec.start();
       });
     }
@@ -469,9 +500,9 @@
       const inp = $('#ans'); if (inp) inp.disabled = true;
       const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
       const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
-      if (inp) inp.placeholder = window.tH ? window.tH('正在倾听 (Listening...)') : '正在倾听 (Listening...)';
+      if (inp) inp.placeholder = "Listening...";
       rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
-      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = window.tH ? window.tH('未听到声音，请手动输入') : '未听到声音，请手动输入'; $('#ans').focus(); } };
+      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = "No voice heard, please type manually"; $('#ans').focus(); } };
       rec.start();
     }
   }
@@ -516,14 +547,14 @@
     if (!text) return;
     if (it.mode === 'dict') {
       const a = E.tryParse(text);
-      if (!a) { if (!fromTimeout) return flashPreview('写法看不懂，检查一下括号'); }
+      if (!a) { if (!fromTimeout) return flashPreview('Unrecognized format, check parentheses'); }
       const ok = !!a && E.equiv(a, it.target, it.env);
       const sib = a && !ok ? it.options.find(o => o !== it.target && E.equiv(a, o, it.env)) : null;
       return conclude(it, { ok, chosen: sib || a, gotText: text });
     }
     if (it.mode === 'calc') {
       const a = T.answerAst(text);
-      if (!a || E.vars(a).size) { if (!fromTimeout) return flashPreview('请填一个数，比如 12、-3、3/4'); return conclude(it, { ok: false, gotText: text }); }
+      if (!a || E.vars(a).size) { if (!fromTimeout) return flashPreview('Please enter a number, e.g., 12, -3, 3/4'); return conclude(it, { ok: false, gotText: text }); }
       const v = E.ev(a), ok = E.close(v, it.answer);
       const diag = ok ? null : it.sib.find(s => isFinite(s.val) && E.close(s.val, v)) || null;
       return conclude(it, { ok, got: v, gotText: text, diag });
@@ -601,7 +632,7 @@
       <div class="drill-top">
         <div class="prog"><i style="width:${Math.round(sess.i / sess.len * 100)}%"></i></div>
         <span class="muted small">${Math.min(sess.i + 1, sess.len)} / ${sess.len}</span>
-        <button class="btn sm ghost" data-act="quit">结束</button>
+        <button class="btn sm ghost" data-act="quit">Quit</button>
       </div>
       <div class="card" id="stage"></div>
     </section>`;
@@ -610,15 +641,15 @@
   function stageHead(it) {
     if (it.mode === 'bank') {
       const q = it.q;
-      return `<div class="stage-head"><span class="mode">${MODE.bank}</span>${typeTag(q)}<span class="tag">${q.format === 'mc' ? 'Multiple Choice' : 'Short Answer'}</span>${it.retry ? '<span class="tag warn">重练</span>' : ''}</div>`;
+      return `<div class="stage-head"><span class="mode">${MODE.bank}</span><span class="tag subj">${esc(subjName(q.subject))}</span>${typeTag(q)}<span class="tag">${q.format === 'mc' ? 'Multiple Choice' : 'Short Answer'}</span>${it.retry ? '<span class="tag warn">Retry</span>' : ''}</div>`;
     }
-    return `<div class="stage-head"><span class="mode">${MODE[it.mode]}</span><span class="tag">${esc(C.CAT[it.cat].zh)} · L${it.lvl}</span>${it.retry ? '<span class="tag warn">重练</span>' : ''}${it.mode === 'calc' ? '<span class="tag tu">toss-up</span>' : ''}</div>`;
+    return `<div class="stage-head"><span class="mode">${MODE[it.mode]}</span><span class="tag">${esc(C.CAT[it.cat].name || C.CAT[it.cat].zh)} · L${it.lvl}</span>${it.retry ? '<span class="tag warn">Retry</span>' : ''}${it.mode === 'calc' ? '<span class="tag tu">toss-up</span>' : ''}</div>`;
   }
   function listenHTML(it, ph) {
     const on = ph === 'reading';
-    const status = on ? '正在朗读…' : it.interrupt ? '你打断了朗读' : '朗读结束';
-    const sub = on ? (it.mode === 'dict' ? '专心听括号和停顿' : isTossup(it) ? '随时可以按空格抢答' : '听完再作答')
-      : it.mode === 'dict' && ph === 'answer' ? `重听了 ${it.replays} 次` : '';
+    const status = on ? 'Reading...' : it.interrupt ? 'You interrupted' : 'Reading finished';
+    const sub = on ? (it.mode === 'dict' ? 'Listen closely for parentheses and pauses' : isTossup(it) ? 'Press Space anytime to buzz' : 'Answer after reading')
+      : it.mode === 'dict' && ph === 'answer' ? `Replayed ${it.replays} times` : '';
     const showCap = S.settings.captions || silentMode();
     return `<div class="listen ${on ? 'on' : ''}"><div class="wave"><i></i><i></i><i></i><i></i><i></i></div>
       <div><div class="st">${status}</div><div class="sub">${sub}</div></div></div>
@@ -637,20 +668,20 @@
       h += listenHTML(it, ph);
       if (it.mode === 'dict') h += dictAnswerHTML(it, ph);
       else if (ph === 'answering') h += answerHTML(it);
-      else if (isTossup(it)) h += `<div class="buzz-wrap"><button class="buzz" data-act="buzz"><b>BUZZ</b><small>${window.tH ? window.tH('空格 / 点按') : '空格 / 点按'}</small></button>
+      else if (isTossup(it)) h += `<div class="buzz-wrap"><button class="buzz" data-act="buzz"><b>BUZZ</b><small>${"Space / Tap"}</small></button>
           ${ph === 'window' ? `<div class="count" id="count"><span>${S.settings.buzz}</span></div>` : ''}</div>`;
       else {
         if (ph === 'reading') {
-          h += `<p class="muted" style="margin-top:14px">${window.tH ? window.tH('Bonus 不用抢答，念完后有 ') : 'Bonus 不用抢答，念完后有 '}${S.settings.bonus}${window.tH ? window.tH(' 秒作答。') : ' 秒作答。'}</p>`;
+          h += `<p class="muted" style="margin-top:14px">${"Bonus requires no buzz, answer within "}${S.settings.bonus}${"s after reading."}</p>`;
         } else if (ph === 'bonus_window') {
-          h += `<div class="buzz-wrap"><button class="buzz" data-act="answer-bonus" style="background:var(--ok);border-color:var(--ok-hard);color:white"><b>ANSWER</b><small>${window.tH ? window.tH('点击作答') : '点击作答'}</small></button>
+          h += `<div class="buzz-wrap"><button class="buzz" data-act="answer-bonus" style="background:var(--ok);border-color:var(--ok-hard);color:white"><b>ANSWER</b><small>${"Click to Answer"}</small></button>
               <div class="count" id="count"><span>${S.settings.bonus}</span></div></div>`;
         }
       }
       
       const peekContent = it.mode === 'bank' ? `<div class="qtext small">${T.toHTML(it.q.text)}</div>${choicesHTML(it.q)}` : `<div class="m" style="margin:10px 0">${texN(it.target)}</div>`;
       h += `<div style="margin-top: 20px; border-top: 1px solid var(--bd); padding-top: 10px;">
-              <button class="btn sm ghost" onclick="this.nextElementSibling.hidden = !this.nextElementSibling.hidden">${window.tH ? window.tH('👁️ 偷看原题 (Peek)') : '👁️ 偷看原题 (Peek)'}</button>
+              <button class="btn sm ghost" onclick="this.nextElementSibling.hidden = !this.nextElementSibling.hidden">${"👁️ Peek at Question"}</button>
               <div hidden style="margin-top: 10px">${peekContent}</div>
             </div>`;
     }
@@ -660,21 +691,21 @@
   }
   function dictAnswerHTML(it, ph) {
     const ready = ph === 'answer';
-    const controls = `<div class="controls"><button class="btn ghost sm" data-act="replay" ${ready ? '' : 'disabled'}>🔁 重听 <kbd>R</kbd></button><span class="spacer"></span><span class="timer" id="tick">${ready ? '0.0s' : ''}</span></div>`;
+    const controls = `<div class="controls"><button class="btn ghost sm" data-act="replay" ${ready ? '' : 'disabled'}>🔁 Replay <kbd>R</kbd></button><span class="spacer"></span><span class="timer" id="tick">${ready ? '0.0s' : ''}</span></div>`;
     if (sess.style === 'type') {
-      return ready ? `<div class="answer-row"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="写出你听到的式子，如 (xy)^2"><button class="btn" data-act="submit">提交</button></div>
+      return ready ? `<div class="answer-row"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type what you heard, e.g. (xy)^2"><button class="btn" data-act="submit">Submit</button></div>
         <div class="preview" id="pv"></div>${controls}` : controls;
     }
     const visible = ready || S.settings.showOpts;
     return `<div class="opts ${visible ? '' : 'hidden'}">${it.options.map((o, i) => `<button class="opt" data-opt="${i}" ${ready ? '' : 'disabled'}><span class="L">${LETTERS[i]}</span><span class="m">${texN(o)}</span></button>`).join('')}</div>${controls}`;
   }
   function answerHTML(it) {
-    const timer = `<div class="controls"><span class="muted small">${it.interrupt ? '⚡ 你打断了朗读——答错在比赛里要扣 4 分' : it.buzzAt ? `抢答用时 ${sec(it.buzzAt - it.t0)}` : `开始作答…`}</span><span class="spacer"></span>
+    const timer = `<div class="controls"><span class="muted small">${it.interrupt ? '⚡ Interrupted — wrong answers deduct 4 pts in games' : it.buzzAt ? `Reaction time ${sec(it.buzzAt - it.t0)}` : `Start answering...`}</span><span class="spacer"></span>
       <span class="timer" id="tick">0.0s</span></div>`;
     if (it.mode === 'bank' && it.q.format === 'mc') {
       return `<div class="letters">${LETTERS.map(L => `<button class="opt" data-letter="${L}">${L}</button>`).join('')}</div>${timer}`;
     }
-    return `<div class="answer-row"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${it.mode === 'calc' ? '答案（数字）' : '你的答案'}"><button class="btn" data-act="submit">提交</button></div>
+    return `<div class="answer-row"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${it.mode === 'calc' ? 'Answer (Number)' : 'Your Answer'}"><button class="btn" data-act="submit">Submit</button></div>
       <div class="preview" id="pv"></div>${timer}`;
   }
   function livePreview() {
@@ -689,45 +720,45 @@
   function typeTag(q) { return q.type === 'bonus' ? '<span class="tag bo">BONUS</span>' : '<span class="tag tu">TOSS-UP</span>'; }
   function fbBanner(it) {
     const r = it.res;
-    if (it.pending) return `<div class="fb ask">🤔 这题我判断不了——你自己对照答案判一下</div>`;
-    const extra = r.timeout ? '（超时）' : it.interrupt && !r.ok ? '（打断答错：比赛中 −4 分）' : it.interrupt ? '（打断成功 ⚡）' : it.replays ? `（重听 ${it.replays} 次）` : '';
-    return `<div class="fb ${r.ok ? 'ok' : 'bad'}">${r.ok ? '✓ 正确' : '✗ 不对'} <span class="small">${extra}</span><span class="rt">${r.rt != null ? sec(r.rt) : ''}</span></div>`;
+    if (it.pending) return `<div class="fb ask">🤔 I can't grade this — check the answer yourself</div>`;
+    const extra = r.timeout ? '(Timeout)' : it.interrupt && !r.ok ? '(Interrupted & wrong: -4 pts)' : it.interrupt ? '(Interrupted successfully ⚡)' : it.replays ? `（Replay ${it.replays} times）` : '';
+    return `<div class="fb ${r.ok ? 'ok' : 'bad'}">${r.ok ? '✓ Correct' : '✗ Incorrect'} <span class="small">${extra}</span><span class="rt">${r.rt != null ? sec(r.rt) : ''}</span></div>`;
   }
   function feedbackHTML(it) {
     const r = it.res, cat = C.CAT[it.cat];
     let h = fbBanner(it);
     if (it.mode === 'dict') {
-      h += `<div class="kv"><span>读的是</span><div class="m">${texN(it.target)}</div>${sayBtn(it.toks)}</div>
+      h += `<div class="kv"><span>Read</span><div class="m">${texN(it.target)}</div>${sayBtn(it.toks)}</div>
         <div class="transcript">${trHTML(it.toks)}</div>`;
       if (!r.ok && r.chosen) {
         const ct = E.speak(r.chosen);
-        h += `<div class="kv"><span>${sess.style === 'type' ? '你写的是' : '你选的是'}</span><div class="m">${texN(r.chosen)}</div>${sayBtn(ct)}</div>
+        h += `<div class="kv"><span>${sess.style === 'type' ? 'You wrote' : 'You chose'}</span><div class="m">${texN(r.chosen)}</div>${sayBtn(ct)}</div>
           <div class="transcript">${trHTML(ct)}</div>
-          <div class="row"><button class="btn sm ghost" data-contrast>🎧 对比听：先题目，再你的答案</button></div>`;
+          <div class="row"><button class="btn sm ghost" data-contrast>🎧 Compare: question first, then your answer</button></div>`;
         it.contrast = [it.toks, ct];
-      } else if (!r.ok) h += `<p class="muted">你写的：<code>${esc(r.gotText || '')}</code>（看不懂这个写法）</p>`;
+      } else if (!r.ok) h += `<p class="muted">You wrote: <code>${esc(r.gotText || '')}</code> (unrecognized format)</p>`;
     } else if (it.mode === 'calc') {
-      h += `<div class="kv"><span>正确答案</span><div class="m">${K(String(it.answer))}</div><span></span></div>
-        <div class="kv"><span>你的答案</span><div class="m">${esc(r.gotText || '—')}</div><span></span></div>`;
+      h += `<div class="kv"><span>Correct Answer</span><div class="m">${K(String(it.answer))}</div><span></span></div>
+        <div class="kv"><span>Your Answer</span><div class="m">${esc(r.gotText || '—')}</div><span></span></div>`;
       if (r.diag) {
         const dt = E.speak(r.diag.node);
-        h += `<div class="diag">🔍 你的答案正好是 ${texN(r.diag.node)} 的值——你把 ${texN(it.target)} 听成了它。<br>
-          题目：<b>${trHTML(E.speak(it.target))}</b> ${sayBtn(E.speak(it.target))}<br>你听成：<b>${trHTML(dt)}</b> ${sayBtn(dt)}</div>`;
-      } else if (!r.ok && !r.timeout) h += `<p class="muted small">你的答案不是任何一种常见误听的结果——结构可能听对了，算的时候出了错。</p>`;
-      h += `<div class="kv"><span>题目</span><div class="m">${texN(it.target)}</div>${sayBtn(it.toks)}</div><div class="transcript">${trHTML(it.toks)}</div>`;
-      if (it.buzzAt && !it.interrupt) h += `<p class="muted small">抢答反应 ${sec(r.buzz)}（从念完到按铃）</p>`;
+        h += `<div class="diag">🔍 Your answer is exactly the value of ${texN(r.diag.node)} — you misheard ${texN(it.target)} as this.<br>
+          Question: <b>${trHTML(E.speak(it.target))}</b> ${sayBtn(E.speak(it.target))}<br>You heard: <b>${trHTML(dt)}</b> ${sayBtn(dt)}</div>`;
+      } else if (!r.ok && !r.timeout) h += `<p class="muted small">Your answer isn't a common mishearing — structure might be right, but calculation was wrong.</p>`;
+      h += `<div class="kv"><span>Question</span><div class="m">${texN(it.target)}</div>${sayBtn(it.toks)}</div><div class="transcript">${trHTML(it.toks)}</div>`;
+      if (it.buzzAt && !it.interrupt) h += `<p class="muted small">Buzz reaction ${sec(r.buzz)} (from end of reading to buzz)</p>`;
     } else {
       const q = it.q;
       h += `<div class="qtext">${T.toHTML(q.text)}</div>${choicesHTML(q)}
-        <div class="kv"><span>官方答案</span><div>${T.toHTML(q.answer)}</div><span></span></div>
-        <div class="kv"><span>你的答案</span><div>${esc(r.gotText || '—')}</div><span></span></div>`;
-      if (it.pending) h += `<div class="row" style="margin:8px 0"><button class="btn good" data-judge="1">✓ 我答对了</button><button class="btn bad" data-judge="0">✗ 我答错了</button></div>`;
-      else if (q.format === 'sa' && !r.timeout) h += `<p class="small muted">判得不对？<a href="#" data-judge="${r.ok ? 0 : 1}">改判为${r.ok ? '错' : '对'}</a></p>`;
-      h += `<details><summary class="muted small">朗读稿 ${sayBtn(it.toks)}</summary><div class="transcript">${trHTML(it.toks)}</div></details>`;
-      if (q.tags && q.tags.length) h += `<p class="small muted">涉及结构：${q.tags.map(t => C.CAT[t] ? esc(C.CAT[t].zh) : t).join('、')}</p>`;
+        <div class="kv"><span>Official Answer</span><div>${T.toHTML(q.answer)}</div><span></span></div>
+        <div class="kv"><span>Your Answer</span><div>${esc(r.gotText || '—')}</div><span></span></div>`;
+      if (it.pending) h += `<div class="row" style="margin:8px 0"><button class="btn good" data-judge="1">✓ I was right</button><button class="btn bad" data-judge="0">✗ I was wrong</button></div>`;
+      else if (q.format === 'sa' && !r.timeout) h += `<p class="small muted">Graded wrong?<a href="#" data-judge="${r.ok ? 0 : 1}">Regrade as ${r.ok ? 'Wrong' : 'Correct'}</a></p>`;
+      h += `<details><summary class="muted small">Transcript ${sayBtn(it.toks)}</summary><div class="transcript">${trHTML(it.toks)}</div></details>`;
+      if (q.tags && q.tags.length) h += `<p class="small muted">Related structures: ${q.tags.map(t => C.CAT[t] ? esc(C.CAT[t].zh) : t).join('、')}</p>`;
     }
     if (cat && !(it.mode === 'bank')) h += `<div class="tip">💡 ${esc(cat.tip)}</div>`;
-    h += `<div class="controls"><span class="spacer"></span><button class="btn" data-act="next" ${it.pending ? 'disabled' : ''}>${sess.i + 1 >= sess.len ? '看总结' : '下一题'} <kbd>Enter</kbd></button></div>`;
+    h += `<div class="controls"><span class="spacer"></span><button class="btn" data-act="next" ${it.pending ? 'disabled' : ''}>${sess.i + 1 >= sess.len ? 'Summary' : 'Next'} <kbd>Enter</kbd></button></div>`;
     return h;
   }
   function choicesHTML(q, mark = true) {
@@ -746,29 +777,29 @@
     const rts = R.filter(it => it.res.ok && it.res.rt).map(it => it.res.rt);
     const wrongCats = [...new Set(R.filter(it => !it.res.ok && it.cat && C.CAT[it.cat]).map(it => it.cat))];
     main.innerHTML = `<section class="drill"><div class="card">
-      <h2>本组完成 ${ok === R.length && R.length ? '🎉' : ''}</h2>
+      <h2>Session Complete ${ok === R.length && R.length ? '🎉' : ''}</h2>
       <div class="summary-top">
-        <div><b>${ok}/${R.length}</b><span>答对</span></div>
-        <div><b>${R.length ? pct(ok / R.length) : '—'}</b><span>正确率</span></div>
-        <div><b>${sec(median(rts))}</b><span>答对的反应时间（中位数）</span></div>
+        <div><b>${ok}/${R.length}</b><span>Correct</span></div>
+        <div><b>${R.length ? pct(ok / R.length) : '—'}</b><span>Accuracy</span></div>
+        <div><b>${sec(median(rts))}</b><span>Median RT for correct answers</span></div>
       </div>
       <div class="res-list">${R.map(it => `
         <div class="res-item"><span>${it.res.ok ? '<span style="color:var(--status-good)">✓</span>' : '<span style="color:var(--status-bad)">✗</span>'}</span>
           <div class="m">${it.mode === 'bank' ? `<span class="small">${T.toHTML(it.q.text)}</span>` : texN(it.target)}</div>
-          <span class="tag">${it.mode === 'bank' ? '真题' : esc(C.CAT[it.cat].zh)}</span>${sayBtn(it.toks)}</div>`).join('')}</div>
+          <span class="tag">${it.mode === 'bank' ? 'Official' : esc(C.CAT[it.cat].zh)}</span>${sayBtn(it.toks)}</div>`).join('')}</div>
       <div class="row" style="margin-top:18px">
-        <button class="btn" data-act="again">再来一组</button>
-        ${wrongCats.length ? `<button class="btn ghost" data-start="smart" data-cats="${wrongCats.join(',')}">专练错的 ${wrongCats.length} 类</button>` : ''}
-        <span class="spacer"></span><a class="btn ghost" href="#home">回首页</a>
+        <button class="btn" data-act="again">Another Round</button>
+        ${wrongCats.length ? `<button class="btn ghost" data-start="smart" data-cats="${wrongCats.join(',')}">Drill missed ${wrongCats.length} categories</button>` : ''}
+        <span class="spacer"></span><a class="btn ghost" href="#home">Back to Home</a>
       </div></div></section>`;
   }
 
   // ───────── bank ─────────
-  const bankF = { q: '', type: 'all', src: 'all', tag: 'all', year: 'all', round: 'all', missed: false, shown: 30 };
-  const srcName = q => q.src && q.src.file ? q.src.file + (q.src.round ? ` · R${q.src.round}` : '') : '手动添加';
+  const bankF = { q: '', subject: 'all', type: 'all', src: 'all', tag: 'all', year: 'all', round: 'all', missed: false, shown: 30 };
+  const srcName = q => q.src && q.src.file ? q.src.file + (q.src.round ? ` · R${q.src.round}` : '') : 'Manually added';
   function filteredBank() {
     const s = bankF.q.trim().toLowerCase();
-    return S.bank.filter(q => q.subject === 'math'
+    return S.bank.filter(q => (bankF.subject === 'all' || q.subject === bankF.subject)
       && (bankF.type === 'all' || q.type === bankF.type)
       && (bankF.src === 'all' || srcName(q) === bankF.src)
       && (bankF.year === 'all' || q.year === bankF.year)
@@ -780,43 +811,44 @@
   function qCard(q) {
     const b = S.bstats[q.id];
     return `<div class="qcard" data-qid="${q.id}">
-      <div class="meta">${typeTag(q)}<span class="tag">${q.format === 'mc' ? '选择' : '简答'}</span><span class="tag">${esc(srcName(q))}</span>
+      <div class="meta">${typeTag(q)}<span class="tag subj">${esc(subjName(q.subject))}</span><span class="tag">${q.format === 'mc' ? 'MCQ' : 'SA'}</span><span class="tag">${esc(srcName(q))}</span>
         ${(q.tags || []).map(t => C.CAT[t] ? `<span class="tag">${esc(C.CAT[t].zh)}</span>` : '').join('')}
-        ${b ? `<span class="tag ${b.lastOk ? 'ok' : 'bad'}">做过 ${b.n} 次 · 对 ${b.ok}</span>` : ''}</div>
+        ${b ? `<span class="tag ${b.lastOk ? 'ok' : 'bad'}">Attempted ${b.n} times · Correct ${b.ok}</span>` : ''}</div>
       <div class="qtext">${T.toHTML(q.text)}</div>${choicesHTML(q)}
       <div class="ans"><b>ANSWER:</b> ${T.toHTML(q.answer)}</div>
-      <div class="acts">${sayBtn(bankToks(q), '🔊 听题')}<button class="btn sm ghost" data-practice="${q.id}">▶ 练这题</button>
-        <button class="btn sm ghost" data-edit="${q.id}">✏️ 编辑</button><button class="btn sm danger" data-del="${q.id}">删除</button></div>
+      <div class="acts">${sayBtn(bankToks(q), '🔊 Listen')}<button class="btn sm ghost" data-practice="${q.id}">▶ Drill this</button>
+        <button class="btn sm ghost" data-edit="${q.id}">✏️ Edit</button><button class="btn sm danger" data-del="${q.id}">Delete</button></div>
     </div>`;
   }
   VIEWS.bank = () => {
-    const math = S.bank.filter(q => q.subject === 'math');
-    const srcs = [...new Set(math.map(srcName))];
+    const srcs = [...new Set(S.bank.map(srcName))];
     const list = filteredBank();
     const opt = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? 'selected' : ''}>${esc(l)}</option>`;
+    const subjBreakdown = SUBJECTS.filter(s => s.id !== 'all').map(s => `${s.name}: ${S.bank.filter(q => q.subject === s.id).length}`).join(' · ');
     main.innerHTML = `
       <div class="card">
-        <div class="row"><h2 style="margin:0">📚 题库</h2><span class="spacer"></span>
-          <button class="btn" data-act="import">📄 导入 PDF / 文本</button><button class="btn ghost" data-act="new-q">＋ 新题</button></div>
-        <p class="muted small">共 ${math.length} 道 Math 题 · 自定义 ${math.filter(q => q.src && !q.src.file).length} · 历年真题 ${math.filter(q => q.year).length}。导入 NSB PDF 时会自动挑出 Math 题，其他科目跳过。</p>
+        <div class="row"><h2 style="margin:0">📚 Bank</h2><span class="spacer"></span>
+          <button class="btn" data-act="import">📄 Import PDF / Text</button><button class="btn ghost" data-act="new-q">＋ New Q</button></div>
+        <p class="muted small">Total ${S.bank.length} questions (${subjBreakdown}). Official: ${S.bank.filter(q => q.year).length} · Custom: ${S.customBank.length}.</p>
         <div class="toolbar">
-          <input type="search" id="bq" placeholder="搜索题目或答案" value="${esc(bankF.q)}">
-          <select data-bf="year">${opt('all', '全部年份', bankF.year)}${YEARS.map(y => opt(y, y, bankF.year)).join('')}</select>
-          <select data-bf="round">${opt('all', '全部轮次', bankF.round)}${ROUNDS.map(r => opt(r, 'Round ' + r, bankF.round)).join('')}</select>
-          <select data-bf="type">${opt('all', '全部题型', bankF.type)}${opt('tossup', 'Toss-up', bankF.type)}${opt('bonus', 'Bonus', bankF.type)}</select>
-          <select data-bf="src">${opt('all', '全部来源', bankF.src)}${srcs.map(s => opt(s, s, bankF.src)).join('')}</select>
-          <select data-bf="tag">${opt('all', '全部结构', bankF.tag)}${C.CATS.map(c => opt(c.id, c.zh, bankF.tag)).join('')}${opt('none', '（没有标记）', bankF.tag)}</select>
+          <input type="search" id="bq" placeholder="Search questions or answers" value="${esc(bankF.q)}">
+          <select data-bf="subject">${SUBJECTS.map(s => opt(s.id, s.name, bankF.subject)).join('')}</select>
+          <select data-bf="year">${opt('all', 'All Years', bankF.year)}${YEARS.map(y => opt(y, y, bankF.year)).join('')}</select>
+          <select data-bf="round">${opt('all', 'All Rounds', bankF.round)}${ROUNDS.map(r => opt(r, 'Round ' + r, bankF.round)).join('')}</select>
+          <select data-bf="type">${opt('all', 'All Types', bankF.type)}${opt('tossup', 'Toss-up', bankF.type)}${opt('bonus', 'Bonus', bankF.type)}</select>
+          <select data-bf="src">${opt('all', 'All Sources', bankF.src)}${srcs.map(s => opt(s, s, bankF.src)).join('')}</select>
+          <select data-bf="tag">${opt('all', 'All Structures', bankF.tag)}${C.CATS.map(c => opt(c.id, c.name || c.zh, bankF.tag)).join('')}${opt('none', '(Untagged)', bankF.tag)}</select>
         </div>
-        <div class="row"><label class="small"><input type="checkbox" data-bf="missed" ${bankF.missed ? 'checked' : ''}> 只看做错过的</label><span class="spacer"></span>
-          <button class="btn sm" data-act="bank-practice" ${list.length ? '' : 'disabled'}>▶ 练这 <span id="bcount">${list.length}</span> 题</button>
-          <button class="btn sm ghost" data-act="export">导出备份</button><button class="btn sm ghost" data-act="restore">导入备份</button></div>
+        <div class="row"><label class="small"><input type="checkbox" data-bf="missed" ${bankF.missed ? 'checked' : ''}> Show Missed Only</label><span class="spacer"></span>
+          <button class="btn sm" data-act="bank-practice" ${list.length ? '' : 'disabled'}>▶ Drill these <span id="bcount">${list.length}</span> Qs</button>
+          <button class="btn sm ghost" data-act="export">Export Backup</button><button class="btn sm ghost" data-act="restore">Import Backup</button></div>
       </div>
       <div id="blist">${bankListHTML(list)}</div>`;
     $('#bq').addEventListener('input', e => { bankF.q = e.target.value; bankF.shown = 30; const l = filteredBank(); $('#blist').innerHTML = bankListHTML(l); $('#bcount').textContent = l.length; });
   };
   const bankListHTML = list => list.length
-    ? list.slice(0, bankF.shown).map(qCard).join('') + (list.length > bankF.shown ? `<div class="row"><button class="btn ghost" data-act="more">再显示 ${Math.min(30, list.length - bankF.shown)} 题</button></div>` : '')
-    : '<div class="card muted">没有符合条件的题。</div>';
+    ? list.slice(0, bankF.shown).map(qCard).join('') + (list.length > bankF.shown ? `<div class="row"><button class="btn ghost" data-act="more">Show ${Math.min(30, list.length - bankF.shown)} Qs</button></div>` : '')
+    : '<div class="card muted">No matching questions.</div>';
   document.addEventListener('change', e => {
     const f = e.target.closest('[data-bf]');
     if (f) { bankF[f.dataset.bf] = f.type === 'checkbox' ? f.checked : f.value; bankF.shown = 30; route(); }
@@ -834,16 +866,16 @@
     inp.onchange = async () => {
       try {
         const j = JSON.parse(await inp.files[0].text());
-        if (j.app !== 'nsb-trainer' || !j.data) throw new Error('不是这个网站导出的备份');
-        if (!confirm(`用备份（${j.exported ? j.exported.slice(0, 10) : '未知日期'}）覆盖当前的题库和练习记录？`)) return;
+        if (j.app !== 'nsb-trainer' || !j.data) throw new Error('Not a valid backup file from this app');
+        if (!confirm(`Use backup（${j.exported ? j.exported.slice(0, 10) : 'UnknownDate'}）Overwrite current question bank and drill history？`)) return;
         const d = defaults();
         S = { ...d, ...j.data, settings: { ...d.settings, ...j.data.settings } };
         // Migration if restoring old backup
         if (S.bank && !S.customBank) {
             S.customBank = S.bank.filter(q => !q.id.startsWith('seed-'));
         }
-        applyBank(); save(); applyTheme(); hud(); route(); toast('✓ 已恢复备份');
-      } catch (err) { toast('⚠️ 导入失败：' + esc(err.message)); }
+        applyBank(); save(); applyTheme(); hud(); route(); toast('✓ Backup restored');
+      } catch (err) { toast('⚠️ Import failed: ' + esc(err.message)); }
     };
     inp.click();
   }
@@ -852,15 +884,15 @@
   let imp = null;
   function openImport() {
     imp = { items: [], files: [] };
-    modal(`<h3>📄 导入真题</h3>
-      <p class="muted small">选 NSB 题目 PDF（可以一次选多个）。按 “TOSS-UP / 1) MATH Short Answer / ANSWER:” 的格式识别，只保留 Math 题。需要能选中文字的 PDF（扫描版不行）。</p>
-      <label class="drop" id="drop"><input type="file" id="imp-file" accept="application/pdf,.pdf,.txt,text/plain" multiple>点这里选 PDF，或把文件拖进来</label>
-      <details style="margin-top:10px"><summary class="small muted">或者粘贴题目文字</summary>
+    modal(`<h3>📄 Import PDF / Text</h3>
+      <p class="muted small">Select NSB question set PDFs (can select multiple). Parses standard DOE format (TOSS-UP / BONUS, Short Answer / Multiple Choice, ANSWER). Requires text-selectable PDFs.</p>
+      <label class="drop" id="drop"><input type="file" id="imp-file" accept="application/pdf,.pdf,.txt,text/plain" multiple>Click here to select PDF, or drag files here</label>
+      <details style="margin-top:10px"><summary class="small muted">Or paste question text</summary>
         <textarea id="imp-text" rows="7" placeholder="TOSS-UP&#10;1) MATH Short Answer What is ...&#10;ANSWER: 12"></textarea>
-        <div class="row" style="margin-top:8px"><button class="btn sm" data-act="imp-text">解析文字</button></div></details>
+        <div class="row" style="margin-top:8px"><button class="btn sm" data-act="imp-text">Parse text</button></div></details>
       <div id="imp-status" class="small" style="margin-top:12px"></div>
       <div id="imp-list"></div>
-      <div class="row" style="margin-top:14px"><button class="btn ghost" data-close>关闭</button><span class="spacer"></span><button class="btn" id="imp-add" data-act="imp-add" disabled>加入题库</button></div>`);
+      <div class="row" style="margin-top:14px"><button class="btn ghost" data-close>Close</button><span class="spacer"></span><button class="btn" id="imp-add" data-act="imp-add" disabled>Add to Bank</button></div>`);
     const drop = $('#drop');
     $('#imp-file').addEventListener('change', e => importFiles([...e.target.files]));
     drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
@@ -871,10 +903,10 @@
   async function importFiles(files) {
     for (const f of files) {
       try {
-        impStatus(`正在读取 ${esc(f.name)} …`);
+        impStatus(`Reading ${esc(f.name)} …`);
         let text, round = '';
         if (/\.pdf$/i.test(f.name) || f.type === 'application/pdf') {
-          const r = await I.pdfToText(await f.arrayBuffer(), (p, n) => impStatus(`正在读取 ${esc(f.name)}：第 ${p}/${n} 页`));
+          const r = await I.pdfToText(await f.arrayBuffer(), (p, n) => impStatus(`Reading ${esc(f.name)}：page ${p}/${n} `));
           text = r.text; round = r.round;
         } else text = await f.text();
         addParsed(I.parseNSB(text, { file: f.name.replace(/\.(pdf|txt)$/i, ''), round }), f.name);
@@ -886,9 +918,8 @@
   }
   function addParsed(r, name) {
     const existing = new Set(S.bank.map(q => I.dupKey(q.text)));
-    const math = r.questions.filter(q => q.subject === 'math');
-    imp.files.push({ name, counts: r.counts, warnings: r.warnings, found: r.found, math: math.length });
-    for (const q of math) {
+    imp.files.push({ name, counts: r.counts, warnings: r.warnings, found: r.found, total: r.questions.length });
+    for (const q of r.questions) {
       const item = I.toBankItem(q);
       const dup = existing.has(I.dupKey(item.text)) || imp.items.some(x => I.dupKey(x.item.text) === I.dupKey(item.text));
       imp.items.push({ item, on: !dup, dup });
@@ -897,20 +928,20 @@
   function renderImport() {
     if (!imp || !$('#imp-list')) return;
     impStatus(imp.files.map(f => f.err ? `<p>⚠️ <b>${esc(f.name)}</b>：${esc(f.err)}</p>`
-      : `<p><b>${esc(f.name)}</b>：找到 ${f.found} 题（${Object.entries(f.counts).map(([k, v]) => `${esc(k)} ${v}`).join(' · ') || '无'}），其中 Math ${f.math} 题。
-        ${f.found === 0 ? '<br>⚠️ 没找到题目格式。可能是扫描版 PDF，或者格式不同——可以把文字粘贴进来试试。' : ''}
+      : `<p><b>${esc(f.name)}</b>: Found ${f.found} Qs (${Object.entries(f.counts).map(([k, v]) => `${esc(k)} ${v}`).join(' · ') || 'None'}), Total: ${f.total} Qs.
+        ${f.found === 0 ? '<br>⚠️ No question format found. Might be a scanned PDF or different format — try pasting the text instead.' : ''}
         ${f.warnings.length ? `<br><span class="muted">${f.warnings.map(esc).join('<br>')}</span>` : ''}</p>`).join(''));
-    $('#imp-list').innerHTML = imp.items.length ? `<div class="row small" style="margin:6px 0"><a href="#" data-act="imp-all">全选</a><a href="#" data-act="imp-none">全不选</a><span class="muted">重复的题默认不选</span></div>` +
+    $('#imp-list').innerHTML = imp.items.length ? `<div class="row small" style="margin:6px 0"><a href="#" data-act="imp-all">Select All</a><a href="#" data-act="imp-none">Deselect All</a><span class="muted">Duplicates are unchecked by default</span></div>` +
       imp.items.map((x, i) => `<label class="imp-item ${x.dup ? 'dup' : ''}"><input type="checkbox" data-imp="${i}" ${x.on ? 'checked' : ''}>
-        <div><div class="meta">${typeTag(x.item)} <span class="tag">${x.item.format === 'mc' ? '选择' : '简答'}</span> ${x.dup ? '<span class="tag warn">已在题库</span>' : ''}
+        <div><div class="meta">${typeTag(x.item)} <span class="tag">${x.item.format === 'mc' ? 'MCQ' : 'SA'}</span> ${x.dup ? '<span class="tag warn">In Bank</span>' : ''}
           ${x.item.tags.map(t => `<span class="tag">${esc(C.CAT[t].zh)}</span>`).join('')}</div>
           <div class="qtext small">${T.toHTML(x.item.text)}</div>${choicesHTML(x.item)}<div class="small"><b>ANSWER:</b> ${T.toHTML(x.item.answer)}</div></div></label>`).join('') : '';
     const n = imp.items.filter(x => x.on).length;
-    const b = $('#imp-add'); if (b) { b.disabled = !n; b.textContent = `加入题库（${n}）`; }
+    const b = $('#imp-add'); if (b) { b.disabled = !n; b.textContent = `Add to Bank (${n}）`; }
   }
   document.addEventListener('change', e => {
     const c = e.target.closest('[data-imp]');
-    if (c && imp) { imp.items[+c.dataset.imp].on = c.checked; const n = imp.items.filter(x => x.on).length; const b = $('#imp-add'); b.disabled = !n; b.textContent = `加入题库（${n}）`; }
+    if (c && imp) { imp.items[+c.dataset.imp].on = c.checked; const n = imp.items.filter(x => x.on).length; const b = $('#imp-add'); b.disabled = !n; b.textContent = `Add to Bank (${n}）`; }
   });
 
   // edit modal
@@ -918,23 +949,25 @@
     const q = id ? qById(id) : { id: null, subject: 'math', type: 'tossup', format: 'sa', text: '', answer: '', choices: null, letter: '', src: { file: '' } };
     if (!q) return;
     const ch = q.choices || { W: '', X: '', Y: '', Z: '' };
-    modal(`<h3>${id ? '✏️ 编辑题目' : '＋ 新题'}</h3>
-      <div class="row"><select id="ed-type" style="width:auto"><option value="tossup">Toss-up</option><option value="bonus">Bonus</option></select>
+    modal(`<h3>${id ? '✏️ Edit Q' : '＋ New Q'}</h3>
+      <div class="row">
+        <select id="ed-subj" style="width:auto">${SUBJECTS.filter(s => s.id !== 'all').map(s => `<option value="${s.id}" ${q.subject === s.id ? 'selected' : ''}>${esc(s.name)}</option>`).join('')}</select>
+        <select id="ed-type" style="width:auto"><option value="tossup">Toss-up</option><option value="bonus">Bonus</option></select>
         <select id="ed-fmt" style="width:auto"><option value="sa">Short Answer</option><option value="mc">Multiple Choice</option></select></div>
-      <label class="field">题目（数学式写在 $…$ 里，例如 $(2x+1)^2$；朗读稿会跟着变）</label><textarea id="ed-text" rows="4">${esc(q.text)}</textarea>
-      <div id="ed-mc"><label class="field">选项</label>${LETTERS.map(L => `<div class="row" style="margin-bottom:6px"><b style="width:22px">${L})</b><input data-ch="${L}" style="flex:1" value="${esc(ch[L] || '')}"></div>`).join('')}</div>
-      <label class="field">答案 <span class="muted">（可以写 “21/2 (ACCEPT: 10.5)”）</span></label>
+      <label class="field">Question (put math expressions in $...$, e.g., $(2x+1)^2$; transcript will update)</label><textarea id="ed-text" rows="4">${esc(q.text)}</textarea>
+      <div id="ed-mc"><label class="field">Options</label>${LETTERS.map(L => `<div class="row" style="margin-bottom:6px"><b style="width:22px">${L})</b><input data-ch="${L}" style="flex:1" value="${esc(ch[L] || '')}"></div>`).join('')}</div>
+      <label class="field">Answer <span class="muted">(Can write '21/2 (ACCEPT: 10.5)')</span></label>
       <div class="row"><select id="ed-letter" style="width:auto"><option value="">—</option>${LETTERS.map(L => `<option ${q.letter === L ? 'selected' : ''}>${L}</option>`).join('')}</select><input id="ed-ans" style="flex:1" value="${esc(q.format === 'mc' ? (q.choices && q.choices[q.letter]) || '' : q.answer)}"></div>
-      <label class="field">预览</label><div class="card flat" id="ed-pv" style="margin:0"></div>
-      <div class="row" style="margin-top:14px"><button class="btn ghost" data-close>取消</button><span class="spacer"></span><button class="btn" data-save-q="${id || ''}">保存</button></div>`);
-    $('#ed-type').value = q.type; $('#ed-fmt').value = q.format;
+      <label class="field">Preview</label><div class="card flat" id="ed-pv" style="margin:0"></div>
+      <div class="row" style="margin-top:14px"><button class="btn ghost" data-close>Cancel</button><span class="spacer"></span><button class="btn" data-save-q="${id || ''}">Save</button></div>`);
+    $('#ed-subj').value = q.subject || 'math'; $('#ed-type').value = q.type; $('#ed-fmt').value = q.format;
     const upd = () => {
       const d = editDraft(q);
       $('#ed-mc').style.display = d.format === 'mc' ? '' : 'none';
       $('#ed-letter').style.display = d.format === 'mc' ? '' : 'none';
       const toks = bankToks(d);
       $('#ed-pv').innerHTML = `<div class="qtext">${T.toHTML(d.text)}</div>${choicesHTML(d)}<div class="small"><b>ANSWER:</b> ${T.toHTML(d.answer)}</div>
-        <div class="transcript small" style="margin-top:8px">${trHTML(toks)}</div>${sayBtn(toks, '🔊 听一遍')}`;
+        <div class="transcript small" style="margin-top:8px">${trHTML(toks)}</div>${sayBtn(toks, '🔊 Listen once')}`;
     };
     $$('#modal-box input, #modal-box textarea, #modal-box select').forEach(el => el.addEventListener('input', upd));
     upd();
@@ -944,14 +977,14 @@
     const choices = format === 'mc' ? Object.fromEntries(LETTERS.map(L => [L, $(`[data-ch="${L}"]`).value.trim()])) : null;
     const letter = format === 'mc' ? $('#ed-letter').value : '';
     const ans = $('#ed-ans').value.trim();
-    return { ...q, type: $('#ed-type').value, format, text: $('#ed-text').value.trim(), choices, letter,
+    return { ...q, subject: $('#ed-subj').value, type: $('#ed-type').value, format, text: $('#ed-text').value.trim(), choices, letter,
       answer: format === 'mc' ? `${letter}) ${ans || (choices[letter] || '')}` : ans };
   }
   function saveEdit(id) {
     const base = id ? qById(id) : { id: 'q' + Date.now().toString(36), subject: 'math', src: { file: '' }, added: Date.now() };
     const d = editDraft(base);
-    if (!d.text) return toast('题目不能是空的');
-    if (d.format === 'mc' && !d.letter) return toast('选择题要选一个正确字母');
+    if (!d.text) return toast('Question text cannot be empty');
+    if (d.format === 'mc' && !d.letter) return toast('MCQquestion requiresonecorrect letter');
     d.tags = T.tagsOfText(d.text, ...Object.values(d.choices || {}));
     if (id) {
       const idx = (S.customBank || []).findIndex(q => q.id === id);
@@ -969,7 +1002,7 @@
       S.customBank.unshift(d);
     }
     applyBank();
-    save(); closeModal(); route(); toast('✓ 已保存');
+    save(); closeModal(); route(); toast('✓ Saved');
   }
 
   // ───────── stats ─────────
@@ -986,11 +1019,11 @@
     const Wd = 420, H = 190, l = 28, r = 6, t = 10, b = 24, iw = Wd - l - r, ih = H - t - b;
     const max = niceMax(Math.max(1, ...days.map(d => d.n))), band = iw / days.length, bw = Math.max(6, band * 0.62);
     const y = v => t + ih - v / max * ih;
-    let s = `<svg class="chart" viewBox="0 0 ${Wd} ${H}" role="img" aria-label="最近 14 天每天的练习题数">`;
+    let s = `<svg class="chart" viewBox="0 0 ${Wd} ${H}" role="img" aria-label="Daily questions over the last 14 days">`;
     for (const v of [0, max / 2, max]) s += `<line class="gl" x1="${l}" x2="${Wd - r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
     days.forEach((d, i) => {
       const x = l + i * band + (band - bw) / 2;
-      s += `<rect class="hit" x="${l + i * band}" y="${t}" width="${band}" height="${ih}" data-tip="${d.label} · ${d.n} 题${d.n ? ` · 正确率 ${pct(d.ok / d.n)}` : ''}"/>`;
+      s += `<rect class="hit" x="${l + i * band}" y="${t}" width="${band}" height="${ih}" data-tip="${d.label} · ${d.n} Qs${d.n ? ` · Accuracy ${pct(d.ok / d.n)}` : ''}"/>`;
       s += `<path class="bar" d="${barPath(x, y(d.n), bw, t + ih - y(d.n))}" pointer-events="none"/>`;
       if ((13 - i) % 3 === 0) s += `<text x="${l + i * band + band / 2}" y="${H - 6}" text-anchor="middle">${d.label}</text>`;
     });
@@ -1000,10 +1033,10 @@
     const Wd = 420, H = 190, l = 36, r = 6, t = 12, b = 24, iw = Wd - l - r, ih = H - t - b, band = iw / days.length;
     const y = v => t + ih - v * ih, x = i => l + i * band + band / 2;
     const pts = days.map((d, i) => d.n ? { i, v: d.ok / d.n, d } : null).filter(Boolean);
-    let s = `<svg class="chart" viewBox="0 0 ${Wd} ${H}" role="img" aria-label="最近 14 天每天的正确率">`;
+    let s = `<svg class="chart" viewBox="0 0 ${Wd} ${H}" role="img" aria-label="Daily accuracy over the last 14 days">`;
     for (const v of [0, .5, 1]) s += `<line class="gl" x1="${l}" x2="${Wd - r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l - 6}" y="${y(v) + 4}" text-anchor="end">${v * 100}%</text>`;
     if (pts.length > 1) s += `<path class="line" d="${pts.map((p, k) => `${k ? 'L' : 'M'}${x(p.i)},${y(p.v)}`).join('')}"/>`;
-    pts.forEach(p => { s += `<g class="pt"><circle class="dot" cx="${x(p.i)}" cy="${y(p.v)}" r="4.5"/><circle class="hit" cx="${x(p.i)}" cy="${y(p.v)}" r="13" data-tip="${p.d.label} · 正确率 ${pct(p.v)}（${p.d.ok}/${p.d.n}）"/></g>`; });
+    pts.forEach(p => { s += `<g class="pt"><circle class="dot" cx="${x(p.i)}" cy="${y(p.v)}" r="4.5"/><circle class="hit" cx="${x(p.i)}" cy="${y(p.v)}" r="13" data-tip="${p.d.label} · Accuracy ${pct(p.v)}（${p.d.ok}/${p.d.n}）"/></g>`; });
     days.forEach((d, i) => { if ((13 - i) % 3 === 0) s += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">${d.label}</text>`; });
     return s + '</svg>';
   }
@@ -1015,61 +1048,61 @@
     const infos = C.CATS.map(c => ({ c, ...catInfo(c.id) })).sort((a, b) => b.score - a.score);
     main.innerHTML = `
       <div class="tiles">
-        <div class="tile"><span>累计练习</span><b>${L.length}</b></div>
-        <div class="tile"><span>近 7 天正确率</span><b>${wk.length ? pct(wk.filter(x => x.ok).length / wk.length) : '—'}</b></div>
-        <div class="tile"><span>听写反应（中位数）</span><b>${sec(rt('dict'))}</b></div>
-        <div class="tile"><span>抢答反应（中位数）</span><b>${sec(buzz)}</b></div>
+        <div class="tile"><span>Total Drills</span><b>${L.length}</b></div>
+        <div class="tile"><span>Last 7 Days Acc</span><b>${wk.length ? pct(wk.filter(x => x.ok).length / wk.length) : '—'}</b></div>
+        <div class="tile"><span>Dictation RT (Median)</span><b>${sec(rt('dict'))}</b></div>
+        <div class="tile"><span>Buzz RT (Median)</span><b>${sec(buzz)}</b></div>
       </div>
       <div class="grid two viz-root">
-        <div class="card"><h3>每天练习题数</h3>${barChart(days)}</div>
-        <div class="card"><h3>每天正确率</h3>${lineChart(days)}</div>
+        <div class="card"><h3>Daily Qs</h3>${barChart(days)}</div>
+        <div class="card"><h3>Daily Acc</h3>${lineChart(days)}</div>
       </div>
-      <details class="card flat small"><summary>数据表</summary><div class="tbl-wrap"><table class="tbl"><tr><th>日期</th><th>题数</th><th>答对</th><th>正确率</th></tr>
+      <details class="card flat small"><summary>Data Table</summary><div class="tbl-wrap"><table class="tbl"><tr><th>Date</th><th>Questions</th><th>Correct</th><th>Accuracy</th></tr>
         ${days.map(d => `<tr><td>${d.label}</td><td class="num">${d.n}</td><td class="num">${d.ok}</td><td class="num">${d.n ? pct(d.ok / d.n) : '—'}</td></tr>`).join('')}</table></div></details>
       <div class="card">
-        <div class="row"><h3 style="margin:0">易混结构</h3><span class="spacer"></span><span class="muted small">从最需要练的排起 · 反应时间从念完开始算</span></div>
+        <div class="row"><h3 style="margin:0">Confusable Structures</h3><span class="spacer"></span><span class="muted small">Sorted by need · RT starts after reading</span></div>
         <div class="tbl-wrap" style="margin-top:8px"><table class="tbl">
-          <tr><th>类别</th><th>等级</th><th>次数</th><th>最近正确率</th><th>最近 10 次</th><th>听写</th><th>听算</th><th></th></tr>
+          <tr><th>Category</th><th>Level</th><th>Times</th><th>Recent Acc</th><th>Last 10 Times</th><th>Dictation</th><th>Math</th><th></th></tr>
           ${infos.map(i => `<tr>
             <td><b>${esc(i.c.zh)}</b><div class="small muted">${egHTML(i.c.eg)}</div></td>
             <td class="lvl">L${i.lvl}</td><td class="num">${i.n}</td>
             <td><div class="accbar"><s><i style="width:${i.acc == null ? 0 : Math.round(i.acc * 100)}%"></i></s><span class="num">${pct(i.acc)}</span></div></td>
-            <td><span class="dots">${i.recent.slice(-10).map(x => x.ok ? '<span class="y" title="对">✓</span>' : '<span class="n" title="错">✗</span>').join('') || '<span class="muted">—</span>'}</span></td>
+            <td><span class="dots">${i.recent.slice(-10).map(x => x.ok ? '<span class="y" title="Correct">✓</span>' : '<span class="n" title="Wrong">✗</span>').join('') || '<span class="muted">—</span>'}</span></td>
             <td class="num">${sec(i.rtDict)}</td><td class="num">${sec(i.rtCalc)}</td>
-            <td><button class="btn sm ghost" data-start="smart" data-cats="${i.id}">专练</button></td></tr>`).join('')}
+            <td><button class="btn sm ghost" data-start="smart" data-cats="${i.id}">Drill</button></td></tr>`).join('')}
         </table></div>
       </div>`;
   };
 
   // ───────── mistakes ─────────
-  const ago = t => { const m = (Date.now() - t) / 6e4; return m < 60 ? `${Math.max(1, Math.round(m))} 分钟前` : m < 1440 ? `${Math.round(m / 60)} 小时前` : `${Math.round(m / 1440)} 天前`; };
+  const ago = t => { const m = (Date.now() - t) / 6e4; return m < 60 ? `${Math.max(1, Math.round(m))}  mins ago` : m < 1440 ? `${Math.round(m / 60)}  hours ago` : `${Math.round(m / 1440)}  days ago`; };
   VIEWS.mistakes = () => {
     const M = S.mistakes;
     const cats = [...new Set(M.slice(0, 30).map(m => m.c).filter(c => C.CAT[c]))];
     const bankIds = [...new Set(M.filter(m => m.q && qById(m.q)).map(m => m.q))];
-    main.innerHTML = `<div class="card"><div class="row"><h2 style="margin:0">📕 错题</h2><span class="spacer"></span>
-        ${cats.length ? `<button class="btn" data-start="smart" data-cats="${cats.join(',')}">▶ 重练最近错的 ${cats.length} 类</button>` : ''}
-        ${bankIds.length ? `<button class="btn ghost" data-act="redo-bank">▶ 重做错过的真题（${bankIds.length}）</button>` : ''}</div>
-        <p class="muted small">每道错题都能重听。听写和听算题会重新出同类的新题，而不是背答案。</p></div>
-      ${M.length ? M.slice(0, 80).map((m, i) => mistakeCard(m, i)).join('') : '<div class="card muted">还没有错题。</div>'}`;
+    main.innerHTML = `<div class="card"><div class="row"><h2 style="margin:0">📕 Mistakes</h2><span class="spacer"></span>
+        ${cats.length ? `<button class="btn" data-start="smart" data-cats="${cats.join(',')}">▶ Redo recently missed ${cats.length} categories</button>` : ''}
+        ${bankIds.length ? `<button class="btn ghost" data-act="redo-bank">▶ Redo missed official Qs (${bankIds.length}）</button>` : ''}</div>
+        <p class="muted small">Every wrong question can be replayed. Dictation and Math modes will generate new questions of the same type instead of letting you memorize answers.</p></div>
+      ${M.length ? M.slice(0, 80).map((m, i) => mistakeCard(m, i)).join('') : '<div class="card muted">No mistakes yet.</div>'}`;
   };
   function mistakeCard(m, i) {
     let body = '';
     if (m.m === 'dict') {
-      body = `<div class="kv"><span>读的是</span><div class="m">${texN(m.target)}</div>${sayBtn(m.toks)}</div>` +
-        (m.chosen ? `<div class="kv"><span>你答的</span><div class="m">${texN(m.chosen)}</div>${sayBtn(E.speak(m.chosen))}</div>` : `<div class="kv"><span>你答的</span><div><code>${esc(m.got || '')}</code></div><span></span></div>`) +
+      body = `<div class="kv"><span>Read</span><div class="m">${texN(m.target)}</div>${sayBtn(m.toks)}</div>` +
+        (m.chosen ? `<div class="kv"><span>You answered</span><div class="m">${texN(m.chosen)}</div>${sayBtn(E.speak(m.chosen))}</div>` : `<div class="kv"><span>You answered</span><div><code>${esc(m.got || '')}</code></div><span></span></div>`) +
         `<div class="transcript small">${trHTML(m.toks)}</div>`;
     } else if (m.m === 'calc') {
       body = `<div class="transcript small">${trHTML(m.toks)}</div>
-        <div class="kv"><span>正确答案</span><div>${esc(String(m.answer))}</div>${sayBtn(m.toks)}</div>
-        <div class="kv"><span>你答的</span><div>${esc(m.got || '—')}${m.diag ? ` <span class="small muted">= ${texN(m.diag)} 的值（把 ${texN(m.target)} 听成了它）</span>` : ''}</div><span></span></div>`;
+        <div class="kv"><span>Correct Answer</span><div>${esc(String(m.answer))}</div>${sayBtn(m.toks)}</div>
+        <div class="kv"><span>You answered</span><div>${esc(m.got || '—')}${m.diag ? ` <span class="small muted">= ${texN(m.diag)} value (misheard ${texN(m.target)} as this)</span>` : ''}</div><span></span></div>`;
     } else {
       const q = qById(m.q);
-      body = q ? `<div class="qtext small">${T.toHTML(q.text)}</div>${choicesHTML(q)}<div class="kv"><span>官方答案</span><div>${T.toHTML(q.answer)}</div>${sayBtn(bankToks(q))}</div>
-        <div class="kv"><span>你答的</span><div>${esc(m.got || '—')}</div><span></span></div>` : '<p class="muted">（题目已从题库删除）</p>';
+      body = q ? `<div class="qtext small">${T.toHTML(q.text)}</div>${choicesHTML(q)}<div class="kv"><span>Official Answer</span><div>${T.toHTML(q.answer)}</div>${sayBtn(bankToks(q))}</div>
+        <div class="kv"><span>You answered</span><div>${esc(m.got || '—')}</div><span></span></div>` : '<p class="muted">(Question deleted from bank)</p>';
     }
     return `<div class="qcard"><div class="meta"><span class="tag">${MODE[m.m]}</span>${C.CAT[m.c] ? `<span class="tag">${esc(C.CAT[m.c].zh)}${m.l ? ' · L' + m.l : ''}</span>` : ''}<span class="muted small">${ago(m.t)}</span>
-      <span class="spacer"></span><button class="btn sm ghost" data-rm-mistake="${i}" title="移出错题本">✕</button></div>${body}</div>`;
+      <span class="spacer"></span><button class="btn sm ghost" data-rm-mistake="${i}" title="Remove from mistakes">✕</button></div>${body}</div>`;
   }
 
   // ───────── reading guide ─────────
@@ -1077,32 +1110,32 @@
     const ex = s => { const a = E.parse(s), toks = E.speak(a); return `<div class="ex"><div class="m">${texN(a)}</div><div class="r">${trHTML(toks)} ${sayBtn(toks)}</div></div>`; };
     main.innerHTML = `
       <div class="card">
-        <h2>📖 NSB 怎么念数学式</h2>
-        <p>比赛时式子只念一遍，没有纸面。能不能听出括号在哪里，全靠几个固定的说法：</p>
+        <h2>📖 How NSB reads math expressions</h2>
+        <p>In competition, expressions are read only once without paper. Knowing where the parentheses are relies on fixed phrasing:</p>
         <ul>
-          <li><b class="cue">the quantity</b> = 左括号；后面的<b>停顿</b>（本站标成 <i class="pz">‖</i>）= 右括号。</li>
-          <li><b>squared / cubed / to the 5th power</b> 只管紧挨着的<b>一个</b>符号；要管一整块，前面必须有 the quantity。</li>
-          <li><b>over</b> 是分数线。分母是单项式（2x）直接念；是和或差，就说 “over the quantity …”。</li>
-          <li><b>negative 3 squared</b> 是 −9；(−3)² 要念成 “the quantity negative 3, squared”。</li>
-          <li>函数：<b>sine of …</b>、<b>log base 2 of …</b>、<b>f of …</b>；“sine squared of x” 是 (sin x)²。</li>
-          <li>常数分数念成 <b>one-half、two-thirds、three-fourths</b>；“one-half x” 是 x/2，“1 over 2x” 是 1/(2x)。</li>
+          <li><b class="cue">the quantity</b> = left parenthesis; the following <b>pause</b> (marked as <i class="pz">‖</i> here) = right parenthesis.</li>
+          <li><b>squared / cubed / to the 5th power</b> only applies to the immediately adjacent <b>one</b> symbol; to apply to a whole block, 'the quantity' must precede it.</li>
+          <li><b>over</b> is the fraction line. If the denominator is a monomial (2x), read it directly; if it's a sum or difference, say 'over the quantity ...'.</li>
+          <li><b>negative 3 squared</b> is −9; (−3)² is read as 'the quantity negative 3, squared'.</li>
+          <li>Functions: <b>sine of …</b>、<b>log base 2 of …</b>、<b>f of …</b>; 'sine squared of x' is (sin x)².</li>
+          <li>Constant fractions are read as <b>one-half、two-thirds、three-fourths</b>; 'one-half x' is x/2, '1 over 2x' is 1/(2x).</li>
         </ul>
-        <p class="muted small">比赛规则：toss-up 念完后 5 秒内抢答，可以打断念题，但打断后答错对方加 4 分；toss-up 答对才有 bonus，bonus 念完后 20 秒内作答。选择题的四个选项是 W、X、Y、Z。</p>
+        <p class="muted small">Rules: Buzz within 5s after toss-up reading. You can interrupt, but wrong answers after interrupt give opponents 4 pts. Only correct toss-ups get a bonus, 20s to answer bonus. MCQ options are W, X, Y, Z.</p>
       </div>
       <div class="card">
-        <h3>🧪 试一试：输入式子，听 NSB 怎么念</h3>
-        <input id="play-in" placeholder="例如 (x+1)^2/(x-1)、sqrt(2x)+1、-3^2、log_2(x+4)" autocomplete="off" spellcheck="false">
+        <h3>🧪 Try it: Enter an expression, hear how NSB reads it</h3>
+        <input id="play-in" placeholder="e.g., (x+1)^2/(x-1), sqrt(2x)+1, -3^2, log_2(x+4)" autocomplete="off" spellcheck="false">
         <div id="play-out" style="margin-top:10px"></div>
       </div>
-      ${C.CATS.map(c => `<div class="card"><div class="row"><h3 style="margin:0">${esc(c.zh)}</h3><span class="spacer"></span><button class="btn sm ghost" data-start="dict" data-cats="${c.id}">练这一类</button></div>
+      ${C.CATS.map(c => `<div class="card"><div class="row"><h3 style="margin:0">${esc(c.zh)}</h3><span class="spacer"></span><button class="btn sm ghost" data-start="dict" data-cats="${c.id}">Drill this type</button></div>
         <p class="muted small" style="margin-top:6px">${esc(c.tip)}</p><div class="rule">${c.eg.split(' vs ').map(ex).join('')}</div></div>`).join('')}`;
     $('#play-in').addEventListener('input', e => {
       const s = e.target.value.trim(), out = $('#play-out');
       if (!s) { out.innerHTML = ''; return; }
       try {
         const a = E.parse(s), toks = E.speak(a), v = E.vars(a).size ? null : E.ev(a);
-        out.innerHTML = `<div class="kv" style="border:0"><span>写出来</span><div class="m">${texN(a)}</div>${sayBtn(toks)}</div>
-          <div class="transcript">${trHTML(toks)}</div>${v != null && isFinite(v) ? `<p class="muted small">值 = ${E.fmtNum(v)}</p>` : ''}`;
+        out.innerHTML = `<div class="kv" style="border:0"><span>Transcribed</span><div class="m">${texN(a)}</div>${sayBtn(toks)}</div>
+          <div class="transcript">${trHTML(toks)}</div>${v != null && isFinite(v) ? `<p class="muted small">Value = ${E.fmtNum(v)}</p>` : ''}`;
       } catch (err) { out.innerHTML = `<p class="muted small">${esc(err.message)}</p>`; }
     });
   };
@@ -1110,25 +1143,25 @@
   // ───────── settings ─────────
   function openSettings() {
     const st = S.settings, vs = TTS.voices();
-    modal(`<h3>⚙️ 设置</h3>
-      <label class="field">朗读声音</label>
-      <div class="row"><select id="st-voice" style="flex:1"><option value="">自动（优先 Samantha / Google US English）</option>
+    modal(`<h3>⚙️ Settings</h3>
+      <label class="field">TTS Voice</label>
+      <div class="row"><select id="st-voice" style="flex:1"><option value="">Auto (Prefers Samantha / Google US English)</option>
         ${vs.map(v => `<option value="${esc(v.name)}" ${st.voice === v.name ? 'selected' : ''}>${esc(v.name)} (${esc(v.lang)})</option>`).join('')}</select>
-        <button class="btn sm ghost" data-act="test-voice">试听</button></div>
-      ${!TTS.available() ? '<p class="small" style="color:var(--bad)">这个浏览器没有语音朗读功能。</p>' : !vs.length ? '<p class="small muted">声音列表还在加载，稍后再打开设置看看。</p>' : ''}
-      <label class="field">语速 <span id="rate-v">${st.rate.toFixed(2)}</span>（比赛大约 0.9–1.1）</label><input type="range" id="st-rate" min="0.6" max="1.4" step="0.05" value="${st.rate}">
-      <label class="field">停顿长度 <span id="pause-v">${st.pause}</span> ms（越短越难）</label><input type="range" id="st-pause" min="120" max="900" step="20" value="${st.pause}">
-      <label class="field">智能训练每组题数</label>${segHTML('settings.len', st.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
-      <label class="field">Toss-up 抢答时间（念完后）</label>${segHTML('settings.buzz', st.buzz, [[3, '3 秒'], [5, '5 秒（比赛）'], [8, '8 秒']])}
-      <label class="field">Bonus 作答时间</label>${segHTML('settings.bonus', st.bonus, [[10, '10 秒'], [20, '20 秒（比赛）'], [30, '30 秒']])}
-      <label class="field">主题</label>${segHTML('settings.theme', st.theme, [['auto', window.tH ? window.tH('跟随系统') : '跟随系统'], ['light', window.tH ? window.tH('浅色') : '浅色'], ['dark', window.tH ? window.tH('深色') : '深色']])}
+        <button class="btn sm ghost" data-act="test-voice">Test</button></div>
+      ${!TTS.available() ? '<p class="small" style="color:var(--bad)">This browser does not support text-to-speech.</p>' : !vs.length ? '<p class="small muted">Voice list is still loading, open settings later.</p>' : ''}
+      <label class="field">Speech Rate <span id="rate-v">${st.rate.toFixed(2)}</span> (Comp is ~0.9-1.1)</label><input type="range" id="st-rate" min="0.6" max="1.4" step="0.05" value="${st.rate}">
+      <label class="field">Pause Duration <span id="pause-v">${st.pause}</span> ms (shorter = harder)</label><input type="range" id="st-pause" min="120" max="900" step="20" value="${st.pause}">
+      <label class="field">Smart Drill Qs per Session</label>${segHTML('settings.len', st.len, [[5, 5], [10, 10], [15, 15], [20, 20]])}
+      <label class="field">Toss-up Buzz Time (after reading)</label>${segHTML('settings.buzz', st.buzz, [[3, '3 sec'], [5, '5 sec (comp)'], [8, '8 sec']])}
+      <label class="field">Bonus Answer Time</label>${segHTML('settings.bonus', st.bonus, [[10, '10 sec'], [20, '20 sec (comp)'], [30, '30 sec']])}
+      <label class="field">Theme</label>${segHTML('settings.theme', st.theme, [['auto', "System"], ['light', "Light"], ['dark', "Dark"]])}
       <div style="margin-top:12px;display:grid;gap:8px">
-        <label><input type="checkbox" id="st-mic" ${st.mic ? 'checked' : ''}> 🎤 ${window.tH ? window.tH('模拟比赛抢答（播报队伍名并开启麦克风作答）') : '模拟比赛抢答（播报队伍名并开启麦克风作答）'}</label>
-        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> ${window.tH ? window.tH('听写时朗读中就显示选项（入门用；比赛没有纸面）') : '听写时朗读中就显示选项（入门用；比赛没有纸面）'}</label>
-        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> ${window.tH ? window.tH('朗读时显示字幕（想“只听不看”就关掉）') : '朗读时显示字幕（想“只听不看”就关掉）'}</label>
-        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> ${window.tH ? window.tH('音效') : '音效'}</label>
+        <label><input type="checkbox" id="st-mic" ${st.mic ? 'checked' : ''}> 🎤 ${"Simulate competition buzzer (Announce team and answer via Mic)"}</label>
+        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> ${"Dictationshow options during readingOptions（for beginners；competition has no paper）"}</label>
+        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> ${"Show captions during reading（to“listen only”turn off）"}</label>
+        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> ${"Sound Effects"}</label>
       </div>
-      <div class="row" style="margin-top:16px"><button class="btn sm danger" data-act="reset">${window.tH ? window.tH('清空练习记录') : '清空练习记录'}</button><span class="spacer"></span><button class="btn" data-close>${window.tH ? window.tH('完成') : '完成'}</button></div>`);
+      <div class="row" style="margin-top:16px"><button class="btn sm danger" data-act="reset">${"Clear Drill History"}</button><span class="spacer"></span><button class="btn" data-close>${"Done"}</button></div>`);
     $('#st-voice').addEventListener('change', e => { st.voice = e.target.value; save(); });
     $('#st-rate').addEventListener('input', e => { st.rate = +e.target.value; $('#rate-v').textContent = st.rate.toFixed(2); save(); });
     $('#st-pause').addEventListener('input', e => { st.pause = +e.target.value; $('#pause-v').textContent = st.pause; save(); });
@@ -1156,7 +1189,7 @@
         const p = playToks(toks); 
         say.classList.add('playing'); 
         if (!say.dataset.orig) say.dataset.orig = say.innerHTML;
-        say.innerHTML = window.tH ? window.tH('🛑 停止') : '🛑 停止';
+        say.innerHTML = "🛑 Cancel";
         p.done.then((completed) => { 
           say.classList.remove('playing'); 
           if (!completed) {
@@ -1216,7 +1249,7 @@
     const del = e.target.closest('[data-del]');
     if (del) { 
       const q = qById(del.dataset.del); 
-      if (q && confirm(window.t ? window.t('删除这道题？') : '删除这道题？')) { 
+      if (q && confirm("Delete this question?")) { 
         S.customBank = (S.customBank || []).filter(x => x.id !== q.id);
         if (!S.deletedIds) S.deletedIds = [];
         S.deletedIds.push(q.id);
@@ -1240,16 +1273,16 @@
       more: () => { bankF.shown += 30; route(); },
       'bank-practice': () => { const l = filteredBank(); startSession({ kind: 'bank', bankIds: l.map(q => q.id), len: Math.min(S.settings.len, l.length) }); },
       'redo-bank': () => { const ids = [...new Set(S.mistakes.filter(m => m.q && qById(m.q)).map(m => m.q))]; startSession({ kind: 'bank', bankIds: ids, len: Math.min(ids.length, S.settings.len) }); },
-      'imp-text': () => { const t = $('#imp-text').value; if (!t.trim()) return; addParsed(I.parseNSB(t, { file: '粘贴' }), '粘贴的文字'); renderImport(); },
+      'imp-text': () => { const t = $('#imp-text').value; if (!t.trim()) return; addParsed(I.parseNSB(t, { file: 'pasted' }), 'Pasted text'); renderImport(); },
       'imp-all': () => { imp.items.forEach(x => x.on = true); renderImport(); },
       'imp-none': () => { imp.items.forEach(x => x.on = false); renderImport(); },
       'imp-add': () => {
         const add = imp.items.filter(x => x.on).map(x => x.item);
         if (!S.customBank) S.customBank = [];
-        S.customBank.unshift(...add); applyBank(); save(); closeModal(); imp = null; toast(`✓ 加入 ${add.length} 道 Math 题`); route();
+        S.customBank.unshift(...add); applyBank(); save(); closeModal(); imp = null; toast(`✓ Added ${add.length} questions Math Qs`); route();
       },
       'test-voice': () => playToks(E.speak(E.parse('(xy)^2 - x y^2'))),
-      reset: () => { if (confirm(window.t ? window.t('清空所有练习记录（题库保留）？此操作不能撤销。') : '清空所有练习记录（题库保留）？此操作不能撤销。')) { Object.assign(S, { cats: {}, log: [], mistakes: [], bstats: {}, streak: { n: 0, last: null } }); save(); closeModal(); hud(); route(); } },
+      reset: () => { if (confirm("Clear all drill history (bank preserved)? This cannot be undone.")) { Object.assign(S, { cats: {}, log: [], mistakes: [], bstats: {}, streak: { n: 0, last: null } }); save(); closeModal(); hud(); route(); } },
     }[act] || (() => { }))();
   });
   function contrast(btn) {

@@ -1,4 +1,4 @@
-/* NSB 听题训练 — text-to-speech. Speaks a reading chunk by chunk with a real silence between
+/* NSB Trainer — text-to-speech. Speaks a reading chunk by chunk with a real silence between
  * chunks (that silence is the NSB "pause" that closes a quantity). A watchdog keeps things moving
  * when a browser never fires `onend`; with no speech engine at all it runs silently on timers so
  * the UI can show captions instead. */

@@ -126,6 +126,7 @@ body.in-drill .nav { display: none; }
 .tag.warn { background: var(--warn-soft); border-color: transparent; color: var(--warn); }
 .tag.ok { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
 .tag.bad { background: var(--bad-soft); border-color: transparent; color: var(--bad); }
+.tag.subj { background: var(--panel-2); color: var(--ink); border-color: var(--line); }
 .seg { display: inline-flex; background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 3px; gap: 2px; }
 .seg button { border: 0; background: none; padding: 6px 12px; border-radius: 9px; font-weight: 800; font-size: 14px; color: var(--muted); }
 .seg button.on { background: var(--panel); color: var(--ink); box-shadow: var(--shadow); }

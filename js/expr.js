@@ -1,4 +1,4 @@
-/* NSB 听题训练 — expression engine.
+/* NSB Trainer — expression engine.
  * One AST, four views: LaTeX (for KaTeX), the spoken NSB reading ("the quantity", pauses),
  * a numeric value, and a parser-compatible plain-text form. The parser turns typed answers
  * and question text back into the same AST. */
@@ -347,19 +347,19 @@
       if (c === '√') { toks.push({ t: 'fn', v: 'sqrt' }); i++; continue; }
       if (c === '∛') { toks.push({ t: 'fn', v: 'cbrt' }); i++; continue; }
       if ('+-*/^!()[]{}|,=<>≤≥≠_'.includes(c)) { toks.push({ t: 'op', v: c }); i++; continue; }
-      throw new Error(`看不懂的符号 “${c}”`);
+      throw new Error(`Unrecognized character "${c}"`);
     }
     return toks;
   }
   const OPEN = { '(': ')', '[': ']', '{': '}' };
   function parse(src) {
     const toks = tokenize(src);
-    if (!toks.length) throw new Error('空的');
+    if (!toks.length) throw new Error('Empty expression');
     let i = 0, absDepth = 0;
     const peek = () => toks[i];
     const isOp = v => toks[i] && toks[i].t === 'op' && toks[i].v === v;
     const eat = v => isOp(v) ? (i++, true) : false;
-    const expect = v => { if (!eat(v)) throw new Error(`缺少 “${v}”`); };
+    const expect = v => { if (!eat(v)) throw new Error(`Expected "${v}"`); };
     const startsPrimary = t => !!t && (t.t !== 'op' || t.v in OPEN || (t.v === '|' && absDepth === 0));
 
     function pRel() {
@@ -419,11 +419,11 @@
     }
     function pSimple() {
       const t = toks[i++];
-      if (!t) throw new Error('意外结束');
+      if (!t) throw new Error('Unexpected end of input');
       if (t.t === 'num') return N(t.v);
       if (t.t === 'var') return V(t.v);
       if (t.t === 'op' && t.v in OPEN) return pGroupAfterOpen(t.v);
-      throw new Error(`意外的 “${t.v}”`);
+      throw new Error(`Unexpected "${t.v}"`);
     }
     function pFunc(name) {
       let p = null, base = null;
@@ -448,7 +448,7 @@
     }
     function pPrim() {
       const t = toks[i++];
-      if (!t) throw new Error('意外结束');
+      if (!t) throw new Error('Unexpected end of input');
       if (t.t === 'num') return N(t.v);
       if (t.t === 'var') {
         if ('fgh'.includes(t.v) && isOp('(')) return fn(t.v, pParenArg());
@@ -457,10 +457,10 @@
       if (t.t === 'fn') return pFunc(t.v);
       if (t.v in OPEN) return pGroupAfterOpen(t.v);
       if (t.v === '|') { absDepth++; const e = pRel(); expect('|'); absDepth--; return abs(e); }
-      throw new Error(`意外的 “${t.v}”`);
+      throw new Error(`Unexpected "${t.v}"`);
     }
     const out = pRel();
-    if (i < toks.length) throw new Error(`多余的 “${toks[i].v}”`);
+    if (i < toks.length) throw new Error(`Extra input "${toks[i].v}"`);
     return out;
   }
   const tryParse = s => { try { return parse(s); } catch (e) { return null; } };
