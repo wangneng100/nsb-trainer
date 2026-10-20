@@ -30,7 +30,7 @@
   // ───────── state ─────────
   const KEY = 'nsb-trainer-v1';
   const defaults = () => ({
-    settings: { voice: '', rate: 0.95, pause: 380, len: 10, buzz: 5, bonus: 20, showOpts: false, captions: false, sfx: true, theme: 'auto' },
+    settings: { voice: '', rate: 0.95, pause: 380, len: 10, buzz: 5, bonus: 20, mic: true, showOpts: false, captions: false, sfx: true, theme: 'auto' },
     prefs: { dict: { cats: [], lvl: 'auto', style: 'choice', len: 10 }, calc: { src: 'gen', cats: [], lvl: 'auto', type: 'all', len: 10, years: [], rounds: [] }, bank: { years: [] } },
     cats: {}, log: [], mistakes: [], customBank: [], deletedIds: [], bstats: {}, streak: { n: 0, last: null },
   });
@@ -46,11 +46,13 @@
           s.customBank = s.bank.filter(q => !q.id.startsWith('seed-'));
       }
       
-      return { ...d, ...s, settings: { ...d.settings, ...s.settings }, prefs: { 
+      const loaded = { ...d, ...s, settings: { ...d.settings, ...s.settings }, prefs: { 
           dict: { ...d.prefs.dict, ...(s.prefs || {}).dict }, 
           calc: { ...d.prefs.calc, ...(s.prefs || {}).calc },
           bank: { ...d.prefs.bank, ...(s.prefs || {}).bank } 
       } };
+      if (loaded.settings.mic === undefined) loaded.settings.mic = true;
+      return loaded;
     } catch (e) { return defaults(); }
   }
   let S = load();
@@ -381,8 +383,15 @@
       years: o.years || [], rounds: o.rounds || [], len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
     if (location.hash === '#drill') route(); else location.hash = '#drill';
   }
-  function endSession() { stopAudio(); stopTimers(); sess = null; }
-  function stopTimers() { clearInterval(cd); clearInterval(tk); cd = tk = null; }
+  let activeRec = null;
+  function stopMic() {
+    if (activeRec) {
+      try { activeRec.abort(); } catch (e) {}
+      activeRec = null;
+    }
+  }
+  function endSession() { stopAudio(); stopTimers(); stopMic(); sess = null; }
+  function stopTimers() { clearInterval(cd); clearInterval(tk); cd = tk = null; stopMic(); }
   const allIds = () => C.CATS.map(c => c.id);
 
   function bankPool() {
@@ -475,18 +484,58 @@
     stopTimers(); sfx('buzz');
     sess.phase = 'answering'; renderStage(); startTicker();
 
-    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
-      const inp = $('#ans'); if (inp) inp.disabled = true;
+    if (S.settings.mic !== false && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
+      const inp = $('#ans');
+      if (inp) {
+        inp.disabled = true;
+        inp.placeholder = "Recognizing team...";
+      }
       const team = ['A', 'B'][Math.floor(Math.random() * 2)];
       const num = 1;
       const recVoice = TTS.play([`Team ${team}, ${team} ${num}`], { rate: 1, pause: 0, voice: S.settings.voice });
       recVoice.done.then(() => {
+        if (!sess || sess.phase !== 'answering') return;
         const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-        const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
-        if (inp) inp.placeholder = "Listening...";
-        rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
-        rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = "No voice heard, please type manually"; $('#ans').focus(); } };
-        rec.start();
+        const rec = new SRec();
+        rec.lang = 'en-US';
+        rec.interimResults = false;
+        rec.maxAlternatives = 1;
+        activeRec = rec;
+        if (inp) {
+          inp.disabled = false;
+          inp.placeholder = "🎤 Listening for answer...";
+          inp.focus();
+        }
+        rec.onresult = e => {
+          activeRec = null;
+          const transcript = e.results && e.results[0] && e.results[0][0] && e.results[0][0].transcript;
+          if (transcript) {
+            if ($('#ans')) $('#ans').value = transcript;
+            submitTyped(false);
+          }
+        };
+        rec.onerror = () => {
+          activeRec = null;
+          if ($('#ans')) {
+            $('#ans').disabled = false;
+            $('#ans').placeholder = "No voice heard, please type manually";
+            $('#ans').focus();
+          }
+        };
+        rec.onend = () => {
+          activeRec = null;
+          if ($('#ans') && $('#ans').disabled) $('#ans').disabled = false;
+        };
+        try {
+          rec.start();
+        } catch (err) {
+          activeRec = null;
+          if ($('#ans')) {
+            $('#ans').disabled = false;
+            $('#ans').placeholder = "Mic unavailable, please type answer";
+            $('#ans').focus();
+          }
+        }
       });
     }
   }
@@ -496,14 +545,45 @@
     stopTimers();
     sess.phase = 'answering'; renderStage(); startTicker();
 
-    if (S.settings.mic && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
-      const inp = $('#ans'); if (inp) inp.disabled = true;
+    if (S.settings.mic !== false && (window.SpeechRecognition || window.webkitSpeechRecognition)) {
+      const inp = $('#ans');
       const SRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-      const rec = new SRec(); rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
-      if (inp) inp.placeholder = "Listening...";
-      rec.onresult = e => { if ($('#ans')) { $('#ans').value = e.results[0][0].transcript; $('#ans').disabled = false; submitTyped(false); } };
-      rec.onerror = () => { if ($('#ans')) { $('#ans').disabled = false; $('#ans').placeholder = "No voice heard, please type manually"; $('#ans').focus(); } };
-      rec.start();
+      const rec = new SRec();
+      rec.lang = 'en-US';
+      rec.interimResults = false;
+      rec.maxAlternatives = 1;
+      activeRec = rec;
+      if (inp) {
+        inp.placeholder = "🎤 Listening for bonus answer...";
+        inp.focus();
+      }
+      rec.onresult = e => {
+        activeRec = null;
+        const transcript = e.results && e.results[0] && e.results[0][0] && e.results[0][0].transcript;
+        if (transcript) {
+          if ($('#ans')) $('#ans').value = transcript;
+          submitTyped(false);
+        }
+      };
+      rec.onerror = () => {
+        activeRec = null;
+        if ($('#ans')) {
+          $('#ans').placeholder = "No voice heard, please type manually";
+          $('#ans').focus();
+        }
+      };
+      rec.onend = () => {
+        activeRec = null;
+      };
+      try {
+        rec.start();
+      } catch (err) {
+        activeRec = null;
+        if ($('#ans')) {
+          $('#ans').placeholder = "Mic unavailable, please type answer";
+          $('#ans').focus();
+        }
+      }
     }
   }
   function replay() {
@@ -528,6 +608,30 @@
   }
 
   // answers
+  function judgeMC(text, q) {
+    const t = String(text || '').trim();
+    const lm = t.match(/^(?:option|choice|letter)?\s*([WXYZ])\b/i) || t.match(/\b([WXYZ])\)?$/i);
+    if (lm) {
+      const letter = lm[1].toUpperCase();
+      return { ok: letter === q.letter, letter, sure: true };
+    }
+    if (/^(why|yep|yes|white)$/i.test(t)) return { ok: 'Y' === q.letter, letter: 'Y', sure: true };
+    if (/^(double\s*u|double\s*you)$/i.test(t)) return { ok: 'W' === q.letter, letter: 'W', sure: true };
+    if (/^(ex|axe|eggs)$/i.test(t)) return { ok: 'X' === q.letter, letter: 'X', sure: true };
+    if (/^(zee|zed)$/i.test(t)) return { ok: 'Z' === q.letter, letter: 'Z', sure: true };
+
+    if (q.choices) {
+      for (const L of LETTERS) {
+        const ctext = q.choices[L];
+        if (ctext && T.judge(t, ctext).ok) {
+          return { ok: L === q.letter, letter: L, sure: true };
+        }
+      }
+    }
+    const j = T.judge(t, q.answer);
+    if (j.ok) return { ok: true, letter: q.letter, sure: j.sure };
+    return { ok: false, sure: false };
+  }
   function choose(idx) {
     const it = sess.item;
     if (it.mode !== 'dict' || sess.style === 'type' || sess.phase !== 'answer' || idx >= it.options.length) return;
@@ -558,6 +662,10 @@
       const v = E.ev(a), ok = E.close(v, it.answer);
       const diag = ok ? null : it.sib.find(s => isFinite(s.val) && E.close(s.val, v)) || null;
       return conclude(it, { ok, got: v, gotText: text, diag });
+    }
+    if (it.mode === 'bank' && it.q.format === 'mc') {
+      const j = judgeMC(text, it.q);
+      return conclude(it, { ok: j.ok, sure: j.sure, gotText: j.letter ? `${j.letter}) ${text}` : text });
     }
     const j = T.judge(text, it.q.answer);
     conclude(it, { ok: j.ok, sure: j.sure, gotText: text });
@@ -703,7 +811,9 @@
     const timer = `<div class="controls"><span class="muted small">${it.interrupt ? '⚡ Interrupted — wrong answers deduct 4 pts in games' : it.buzzAt ? `Reaction time ${sec(it.buzzAt - it.t0)}` : `Start answering...`}</span><span class="spacer"></span>
       <span class="timer" id="tick">0.0s</span></div>`;
     if (it.mode === 'bank' && it.q.format === 'mc') {
-      return `<div class="letters">${LETTERS.map(L => `<button class="opt" data-letter="${L}">${L}</button>`).join('')}</div>${timer}`;
+      return `<div class="letters">${LETTERS.map(L => `<button class="opt" data-letter="${L}">${L}</button>`).join('')}</div>
+        <div class="answer-row" style="margin-top:10px"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Speak or type W/X/Y/Z or answer"><button class="btn" data-act="submit">Submit</button></div>
+        <div class="preview" id="pv"></div>${timer}`;
     }
     return `<div class="answer-row"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${it.mode === 'calc' ? 'Answer (Number)' : 'Your Answer'}"><button class="btn" data-act="submit">Submit</button></div>
       <div class="preview" id="pv"></div>${timer}`;
@@ -714,6 +824,11 @@
     pv.className = 'preview';
     const s = inp.value.trim();
     if (!s) { pv.innerHTML = ''; return; }
+    if (sess && sess.item && sess.item.mode === 'bank' && sess.item.q.format === 'mc') {
+      const j = judgeMC(s, sess.item.q);
+      pv.innerHTML = j.letter ? `<span class="muted small">Detected: <b>${j.letter}</b></span>` : '';
+      return;
+    }
     const a = sess.item.mode === 'dict' ? E.tryParse(s) : T.answerAst(s);
     pv.innerHTML = a ? '= ' + texN(a) : '<span class="muted small">…</span>';
   }
@@ -1156,10 +1271,10 @@
       <label class="field">Bonus Answer Time</label>${segHTML('settings.bonus', st.bonus, [[10, '10 sec'], [20, '20 sec (comp)'], [30, '30 sec']])}
       <label class="field">Theme</label>${segHTML('settings.theme', st.theme, [['auto', "System"], ['light', "Light"], ['dark', "Dark"]])}
       <div style="margin-top:12px;display:grid;gap:8px">
-        <label><input type="checkbox" id="st-mic" ${st.mic ? 'checked' : ''}> 🎤 ${"Simulate competition buzzer (Announce team and answer via Mic)"}</label>
-        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> ${"Dictationshow options during readingOptions（for beginners；competition has no paper）"}</label>
-        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> ${"Show captions during reading（to“listen only”turn off）"}</label>
-        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> ${"Sound Effects"}</label>
+        <label><input type="checkbox" id="st-mic" ${st.mic !== false ? 'checked' : ''}> 🎤 Simulate competition buzzer (Announce team and answer via Mic)</label>
+        <label><input type="checkbox" id="st-showOpts" ${st.showOpts ? 'checked' : ''}> Show options during reading in dictation (for beginners)</label>
+        <label><input type="checkbox" id="st-captions" ${st.captions ? 'checked' : ''}> Show captions during reading (turn off for listen-only)</label>
+        <label><input type="checkbox" id="st-sfx" ${st.sfx ? 'checked' : ''}> Sound Effects</label>
       </div>
       <div class="row" style="margin-top:16px"><button class="btn sm danger" data-act="reset">${"Clear Drill History"}</button><span class="spacer"></span><button class="btn" data-close>${"Done"}</button></div>`);
     $('#st-voice').addEventListener('change', e => { st.voice = e.target.value; save(); });
