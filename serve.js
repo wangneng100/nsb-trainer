@@ -16,6 +16,7 @@ const MIME = {
 function handler(req, res) {
   let reqPath = decodeURIComponent(req.url.split('?')[0]);
   if (reqPath === '/') reqPath = '/index.html';
+  console.log(`${new Date().toISOString()} ${req.method} ${req.url}`);
   
   const filePath = path.join(__dirname, reqPath);
   
@@ -35,7 +36,10 @@ function handler(req, res) {
 
     res.writeHead(200, {
       'Content-Type': contentType,
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0'
     });
     fs.createReadStream(filePath).pipe(res);
   });

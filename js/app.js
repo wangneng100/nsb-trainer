@@ -40,10 +40,10 @@
       if (!s) return defaults();
       const d = defaults();
       
-      // Migration from older v1 version:
-      // If `s.bank` exists, move anything not from the original seed into customBank.
-      if (s.bank && !s.customBank) {
-          s.customBank = s.bank.filter(q => !q.id.startsWith('seed-'));
+      // Remove legacy bank data from localStorage and clean customBank
+      delete s.bank;
+      if (s.customBank) {
+        s.customBank = s.customBank.filter(q => !q.year && q.src && (q.src.file === 'manual' || q.src.file === 'pasted'));
       }
       
       const loaded = { ...d, ...s, settings: { ...d.settings, ...s.settings }, prefs: { 
@@ -81,7 +81,8 @@
   
   async function loadBanks() {
     try {
-      const promises = YEARS.map(y => fetch(`banks/${y}.json`).then(r => r.json()).catch(() => []));
+      const v = Date.now();
+      const promises = YEARS.map(y => fetch(`banks/${y}.json?v=${v}`).then(r => r.json()).catch(() => []));
       const arrays = await Promise.all(promises);
       loadedBanks = arrays.flat();
       applyBank();
@@ -90,6 +91,12 @@
   }
   
   function applyBank() {
+    const loadedIdSet = new Set(loadedBanks.map(q => q.id));
+    if (S.customBank && S.customBank.length) {
+      const origLen = S.customBank.length;
+      S.customBank = S.customBank.filter(q => !loadedIdSet.has(q.id) && !q.year && q.src && (q.src.file === 'manual' || q.src.file === 'pasted'));
+      if (S.customBank.length !== origLen) save();
+    }
     S.bank = [...loadedBanks.filter(q => !(S.deletedIds || []).includes(q.id)), ...(S.customBank || [])];
   }
   loadBanks();
@@ -396,10 +403,13 @@
 
   function bankPool() {
     let pool = S.bank.slice();
+    if (sess.bankIds) {
+      const idSet = new Set(sess.bankIds);
+      return pool.filter(q => idSet.has(q.id) && !sess.seen.has(q.id));
+    }
     if (sess.subjects && sess.subjects.length && !sess.subjects.includes('all')) {
       pool = pool.filter(q => sess.subjects.includes(q.subject));
     }
-    if (sess.bankIds) pool = pool.filter(q => sess.bankIds.includes(q.id));
     if (sess.btype !== 'all') pool = pool.filter(q => q.type === sess.btype);
     if (sess.years && sess.years.length) pool = pool.filter(q => sess.years.includes(q.year));
     if (sess.rounds && sess.rounds.length) pool = pool.filter(q => q.src && sess.rounds.includes(String(q.src.round)));
@@ -1386,8 +1396,8 @@
       again: () => startSession(sess.opts),
       import: openImport, 'new-q': () => openEdit(null), export: exportData, restore: restoreData,
       more: () => { bankF.shown += 30; route(); },
-      'bank-practice': () => { const l = filteredBank(); startSession({ kind: 'bank', bankIds: l.map(q => q.id), len: Math.min(S.settings.len, l.length) }); },
-      'redo-bank': () => { const ids = [...new Set(S.mistakes.filter(m => m.q && qById(m.q)).map(m => m.q))]; startSession({ kind: 'bank', bankIds: ids, len: Math.min(ids.length, S.settings.len) }); },
+      'bank-practice': () => { const l = filteredBank(); startSession({ kind: 'bank', bankIds: l.map(q => q.id), len: l.length }); },
+      'redo-bank': () => { const ids = [...new Set(S.mistakes.filter(m => m.q && qById(m.q)).map(m => m.q))]; startSession({ kind: 'bank', bankIds: ids, len: ids.length }); },
       'imp-text': () => { const t = $('#imp-text').value; if (!t.trim()) return; addParsed(I.parseNSB(t, { file: 'pasted' }), 'Pasted text'); renderImport(); },
       'imp-all': () => { imp.items.forEach(x => x.on = true); renderImport(); },
       'imp-none': () => { imp.items.forEach(x => x.on = false); renderImport(); },

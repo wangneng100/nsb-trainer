@@ -14,7 +14,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637396,
+    "added": 1792649057970,
     "year": "2020"
   },
   {
@@ -32,7 +32,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637396,
+    "added": 1792649057973,
     "year": "2020"
   },
   {
@@ -50,7 +50,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637396,
+    "added": 1792649057974,
     "year": "2020"
   },
   {
@@ -60,7 +60,7 @@
     "format": "sa",
     "text": "Identify all of the following three statements about Jupiter and Saturn that are TRUE: 1) Jupiter is more massive than Saturn; 2) Hydrogen is the most abundant gas in the atmospheres of both planets; 3) Both planets have planetary rings.",
     "choices": null,
-    "answer": "ALL Page 1",
+    "answer": "ALL",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -68,7 +68,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637396,
+    "added": 1792649057975,
     "year": "2020"
   },
   {
@@ -86,7 +86,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637397,
+    "added": 1792649057983,
     "year": "2020"
   },
   {
@@ -104,7 +104,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637397,
+    "added": 1792649057984,
     "year": "2020"
   },
   {
@@ -127,7 +127,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057987,
     "year": "2020"
   },
   {
@@ -142,7 +142,7 @@
       "Y": "ATP synthase [SIN-thase]",
       "Z": "DNA polymerase [pah-LIM-er-ace]"
     },
-    "answer": "$X$) ACETYL-CHOLIN-ESTERASE Page 2",
+    "answer": "$X$) ACETYL-CHOLIN-ESTERASE",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd1",
@@ -150,7 +150,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057988,
     "year": "2020"
   },
   {
@@ -173,7 +173,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057993,
     "year": "2020"
   },
   {
@@ -191,7 +191,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057994,
     "year": "2020"
   },
   {
@@ -209,7 +209,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057994,
     "year": "2020"
   },
   {
@@ -219,7 +219,7 @@
     "format": "sa",
     "text": "What is the SI derived unit, equal to one joule per coulomb, that is used to quantify electric potential?",
     "choices": null,
-    "answer": "VOLT Page 3",
+    "answer": "VOLT",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -227,7 +227,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057994,
     "year": "2020"
   },
   {
@@ -250,7 +250,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057995,
     "year": "2020"
   },
   {
@@ -268,7 +268,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057996,
     "year": "2020"
   },
   {
@@ -286,7 +286,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057996,
     "year": "2020"
   },
   {
@@ -296,7 +296,7 @@
     "format": "sa",
     "text": "Mars has solid ice at its polar regions. Because of its low surface pressure, when the ice caps warm up, what type of phase change does the ice undergo?",
     "choices": null,
-    "answer": "SUBLIMATION Page 4",
+    "answer": "SUBLIMATION",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -304,7 +304,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637398,
+    "added": 1792649057996,
     "year": "2020"
   },
   {
@@ -327,7 +327,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637399,
+    "added": 1792649057997,
     "year": "2020"
   },
   {
@@ -345,7 +345,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637399,
+    "added": 1792649057997,
     "year": "2020"
   },
   {
@@ -363,7 +363,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637399,
+    "added": 1792649057998,
     "year": "2020"
   },
   {
@@ -373,7 +373,7 @@
     "format": "sa",
     "text": "Researchers at Brookhaven National Lab are seeking to better understand high-temperature superconductors made from cuprates [KYU-prayts]. What two elements comprise cuprates?",
     "choices": null,
-    "answer": "COPPER AND OXYGEN Page 5",
+    "answer": "COPPER AND OXYGEN",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -381,7 +381,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637399,
+    "added": 1792649057998,
     "year": "2020"
   },
   {
@@ -399,7 +399,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058002,
     "year": "2020"
   },
   {
@@ -417,7 +417,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058002,
     "year": "2020"
   },
   {
@@ -440,7 +440,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058003,
     "year": "2020"
   },
   {
@@ -450,7 +450,7 @@
     "format": "sa",
     "text": "When you hang a box from a spring with a spring constant of 30 newtons per meter, the spring is extended by 1.3 meters. To the nearest kilogram, what is the mass of the box?",
     "choices": null,
-    "answer": "4 Page 6",
+    "answer": "4",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -458,7 +458,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058004,
     "year": "2020"
   },
   {
@@ -476,7 +476,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058005,
     "year": "2020"
   },
   {
@@ -494,7 +494,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637400,
+    "added": 1792649058005,
     "year": "2020"
   },
   {
@@ -512,7 +512,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058010,
     "year": "2020"
   },
   {
@@ -522,7 +522,7 @@
     "format": "sa",
     "text": "For the universal set consisting of the integers from 1 through 10, what is the sum of the elements in the union of the set of all prime numbers and the set of all odd numbers?",
     "choices": null,
-    "answer": "27 Page 7",
+    "answer": "27",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -530,7 +530,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058010,
     "year": "2020"
   },
   {
@@ -553,7 +553,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058011,
     "year": "2020"
   },
   {
@@ -576,7 +576,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058011,
     "year": "2020"
   },
   {
@@ -599,7 +599,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058013,
     "year": "2020"
   },
   {
@@ -609,7 +609,7 @@
     "format": "sa",
     "text": "A 1200-kilogram car is parked on a 30-degree incline. If the car remains parked for eight hours, how much work, in joules, is done by the brakes to keep it from rolling down the incline?",
     "choices": null,
-    "answer": "ZERO Page 8",
+    "answer": "ZERO",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -617,7 +617,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058013,
     "year": "2020"
   },
   {
@@ -635,7 +635,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058013,
     "year": "2020"
   },
   {
@@ -653,7 +653,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -671,7 +671,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -681,7 +681,7 @@
     "format": "sa",
     "text": "What structure connects the middle ear to the throat?",
     "choices": null,
-    "answer": "EUSTACHIAN TUBE (ACCEPT: AUDITORY TUBE, PHARYNGOTYMPANIC TUBE) Page 9",
+    "answer": "EUSTACHIAN TUBE (ACCEPT: AUDITORY TUBE, PHARYNGOTYMPANIC TUBE)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -689,7 +689,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -707,7 +707,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -725,7 +725,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -743,7 +743,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058014,
     "year": "2020"
   },
   {
@@ -753,7 +753,7 @@
     "format": "sa",
     "text": "Scientists at Jefferson Lab are studying plants with PET imaging. What does PET stand for?",
     "choices": null,
-    "answer": "POSITRON EMISSION TOMOGRAPHY Page 10",
+    "answer": "POSITRON EMISSION TOMOGRAPHY",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -761,7 +761,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637401,
+    "added": 1792649058015,
     "year": "2020"
   },
   {
@@ -779,7 +779,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058015,
     "year": "2020"
   },
   {
@@ -797,7 +797,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058016,
     "year": "2020"
   },
   {
@@ -820,7 +820,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058016,
     "year": "2020"
   },
   {
@@ -830,7 +830,7 @@
     "format": "sa",
     "text": "Place the following three locations in chronological order that a breath of air will pass through during human inhalation: 1) Larynx [lair-inx]; 2) Pharynx [fair-inx]; 3) Bronchi [BRONK-eye].",
     "choices": null,
-    "answer": "2, 1, 3 Page 11",
+    "answer": "2, 1, 3",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -838,7 +838,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058016,
     "year": "2020"
   },
   {
@@ -861,7 +861,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058017,
     "year": "2020"
   },
   {
@@ -871,7 +871,7 @@
     "format": "sa",
     "text": "How much power, in watts, is used by a laptop computer with a 12-volt battery and a current draw of 5 amps?",
     "choices": null,
-    "answer": "60 Page 12",
+    "answer": "60",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd1",
@@ -879,7 +879,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637402,
+    "added": 1792649058017,
     "year": "2020"
   },
   {
@@ -897,7 +897,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637403,
+    "added": 1792649058023,
     "year": "2020"
   },
   {
@@ -915,7 +915,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637403,
+    "added": 1792649058023,
     "year": "2020"
   },
   {
@@ -938,7 +938,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637403,
+    "added": 1792649058024,
     "year": "2020"
   },
   {
@@ -956,7 +956,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058026,
     "year": "2020"
   },
   {
@@ -974,7 +974,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058027,
     "year": "2020"
   },
   {
@@ -992,7 +992,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058027,
     "year": "2020"
   },
   {
@@ -1010,7 +1010,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058028,
     "year": "2020"
   },
   {
@@ -1020,7 +1020,7 @@
     "format": "sa",
     "text": "Researchers at Pacific Northwest National Lab are studying the chemistry of aluminum production, including the dissolution of aluminum hydroxide. What is the chemical formula for neutral aluminum hydroxide?",
     "choices": null,
-    "answer": "Al(OH) 3",
+    "answer": "Al(OH)3",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd10",
@@ -1028,7 +1028,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058028,
     "year": "2020"
   },
   {
@@ -1051,7 +1051,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058029,
     "year": "2020"
   },
   {
@@ -1069,7 +1069,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058029,
     "year": "2020"
   },
   {
@@ -1087,7 +1087,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058029,
     "year": "2020"
   },
   {
@@ -1110,7 +1110,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637404,
+    "added": 1792649058030,
     "year": "2020"
   },
   {
@@ -1118,7 +1118,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "mc",
-    "text": "Which of the following translations changes the graph of $y = x2$ into that of $y$ = open parenthesis $x + 4$ close parenthesis squared plus 6?",
+    "text": "Which of the following translations changes the graph of $y = x^2$ into that of $y$ = open parenthesis $x + 4$ close parenthesis squared plus 6?",
     "choices": {
       "W": "6 units down and 4 units to the left",
       "X": "6 units down and 4 units to the right",
@@ -1133,7 +1133,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058031,
     "year": "2020"
   },
   {
@@ -1151,7 +1151,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058031,
     "year": "2020"
   },
   {
@@ -1174,7 +1174,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058032,
     "year": "2020"
   },
   {
@@ -1197,7 +1197,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058032,
     "year": "2020"
   },
   {
@@ -1215,7 +1215,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058032,
     "year": "2020"
   },
   {
@@ -1233,7 +1233,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058032,
     "year": "2020"
   },
   {
@@ -1241,7 +1241,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is the degree of the product of the three binomials $x2 + 5$, $x6 + x2$, and $7x - 6$?",
+    "text": "What is the degree of the product of the three binomials $x^2 + 5$, $x^6 + x^2$, and $7x - 6$?",
     "choices": null,
     "answer": "9",
     "letter": "",
@@ -1251,7 +1251,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058033,
     "year": "2020"
   },
   {
@@ -1269,7 +1269,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058034,
     "year": "2020"
   },
   {
@@ -1287,7 +1287,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058034,
     "year": "2020"
   },
   {
@@ -1305,7 +1305,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637405,
+    "added": 1792649058034,
     "year": "2020"
   },
   {
@@ -1315,7 +1315,7 @@
     "format": "sa",
     "text": "Researchers at Brookhaven National Lab have developed a new catalyst for the combustion of ethanol in fuel cells. Other than high-energy electrons that can be used for power, what are the two primary chemical products of this reaction?",
     "choices": null,
-    "answer": "CARBON DIOXIDE AND WATER (ACCEPT IN ANY ORDER; ACCEPT: CO FOR 2 CARBON DIOXIDE AND H O FOR WATER) 2",
+    "answer": "CARBON DIOXIDE AND WATER (ACCEPT IN ANY ORDER; ACCEPT: CO2 FOR CARBON DIOXIDE AND $H2O$ FOR WATER)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd10",
@@ -1323,7 +1323,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058035,
     "year": "2020"
   },
   {
@@ -1346,7 +1346,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058035,
     "year": "2020"
   },
   {
@@ -1369,7 +1369,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058035,
     "year": "2020"
   },
   {
@@ -1387,7 +1387,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058036,
     "year": "2020"
   },
   {
@@ -1405,7 +1405,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058036,
     "year": "2020"
   },
   {
@@ -1423,7 +1423,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058036,
     "year": "2020"
   },
   {
@@ -1446,7 +1446,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058037,
     "year": "2020"
   },
   {
@@ -1464,7 +1464,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058037,
     "year": "2020"
   },
   {
@@ -1482,7 +1482,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058037,
     "year": "2020"
   },
   {
@@ -1500,7 +1500,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058037,
     "year": "2020"
   },
   {
@@ -1518,7 +1518,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637406,
+    "added": 1792649058038,
     "year": "2020"
   },
   {
@@ -1541,7 +1541,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058039,
     "year": "2020"
   },
   {
@@ -1564,7 +1564,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058039,
     "year": "2020"
   },
   {
@@ -1587,7 +1587,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058040,
     "year": "2020"
   },
   {
@@ -1605,7 +1605,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058040,
     "year": "2020"
   },
   {
@@ -1623,7 +1623,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058040,
     "year": "2020"
   },
   {
@@ -1633,7 +1633,7 @@
     "format": "sa",
     "text": "The pH value of a solution is defined as the negative log of the concentration of what ion?",
     "choices": null,
-    "answer": "HYDRONIUM (ACCEPT: HYDROGEN, $H$+, H O+) 3",
+    "answer": "HYDRONIUM (ACCEPT: HYDROGEN, $H$+, $H3O$+)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd10",
@@ -1641,7 +1641,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058042,
     "year": "2020"
   },
   {
@@ -1659,7 +1659,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058042,
     "year": "2020"
   },
   {
@@ -1682,7 +1682,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058042,
     "year": "2020"
   },
   {
@@ -1705,7 +1705,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058043,
     "year": "2020"
   },
   {
@@ -1723,7 +1723,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058044,
     "year": "2020"
   },
   {
@@ -1741,7 +1741,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058044,
     "year": "2020"
   },
   {
@@ -1759,7 +1759,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058045,
     "year": "2020"
   },
   {
@@ -1777,7 +1777,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637407,
+    "added": 1792649058045,
     "year": "2020"
   },
   {
@@ -1800,7 +1800,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637408,
+    "added": 1792649058052,
     "year": "2020"
   },
   {
@@ -1823,7 +1823,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637408,
+    "added": 1792649058052,
     "year": "2020"
   },
   {
@@ -1841,7 +1841,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637408,
+    "added": 1792649058052,
     "year": "2020"
   },
   {
@@ -1859,7 +1859,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637408,
+    "added": 1792649058053,
     "year": "2020"
   },
   {
@@ -1882,7 +1882,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637408,
+    "added": 1792649058053,
     "year": "2020"
   },
   {
@@ -1905,7 +1905,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058054,
     "year": "2020"
   },
   {
@@ -1923,7 +1923,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058054,
     "year": "2020"
   },
   {
@@ -1946,7 +1946,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058054,
     "year": "2020"
   },
   {
@@ -1964,7 +1964,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058054,
     "year": "2020"
   },
   {
@@ -1982,7 +1982,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058056,
     "year": "2020"
   },
   {
@@ -2000,7 +2000,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058056,
     "year": "2020"
   },
   {
@@ -2018,7 +2018,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058056,
     "year": "2020"
   },
   {
@@ -2041,7 +2041,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058057,
     "year": "2020"
   },
   {
@@ -2059,7 +2059,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058057,
     "year": "2020"
   },
   {
@@ -2082,7 +2082,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058057,
     "year": "2020"
   },
   {
@@ -2100,7 +2100,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637409,
+    "added": 1792649058057,
     "year": "2020"
   },
   {
@@ -2123,7 +2123,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058059,
     "year": "2020"
   },
   {
@@ -2141,7 +2141,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058059,
     "year": "2020"
   },
   {
@@ -2159,7 +2159,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058059,
     "year": "2020"
   },
   {
@@ -2177,7 +2177,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058059,
     "year": "2020"
   },
   {
@@ -2195,7 +2195,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058060,
     "year": "2020"
   },
   {
@@ -2205,7 +2205,7 @@
     "format": "sa",
     "text": "Scientists supported by the Department of Energy who are studying enzymes that reduce nitrogen to ammonia have found that they can also be used to reduce carbon dioxide to what fuel-relevant, single carbon molecule?",
     "choices": null,
-    "answer": "METHANE (ACCEPT: CH ) 4",
+    "answer": "METHANE (ACCEPT: CH4)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd11",
@@ -2213,7 +2213,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058060,
     "year": "2020"
   },
   {
@@ -2236,7 +2236,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058061,
     "year": "2020"
   },
   {
@@ -2254,7 +2254,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058061,
     "year": "2020"
   },
   {
@@ -2272,7 +2272,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058061,
     "year": "2020"
   },
   {
@@ -2290,7 +2290,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058061,
     "year": "2020"
   },
   {
@@ -2313,7 +2313,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058061,
     "year": "2020"
   },
   {
@@ -2331,7 +2331,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058062,
     "year": "2020"
   },
   {
@@ -2349,7 +2349,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058062,
     "year": "2020"
   },
   {
@@ -2367,7 +2367,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058062,
     "year": "2020"
   },
   {
@@ -2385,7 +2385,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058062,
     "year": "2020"
   },
   {
@@ -2403,7 +2403,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058062,
     "year": "2020"
   },
   {
@@ -2426,7 +2426,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058063,
     "year": "2020"
   },
   {
@@ -2449,7 +2449,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058063,
     "year": "2020"
   },
   {
@@ -2472,7 +2472,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058063,
     "year": "2020"
   },
   {
@@ -2490,7 +2490,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058063,
     "year": "2020"
   },
   {
@@ -2513,7 +2513,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058063,
     "year": "2020"
   },
   {
@@ -2536,7 +2536,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058064,
     "year": "2020"
   },
   {
@@ -2559,7 +2559,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058064,
     "year": "2020"
   },
   {
@@ -2577,7 +2577,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637410,
+    "added": 1792649058064,
     "year": "2020"
   },
   {
@@ -2595,7 +2595,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058064,
     "year": "2020"
   },
   {
@@ -2613,7 +2613,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058065,
     "year": "2020"
   },
   {
@@ -2631,7 +2631,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058065,
     "year": "2020"
   },
   {
@@ -2649,7 +2649,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058065,
     "year": "2020"
   },
   {
@@ -2667,7 +2667,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058066,
     "year": "2020"
   },
   {
@@ -2685,7 +2685,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637411,
+    "added": 1792649058066,
     "year": "2020"
   },
   {
@@ -2703,7 +2703,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058071,
     "year": "2020"
   },
   {
@@ -2726,7 +2726,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058071,
     "year": "2020"
   },
   {
@@ -2749,7 +2749,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058072,
     "year": "2020"
   },
   {
@@ -2767,7 +2767,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058072,
     "year": "2020"
   },
   {
@@ -2785,7 +2785,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058072,
     "year": "2020"
   },
   {
@@ -2808,7 +2808,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058072,
     "year": "2020"
   },
   {
@@ -2826,7 +2826,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058072,
     "year": "2020"
   },
   {
@@ -2844,7 +2844,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058073,
     "year": "2020"
   },
   {
@@ -2852,7 +2852,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is $242 - 212$?",
+    "text": "What is $24^2 - 21^2$?",
     "choices": null,
     "answer": "135",
     "letter": "",
@@ -2862,7 +2862,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058073,
     "year": "2020"
   },
   {
@@ -2880,7 +2880,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058073,
     "year": "2020"
   },
   {
@@ -2903,7 +2903,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058074,
     "year": "2020"
   },
   {
@@ -2921,7 +2921,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058074,
     "year": "2020"
   },
   {
@@ -2944,7 +2944,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058075,
     "year": "2020"
   },
   {
@@ -2962,7 +2962,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058075,
     "year": "2020"
   },
   {
@@ -2980,7 +2980,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058075,
     "year": "2020"
   },
   {
@@ -2998,7 +2998,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058075,
     "year": "2020"
   },
   {
@@ -3016,7 +3016,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058075,
     "year": "2020"
   },
   {
@@ -3034,7 +3034,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058076,
     "year": "2020"
   },
   {
@@ -3057,7 +3057,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058076,
     "year": "2020"
   },
   {
@@ -3075,7 +3075,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058077,
     "year": "2020"
   },
   {
@@ -3098,7 +3098,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637412,
+    "added": 1792649058077,
     "year": "2020"
   },
   {
@@ -3116,7 +3116,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058077,
     "year": "2020"
   },
   {
@@ -3134,7 +3134,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058078,
     "year": "2020"
   },
   {
@@ -3152,7 +3152,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058078,
     "year": "2020"
   },
   {
@@ -3170,7 +3170,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058078,
     "year": "2020"
   },
   {
@@ -3188,7 +3188,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058079,
     "year": "2020"
   },
   {
@@ -3206,7 +3206,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058079,
     "year": "2020"
   },
   {
@@ -3214,7 +3214,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the remainder when the polynomial $x3 + 4x2 + x - 7$ is divided by $x + 5$?",
+    "text": "What is the remainder when the polynomial $x^3 + 4x^2 + x - 7$ is divided by $x + 5$?",
     "choices": null,
     "answer": "$-37$",
     "letter": "",
@@ -3224,7 +3224,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058080,
     "year": "2020"
   },
   {
@@ -3247,7 +3247,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058080,
     "year": "2020"
   },
   {
@@ -3265,7 +3265,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058080,
     "year": "2020"
   },
   {
@@ -3283,7 +3283,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058080,
     "year": "2020"
   },
   {
@@ -3301,7 +3301,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058081,
     "year": "2020"
   },
   {
@@ -3319,7 +3319,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058081,
     "year": "2020"
   },
   {
@@ -3337,7 +3337,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058081,
     "year": "2020"
   },
   {
@@ -3355,7 +3355,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058081,
     "year": "2020"
   },
   {
@@ -3373,7 +3373,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637413,
+    "added": 1792649058081,
     "year": "2020"
   },
   {
@@ -3383,12 +3383,12 @@
     "format": "mc",
     "text": "Which of the following is closest to the diameter, in meters, of the nucleus of a zinc atom?",
     "choices": {
-      "W": "$10-8$",
-      "X": "$10-10$",
-      "Y": "$10-12$",
-      "Z": "$10-14$"
+      "W": "$10^(-8)$",
+      "X": "$10^(-10)$",
+      "Y": "$10^(-12)$",
+      "Z": "$10^(-14)$"
     },
-    "answer": "Z) 10-14",
+    "answer": "Z) 10^(-14)",
     "letter": "Z",
     "src": {
       "file": "2020-MS-Rd12",
@@ -3396,7 +3396,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058083,
     "year": "2020"
   },
   {
@@ -3414,7 +3414,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058083,
     "year": "2020"
   },
   {
@@ -3432,7 +3432,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058083,
     "year": "2020"
   },
   {
@@ -3450,7 +3450,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058083,
     "year": "2020"
   },
   {
@@ -3468,7 +3468,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058084,
     "year": "2020"
   },
   {
@@ -3486,7 +3486,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058084,
     "year": "2020"
   },
   {
@@ -3509,7 +3509,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058085,
     "year": "2020"
   },
   {
@@ -3527,7 +3527,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058085,
     "year": "2020"
   },
   {
@@ -3545,7 +3545,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058086,
     "year": "2020"
   },
   {
@@ -3563,7 +3563,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637414,
+    "added": 1792649058086,
     "year": "2020"
   },
   {
@@ -3586,7 +3586,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637415,
+    "added": 1792649058093,
     "year": "2020"
   },
   {
@@ -3604,7 +3604,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637415,
+    "added": 1792649058093,
     "year": "2020"
   },
   {
@@ -3622,7 +3622,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637415,
+    "added": 1792649058093,
     "year": "2020"
   },
   {
@@ -3645,7 +3645,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637415,
+    "added": 1792649058094,
     "year": "2020"
   },
   {
@@ -3663,7 +3663,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637415,
+    "added": 1792649058094,
     "year": "2020"
   },
   {
@@ -3686,7 +3686,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058094,
     "year": "2020"
   },
   {
@@ -3704,7 +3704,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058095,
     "year": "2020"
   },
   {
@@ -3727,7 +3727,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058095,
     "year": "2020"
   },
   {
@@ -3750,7 +3750,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058096,
     "year": "2020"
   },
   {
@@ -3768,7 +3768,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058096,
     "year": "2020"
   },
   {
@@ -3786,7 +3786,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637416,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3804,7 +3804,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3822,7 +3822,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3840,7 +3840,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3858,7 +3858,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3876,7 +3876,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3894,7 +3894,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3912,7 +3912,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058097,
     "year": "2020"
   },
   {
@@ -3930,7 +3930,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058098,
     "year": "2020"
   },
   {
@@ -3938,7 +3938,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Given the prime factorizations of the following two numbers, what is their greatest common divisor? 25 times 3 times 52 times 11 and 24 times 32 times 5 times 72",
+    "text": "Given the prime factorizations of the following two numbers, what is their greatest common divisor? $2^5$ times 3 times $5^2$ times 11 and $2^4$ times $3^2$ times 5 times $7^2$",
     "choices": null,
     "answer": "240",
     "letter": "",
@@ -3948,7 +3948,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058098,
     "year": "2020"
   },
   {
@@ -3971,7 +3971,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058099,
     "year": "2020"
   },
   {
@@ -3994,7 +3994,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058099,
     "year": "2020"
   },
   {
@@ -4012,7 +4012,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058099,
     "year": "2020"
   },
   {
@@ -4030,7 +4030,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058099,
     "year": "2020"
   },
   {
@@ -4053,7 +4053,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4071,7 +4071,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4094,7 +4094,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4112,7 +4112,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4135,7 +4135,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4158,7 +4158,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058100,
     "year": "2020"
   },
   {
@@ -4181,7 +4181,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058101,
     "year": "2020"
   },
   {
@@ -4199,7 +4199,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058101,
     "year": "2020"
   },
   {
@@ -4217,7 +4217,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058101,
     "year": "2020"
   },
   {
@@ -4225,7 +4225,7 @@
     "subject": "phys",
     "type": "bonus",
     "format": "sa",
-    "text": "Consider the reaction of Fe $O$ with carbon monoxide to yield 3 4 solid iron and carbon dioxide. For each mole of Fe $O$ that is consumed, how many moles of carbon 3 4 dioxide are formed?",
+    "text": "Consider the reaction of Fe$3O4$ with carbon monoxide to yield solid iron and carbon dioxide. For each mole of Fe$3O4$ that is consumed, how many moles of carbon dioxide are formed?",
     "choices": null,
     "answer": "FOUR",
     "letter": "",
@@ -4235,7 +4235,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058101,
     "year": "2020"
   },
   {
@@ -4253,7 +4253,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058101,
     "year": "2020"
   },
   {
@@ -4271,7 +4271,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637417,
+    "added": 1792649058102,
     "year": "2020"
   },
   {
@@ -4294,7 +4294,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058102,
     "year": "2020"
   },
   {
@@ -4312,7 +4312,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058102,
     "year": "2020"
   },
   {
@@ -4335,7 +4335,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058103,
     "year": "2020"
   },
   {
@@ -4345,7 +4345,7 @@
     "format": "sa",
     "text": "Corals produce a hard exoskeleton that eventually forms coral reefs. What is the chemical formula of the typical constituent of this material?",
     "choices": null,
-    "answer": "CaCO 3",
+    "answer": "CaCO3",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd13",
@@ -4353,7 +4353,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058103,
     "year": "2020"
   },
   {
@@ -4371,7 +4371,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058103,
     "year": "2020"
   },
   {
@@ -4389,7 +4389,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058103,
     "year": "2020"
   },
   {
@@ -4407,7 +4407,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058104,
     "year": "2020"
   },
   {
@@ -4425,7 +4425,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058104,
     "year": "2020"
   },
   {
@@ -4443,7 +4443,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058104,
     "year": "2020"
   },
   {
@@ -4453,7 +4453,7 @@
     "format": "sa",
     "text": "The hydrolysis of ATP to ADP results in the release of what anion [AN-eye-on]?",
     "choices": null,
-    "answer": "PHOSPHATE (ACCEPT: PO ) 4",
+    "answer": "PHOSPHATE (ACCEPT: PO4)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd13",
@@ -4461,7 +4461,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058104,
     "year": "2020"
   },
   {
@@ -4479,7 +4479,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637418,
+    "added": 1792649058107,
     "year": "2020"
   },
   {
@@ -4497,7 +4497,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058107,
     "year": "2020"
   },
   {
@@ -4515,7 +4515,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058107,
     "year": "2020"
   },
   {
@@ -4533,7 +4533,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058107,
     "year": "2020"
   },
   {
@@ -4551,7 +4551,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4574,7 +4574,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4592,7 +4592,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4610,7 +4610,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4633,7 +4633,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4651,7 +4651,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4669,7 +4669,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058108,
     "year": "2020"
   },
   {
@@ -4687,7 +4687,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058109,
     "year": "2020"
   },
   {
@@ -4705,7 +4705,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058110,
     "year": "2020"
   },
   {
@@ -4723,7 +4723,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058110,
     "year": "2020"
   },
   {
@@ -4746,7 +4746,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058110,
     "year": "2020"
   },
   {
@@ -4764,7 +4764,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058110,
     "year": "2020"
   },
   {
@@ -4782,7 +4782,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058110,
     "year": "2020"
   },
   {
@@ -4800,7 +4800,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4818,7 +4818,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4841,7 +4841,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4859,7 +4859,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4877,7 +4877,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4895,7 +4895,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4918,7 +4918,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4936,7 +4936,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058111,
     "year": "2020"
   },
   {
@@ -4959,7 +4959,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058112,
     "year": "2020"
   },
   {
@@ -4977,7 +4977,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637419,
+    "added": 1792649058112,
     "year": "2020"
   },
   {
@@ -4995,7 +4995,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058113,
     "year": "2020"
   },
   {
@@ -5013,7 +5013,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5031,7 +5031,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5049,7 +5049,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5067,7 +5067,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5085,7 +5085,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5108,7 +5108,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5126,7 +5126,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5144,7 +5144,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058114,
     "year": "2020"
   },
   {
@@ -5167,7 +5167,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058115,
     "year": "2020"
   },
   {
@@ -5185,7 +5185,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058115,
     "year": "2020"
   },
   {
@@ -5203,7 +5203,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058115,
     "year": "2020"
   },
   {
@@ -5221,7 +5221,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058115,
     "year": "2020"
   },
   {
@@ -5244,7 +5244,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058116,
     "year": "2020"
   },
   {
@@ -5262,7 +5262,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058116,
     "year": "2020"
   },
   {
@@ -5280,7 +5280,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058116,
     "year": "2020"
   },
   {
@@ -5298,7 +5298,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058116,
     "year": "2020"
   },
   {
@@ -5316,7 +5316,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058117,
     "year": "2020"
   },
   {
@@ -5334,7 +5334,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637420,
+    "added": 1792649058117,
     "year": "2020"
   },
   {
@@ -5352,7 +5352,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058120,
     "year": "2020"
   },
   {
@@ -5370,7 +5370,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058120,
     "year": "2020"
   },
   {
@@ -5393,7 +5393,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058121,
     "year": "2020"
   },
   {
@@ -5411,7 +5411,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058122,
     "year": "2020"
   },
   {
@@ -5429,7 +5429,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058122,
     "year": "2020"
   },
   {
@@ -5452,7 +5452,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058122,
     "year": "2020"
   },
   {
@@ -5470,7 +5470,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5488,7 +5488,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5511,7 +5511,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5534,7 +5534,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5552,7 +5552,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5575,7 +5575,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637421,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5593,7 +5593,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058123,
     "year": "2020"
   },
   {
@@ -5611,7 +5611,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058124,
     "year": "2020"
   },
   {
@@ -5629,7 +5629,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058124,
     "year": "2020"
   },
   {
@@ -5647,7 +5647,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058124,
     "year": "2020"
   },
   {
@@ -5665,7 +5665,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058124,
     "year": "2020"
   },
   {
@@ -5683,7 +5683,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5706,7 +5706,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5729,7 +5729,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5747,7 +5747,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5765,7 +5765,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5783,7 +5783,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058125,
     "year": "2020"
   },
   {
@@ -5801,7 +5801,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058126,
     "year": "2020"
   },
   {
@@ -5824,7 +5824,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058126,
     "year": "2020"
   },
   {
@@ -5847,7 +5847,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637422,
+    "added": 1792649058126,
     "year": "2020"
   },
   {
@@ -5855,7 +5855,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is the sum of the roots of the quadratic equation $x2 + 2x - 35 = 0$?",
+    "text": "What is the sum of the roots of the quadratic equation $x^2 + 2x - 35 = 0$?",
     "choices": null,
     "answer": "$-2$",
     "letter": "",
@@ -5865,7 +5865,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5883,7 +5883,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5901,7 +5901,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5919,7 +5919,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5942,7 +5942,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5965,7 +5965,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -5988,7 +5988,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058127,
     "year": "2020"
   },
   {
@@ -6011,7 +6011,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058128,
     "year": "2020"
   },
   {
@@ -6029,7 +6029,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058128,
     "year": "2020"
   },
   {
@@ -6047,7 +6047,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058128,
     "year": "2020"
   },
   {
@@ -6065,7 +6065,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058128,
     "year": "2020"
   },
   {
@@ -6083,7 +6083,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6101,7 +6101,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6119,7 +6119,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6137,7 +6137,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6155,7 +6155,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6178,7 +6178,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058129,
     "year": "2020"
   },
   {
@@ -6196,7 +6196,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058130,
     "year": "2020"
   },
   {
@@ -6214,7 +6214,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058130,
     "year": "2020"
   },
   {
@@ -6232,7 +6232,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637423,
+    "added": 1792649058130,
     "year": "2020"
   },
   {
@@ -6250,7 +6250,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058133,
     "year": "2020"
   },
   {
@@ -6268,7 +6268,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058133,
     "year": "2020"
   },
   {
@@ -6286,7 +6286,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058134,
     "year": "2020"
   },
   {
@@ -6304,7 +6304,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058134,
     "year": "2020"
   },
   {
@@ -6312,7 +6312,7 @@
     "subject": "energy",
     "type": "tossup",
     "format": "mc",
-    "text": "Oak Ridge National Lab scientists are studying perovskites [purr-OFF-skytes], which are a class of minerals that have the general formula ABO , where $3 A$ is usually an alkaline earth element and $B$ is a d-block transition metal. Which of the following elements could NOT be found as $B$ in this formula?",
+    "text": "Oak Ridge National Lab scientists are studying perovskites [purr-OFF-skytes], which are a class of minerals that have the general formula ABO3, where A is usually an alkaline earth element and $B$ is a d-block transition metal. Which of the following elements could NOT be found as $B$ in this formula?",
     "choices": {
       "W": "Cesium [SEE -zee- um]",
       "X": "Titanium",
@@ -6327,7 +6327,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058134,
     "year": "2020"
   },
   {
@@ -6350,7 +6350,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058135,
     "year": "2020"
   },
   {
@@ -6373,7 +6373,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058136,
     "year": "2020"
   },
   {
@@ -6391,7 +6391,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637424,
+    "added": 1792649058136,
     "year": "2020"
   },
   {
@@ -6409,7 +6409,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058136,
     "year": "2020"
   },
   {
@@ -6427,7 +6427,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058136,
     "year": "2020"
   },
   {
@@ -6445,7 +6445,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058136,
     "year": "2020"
   },
   {
@@ -6463,7 +6463,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058137,
     "year": "2020"
   },
   {
@@ -6486,7 +6486,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058137,
     "year": "2020"
   },
   {
@@ -6504,7 +6504,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058137,
     "year": "2020"
   },
   {
@@ -6522,7 +6522,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058137,
     "year": "2020"
   },
   {
@@ -6540,7 +6540,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058137,
     "year": "2020"
   },
   {
@@ -6558,7 +6558,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058138,
     "year": "2020"
   },
   {
@@ -6576,7 +6576,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058138,
     "year": "2020"
   },
   {
@@ -6599,7 +6599,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058138,
     "year": "2020"
   },
   {
@@ -6617,7 +6617,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058138,
     "year": "2020"
   },
   {
@@ -6635,7 +6635,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058138,
     "year": "2020"
   },
   {
@@ -6653,7 +6653,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058139,
     "year": "2020"
   },
   {
@@ -6663,7 +6663,7 @@
     "format": "sa",
     "text": "Many enzymes in signaling cascades are called kinases [KYE-nases], because they move what inorganic group usually from ATP onto substrates?",
     "choices": null,
-    "answer": "PHOSPHATE (ACCEPT: PO -) 4",
+    "answer": "PHOSPHATE (ACCEPT: PO4^(-))",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd16",
@@ -6671,7 +6671,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058139,
     "year": "2020"
   },
   {
@@ -6694,7 +6694,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058139,
     "year": "2020"
   },
   {
@@ -6712,7 +6712,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058140,
     "year": "2020"
   },
   {
@@ -6730,7 +6730,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058140,
     "year": "2020"
   },
   {
@@ -6748,7 +6748,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058140,
     "year": "2020"
   },
   {
@@ -6758,7 +6758,7 @@
     "format": "sa",
     "text": "What is the polynomial with least degree, integer coefficients, and leading coefficient one that has $5 - √7$ as a zero?",
     "choices": null,
-    "answer": "$x2 - 10x + 18$",
+    "answer": "$x^2 - 10x + 18$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd16",
@@ -6766,7 +6766,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058141,
     "year": "2020"
   },
   {
@@ -6789,7 +6789,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058141,
     "year": "2020"
   },
   {
@@ -6812,7 +6812,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058141,
     "year": "2020"
   },
   {
@@ -6830,7 +6830,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637425,
+    "added": 1792649058142,
     "year": "2020"
   },
   {
@@ -6848,7 +6848,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058143,
     "year": "2020"
   },
   {
@@ -6871,7 +6871,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058143,
     "year": "2020"
   },
   {
@@ -6889,7 +6889,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058144,
     "year": "2020"
   },
   {
@@ -6907,7 +6907,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058144,
     "year": "2020"
   },
   {
@@ -6925,7 +6925,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058144,
     "year": "2020"
   },
   {
@@ -6943,7 +6943,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058144,
     "year": "2020"
   },
   {
@@ -6961,7 +6961,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058144,
     "year": "2020"
   },
   {
@@ -6979,7 +6979,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058145,
     "year": "2020"
   },
   {
@@ -7002,7 +7002,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058145,
     "year": "2020"
   },
   {
@@ -7025,7 +7025,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058145,
     "year": "2020"
   },
   {
@@ -7043,7 +7043,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058146,
     "year": "2020"
   },
   {
@@ -7066,7 +7066,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058146,
     "year": "2020"
   },
   {
@@ -7084,7 +7084,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058146,
     "year": "2020"
   },
   {
@@ -7102,7 +7102,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058146,
     "year": "2020"
   },
   {
@@ -7120,7 +7120,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637426,
+    "added": 1792649058146,
     "year": "2020"
   },
   {
@@ -7128,7 +7128,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "If the product of two binomials is $h2 + 4h - 396$ and one factor is $h - 18$, what is the other factor?",
+    "text": "If the product of two binomials is $h^2 + 4h - 396$ and one factor is $h - 18$, what is the other factor?",
     "choices": null,
     "answer": "$h + 22$",
     "letter": "",
@@ -7138,7 +7138,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058149,
     "year": "2020"
   },
   {
@@ -7156,7 +7156,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058150,
     "year": "2020"
   },
   {
@@ -7179,7 +7179,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058151,
     "year": "2020"
   },
   {
@@ -7202,7 +7202,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058151,
     "year": "2020"
   },
   {
@@ -7220,7 +7220,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058151,
     "year": "2020"
   },
   {
@@ -7243,7 +7243,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058151,
     "year": "2020"
   },
   {
@@ -7253,7 +7253,7 @@
     "format": "sa",
     "text": "Scientists are using the DOE’s Environmental Molecular Sciences Laboratory to study soybean root nodules, which are one of the few locations where what gas can be reacted to form ammonia?",
     "choices": null,
-    "answer": "NITROGEN (ACCEPT: DINITROGEN, N ) 2",
+    "answer": "NITROGEN (ACCEPT: DINITROGEN, N2)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd17",
@@ -7261,7 +7261,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058152,
     "year": "2020"
   },
   {
@@ -7279,7 +7279,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058152,
     "year": "2020"
   },
   {
@@ -7297,7 +7297,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058152,
     "year": "2020"
   },
   {
@@ -7320,7 +7320,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058153,
     "year": "2020"
   },
   {
@@ -7338,7 +7338,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058153,
     "year": "2020"
   },
   {
@@ -7356,7 +7356,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637427,
+    "added": 1792649058153,
     "year": "2020"
   },
   {
@@ -7374,7 +7374,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058154,
     "year": "2020"
   },
   {
@@ -7392,7 +7392,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058154,
     "year": "2020"
   },
   {
@@ -7410,7 +7410,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058155,
     "year": "2020"
   },
   {
@@ -7428,7 +7428,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058155,
     "year": "2020"
   },
   {
@@ -7446,7 +7446,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058155,
     "year": "2020"
   },
   {
@@ -7469,7 +7469,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058155,
     "year": "2020"
   },
   {
@@ -7487,7 +7487,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058156,
     "year": "2020"
   },
   {
@@ -7510,7 +7510,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058156,
     "year": "2020"
   },
   {
@@ -7528,7 +7528,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058157,
     "year": "2020"
   },
   {
@@ -7551,7 +7551,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058157,
     "year": "2020"
   },
   {
@@ -7574,7 +7574,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058158,
     "year": "2020"
   },
   {
@@ -7592,7 +7592,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058158,
     "year": "2020"
   },
   {
@@ -7615,7 +7615,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058159,
     "year": "2020"
   },
   {
@@ -7633,7 +7633,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058159,
     "year": "2020"
   },
   {
@@ -7651,7 +7651,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058159,
     "year": "2020"
   },
   {
@@ -7669,7 +7669,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058159,
     "year": "2020"
   },
   {
@@ -7687,7 +7687,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058160,
     "year": "2020"
   },
   {
@@ -7705,7 +7705,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058160,
     "year": "2020"
   },
   {
@@ -7728,7 +7728,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637428,
+    "added": 1792649058160,
     "year": "2020"
   },
   {
@@ -7746,7 +7746,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058160,
     "year": "2020"
   },
   {
@@ -7764,7 +7764,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058160,
     "year": "2020"
   },
   {
@@ -7782,7 +7782,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058161,
     "year": "2020"
   },
   {
@@ -7800,7 +7800,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058161,
     "year": "2020"
   },
   {
@@ -7818,7 +7818,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7836,7 +7836,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7854,7 +7854,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7872,7 +7872,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7890,7 +7890,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7908,7 +7908,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7931,7 +7931,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058162,
     "year": "2020"
   },
   {
@@ -7949,7 +7949,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058163,
     "year": "2020"
   },
   {
@@ -7967,7 +7967,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058163,
     "year": "2020"
   },
   {
@@ -7985,7 +7985,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058163,
     "year": "2020"
   },
   {
@@ -8003,7 +8003,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637429,
+    "added": 1792649058163,
     "year": "2020"
   },
   {
@@ -8021,7 +8021,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058166,
     "year": "2020"
   },
   {
@@ -8044,7 +8044,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058166,
     "year": "2020"
   },
   {
@@ -8062,7 +8062,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058166,
     "year": "2020"
   },
   {
@@ -8072,7 +8072,7 @@
     "format": "sa",
     "text": "Some organisms make high-frequency calls and then listen to the reflected sound to build an image of their environment. What is the term for this method?",
     "choices": null,
-    "answer": "ECHOLOCATION (ACCEPT: BIOSONAR) Page 1",
+    "answer": "ECHOLOCATION (ACCEPT: BIOSONAR)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8080,7 +8080,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058166,
     "year": "2020"
   },
   {
@@ -8098,7 +8098,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8116,7 +8116,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8139,7 +8139,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8149,7 +8149,7 @@
     "format": "sa",
     "text": "Los Alamos National Lab researchers are modeling the behavior of histone proteins, which are typically localized to what organelle?",
     "choices": null,
-    "answer": "NUCLEUS Page 2",
+    "answer": "NUCLEUS",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8157,7 +8157,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8175,7 +8175,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8193,7 +8193,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8211,7 +8211,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058167,
     "year": "2020"
   },
   {
@@ -8221,7 +8221,7 @@
     "format": "sa",
     "text": "A student stands on the roof of a 320-meter building and drops a ball. In seconds to the nearest integer, how long does it take for the ball to reach the ground?",
     "choices": null,
-    "answer": "8 Page 3",
+    "answer": "8",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8229,7 +8229,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058168,
     "year": "2020"
   },
   {
@@ -8252,7 +8252,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058168,
     "year": "2020"
   },
   {
@@ -8275,7 +8275,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058168,
     "year": "2020"
   },
   {
@@ -8298,7 +8298,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058168,
     "year": "2020"
   },
   {
@@ -8308,7 +8308,7 @@
     "format": "sa",
     "text": "What law of genetics states that the alleles for one trait separate independently of the alleles for another trait?",
     "choices": null,
-    "answer": "LAW OF INDEPENDENT ASSORTMENT Page 4",
+    "answer": "LAW OF INDEPENDENT ASSORTMENT",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8316,7 +8316,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058168,
     "year": "2020"
   },
   {
@@ -8334,7 +8334,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058169,
     "year": "2020"
   },
   {
@@ -8357,7 +8357,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058169,
     "year": "2020"
   },
   {
@@ -8380,7 +8380,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058169,
     "year": "2020"
   },
   {
@@ -8395,7 +8395,7 @@
       "Y": "Precession of the vernal equinox",
       "Z": "The slow dimming of the Sun"
     },
-    "answer": "$Y$) PRECESSION OF THE VERNAL EQUINOX Page 5",
+    "answer": "$Y$) PRECESSION OF THE VERNAL EQUINOX",
     "letter": "Y",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8403,7 +8403,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058169,
     "year": "2020"
   },
   {
@@ -8426,7 +8426,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058169,
     "year": "2020"
   },
   {
@@ -8449,7 +8449,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058170,
     "year": "2020"
   },
   {
@@ -8467,7 +8467,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058170,
     "year": "2020"
   },
   {
@@ -8477,7 +8477,7 @@
     "format": "sa",
     "text": "A three-toed sloth moves at a speed of 0.15 miles per hour. At this rate, how many minutes would it take the sloth to travel one mile?",
     "choices": null,
-    "answer": "400 Page 6",
+    "answer": "400",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8485,7 +8485,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637430,
+    "added": 1792649058170,
     "year": "2020"
   },
   {
@@ -8503,7 +8503,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058170,
     "year": "2020"
   },
   {
@@ -8521,7 +8521,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8539,7 +8539,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8554,7 +8554,7 @@
       "Y": "79",
       "Z": "99"
     },
-    "answer": "Z) 99 Page 7",
+    "answer": "Z) 99",
     "letter": "Z",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8562,7 +8562,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8572,7 +8572,7 @@
     "format": "sa",
     "text": "The atmosphere of Saturn’s moon Titan is primarily composed of what gas?",
     "choices": null,
-    "answer": "NITROGEN (ACCEPT: MOLECULAR NITROGEN, DINITROGEN, N ) 2",
+    "answer": "NITROGEN (ACCEPT: MOLECULAR NITROGEN, DINITROGEN, N2)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8580,7 +8580,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8598,7 +8598,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8616,7 +8616,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8626,7 +8626,7 @@
     "format": "sa",
     "text": "Researchers at Brookhaven National Lab are studying electron-hole pairing in the material lanthanum [LAN-tha-num] barium copper oxide, or LBCO. What is the only nonmetallic element that is present in this ceramic compound?",
     "choices": null,
-    "answer": "OXYGEN Page 8",
+    "answer": "OXYGEN",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8634,7 +8634,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058171,
     "year": "2020"
   },
   {
@@ -8652,7 +8652,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058172,
     "year": "2020"
   },
   {
@@ -8660,7 +8660,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the equation for the horizontal asymptote of the graph of the function $f$ of $x$ = the fraction with numerator $6x2 + 7$ and denominator $3x2 + 7x + 5$?",
+    "text": "What is the equation for the horizontal asymptote of the graph of the function $f$ of $x$ = the fraction with numerator $6x^2 + 7$ and denominator $3x^2 + 7x + 5$?",
     "choices": null,
     "answer": "$y = 2$",
     "letter": "",
@@ -8670,7 +8670,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058172,
     "year": "2020"
   },
   {
@@ -8688,7 +8688,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058173,
     "year": "2020"
   },
   {
@@ -8698,7 +8698,7 @@
     "format": "sa",
     "text": "Jessica exerts 240 joules of work on a 30-kilogram box to slide it across the floor. The coefficient of friction between the box and the floor is 0.5. To two significant figures and in meters, how far will the box slide?",
     "choices": null,
-    "answer": "1.6 Page 9",
+    "answer": "1.6",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8706,7 +8706,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058173,
     "year": "2020"
   },
   {
@@ -8724,7 +8724,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058174,
     "year": "2020"
   },
   {
@@ -8742,7 +8742,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058174,
     "year": "2020"
   },
   {
@@ -8760,7 +8760,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058174,
     "year": "2020"
   },
   {
@@ -8770,7 +8770,7 @@
     "format": "sa",
     "text": "On a 100-mile road trip, you drive the first 40 miles at 60 miles per hour, the next 40 miles at 30 miles per hour, and the final 20 miles at 40 miles per hour. To the nearest mile per hour, what is your average speed on the road trip?",
     "choices": null,
-    "answer": "40 Page 10",
+    "answer": "40",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8778,7 +8778,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058174,
     "year": "2020"
   },
   {
@@ -8801,7 +8801,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058175,
     "year": "2020"
   },
   {
@@ -8824,7 +8824,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058175,
     "year": "2020"
   },
   {
@@ -8847,7 +8847,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058175,
     "year": "2020"
   },
   {
@@ -8862,7 +8862,7 @@
       "Y": "Radial lines pointing inward toward the wire",
       "Z": "Loops connecting the top of the wire to the bottom of the wire"
     },
-    "answer": "$W$) RINGS ENCIRCLING ABOUT THE CORE OF THE WIRE Page 11",
+    "answer": "$W$) RINGS ENCIRCLING ABOUT THE CORE OF THE WIRE",
     "letter": "W",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8870,7 +8870,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058176,
     "year": "2020"
   },
   {
@@ -8888,7 +8888,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058176,
     "year": "2020"
   },
   {
@@ -8896,9 +8896,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "For positive integer values of $n$, identify all of the following four expressions for the nth term of a sequence that result in a geometric sequence: 1) n; 2) n2; 3) The nth power of $-3$; 4) 2 to the nth power.",
+    "text": "For positive integer values of $n$, identify all of the following four expressions for the nth term of a sequence that result in a geometric sequence: 1) n; 2) n^2; 3) The nth power of $-3$; 4) 2 to the nth power.",
     "choices": null,
-    "answer": "3, 4 Page 12",
+    "answer": "3, 4",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd2",
@@ -8906,7 +8906,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637431,
+    "added": 1792649058176,
     "year": "2020"
   },
   {
@@ -8924,7 +8924,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058180,
     "year": "2020"
   },
   {
@@ -8942,7 +8942,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058180,
     "year": "2020"
   },
   {
@@ -8965,7 +8965,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058180,
     "year": "2020"
   },
   {
@@ -8975,7 +8975,7 @@
     "format": "sa",
     "text": "A wind that reverses direction based on the season, a scenario most notable for determining rainfall in South Asia, is characteristic of what type of weather system?",
     "choices": null,
-    "answer": "MONSOON Page 1",
+    "answer": "MONSOON",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -8983,7 +8983,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058180,
     "year": "2020"
   },
   {
@@ -9001,7 +9001,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058181,
     "year": "2020"
   },
   {
@@ -9019,7 +9019,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058181,
     "year": "2020"
   },
   {
@@ -9037,7 +9037,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058181,
     "year": "2020"
   },
   {
@@ -9047,7 +9047,7 @@
     "format": "sa",
     "text": "Identify all of the following three actions that occur during mitosis in the process of replicating a cell: 1) DNA is copied; 2) Nuclear envelope disappears; 3) Daughter chromosomes are pulled apart.",
     "choices": null,
-    "answer": "2, 3 Page 2",
+    "answer": "2, 3",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9055,7 +9055,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637432,
+    "added": 1792649058181,
     "year": "2020"
   },
   {
@@ -9073,7 +9073,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058182,
     "year": "2020"
   },
   {
@@ -9091,7 +9091,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058182,
     "year": "2020"
   },
   {
@@ -9109,7 +9109,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058182,
     "year": "2020"
   },
   {
@@ -9119,7 +9119,7 @@
     "format": "sa",
     "text": "Many early measurements of the Hubble constant were done using what type of variable star as a standard candle?",
     "choices": null,
-    "answer": "CEPHEID [SEF-ee-id] Page 3",
+    "answer": "CEPHEID [SEF-ee-id]",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9127,7 +9127,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058182,
     "year": "2020"
   },
   {
@@ -9145,7 +9145,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9163,7 +9163,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9181,7 +9181,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9191,7 +9191,7 @@
     "format": "sa",
     "text": "A bacteria population is estimated to be modeled by 3 to the $t$ power, where $t$ represents time measured in days. What is the smallest integer value of $t$ for which the bacteria population is over 10,000?",
     "choices": null,
-    "answer": "9 Page 4",
+    "answer": "9",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9199,7 +9199,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9217,7 +9217,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9235,7 +9235,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9253,7 +9253,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9263,7 +9263,7 @@
     "format": "sa",
     "text": "Scientists at Ames Lab are studying the properties of superconductors at temperatures of around 50 milli-kelvins. To the nearest degree, what temperature in Celsius does this equal?",
     "choices": null,
-    "answer": "$-273$ Page 5",
+    "answer": "$-273$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9271,7 +9271,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058183,
     "year": "2020"
   },
   {
@@ -9289,7 +9289,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058184,
     "year": "2020"
   },
   {
@@ -9307,7 +9307,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058184,
     "year": "2020"
   },
   {
@@ -9325,7 +9325,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058184,
     "year": "2020"
   },
   {
@@ -9335,7 +9335,7 @@
     "format": "sa",
     "text": "Trilobites [TRY-low-bites] are thought to have emerged during what geologic period?",
     "choices": null,
-    "answer": "CAMBRIAN Page 6",
+    "answer": "CAMBRIAN",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9343,7 +9343,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058184,
     "year": "2020"
   },
   {
@@ -9361,7 +9361,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058184,
     "year": "2020"
   },
   {
@@ -9384,7 +9384,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9407,7 +9407,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9417,7 +9417,7 @@
     "format": "sa",
     "text": "Scientists at Lawrence Berkeley National Lab have developed the PhyloChip [FYE-loh-chip], which is able to detect pathogenic microbial contamination in drinking water. The PhyloChip functions by detecting a particular class of bacterial macromolecules which hybridize [HIGH-brih-dize] with fluorescent probe molecules on the chip’s microarray. What are these macromolecules?",
     "choices": null,
-    "answer": "DNA (ACCEPT: NUCLEIC ACIDS) Page 7",
+    "answer": "DNA (ACCEPT: NUCLEIC ACIDS)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9425,7 +9425,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9443,7 +9443,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9461,7 +9461,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9479,7 +9479,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637433,
+    "added": 1792649058185,
     "year": "2020"
   },
   {
@@ -9494,7 +9494,7 @@
       "Y": "The sun and the moon have equal tidal influence over Earth",
       "Z": "The tidal influence of the moon is speeding up the Earth’s rotation"
     },
-    "answer": "X) A FIRST QUARTER MOON OCCURS AT NEAP TIDE Page 8",
+    "answer": "X) A FIRST QUARTER MOON OCCURS AT NEAP TIDE",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9502,7 +9502,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9520,7 +9520,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9538,7 +9538,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9556,7 +9556,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9566,7 +9566,7 @@
     "format": "sa",
     "text": "A horse on the outer edge of a circular carousel is 35 feet from the center of rotation. A horse on the inner edge is 10 feet from the center. During a ride of 6.5 rotations, to the nearest hundred feet, how much further in linear distance will the outer horse travel than the inner horse?",
     "choices": null,
-    "answer": "1000 Page 9",
+    "answer": "1000",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9574,7 +9574,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9597,7 +9597,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058186,
     "year": "2020"
   },
   {
@@ -9615,7 +9615,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9633,7 +9633,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9643,7 +9643,7 @@
     "format": "sa",
     "text": "Identify all of the following three descriptions that characterize Earth: 1) Differentiated; 2) Jovian; 3) Highly eccentric orbit.",
     "choices": null,
-    "answer": "1 Page 10",
+    "answer": "1",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9651,7 +9651,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9669,7 +9669,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9692,7 +9692,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9710,7 +9710,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058187,
     "year": "2020"
   },
   {
@@ -9718,9 +9718,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Solve the following equation for $x$ over the negative real numbers: $x4 - 4x2 - 21 = 0$.",
+    "text": "Solve the following equation for $x$ over the negative real numbers: $x^4 - 4x^2 - 21 = 0$.",
     "choices": null,
-    "answer": "$-√7$ Page 11",
+    "answer": "$-√7$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9728,7 +9728,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058188,
     "year": "2020"
   },
   {
@@ -9746,7 +9746,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058188,
     "year": "2020"
   },
   {
@@ -9756,7 +9756,7 @@
     "format": "sa",
     "text": "What is the empirical [em-PEER-ih-kul] formula for hydrogen peroxide?",
     "choices": null,
-    "answer": "HO (ACCEPT: OH) Page 12",
+    "answer": "HO (ACCEPT: OH)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd3",
@@ -9764,7 +9764,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637434,
+    "added": 1792649058188,
     "year": "2020"
   },
   {
@@ -9782,7 +9782,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058192,
     "year": "2020"
   },
   {
@@ -9805,7 +9805,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058193,
     "year": "2020"
   },
   {
@@ -9828,7 +9828,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058193,
     "year": "2020"
   },
   {
@@ -9838,7 +9838,7 @@
     "format": "sa",
     "text": "Sandia National Lab researchers have developed a chip that models the junction at which two neurons communicate with one another. What is the name of this junction?",
     "choices": null,
-    "answer": "SYNAPSE Page 1",
+    "answer": "SYNAPSE",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -9846,7 +9846,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058193,
     "year": "2020"
   },
   {
@@ -9864,7 +9864,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058193,
     "year": "2020"
   },
   {
@@ -9882,7 +9882,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058193,
     "year": "2020"
   },
   {
@@ -9905,7 +9905,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -9915,7 +9915,7 @@
     "format": "sa",
     "text": "What element, while not strictly essential for humans, is needed to maintain healthy tooth structure?",
     "choices": null,
-    "answer": "FLUORINE (DO NOT ACCEPT: FLUORIDE) Page 2",
+    "answer": "FLUORINE (DO NOT ACCEPT: FLUORIDE)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -9923,7 +9923,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -9946,7 +9946,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -9964,7 +9964,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -9982,7 +9982,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -9997,7 +9997,7 @@
       "Y": "Feldspars weather more rapidly",
       "Z": "Feldspars are less abundant in crustal rock"
     },
-    "answer": "$Y$) FELDSPARS WEATHER MORE RAPIDLY Page 3",
+    "answer": "$Y$) FELDSPARS WEATHER MORE RAPIDLY",
     "letter": "Y",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10005,7 +10005,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -10023,7 +10023,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058194,
     "year": "2020"
   },
   {
@@ -10041,7 +10041,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10059,7 +10059,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10074,7 +10074,7 @@
       "Y": "Cyanobacteria",
       "Z": "Proteobacteria"
     },
-    "answer": "$X$) PROTISTS Page 4",
+    "answer": "$X$) PROTISTS",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10082,7 +10082,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10100,7 +10100,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10118,7 +10118,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10141,7 +10141,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058195,
     "year": "2020"
   },
   {
@@ -10151,7 +10151,7 @@
     "format": "sa",
     "text": "Rank the following three stellar spectral classes in order of increasing star temperature: 1) A; 2) B; 3) O.",
     "choices": null,
-    "answer": "1, 2, 3 Page 5",
+    "answer": "1, 2, 3",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10159,7 +10159,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637435,
+    "added": 1792649058196,
     "year": "2020"
   },
   {
@@ -10177,7 +10177,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058196,
     "year": "2020"
   },
   {
@@ -10195,7 +10195,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058196,
     "year": "2020"
   },
   {
@@ -10213,7 +10213,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058196,
     "year": "2020"
   },
   {
@@ -10223,7 +10223,7 @@
     "format": "sa",
     "text": "Conifers typically have two main types of cones, one that is the familiar-looking ovulate [AW-vyoo-late] cone, and the other which produces what?",
     "choices": null,
-    "answer": "POLLEN Page 6",
+    "answer": "POLLEN",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10231,7 +10231,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058196,
     "year": "2020"
   },
   {
@@ -10254,7 +10254,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058197,
     "year": "2020"
   },
   {
@@ -10272,7 +10272,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058197,
     "year": "2020"
   },
   {
@@ -10290,7 +10290,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058197,
     "year": "2020"
   },
   {
@@ -10300,7 +10300,7 @@
     "format": "sa",
     "text": "Evaluate 5 log base 2 of 16 plus one-half log base 3 of 81 minus 3 log base 4 of 1024.",
     "choices": null,
-    "answer": "7 Page 7",
+    "answer": "7",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10308,7 +10308,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10331,7 +10331,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10354,7 +10354,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10377,7 +10377,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10387,7 +10387,7 @@
     "format": "sa",
     "text": "Parathyroid hormone helps increase calcium levels in the blood in part by increasing the production of what vitamin?",
     "choices": null,
-    "answer": "$D$ (ACCEPT: CALCITRIOL, CHOLECALCIFEROL) Page 8",
+    "answer": "$D$ (ACCEPT: CALCITRIOL, CHOLECALCIFEROL)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10395,7 +10395,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10413,7 +10413,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058198,
     "year": "2020"
   },
   {
@@ -10431,7 +10431,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058199,
     "year": "2020"
   },
   {
@@ -10449,7 +10449,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058199,
     "year": "2020"
   },
   {
@@ -10459,7 +10459,7 @@
     "format": "sa",
     "text": "Identify all of the following three planets that exhibit a full set of phases when observed from Earth: 1) Mercury: 2) Mars; 3) Jupiter.",
     "choices": null,
-    "answer": "1 Page 9",
+    "answer": "1",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10467,7 +10467,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058199,
     "year": "2020"
   },
   {
@@ -10485,7 +10485,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058199,
     "year": "2020"
   },
   {
@@ -10503,7 +10503,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058199,
     "year": "2020"
   },
   {
@@ -10521,7 +10521,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10536,7 +10536,7 @@
       "Y": "Applied force",
       "Z": "Coefficient of static friction"
     },
-    "answer": "$X$) NORMAL FORCE Page 10",
+    "answer": "$X$) NORMAL FORCE",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10544,7 +10544,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10562,7 +10562,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10580,7 +10580,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10598,7 +10598,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10608,7 +10608,7 @@
     "format": "sa",
     "text": "Two triangles are similar with scale factor $3/4$. If the area of the smaller triangle is 288, what is the area of the larger triangle?",
     "choices": null,
-    "answer": "512 Page 11",
+    "answer": "512",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10616,7 +10616,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058200,
     "year": "2020"
   },
   {
@@ -10634,7 +10634,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058201,
     "year": "2020"
   },
   {
@@ -10644,7 +10644,7 @@
     "format": "sa",
     "text": "What molecule is the solute in vinegar?",
     "choices": null,
-    "answer": "ACETIC ACID (ACCEPT: ACETATE, CH COOH, C H O ) 3 2 4 2 Page 12",
+    "answer": "ACETIC ACID (ACCEPT: ACETATE, CH3COOH, $C2H4O2$)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd4",
@@ -10652,7 +10652,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637436,
+    "added": 1792649058201,
     "year": "2020"
   },
   {
@@ -10670,7 +10670,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058205,
     "year": "2020"
   },
   {
@@ -10693,7 +10693,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058205,
     "year": "2020"
   },
   {
@@ -10711,7 +10711,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058206,
     "year": "2020"
   },
   {
@@ -10721,7 +10721,7 @@
     "format": "sa",
     "text": "Identify all of the following three substances that are minerals: 1) Copper metal; 2) Coal; 3) Synthetic diamond.",
     "choices": null,
-    "answer": "1 Page 1",
+    "answer": "1",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -10729,7 +10729,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058206,
     "year": "2020"
   },
   {
@@ -10747,7 +10747,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058206,
     "year": "2020"
   },
   {
@@ -10765,7 +10765,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058206,
     "year": "2020"
   },
   {
@@ -10783,7 +10783,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058206,
     "year": "2020"
   },
   {
@@ -10793,7 +10793,7 @@
     "format": "sa",
     "text": "Identify all of the following three statements that are true regarding astronauts in low Earth orbit: 1) Their mass is nearly zero; 2) Their weight is nearly zero; 3) They experience no gravitational force from the Earth.",
     "choices": null,
-    "answer": "2 Page 2",
+    "answer": "2",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -10801,7 +10801,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10819,7 +10819,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10837,7 +10837,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10855,7 +10855,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637437,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10865,7 +10865,7 @@
     "format": "sa",
     "text": "To the nearest whole number, what is the length of the hypotenuse in a right triangle with legs of length 17 and 12?",
     "choices": null,
-    "answer": "21 Page 3",
+    "answer": "21",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -10873,7 +10873,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10891,7 +10891,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058207,
     "year": "2020"
   },
   {
@@ -10909,7 +10909,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -10927,7 +10927,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -10937,7 +10937,7 @@
     "format": "sa",
     "text": "Rock strata exposed by the Colorado River at the Grand Canyon are separated by intervals where no net sedimentary deposition occurred. What is the general term for these unrecorded intervals of time in the rock record?",
     "choices": null,
-    "answer": "UNCONFORMITY (ACCEPT: DISCONFORMITY; DO NOT ACCEPT: THE GREAT UNCONFORMITY) Page 4",
+    "answer": "UNCONFORMITY (ACCEPT: DISCONFORMITY; DO NOT ACCEPT: THE GREAT UNCONFORMITY)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -10945,7 +10945,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -10963,7 +10963,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -10981,7 +10981,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -10999,7 +10999,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -11009,7 +11009,7 @@
     "format": "sa",
     "text": "Researchers at SLAC [slack] National Accelerator Lab are studying phasechange materials, which are used in the RAM of computers and smartphones. These materials change from a glassy phase to a crystalline phase with a thermal pulse, and then lock in that phase at a lower temperature. While the crystalline phase is ordered, what term best describes the glassy phase because it is a solid material that lacks long range order?",
     "choices": null,
-    "answer": "AMORPHOUS Page 5",
+    "answer": "AMORPHOUS",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11017,7 +11017,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058208,
     "year": "2020"
   },
   {
@@ -11035,7 +11035,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058209,
     "year": "2020"
   },
   {
@@ -11043,7 +11043,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "For the function $f$ of $x = x2 + 3$, evaluate $f$ of open parenthesis $3a$ close parenthesis minus $3 f$ of a when $a = 5$.",
+    "text": "For the function $f$ of $x = x^2 + 3$, evaluate $f$ of open parenthesis $3a$ close parenthesis minus $3 f$ of a when $a = 5$.",
     "choices": null,
     "answer": "144",
     "letter": "",
@@ -11053,7 +11053,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058210,
     "year": "2020"
   },
   {
@@ -11071,7 +11071,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058210,
     "year": "2020"
   },
   {
@@ -11081,7 +11081,7 @@
     "format": "sa",
     "text": "During birth, oxytocin [ox-ee-TOW-sin] results in uterine contractions, which eventually results in the production of more oxytocin. Of what type of regulation is this an example?",
     "choices": null,
-    "answer": "POSITIVE FEEDBACK (ACCEPT: POSITIVE FEEDBACK LOOP) Page 6",
+    "answer": "POSITIVE FEEDBACK (ACCEPT: POSITIVE FEEDBACK LOOP)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11089,7 +11089,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058210,
     "year": "2020"
   },
   {
@@ -11107,7 +11107,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058210,
     "year": "2020"
   },
   {
@@ -11125,7 +11125,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058211,
     "year": "2020"
   },
   {
@@ -11143,7 +11143,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058211,
     "year": "2020"
   },
   {
@@ -11153,7 +11153,7 @@
     "format": "sa",
     "text": "Two children have a pile of building blocks. Mark used $1/3$ of the blocks to build a house, and Mary used $3/8$ of the blocks to build a ship. If 140 unused blocks remained, how many blocks were there to begin with?",
     "choices": null,
-    "answer": "480 Page 7",
+    "answer": "480",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11161,7 +11161,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058211,
     "year": "2020"
   },
   {
@@ -11184,7 +11184,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058211,
     "year": "2020"
   },
   {
@@ -11202,7 +11202,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11220,7 +11220,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11230,7 +11230,7 @@
     "format": "sa",
     "text": "Identify all of the following three trophic levels that directly contribute energy flow to detritivores [deh-TRY-tih-vores]: 1) Primary producers; 2) Primary consumers; 3) Secondary consumers.",
     "choices": null,
-    "answer": "ALL Page 8",
+    "answer": "ALL",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11238,7 +11238,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11256,7 +11256,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11274,7 +11274,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11292,7 +11292,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11302,7 +11302,7 @@
     "format": "sa",
     "text": "Identify all of the following three outcomes that result from increased dissolution of carbon dioxide into the world’s oceans: 1) Seawater will become more acidic; 2) Seawater will dissolve more seafloor carbonate; 3) Coral reefs will decline.",
     "choices": null,
-    "answer": "ALL Page 9",
+    "answer": "ALL",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11310,7 +11310,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11328,7 +11328,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058213,
     "year": "2020"
   },
   {
@@ -11346,7 +11346,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11364,7 +11364,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11379,7 +11379,7 @@
       "Y": "Ketones",
       "Z": "Organic acids"
     },
-    "answer": "$Z$) ORGANIC ACIDS Page 10",
+    "answer": "$Z$) ORGANIC ACIDS",
     "letter": "Z",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11387,7 +11387,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637438,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11405,7 +11405,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11423,7 +11423,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11431,7 +11431,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Give one of the linear factors of $x2 + 3x - 40$.",
+    "text": "Give one of the linear factors of $x^2 + 3x - 40$.",
     "choices": null,
     "answer": "$x - 5$ OR $x + 8$ [must give at least one]",
     "letter": "",
@@ -11441,7 +11441,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11451,7 +11451,7 @@
     "format": "sa",
     "text": "A rhombus has diagonals of length 13 and 22. What is its area?",
     "choices": null,
-    "answer": "143 Page 11",
+    "answer": "143",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11459,7 +11459,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058214,
     "year": "2020"
   },
   {
@@ -11477,7 +11477,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058215,
     "year": "2020"
   },
   {
@@ -11487,7 +11487,7 @@
     "format": "sa",
     "text": "What solid-state electrical component only allows current to flow in one direction?",
     "choices": null,
-    "answer": "DIODE Page 12",
+    "answer": "DIODE",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd5",
@@ -11495,7 +11495,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637439,
+    "added": 1792649058215,
     "year": "2020"
   },
   {
@@ -11513,7 +11513,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11531,7 +11531,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11549,7 +11549,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11564,7 +11564,7 @@
       "Y": "The top of the wheel",
       "Z": "The forward-most edge of the wheel"
     },
-    "answer": "$Y$) THE TOP OF THE WHEEL Page 1",
+    "answer": "$Y$) THE TOP OF THE WHEEL",
     "letter": "Y",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11572,7 +11572,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11595,7 +11595,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11618,7 +11618,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058218,
     "year": "2020"
   },
   {
@@ -11636,7 +11636,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11646,7 +11646,7 @@
     "format": "sa",
     "text": "What is the term for the speed that an animal uses energy, which can be measured in units of liters of oxygen per hour?",
     "choices": null,
-    "answer": "METABOLIC RATE (ACCEPT: BASAL METABOLIC RATE, STANDARD METABOLIC RATE) Page 2",
+    "answer": "METABOLIC RATE (ACCEPT: BASAL METABOLIC RATE, STANDARD METABOLIC RATE)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11654,7 +11654,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11672,7 +11672,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11690,7 +11690,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11713,7 +11713,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11728,7 +11728,7 @@
       "Y": "Bismuth$-212$",
       "Z": "Cobalt$-60$"
     },
-    "answer": "$X$) URANIUM$-238$ Page 3",
+    "answer": "$X$) URANIUM$-238$",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11736,7 +11736,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058219,
     "year": "2020"
   },
   {
@@ -11759,7 +11759,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058220,
     "year": "2020"
   },
   {
@@ -11777,7 +11777,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058220,
     "year": "2020"
   },
   {
@@ -11795,7 +11795,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058220,
     "year": "2020"
   },
   {
@@ -11803,9 +11803,9 @@
     "subject": "energy",
     "type": "bonus",
     "format": "sa",
-    "text": "Savannah River National Lab researchers are analyzing the toxic effects of mercury compounds such as CH Hg+. In this ion, what functional group is attached to the mercury atom? 3",
+    "text": "Savannah River National Lab researchers are analyzing the toxic effects of mercury compounds such as CH3Hg+. In this ion, what functional group is attached to the mercury atom?",
     "choices": null,
-    "answer": "METHYL Page 4",
+    "answer": "METHYL",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11813,7 +11813,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058220,
     "year": "2020"
   },
   {
@@ -11831,7 +11831,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11849,7 +11849,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11867,7 +11867,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11877,7 +11877,7 @@
     "format": "sa",
     "text": "The layers of an onion that are used for storing food are adapted versions of what plant organ?",
     "choices": null,
-    "answer": "LEAF Page 5",
+    "answer": "LEAF",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11885,7 +11885,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11903,7 +11903,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11926,7 +11926,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058221,
     "year": "2020"
   },
   {
@@ -11949,7 +11949,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -11959,7 +11959,7 @@
     "format": "sa",
     "text": "Pacific Northwest and Savannah River National Lab researchers are working together to study the role of the iodate ion in bacteria as a potential terminal electron acceptor. What molecule is typically the terminal electron acceptor in aerobic respiration?",
     "choices": null,
-    "answer": "OXYGEN (ACCEPT: DIOXYGEN, O ) 2 Page 6",
+    "answer": "OXYGEN (ACCEPT: DIOXYGEN, O2)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -11967,7 +11967,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -11985,7 +11985,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -12003,7 +12003,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -12021,7 +12021,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -12031,7 +12031,7 @@
     "format": "sa",
     "text": "Mammals have a double circulation, with one set of blood vessels supplying most of the body and the other set traveling to what organ?",
     "choices": null,
-    "answer": "LUNGS Page 7",
+    "answer": "LUNGS",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12039,7 +12039,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058222,
     "year": "2020"
   },
   {
@@ -12062,7 +12062,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12080,7 +12080,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12103,7 +12103,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637440,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12113,7 +12113,7 @@
     "format": "sa",
     "text": "In a transverse wave, what physical quantity is defined as one-half the distance between a crest and a trough?",
     "choices": null,
-    "answer": "AMPLITUDE Page 8",
+    "answer": "AMPLITUDE",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12121,7 +12121,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12139,7 +12139,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12157,7 +12157,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12175,7 +12175,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058223,
     "year": "2020"
   },
   {
@@ -12190,7 +12190,7 @@
       "Y": "Off the southern coast of Alaska",
       "Z": "Off the western coast of Chile"
     },
-    "answer": "X) OFF THE EASTERN COAST OF THE US Page 9",
+    "answer": "X) OFF THE EASTERN COAST OF THE US",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12198,7 +12198,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12216,7 +12216,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12234,7 +12234,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12252,7 +12252,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12262,7 +12262,7 @@
     "format": "sa",
     "text": "Identify all of the following three substances that are liquid at room temperature: 1) Mercury; 2) Methane; 3) Ammonia.",
     "choices": null,
-    "answer": "1 Page 10",
+    "answer": "1",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12270,7 +12270,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12288,7 +12288,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12306,7 +12306,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058224,
     "year": "2020"
   },
   {
@@ -12324,7 +12324,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058225,
     "year": "2020"
   },
   {
@@ -12334,7 +12334,7 @@
     "format": "sa",
     "text": "Identify all of the following three organs that are part of the lymphatic system: 1) Tonsils; 2) Spleen; 3) Bladder.",
     "choices": null,
-    "answer": "1, 2 Page 11",
+    "answer": "1, 2",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12342,7 +12342,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058225,
     "year": "2020"
   },
   {
@@ -12360,7 +12360,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058225,
     "year": "2020"
   },
   {
@@ -12370,7 +12370,7 @@
     "format": "sa",
     "text": "Given the right triangle with legs of length 5 and 6 and angle A opposite the side of length 5, what is tangent A + cotangent A?",
     "choices": null,
-    "answer": "$61/30$ (ACCEPT: $2 1/30$) Page 12",
+    "answer": "$61/30$ (ACCEPT: $2 1/30$)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd6",
@@ -12378,7 +12378,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058225,
     "year": "2020"
   },
   {
@@ -12396,7 +12396,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12414,7 +12414,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12432,7 +12432,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637441,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12447,7 +12447,7 @@
       "Y": "Geminids [GEM-in-id]",
       "Z": "Perseids [PURSE-ee-ids]"
     },
-    "answer": "$Z$) PERSEIDS Page 1",
+    "answer": "$Z$) PERSEIDS",
     "letter": "Z",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12455,7 +12455,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12473,7 +12473,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12491,7 +12491,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12509,7 +12509,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058229,
     "year": "2020"
   },
   {
@@ -12524,7 +12524,7 @@
       "Y": "Beaver trout",
       "Z": "Bullfrog"
     },
-    "answer": "$X$) MAYFLY Page 2",
+    "answer": "$X$) MAYFLY",
     "letter": "X",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12532,7 +12532,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058230,
     "year": "2020"
   },
   {
@@ -12550,7 +12550,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058230,
     "year": "2020"
   },
   {
@@ -12568,7 +12568,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058230,
     "year": "2020"
   },
   {
@@ -12586,7 +12586,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058230,
     "year": "2020"
   },
   {
@@ -12601,7 +12601,7 @@
       "Y": "The inward-directed centrifugal force counteracts gravity",
       "Z": "The inward-directed centripetal force counteracts gravity"
     },
-    "answer": "$W$) THE OUTWARD-DIRECTED CENTRIFUGAL FORCE COUNTERACTS GRAVITY Page 3",
+    "answer": "$W$) THE OUTWARD-DIRECTED CENTRIFUGAL FORCE COUNTERACTS GRAVITY",
     "letter": "W",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12609,7 +12609,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058230,
     "year": "2020"
   },
   {
@@ -12632,7 +12632,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12650,7 +12650,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12668,7 +12668,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12678,7 +12678,7 @@
     "format": "sa",
     "text": "If the area of a circle is numerically four times its circumference, what is the area?",
     "choices": null,
-    "answer": "$64π$ Page 4",
+    "answer": "$64π$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12686,7 +12686,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12704,7 +12704,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12722,7 +12722,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058231,
     "year": "2020"
   },
   {
@@ -12745,7 +12745,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12755,7 +12755,7 @@
     "format": "sa",
     "text": "During fusion reactions in the sun, a nucleus with 2 protons and 1 neutron is created. What is the name of this isotope?",
     "choices": null,
-    "answer": "HELIUM$-3$ (ACCEPT: $HE-3$) Page 5",
+    "answer": "HELIUM$-3$ (ACCEPT: $HE-3$)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12763,7 +12763,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12781,7 +12781,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12799,7 +12799,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12817,7 +12817,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12827,7 +12827,7 @@
     "format": "sa",
     "text": "What is the general term for a group of cells within an organ that work together to perform a higher-order function?",
     "choices": null,
-    "answer": "TISSUE Page 6",
+    "answer": "TISSUE",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12835,7 +12835,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12853,7 +12853,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12871,7 +12871,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058232,
     "year": "2020"
   },
   {
@@ -12889,7 +12889,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058233,
     "year": "2020"
   },
   {
@@ -12899,7 +12899,7 @@
     "format": "sa",
     "text": "Forty students are in a room, with 23 of them playing in the school band. What is the least number of students that could be added to the room to raise the percentage of band members to at least 70 percent?",
     "choices": null,
-    "answer": "17 Page 7",
+    "answer": "17",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12907,7 +12907,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058233,
     "year": "2020"
   },
   {
@@ -12925,7 +12925,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058233,
     "year": "2020"
   },
   {
@@ -12943,7 +12943,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058233,
     "year": "2020"
   },
   {
@@ -12961,7 +12961,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058233,
     "year": "2020"
   },
   {
@@ -12971,7 +12971,7 @@
     "format": "sa",
     "text": "A piece of styrofoam has a mass of 50 grams and a volume of 200 cubic centimeters. If it is at rest while floating in water, what fraction of its volume will be above the surface of the water?",
     "choices": null,
-    "answer": "$3/4$ (ACCEPT: 0.75, 75%) Page 8",
+    "answer": "$3/4$ (ACCEPT: 0.75, 75%)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -12979,7 +12979,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -12997,7 +12997,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -13020,7 +13020,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637442,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -13038,7 +13038,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -13046,9 +13046,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Give one of the linear factors of $6x2 - 7x - 55$.",
+    "text": "Give one of the linear factors of $6x^2 - 7x - 55$.",
     "choices": null,
-    "answer": "$3x - 11$ OR $2x + 5$ [must give at least one] Page 9",
+    "answer": "$3x - 11$ OR $2x + 5$ [must give at least one]",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -13056,7 +13056,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -13074,7 +13074,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058234,
     "year": "2020"
   },
   {
@@ -13097,7 +13097,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13115,7 +13115,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13125,7 +13125,7 @@
     "format": "sa",
     "text": "A microscope lens used to focus light emitted by a sample onto the user’s eyes is most likely to have what type of curvature?",
     "choices": null,
-    "answer": "CONVEX (ACCEPT: BICONVEX) Page 10",
+    "answer": "CONVEX (ACCEPT: BICONVEX)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -13133,7 +13133,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13143,7 +13143,7 @@
     "format": "sa",
     "text": "What is the square of the binomial $x - 11$?",
     "choices": null,
-    "answer": "$x2 - 22x + 121$",
+    "answer": "$x^2 - 22x + 121$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -13151,7 +13151,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13169,7 +13169,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13187,7 +13187,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13197,7 +13197,7 @@
     "format": "sa",
     "text": "One of the products of photosynthesis is glucose. From what reactant do the carbon atoms of this glucose originate?",
     "choices": null,
-    "answer": "CARBON DIOXIDE (ACCEPT: CO ) 2 Page 11",
+    "answer": "CARBON DIOXIDE (ACCEPT: CO2)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -13205,7 +13205,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13223,7 +13223,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058235,
     "year": "2020"
   },
   {
@@ -13233,7 +13233,7 @@
     "format": "sa",
     "text": "What is the name given to the sum of the numbers of protons and neutrons for a given nuclide?",
     "choices": null,
-    "answer": "MASS NUMBER (ACCEPT: NUCLEON NUMBER; DO NOT ACCEPT: ATOMIC MASS) Page 12",
+    "answer": "MASS NUMBER (ACCEPT: NUCLEON NUMBER; DO NOT ACCEPT: ATOMIC MASS)",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd7",
@@ -13241,7 +13241,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058236,
     "year": "2020"
   },
   {
@@ -13259,7 +13259,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13282,7 +13282,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13305,7 +13305,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13328,7 +13328,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13346,7 +13346,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637443,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13369,7 +13369,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058241,
     "year": "2020"
   },
   {
@@ -13392,7 +13392,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13410,7 +13410,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13428,7 +13428,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13446,7 +13446,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13464,7 +13464,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13482,7 +13482,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13500,7 +13500,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058242,
     "year": "2020"
   },
   {
@@ -13510,7 +13510,7 @@
     "format": "sa",
     "text": "Scientists supported by the Department of Energy are developing new methods to synthesize tagatose [TAG-ah-tose], an isomer of glucose that is nearly as sweet as sucrose. What is the chemical formula of tagatose?",
     "choices": null,
-    "answer": "C H O 6 12 6",
+    "answer": "$C6H12O6$",
     "letter": "",
     "src": {
       "file": "2020-MS-Rd8",
@@ -13518,7 +13518,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13536,7 +13536,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13554,7 +13554,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13572,7 +13572,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13590,7 +13590,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13608,7 +13608,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058243,
     "year": "2020"
   },
   {
@@ -13626,7 +13626,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058244,
     "year": "2020"
   },
   {
@@ -13644,7 +13644,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058244,
     "year": "2020"
   },
   {
@@ -13662,7 +13662,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058244,
     "year": "2020"
   },
   {
@@ -13680,7 +13680,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058244,
     "year": "2020"
   },
   {
@@ -13698,7 +13698,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058245,
     "year": "2020"
   },
   {
@@ -13716,7 +13716,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637444,
+    "added": 1792649058245,
     "year": "2020"
   },
   {
@@ -13739,7 +13739,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058245,
     "year": "2020"
   },
   {
@@ -13757,7 +13757,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058245,
     "year": "2020"
   },
   {
@@ -13775,7 +13775,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058245,
     "year": "2020"
   },
   {
@@ -13793,7 +13793,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13811,7 +13811,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13829,7 +13829,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13847,7 +13847,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13865,7 +13865,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13888,7 +13888,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13911,7 +13911,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058246,
     "year": "2020"
   },
   {
@@ -13929,7 +13929,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058247,
     "year": "2020"
   },
   {
@@ -13947,7 +13947,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058247,
     "year": "2020"
   },
   {
@@ -13965,7 +13965,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058247,
     "year": "2020"
   },
   {
@@ -13983,7 +13983,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058247,
     "year": "2020"
   },
   {
@@ -14001,7 +14001,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058247,
     "year": "2020"
   },
   {
@@ -14019,7 +14019,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14037,7 +14037,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14055,7 +14055,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14078,7 +14078,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14096,7 +14096,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14114,7 +14114,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637445,
+    "added": 1792649058248,
     "year": "2020"
   },
   {
@@ -14132,7 +14132,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058251,
     "year": "2020"
   },
   {
@@ -14155,7 +14155,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058251,
     "year": "2020"
   },
   {
@@ -14173,7 +14173,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058251,
     "year": "2020"
   },
   {
@@ -14191,7 +14191,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058252,
     "year": "2020"
   },
   {
@@ -14214,7 +14214,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058252,
     "year": "2020"
   },
   {
@@ -14232,7 +14232,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058252,
     "year": "2020"
   },
   {
@@ -14250,7 +14250,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058253,
     "year": "2020"
   },
   {
@@ -14268,7 +14268,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058253,
     "year": "2020"
   },
   {
@@ -14286,7 +14286,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058253,
     "year": "2020"
   },
   {
@@ -14304,7 +14304,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058253,
     "year": "2020"
   },
   {
@@ -14322,7 +14322,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14340,7 +14340,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14358,7 +14358,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14381,7 +14381,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14404,7 +14404,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14422,7 +14422,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058254,
     "year": "2020"
   },
   {
@@ -14445,7 +14445,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058255,
     "year": "2020"
   },
   {
@@ -14463,7 +14463,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058256,
     "year": "2020"
   },
   {
@@ -14481,7 +14481,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058256,
     "year": "2020"
   },
   {
@@ -14499,7 +14499,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14522,7 +14522,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14545,7 +14545,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14563,7 +14563,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637446,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14581,7 +14581,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14599,7 +14599,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058258,
     "year": "2020"
   },
   {
@@ -14617,7 +14617,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058259,
     "year": "2020"
   },
   {
@@ -14640,7 +14640,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058259,
     "year": "2020"
   },
   {
@@ -14663,7 +14663,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058259,
     "year": "2020"
   },
   {
@@ -14681,7 +14681,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058259,
     "year": "2020"
   },
   {
@@ -14704,7 +14704,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058259,
     "year": "2020"
   },
   {
@@ -14727,7 +14727,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058260,
     "year": "2020"
   },
   {
@@ -14745,7 +14745,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058260,
     "year": "2020"
   },
   {
@@ -14768,7 +14768,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058260,
     "year": "2020"
   },
   {
@@ -14786,7 +14786,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058260,
     "year": "2020"
   },
   {
@@ -14804,7 +14804,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058260,
     "year": "2020"
   },
   {
@@ -14822,7 +14822,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058261,
     "year": "2020"
   },
   {
@@ -14845,7 +14845,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058261,
     "year": "2020"
   },
   {
@@ -14863,7 +14863,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058262,
     "year": "2020"
   },
   {
@@ -14886,7 +14886,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058262,
     "year": "2020"
   },
   {
@@ -14904,7 +14904,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058262,
     "year": "2020"
   },
   {
@@ -14922,7 +14922,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058262,
     "year": "2020"
   },
   {
@@ -14940,7 +14940,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058262,
     "year": "2020"
   },
   {
@@ -14958,7 +14958,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058263,
     "year": "2020"
   },
   {
@@ -14976,7 +14976,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058263,
     "year": "2020"
   },
   {
@@ -14994,7 +14994,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058263,
     "year": "2020"
   },
   {
@@ -15012,7 +15012,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257637447,
+    "added": 1792649058264,
     "year": "2020"
   }
 ]

@@ -19,7 +19,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607591,
+    "added": 1792648114819,
     "year": "2017"
   },
   {
@@ -42,7 +42,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607591,
+    "added": 1792648114823,
     "year": "2017"
   },
   {
@@ -65,7 +65,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607591,
+    "added": 1792648114824,
     "year": "2017"
   },
   {
@@ -80,7 +80,7 @@
       "Y": "2",
       "Z": "4"
     },
-    "answer": "Y) 2 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "Y) 2",
     "letter": "Y",
     "src": {
       "file": "MS_1",
@@ -88,7 +88,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607591,
+    "added": 1792648114824,
     "year": "2017"
   },
   {
@@ -111,7 +111,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607591,
+    "added": 1792648114825,
     "year": "2017"
   },
   {
@@ -129,7 +129,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607592,
+    "added": 1792648114829,
     "year": "2017"
   },
   {
@@ -152,7 +152,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607592,
+    "added": 1792648114829,
     "year": "2017"
   },
   {
@@ -167,7 +167,7 @@
       "Y": "Ribosome [RYE-beh-sohm]",
       "Z": "Golgi [GOAL-jee] Body"
     },
-    "answer": "$W$) MITOCHONDRION 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "$W$) MITOCHONDRION",
     "letter": "W",
     "src": {
       "file": "MS_1",
@@ -175,7 +175,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607592,
+    "added": 1792648114831,
     "year": "2017"
   },
   {
@@ -198,7 +198,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607592,
+    "added": 1792648114834,
     "year": "2017"
   },
   {
@@ -221,7 +221,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607592,
+    "added": 1792648114836,
     "year": "2017"
   },
   {
@@ -244,7 +244,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607593,
+    "added": 1792648114837,
     "year": "2017"
   },
   {
@@ -259,7 +259,7 @@
       "Y": "100",
       "Z": "1000"
     },
-    "answer": "Y) 100 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "Y) 100",
     "letter": "Y",
     "src": {
       "file": "MS_1",
@@ -267,7 +267,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607593,
+    "added": 1792648114838,
     "year": "2017"
   },
   {
@@ -285,7 +285,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607593,
+    "added": 1792648114840,
     "year": "2017"
   },
   {
@@ -293,7 +293,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the radius of the circle with equation $x2 + 4x + y2 = 12$?",
+    "text": "What is the radius of the circle with equation $x^2 + 4x + y^2 = 12$?",
     "choices": null,
     "answer": "4",
     "letter": "",
@@ -303,7 +303,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607593,
+    "added": 1792648114843,
     "year": "2017"
   },
   {
@@ -326,7 +326,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114844,
     "year": "2017"
   },
   {
@@ -336,7 +336,7 @@
     "format": "sa",
     "text": "In meters per second squared, what is the acceleration experienced by a 10kilogram mass if it is being pushed by a 15-newton force?",
     "choices": null,
-    "answer": "1.5 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "1.5",
     "letter": "",
     "src": {
       "file": "MS_1",
@@ -344,7 +344,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114844,
     "year": "2017"
   },
   {
@@ -367,7 +367,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114844,
     "year": "2017"
   },
   {
@@ -385,7 +385,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114844,
     "year": "2017"
   },
   {
@@ -403,7 +403,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114844,
     "year": "2017"
   },
   {
@@ -418,7 +418,7 @@
       "Y": "Left Atrium",
       "Z": "Left Ventricle"
     },
-    "answer": "$Y$) LEFT ATRIUM 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "$Y$) LEFT ATRIUM",
     "letter": "Y",
     "src": {
       "file": "MS_1",
@@ -426,7 +426,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114845,
     "year": "2017"
   },
   {
@@ -449,7 +449,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114845,
     "year": "2017"
   },
   {
@@ -467,7 +467,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114846,
     "year": "2017"
   },
   {
@@ -490,7 +490,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114846,
     "year": "2017"
   },
   {
@@ -500,7 +500,7 @@
     "format": "sa",
     "text": "What is the adjective for a process that occurs at constant pressure?",
     "choices": null,
-    "answer": "ISOBARIC 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "ISOBARIC",
     "letter": "",
     "src": {
       "file": "MS_1",
@@ -508,7 +508,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114846,
     "year": "2017"
   },
   {
@@ -531,7 +531,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114846,
     "year": "2017"
   },
   {
@@ -554,7 +554,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114847,
     "year": "2017"
   },
   {
@@ -577,7 +577,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114847,
     "year": "2017"
   },
   {
@@ -592,7 +592,7 @@
       "Y": "Use of large land areas",
       "Z": "Use of water for cooling"
     },
-    "answer": "$X$) WILDLIFE STRIKES WITH TURBINES 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$X$) WILDLIFE STRIKES WITH TURBINES",
     "letter": "X",
     "src": {
       "file": "MS_1",
@@ -600,7 +600,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114847,
     "year": "2017"
   },
   {
@@ -623,7 +623,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114847,
     "year": "2017"
   },
   {
@@ -646,7 +646,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114848,
     "year": "2017"
   },
   {
@@ -669,7 +669,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114848,
     "year": "2017"
   },
   {
@@ -679,7 +679,7 @@
     "format": "sa",
     "text": "What type of radioactive decay occurs when carbon$-14$ decays to nitrogen$-14$?",
     "choices": null,
-    "answer": "BETA DECAY 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "BETA DECAY",
     "letter": "",
     "src": {
       "file": "MS_1",
@@ -687,7 +687,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607594,
+    "added": 1792648114848,
     "year": "2017"
   },
   {
@@ -705,7 +705,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114850,
     "year": "2017"
   },
   {
@@ -723,7 +723,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114850,
     "year": "2017"
   },
   {
@@ -741,7 +741,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114850,
     "year": "2017"
   },
   {
@@ -756,7 +756,7 @@
       "Y": "Crux",
       "Z": "Ursa Minor"
     },
-    "answer": "X) BIG DIPPER 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "X) BIG DIPPER",
     "letter": "X",
     "src": {
       "file": "MS_1",
@@ -764,7 +764,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114851,
     "year": "2017"
   },
   {
@@ -782,7 +782,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114851,
     "year": "2017"
   },
   {
@@ -800,7 +800,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114851,
     "year": "2017"
   },
   {
@@ -818,7 +818,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114852,
     "year": "2017"
   },
   {
@@ -833,7 +833,7 @@
       "Y": "Fire storm",
       "Z": "Jet stream"
     },
-    "answer": "$X$) DOWNBURST 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$X$) DOWNBURST",
     "letter": "X",
     "src": {
       "file": "MS_1",
@@ -841,7 +841,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114852,
     "year": "2017"
   },
   {
@@ -864,7 +864,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114852,
     "year": "2017"
   },
   {
@@ -887,7 +887,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114853,
     "year": "2017"
   },
   {
@@ -905,7 +905,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114853,
     "year": "2017"
   },
   {
@@ -915,7 +915,7 @@
     "format": "sa",
     "text": "What process introduces genetic variation during meiosis [my-OH-sis] and does not occur during mitosis [my-TOW-sis]?",
     "choices": null,
-    "answer": "CROSSING OVER (ACCEPT: CHROMOSOMAL CROSSOVER) 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "CROSSING OVER (ACCEPT: CHROMOSOMAL CROSSOVER)",
     "letter": "",
     "src": {
       "file": "MS_1",
@@ -923,7 +923,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114853,
     "year": "2017"
   },
   {
@@ -941,7 +941,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114854,
     "year": "2017"
   },
   {
@@ -951,7 +951,7 @@
     "format": "sa",
     "text": "To the nearest tenth of a day, how long is a sidereal month?",
     "choices": null,
-    "answer": "27.3 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "27.3",
     "letter": "",
     "src": {
       "file": "MS_1",
@@ -959,7 +959,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607595,
+    "added": 1792648114854,
     "year": "2017"
   },
   {
@@ -977,7 +977,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114861,
     "year": "2017"
   },
   {
@@ -995,7 +995,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114861,
     "year": "2017"
   },
   {
@@ -1013,7 +1013,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114861,
     "year": "2017"
   },
   {
@@ -1028,7 +1028,7 @@
       "Y": "Orogen",
       "Z": "Basin"
     },
-    "answer": "$W$) SHIELD 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$W$) SHIELD",
     "letter": "W",
     "src": {
       "file": "MS_10A",
@@ -1036,7 +1036,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114861,
     "year": "2017"
   },
   {
@@ -1059,7 +1059,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114862,
     "year": "2017"
   },
   {
@@ -1082,7 +1082,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114863,
     "year": "2017"
   },
   {
@@ -1100,7 +1100,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114863,
     "year": "2017"
   },
   {
@@ -1110,7 +1110,7 @@
     "format": "sa",
     "text": "What is the degree measure of each interior angle of a regular 60-sided polygon?",
     "choices": null,
-    "answer": "174 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "174",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1118,7 +1118,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114863,
     "year": "2017"
   },
   {
@@ -1141,7 +1141,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114864,
     "year": "2017"
   },
   {
@@ -1164,7 +1164,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114864,
     "year": "2017"
   },
   {
@@ -1187,7 +1187,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114865,
     "year": "2017"
   },
   {
@@ -1197,7 +1197,7 @@
     "format": "sa",
     "text": "Add the following three terms and give the answer in centimeters to the appropriate number of significant figures: 2.5 centimeters, 0.50 centimeters, and 0.055 centimeters.",
     "choices": null,
-    "answer": "3.1 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "3.1",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1205,7 +1205,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114865,
     "year": "2017"
   },
   {
@@ -1228,7 +1228,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114865,
     "year": "2017"
   },
   {
@@ -1246,7 +1246,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114865,
     "year": "2017"
   },
   {
@@ -1269,7 +1269,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114865,
     "year": "2017"
   },
   {
@@ -1284,7 +1284,7 @@
       "Y": "Carbon dioxide",
       "Z": "Hydrogen"
     },
-    "answer": "$Z$) HYDROGEN 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "$Z$) HYDROGEN",
     "letter": "Z",
     "src": {
       "file": "MS_10A",
@@ -1292,7 +1292,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607596,
+    "added": 1792648114866,
     "year": "2017"
   },
   {
@@ -1310,7 +1310,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114866,
     "year": "2017"
   },
   {
@@ -1328,7 +1328,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114866,
     "year": "2017"
   },
   {
@@ -1351,7 +1351,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114866,
     "year": "2017"
   },
   {
@@ -1361,7 +1361,7 @@
     "format": "sa",
     "text": "What are the chemical compounds used as the anode [ANN-ode] and cathode [CATH-ode], respectively, of a standard alkaline AA battery?",
     "choices": null,
-    "answer": "ANODE: ZINC; CATHODE: MANGANESE OXIDE (ACCEPT: ZINC AND MANGANESE OXIDE, IN THAT ORDER) 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "ANODE: ZINC; CATHODE: MANGANESE OXIDE (ACCEPT: ZINC AND MANGANESE OXIDE, IN THAT ORDER)",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1369,7 +1369,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114867,
     "year": "2017"
   },
   {
@@ -1387,7 +1387,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114867,
     "year": "2017"
   },
   {
@@ -1405,7 +1405,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114867,
     "year": "2017"
   },
   {
@@ -1428,7 +1428,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114868,
     "year": "2017"
   },
   {
@@ -1438,7 +1438,7 @@
     "format": "sa",
     "text": "What two elements are liquids at standard room temperature and pressure?",
     "choices": null,
-    "answer": "MERCURY AND BROMINE 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "MERCURY AND BROMINE",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1446,7 +1446,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114868,
     "year": "2017"
   },
   {
@@ -1469,7 +1469,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114868,
     "year": "2017"
   },
   {
@@ -1487,7 +1487,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114869,
     "year": "2017"
   },
   {
@@ -1505,7 +1505,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114869,
     "year": "2017"
   },
   {
@@ -1515,7 +1515,7 @@
     "format": "sa",
     "text": "Phagocytosis [fag-oh-sye-TOW-sis] and pinocytosis [PEE-noh-sigh-TOW-sis] are both examples of what type of general cellular process?",
     "choices": null,
-    "answer": "ENDOCYTOSIS (ACCEPT: ACTIVE TRANSPORT, BULK TRANSPORT) 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "ENDOCYTOSIS (ACCEPT: ACTIVE TRANSPORT, BULK TRANSPORT)",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1523,7 +1523,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114869,
     "year": "2017"
   },
   {
@@ -1546,7 +1546,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114870,
     "year": "2017"
   },
   {
@@ -1564,7 +1564,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114870,
     "year": "2017"
   },
   {
@@ -1582,7 +1582,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114870,
     "year": "2017"
   },
   {
@@ -1592,7 +1592,7 @@
     "format": "sa",
     "text": "What is the slope-intercept equation of the line that contains points $(-1, 1)$ and $(4, 21)$?",
     "choices": null,
-    "answer": "$y = 4x + 5 2017$ Middle School Regional NSB® PAGE 8",
+    "answer": "$y = 4x + 5$",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1600,7 +1600,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114873,
     "year": "2017"
   },
   {
@@ -1618,7 +1618,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114873,
     "year": "2017"
   },
   {
@@ -1636,7 +1636,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114873,
     "year": "2017"
   },
   {
@@ -1659,7 +1659,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114875,
     "year": "2017"
   },
   {
@@ -1669,7 +1669,7 @@
     "format": "sa",
     "text": "Which of the Galilean moons has the shortest orbital period?",
     "choices": null,
-    "answer": "IO 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "IO",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1677,7 +1677,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114875,
     "year": "2017"
   },
   {
@@ -1700,7 +1700,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607597,
+    "added": 1792648114875,
     "year": "2017"
   },
   {
@@ -1718,7 +1718,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114875,
     "year": "2017"
   },
   {
@@ -1736,7 +1736,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114875,
     "year": "2017"
   },
   {
@@ -1746,7 +1746,7 @@
     "format": "sa",
     "text": "What molecules diffuse across synapses [sin-AP-seez] and bind to ligand [LIH-gund] gated ion channels?",
     "choices": null,
-    "answer": "NEUROTRANSMITTERS 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "NEUROTRANSMITTERS",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1754,7 +1754,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114876,
     "year": "2017"
   },
   {
@@ -1777,7 +1777,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114876,
     "year": "2017"
   },
   {
@@ -1795,7 +1795,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114876,
     "year": "2017"
   },
   {
@@ -1813,7 +1813,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114877,
     "year": "2017"
   },
   {
@@ -1823,7 +1823,7 @@
     "format": "sa",
     "text": "What type of viruses exclusively attack bacteria?",
     "choices": null,
-    "answer": "BACTERIOPHAGES 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "BACTERIOPHAGES",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1831,7 +1831,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114877,
     "year": "2017"
   },
   {
@@ -1849,7 +1849,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114877,
     "year": "2017"
   },
   {
@@ -1859,7 +1859,7 @@
     "format": "sa",
     "text": "To the nearest whole number, what is the slant height of a right circular cone with radius 8 and height 11?",
     "choices": null,
-    "answer": "14 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "14",
     "letter": "",
     "src": {
       "file": "MS_10A",
@@ -1867,7 +1867,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607598,
+    "added": 1792648114877,
     "year": "2017"
   },
   {
@@ -1890,7 +1890,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114882,
     "year": "2017"
   },
   {
@@ -1908,7 +1908,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114882,
     "year": "2017"
   },
   {
@@ -1926,7 +1926,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114882,
     "year": "2017"
   },
   {
@@ -1934,9 +1934,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What are the sum of the roots and the product of the roots, respectively, for the following quadratic equation: $4x2 - 12x - 7 = 0$?",
+    "text": "What are the sum of the roots and the product of the roots, respectively, for the following quadratic equation: $4x^2 - 12x - 7 = 0$?",
     "choices": null,
-    "answer": "SUM = 3; PRODUCT = $-7/4$ (ACCEPT: $-1$¾, –1.75) 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "SUM = 3; PRODUCT = $-7/4$ (ACCEPT: $-1$¾, $-1.75$)",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -1944,7 +1944,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114885,
     "year": "2017"
   },
   {
@@ -1967,7 +1967,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114885,
     "year": "2017"
   },
   {
@@ -1985,7 +1985,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114885,
     "year": "2017"
   },
   {
@@ -2008,7 +2008,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114886,
     "year": "2017"
   },
   {
@@ -2018,7 +2018,7 @@
     "format": "sa",
     "text": "What is the term for the phenomenon by which light from a distant object can be bent by a massive intervening object?",
     "choices": null,
-    "answer": "GRAVITATIONAL LENSING 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "GRAVITATIONAL LENSING",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2026,7 +2026,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114886,
     "year": "2017"
   },
   {
@@ -2044,7 +2044,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114886,
     "year": "2017"
   },
   {
@@ -2062,7 +2062,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114887,
     "year": "2017"
   },
   {
@@ -2080,7 +2080,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114887,
     "year": "2017"
   },
   {
@@ -2090,7 +2090,7 @@
     "format": "sa",
     "text": "What is the units digit of 3 to the 33rd power?",
     "choices": null,
-    "answer": "3 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "3",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2098,7 +2098,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114887,
     "year": "2017"
   },
   {
@@ -2121,7 +2121,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114888,
     "year": "2017"
   },
   {
@@ -2144,7 +2144,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114889,
     "year": "2017"
   },
   {
@@ -2162,7 +2162,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607599,
+    "added": 1792648114890,
     "year": "2017"
   },
   {
@@ -2172,7 +2172,7 @@
     "format": "sa",
     "text": "53 teams play in a single-elimination tournament; that is, each game is played by two teams, and the losing team is eliminated. Some teams have byes in the first round and don’t have to play, but, after the first round, each remaining team plays every round until they are eliminated. How many games are played in the first round?",
     "choices": null,
-    "answer": "21 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "21",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2180,7 +2180,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114890,
     "year": "2017"
   },
   {
@@ -2203,7 +2203,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114890,
     "year": "2017"
   },
   {
@@ -2226,7 +2226,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114894,
     "year": "2017"
   },
   {
@@ -2244,7 +2244,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114894,
     "year": "2017"
   },
   {
@@ -2254,7 +2254,7 @@
     "format": "sa",
     "text": "Beta-galactosidase [[BAY-tah gah-lac-toh-SIGH-dase] is an enzyme that cleaves what disaccharide?",
     "choices": null,
-    "answer": "LACTOSE 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "LACTOSE",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2262,7 +2262,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114894,
     "year": "2017"
   },
   {
@@ -2280,7 +2280,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114894,
     "year": "2017"
   },
   {
@@ -2298,7 +2298,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114894,
     "year": "2017"
   },
   {
@@ -2321,7 +2321,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114895,
     "year": "2017"
   },
   {
@@ -2331,7 +2331,7 @@
     "format": "sa",
     "text": "Expressing your answer in meters, to 2 significant figures, what is the wavelength of a light wave that has a frequency of 200,000 hertz?",
     "choices": null,
-    "answer": "1500 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "1500",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2339,7 +2339,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114895,
     "year": "2017"
   },
   {
@@ -2357,7 +2357,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114895,
     "year": "2017"
   },
   {
@@ -2380,7 +2380,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114895,
     "year": "2017"
   },
   {
@@ -2403,7 +2403,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114896,
     "year": "2017"
   },
   {
@@ -2418,7 +2418,7 @@
       "Y": "The nitrate ion has three valid resonance structures",
       "Z": "Sigma bonds are most often involved in resonance"
     },
-    "answer": "$Y$) THE NITRATE ION HAS THREE VALID RESONANCE STRUCTURES 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$Y$) THE NITRATE ION HAS THREE VALID RESONANCE STRUCTURES",
     "letter": "Y",
     "src": {
       "file": "MS_11A",
@@ -2426,7 +2426,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607600,
+    "added": 1792648114896,
     "year": "2017"
   },
   {
@@ -2449,7 +2449,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114896,
     "year": "2017"
   },
   {
@@ -2467,7 +2467,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114896,
     "year": "2017"
   },
   {
@@ -2485,7 +2485,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114897,
     "year": "2017"
   },
   {
@@ -2495,7 +2495,7 @@
     "format": "sa",
     "text": "A pyramid with 9 faces has how many edges?",
     "choices": null,
-    "answer": "16 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "16",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2503,7 +2503,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114897,
     "year": "2017"
   },
   {
@@ -2521,7 +2521,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114897,
     "year": "2017"
   },
   {
@@ -2544,7 +2544,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114897,
     "year": "2017"
   },
   {
@@ -2567,7 +2567,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114898,
     "year": "2017"
   },
   {
@@ -2577,7 +2577,7 @@
     "format": "sa",
     "text": "Identify all of the following three statements that are true regarding sound: 1) The speed of sound depends on the medium; 2) Sound is a pressure wave; 3) Sound travels faster in water than in air.",
     "choices": null,
-    "answer": "ALL OF THEM 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "ALL OF THEM",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2585,7 +2585,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114898,
     "year": "2017"
   },
   {
@@ -2603,7 +2603,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114898,
     "year": "2017"
   },
   {
@@ -2626,7 +2626,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114898,
     "year": "2017"
   },
   {
@@ -2644,7 +2644,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114898,
     "year": "2017"
   },
   {
@@ -2654,7 +2654,7 @@
     "format": "sa",
     "text": "A single, charged particle is placed at the origin. The resulting potential at point $(0, 2)$ is $V$. What is the potential at point $(0, 4)$?",
     "choices": null,
-    "answer": "$V/2 2017$ Middle School Regional NSB® PAGE 10",
+    "answer": "$V/2$",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2662,7 +2662,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114899,
     "year": "2017"
   },
   {
@@ -2680,7 +2680,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114899,
     "year": "2017"
   },
   {
@@ -2703,7 +2703,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114899,
     "year": "2017"
   },
   {
@@ -2721,7 +2721,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114901,
     "year": "2017"
   },
   {
@@ -2731,7 +2731,7 @@
     "format": "sa",
     "text": "To the nearest whole number, what is the circumference of a circle with radius 6?",
     "choices": null,
-    "answer": "38 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "38",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2739,7 +2739,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114901,
     "year": "2017"
   },
   {
@@ -2757,7 +2757,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114901,
     "year": "2017"
   },
   {
@@ -2767,7 +2767,7 @@
     "format": "sa",
     "text": "Order the following 4 units of distance from the shortest to the longest: 1) AU; 2) Light-year; 3) Parsec, 4) Light-minute.",
     "choices": null,
-    "answer": "4, 1, 2, 3 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "4, 1, 2, 3",
     "letter": "",
     "src": {
       "file": "MS_11A",
@@ -2775,7 +2775,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607601,
+    "added": 1792648114901,
     "year": "2017"
   },
   {
@@ -2793,7 +2793,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114907,
     "year": "2017"
   },
   {
@@ -2811,7 +2811,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114907,
     "year": "2017"
   },
   {
@@ -2834,7 +2834,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114908,
     "year": "2017"
   },
   {
@@ -2849,7 +2849,7 @@
       "Y": "Refractor telescope",
       "Z": "Optical interferometer"
     },
-    "answer": "$X$) BOLOMETER 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$X$) BOLOMETER",
     "letter": "X",
     "src": {
       "file": "MS_12A",
@@ -2857,7 +2857,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114908,
     "year": "2017"
   },
   {
@@ -2875,7 +2875,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2893,7 +2893,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2911,7 +2911,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2926,7 +2926,7 @@
       "Y": "20",
       "Z": "50"
     },
-    "answer": "Y) 20 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "Y) 20",
     "letter": "Y",
     "src": {
       "file": "MS_12A",
@@ -2934,7 +2934,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2952,7 +2952,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2970,7 +2970,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114909,
     "year": "2017"
   },
   {
@@ -2993,7 +2993,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114910,
     "year": "2017"
   },
   {
@@ -3003,7 +3003,7 @@
     "format": "sa",
     "text": "In molecular orbital theory, what type of orbital is always lower in energy than the atomic orbitals from which it is composed?",
     "choices": null,
-    "answer": "BONDING ORBITAL 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "BONDING ORBITAL",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3011,7 +3011,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114910,
     "year": "2017"
   },
   {
@@ -3034,7 +3034,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114910,
     "year": "2017"
   },
   {
@@ -3057,7 +3057,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114910,
     "year": "2017"
   },
   {
@@ -3075,7 +3075,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114910,
     "year": "2017"
   },
   {
@@ -3085,7 +3085,7 @@
     "format": "sa",
     "text": "Identify all of the following three statements that are true of atomic theory: 1) Hydrogen gas has a mass of $1 AMU$; 2) Compounds can contain any real number of atoms; 3) One liter of argon at STP contains the same number of atoms as one liter of neon at STP.",
     "choices": null,
-    "answer": "3 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "3",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3093,7 +3093,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114911,
     "year": "2017"
   },
   {
@@ -3111,7 +3111,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114911,
     "year": "2017"
   },
   {
@@ -3134,7 +3134,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114911,
     "year": "2017"
   },
   {
@@ -3157,7 +3157,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607602,
+    "added": 1792648114911,
     "year": "2017"
   },
   {
@@ -3172,7 +3172,7 @@
       "Y": "From 19 to 26 inclusive",
       "Z": "From 27 to 32 inclusive"
     },
-    "answer": "$W$) FROM 4 TO 12 INCLUSIVE 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "$W$) FROM 4 TO 12 INCLUSIVE",
     "letter": "W",
     "src": {
       "file": "MS_12A",
@@ -3180,7 +3180,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114912,
     "year": "2017"
   },
   {
@@ -3198,7 +3198,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114912,
     "year": "2017"
   },
   {
@@ -3216,7 +3216,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114912,
     "year": "2017"
   },
   {
@@ -3234,7 +3234,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114912,
     "year": "2017"
   },
   {
@@ -3242,9 +3242,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Solve the following equation for $x$ over the negative integers: $x4 - 15x2 + 54 = 0$",
+    "text": "Solve the following equation for $x$ over the negative integers: $x^4 - 15x^2 + 54 = 0$",
     "choices": null,
-    "answer": "$-3 2017$ Middle School Regional NSB® PAGE 6",
+    "answer": "$-3$",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3252,7 +3252,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114913,
     "year": "2017"
   },
   {
@@ -3270,7 +3270,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114913,
     "year": "2017"
   },
   {
@@ -3288,7 +3288,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114913,
     "year": "2017"
   },
   {
@@ -3306,7 +3306,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114913,
     "year": "2017"
   },
   {
@@ -3316,7 +3316,7 @@
     "format": "sa",
     "text": "Identify all of the following three units that could be used to measure acceleration: 1) Meters per second squared; 2) Newtons per kilogram; 3) Kilometers per hour.",
     "choices": null,
-    "answer": "1 AND 2 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "1 AND 2",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3324,7 +3324,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114914,
     "year": "2017"
   },
   {
@@ -3342,7 +3342,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114914,
     "year": "2017"
   },
   {
@@ -3365,7 +3365,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114914,
     "year": "2017"
   },
   {
@@ -3383,7 +3383,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114915,
     "year": "2017"
   },
   {
@@ -3398,7 +3398,7 @@
       "Y": "Fish",
       "Z": "Lobster"
     },
-    "answer": "X) SEA STAR 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "X) SEA STAR",
     "letter": "X",
     "src": {
       "file": "MS_12A",
@@ -3406,7 +3406,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114915,
     "year": "2017"
   },
   {
@@ -3429,7 +3429,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114915,
     "year": "2017"
   },
   {
@@ -3452,7 +3452,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114915,
     "year": "2017"
   },
   {
@@ -3470,7 +3470,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607603,
+    "added": 1792648114918,
     "year": "2017"
   },
   {
@@ -3480,7 +3480,7 @@
     "format": "sa",
     "text": "To the nearest integer, what is 123 decreased by 37%?",
     "choices": null,
-    "answer": "77 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "77",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3488,7 +3488,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114918,
     "year": "2017"
   },
   {
@@ -3511,7 +3511,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114918,
     "year": "2017"
   },
   {
@@ -3529,7 +3529,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114918,
     "year": "2017"
   },
   {
@@ -3547,7 +3547,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114919,
     "year": "2017"
   },
   {
@@ -3562,7 +3562,7 @@
       "Y": "Succulents",
       "Z": "Grasses"
     },
-    "answer": "$X$) LEGUMES 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$X$) LEGUMES",
     "letter": "X",
     "src": {
       "file": "MS_12A",
@@ -3570,7 +3570,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114919,
     "year": "2017"
   },
   {
@@ -3588,7 +3588,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114919,
     "year": "2017"
   },
   {
@@ -3606,7 +3606,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114919,
     "year": "2017"
   },
   {
@@ -3624,7 +3624,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114920,
     "year": "2017"
   },
   {
@@ -3634,7 +3634,7 @@
     "format": "sa",
     "text": "Two lines in space are each perpendicular to a third line. Identify all of the following three relationships that could be true of the first two lines: 1) They are perpendicular; 2) They are parallel; 3) They are skew.",
     "choices": null,
-    "answer": "ALL (ACCEPT: 1, 2, 3) 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "ALL (ACCEPT: 1, 2, 3)",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3642,7 +3642,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114921,
     "year": "2017"
   },
   {
@@ -3660,7 +3660,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114921,
     "year": "2017"
   },
   {
@@ -3670,7 +3670,7 @@
     "format": "sa",
     "text": "What type of biological structures have no apparent function, but resemble structures that are found in the evolutionary history of an organism?",
     "choices": null,
-    "answer": "VESTIGIAL STRUCTURES 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "VESTIGIAL STRUCTURES",
     "letter": "",
     "src": {
       "file": "MS_12A",
@@ -3678,7 +3678,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607604,
+    "added": 1792648114922,
     "year": "2017"
   },
   {
@@ -3701,7 +3701,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114928,
     "year": "2017"
   },
   {
@@ -3719,7 +3719,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114928,
     "year": "2017"
   },
   {
@@ -3737,7 +3737,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114928,
     "year": "2017"
   },
   {
@@ -3747,7 +3747,7 @@
     "format": "sa",
     "text": "Give the name of the compound formed by combining oxygen with the iron +2 ion.",
     "choices": null,
-    "answer": "FERROUS OXIDE 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "FERROUS OXIDE",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -3755,7 +3755,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114928,
     "year": "2017"
   },
   {
@@ -3773,7 +3773,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114928,
     "year": "2017"
   },
   {
@@ -3796,7 +3796,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114929,
     "year": "2017"
   },
   {
@@ -3814,7 +3814,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114929,
     "year": "2017"
   },
   {
@@ -3829,7 +3829,7 @@
       "Y": "More efficient burning",
       "Z": "Reducing landfill disposal"
     },
-    "answer": "$Z$) REDUCING LANDFILL DISPOSAL 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "$Z$) REDUCING LANDFILL DISPOSAL",
     "letter": "Z",
     "src": {
       "file": "MS_13A",
@@ -3837,7 +3837,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114929,
     "year": "2017"
   },
   {
@@ -3855,7 +3855,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114929,
     "year": "2017"
   },
   {
@@ -3873,7 +3873,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114930,
     "year": "2017"
   },
   {
@@ -3891,7 +3891,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114930,
     "year": "2017"
   },
   {
@@ -3901,7 +3901,7 @@
     "format": "sa",
     "text": "How many chambers does the human heart have?",
     "choices": null,
-    "answer": "FOUR 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "FOUR",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -3909,7 +3909,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114930,
     "year": "2017"
   },
   {
@@ -3932,7 +3932,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114931,
     "year": "2017"
   },
   {
@@ -3950,7 +3950,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114931,
     "year": "2017"
   },
   {
@@ -3968,7 +3968,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114931,
     "year": "2017"
   },
   {
@@ -3978,7 +3978,7 @@
     "format": "sa",
     "text": "Rounded to the nearest integer, what is the area of a circle of circumference 8?",
     "choices": null,
-    "answer": "5 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "5",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -3986,7 +3986,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607605,
+    "added": 1792648114931,
     "year": "2017"
   },
   {
@@ -4009,7 +4009,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114932,
     "year": "2017"
   },
   {
@@ -4027,7 +4027,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114932,
     "year": "2017"
   },
   {
@@ -4045,7 +4045,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114932,
     "year": "2017"
   },
   {
@@ -4055,7 +4055,7 @@
     "format": "sa",
     "text": "What is the sum of the mean, median, and mode of the following list of eight numbers: 1, 2, 3, 3, 6, 9, 11, 13?",
     "choices": null,
-    "answer": "13.5 (ACCEPT: $27/2$, 13 ½) 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "13.5 (ACCEPT: $27/2$, 13 ½)",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4063,7 +4063,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114932,
     "year": "2017"
   },
   {
@@ -4081,7 +4081,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114933,
     "year": "2017"
   },
   {
@@ -4099,7 +4099,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114933,
     "year": "2017"
   },
   {
@@ -4122,7 +4122,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114934,
     "year": "2017"
   },
   {
@@ -4137,7 +4137,7 @@
       "Y": "On-site at nuclear reactors",
       "Z": "In breeder reactors"
     },
-    "answer": "$Y$) ON-SITE AT NUCLEAR REACTORS 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "$Y$) ON-SITE AT NUCLEAR REACTORS",
     "letter": "Y",
     "src": {
       "file": "MS_13A",
@@ -4145,7 +4145,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114934,
     "year": "2017"
   },
   {
@@ -4163,7 +4163,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114935,
     "year": "2017"
   },
   {
@@ -4181,7 +4181,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114935,
     "year": "2017"
   },
   {
@@ -4199,7 +4199,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114935,
     "year": "2017"
   },
   {
@@ -4209,7 +4209,7 @@
     "format": "sa",
     "text": "On a math exam, every question gives two explicit choices, A and $B$, but the answer can be any combination of these two choices. The answer includes choice A 70% of the time and choice B 50% of the time. The answer is neither A nor B 10% of the time. For what percentage of questions is the answer both A and $B$?",
     "choices": null,
-    "answer": "30 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "30",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4217,7 +4217,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114936,
     "year": "2017"
   },
   {
@@ -4235,7 +4235,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114936,
     "year": "2017"
   },
   {
@@ -4243,7 +4243,7 @@
     "subject": "earth",
     "type": "bonus",
     "format": "sa",
-    "text": "Order the following three dissolved ions from most abundant to least abundant in the Earth's oceans: 1) Na+; 2) Cl-; 3) Mg +. 2",
+    "text": "Order the following three dissolved ions from most abundant to least abundant in the Earth's oceans: 1) Na+; 2) Cl-; 3) Mg2+.",
     "choices": null,
     "answer": "2, 1, 3",
     "letter": "",
@@ -4253,7 +4253,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114936,
     "year": "2017"
   },
   {
@@ -4276,7 +4276,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607606,
+    "added": 1792648114937,
     "year": "2017"
   },
   {
@@ -4286,7 +4286,7 @@
     "format": "sa",
     "text": "If an isotope undergoes first-order radioactive decay with a half-life of 5 years, how long will it take, in years, until only 12.5% of the isotope remains?",
     "choices": null,
-    "answer": "15 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "15",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4294,7 +4294,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114937,
     "year": "2017"
   },
   {
@@ -4312,7 +4312,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114938,
     "year": "2017"
   },
   {
@@ -4330,7 +4330,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114938,
     "year": "2017"
   },
   {
@@ -4348,7 +4348,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114938,
     "year": "2017"
   },
   {
@@ -4358,7 +4358,7 @@
     "format": "sa",
     "text": "Two children sit on opposite sides of a teeter-totter. If one child has mass 30 kilograms and sits 2.5 meters away from the fulcrum, how far away, in meters, must the other child, who has mass 25 kilograms, sit from the fulcrum to keep the teeter-totter balanced?",
     "choices": null,
-    "answer": "3 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "3",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4366,7 +4366,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114938,
     "year": "2017"
   },
   {
@@ -4384,7 +4384,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114939,
     "year": "2017"
   },
   {
@@ -4402,7 +4402,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114939,
     "year": "2017"
   },
   {
@@ -4420,7 +4420,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114939,
     "year": "2017"
   },
   {
@@ -4430,7 +4430,7 @@
     "format": "sa",
     "text": "Identify all of the following three chemicals that are strong acids: 1) Sodium hydroxide; 2) Hydrochloric [HIGH-droh-KLOR-ic] acid; 3) Acetic [ah-SEE-tik] acid.",
     "choices": null,
-    "answer": "2 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "2",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4438,7 +4438,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114939,
     "year": "2017"
   },
   {
@@ -4446,7 +4446,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Name one of the linear factors of $x2 - x - 72$.",
+    "text": "Name one of the linear factors of $x^2 - x - 72$.",
     "choices": null,
     "answer": "$x - 9$ OR $x + 8$ (must give at least one)",
     "letter": "",
@@ -4456,7 +4456,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114940,
     "year": "2017"
   },
   {
@@ -4474,7 +4474,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114940,
     "year": "2017"
   },
   {
@@ -4492,7 +4492,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114942,
     "year": "2017"
   },
   {
@@ -4502,7 +4502,7 @@
     "format": "sa",
     "text": "How many stomach chambers do ruminants possess?",
     "choices": null,
-    "answer": "FOUR 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "FOUR",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4510,7 +4510,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114943,
     "year": "2017"
   },
   {
@@ -4528,7 +4528,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114943,
     "year": "2017"
   },
   {
@@ -4538,7 +4538,7 @@
     "format": "sa",
     "text": "Order the following 4 layers of the sun from the coolest to the warmest: 1) Core; 2) Photosphere; 3) Chromosphere; 4) Corona.",
     "choices": null,
-    "answer": "2, 3, 4, 1 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "2, 3, 4, 1",
     "letter": "",
     "src": {
       "file": "MS_13A",
@@ -4546,7 +4546,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114943,
     "year": "2017"
   },
   {
@@ -4569,7 +4569,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114946,
     "year": "2017"
   },
   {
@@ -4587,7 +4587,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607607,
+    "added": 1792648114946,
     "year": "2017"
   },
   {
@@ -4610,7 +4610,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114947,
     "year": "2017"
   },
   {
@@ -4620,7 +4620,7 @@
     "format": "sa",
     "text": "A custom mixture of nuts is composed of cashews worth ＄$8 a$ pound and almonds worth ＄$6 a$ pound. Ray purchases 9 pounds of the mixture for ＄67. How many of these 9 pounds are cashews?",
     "choices": null,
-    "answer": "6.5 (ACCEPT: 6½, 13/2) 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "6.5 (ACCEPT: 6½, $13/2$)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -4628,7 +4628,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114947,
     "year": "2017"
   },
   {
@@ -4646,7 +4646,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114947,
     "year": "2017"
   },
   {
@@ -4669,7 +4669,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114948,
     "year": "2017"
   },
   {
@@ -4687,7 +4687,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114948,
     "year": "2017"
   },
   {
@@ -4697,7 +4697,7 @@
     "format": "sa",
     "text": "What is the sum of the integers between 70 and 89, inclusive?",
     "choices": null,
-    "answer": "1590 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "1590",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -4705,7 +4705,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114948,
     "year": "2017"
   },
   {
@@ -4723,7 +4723,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114948,
     "year": "2017"
   },
   {
@@ -4746,7 +4746,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114949,
     "year": "2017"
   },
   {
@@ -4769,7 +4769,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114949,
     "year": "2017"
   },
   {
@@ -4779,7 +4779,7 @@
     "format": "sa",
     "text": "What is the term for a pair of non-bonding electrons in a molecule?",
     "choices": null,
-    "answer": "LONE PAIR (ACCEPT: NON-BONDING PAIR) 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "LONE PAIR (ACCEPT: NON-BONDING PAIR)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -4787,7 +4787,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114949,
     "year": "2017"
   },
   {
@@ -4805,7 +4805,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114949,
     "year": "2017"
   },
   {
@@ -4823,7 +4823,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4841,7 +4841,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4851,7 +4851,7 @@
     "format": "sa",
     "text": "What is the primary mode of ocean circulation below 1000 meters below sea level?",
     "choices": null,
-    "answer": "THERMOHALINE CIRCULATION (OR THERMOHALINE) 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "THERMOHALINE CIRCULATION (OR THERMOHALINE)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -4859,7 +4859,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4877,7 +4877,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4895,7 +4895,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4913,7 +4913,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114950,
     "year": "2017"
   },
   {
@@ -4928,7 +4928,7 @@
       "Y": "Igneous [IG-nee-us]",
       "Z": "Quartz"
     },
-    "answer": "$W$) LIMESTONE 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "$W$) LIMESTONE",
     "letter": "W",
     "src": {
       "file": "MS_14A",
@@ -4936,7 +4936,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114951,
     "year": "2017"
   },
   {
@@ -4944,7 +4944,7 @@
     "subject": "phys",
     "type": "tossup",
     "format": "sa",
-    "text": "What is the IUPAC name of N O? 2",
+    "text": "What is the IUPAC name of $N2O$?",
     "choices": null,
     "answer": "DINITROGEN MONOXIDE",
     "letter": "",
@@ -4954,7 +4954,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114951,
     "year": "2017"
   },
   {
@@ -4964,7 +4964,7 @@
     "format": "sa",
     "text": "What is the empirical formula of glucose?",
     "choices": null,
-    "answer": "CH O 2",
+    "answer": "$CH2O$",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -4972,7 +4972,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114951,
     "year": "2017"
   },
   {
@@ -4995,7 +4995,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114952,
     "year": "2017"
   },
   {
@@ -5005,7 +5005,7 @@
     "format": "sa",
     "text": "Rank the following sectors by total annual energy consumption in the $U$.$S$., from least amount of energy consumed to greatest: 1) Residential; 2) Transportation; 3) Commercial; 4) Industrial.",
     "choices": null,
-    "answer": "3, 1, 2, 4 (COMMERCIAL, RESIDENTIAL, TRANSPORTATION, INDUSTRIAL) 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "3, 1, 2, 4 (COMMERCIAL, RESIDENTIAL, TRANSPORTATION, INDUSTRIAL)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5013,7 +5013,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114953,
     "year": "2017"
   },
   {
@@ -5031,7 +5031,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114953,
     "year": "2017"
   },
   {
@@ -5049,7 +5049,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114953,
     "year": "2017"
   },
   {
@@ -5067,7 +5067,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114954,
     "year": "2017"
   },
   {
@@ -5077,7 +5077,7 @@
     "format": "sa",
     "text": "At what value of $y$ does the line that contains the points $(2, 4)$ and $(5, 12)$ cross the y-axis?",
     "choices": null,
-    "answer": "$-4/3$ (ACCEPT: –1 1/3) 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$-4/3$ (ACCEPT: $-1 1/3$)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5085,7 +5085,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114955,
     "year": "2017"
   },
   {
@@ -5103,7 +5103,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114955,
     "year": "2017"
   },
   {
@@ -5121,7 +5121,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114955,
     "year": "2017"
   },
   {
@@ -5144,7 +5144,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114955,
     "year": "2017"
   },
   {
@@ -5154,7 +5154,7 @@
     "format": "sa",
     "text": "Rank the following three reservoirs of unfrozen fresh water in decreasing order of volume: 1) Rivers; 2) Lakes; 3) Atmosphere.",
     "choices": null,
-    "answer": "2, 3, 1 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "2, 3, 1",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5162,7 +5162,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114955,
     "year": "2017"
   },
   {
@@ -5180,7 +5180,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5198,7 +5198,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607608,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5216,7 +5216,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5226,7 +5226,7 @@
     "format": "sa",
     "text": "Order the four terrestrial planets in order of increasing planetary radius.",
     "choices": null,
-    "answer": "MERCURY, MARS, VENUS, EARTH 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "MERCURY, MARS, VENUS, EARTH",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5234,7 +5234,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5252,7 +5252,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5270,7 +5270,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5293,7 +5293,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114956,
     "year": "2017"
   },
   {
@@ -5308,7 +5308,7 @@
       "Y": "The amount of chlorine gas would remain the same",
       "Z": "Solid phosphorus argonite [AR-gah-nite] would form"
     },
-    "answer": "$Y$) THE AMOUNT OF CHLORINE GAS WOULD REMAIN THE SAME 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$Y$) THE AMOUNT OF CHLORINE GAS WOULD REMAIN THE SAME",
     "letter": "Y",
     "src": {
       "file": "MS_14A",
@@ -5316,7 +5316,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5334,7 +5334,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5352,7 +5352,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5370,7 +5370,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5380,7 +5380,7 @@
     "format": "sa",
     "text": "In stellar structure, identify all of the following four elements that are considered metals: 1) Carbon; 2) Oxygen; 3) Silicon; 4) Iron.",
     "choices": null,
-    "answer": "ALL (ACCEPT: 1, 2, 3, AND 4) 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "ALL (ACCEPT: 1, 2, 3, AND 4)",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5388,7 +5388,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5406,7 +5406,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5416,7 +5416,7 @@
     "format": "sa",
     "text": "In humans, in order to neutralize the acidic stomach juices as they enter the small intestine, what organ produces bicarbonate as a base?",
     "choices": null,
-    "answer": "PANCREAS 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "PANCREAS",
     "letter": "",
     "src": {
       "file": "MS_14A",
@@ -5424,7 +5424,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114957,
     "year": "2017"
   },
   {
@@ -5447,7 +5447,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114961,
     "year": "2017"
   },
   {
@@ -5465,7 +5465,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114961,
     "year": "2017"
   },
   {
@@ -5483,7 +5483,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114961,
     "year": "2017"
   },
   {
@@ -5498,7 +5498,7 @@
       "Y": "Methanol",
       "Z": "Hydrogen"
     },
-    "answer": "$X$) OXYGEN 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$X$) OXYGEN",
     "letter": "X",
     "src": {
       "file": "MS_15A",
@@ -5506,7 +5506,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114961,
     "year": "2017"
   },
   {
@@ -5524,7 +5524,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114961,
     "year": "2017"
   },
   {
@@ -5547,7 +5547,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114962,
     "year": "2017"
   },
   {
@@ -5565,7 +5565,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114962,
     "year": "2017"
   },
   {
@@ -5575,7 +5575,7 @@
     "format": "sa",
     "text": "Maggie drives 72 kilometers in 2 hours. In meters per second, what is her speed?",
     "choices": null,
-    "answer": "10 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "10",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -5583,7 +5583,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114962,
     "year": "2017"
   },
   {
@@ -5606,7 +5606,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114962,
     "year": "2017"
   },
   {
@@ -5624,7 +5624,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607609,
+    "added": 1792648114962,
     "year": "2017"
   },
   {
@@ -5642,7 +5642,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114963,
     "year": "2017"
   },
   {
@@ -5652,7 +5652,7 @@
     "format": "sa",
     "text": "It took Marcos 3 hours to travel down the Amazon River by boat from his village to his friend’s village. It took him 5 hours to travel up the river on his return trip. How many hours would it take him to make this same journey in still water?",
     "choices": null,
-    "answer": "3.75 (ACCEPT: 3¾, 15/4) 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "3.75 (ACCEPT: 3¾, $15/4$)",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -5660,7 +5660,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114963,
     "year": "2017"
   },
   {
@@ -5678,7 +5678,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114964,
     "year": "2017"
   },
   {
@@ -5696,7 +5696,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114964,
     "year": "2017"
   },
   {
@@ -5714,7 +5714,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114964,
     "year": "2017"
   },
   {
@@ -5729,7 +5729,7 @@
       "Y": "Volcanic eruptions and offgassing from glacial melt",
       "Z": "The seasonal variation of carbon uptake by land plants"
     },
-    "answer": "$Z$) THE SEASONAL VARIATION OF CARBON UPTAKE BY LAND PLANTS 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "$Z$) THE SEASONAL VARIATION OF CARBON UPTAKE BY LAND PLANTS",
     "letter": "Z",
     "src": {
       "file": "MS_15A",
@@ -5737,7 +5737,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114964,
     "year": "2017"
   },
   {
@@ -5760,7 +5760,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114964,
     "year": "2017"
   },
   {
@@ -5783,7 +5783,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114965,
     "year": "2017"
   },
   {
@@ -5791,7 +5791,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Identify all of the following three numbers that are in the domain of the function $f$ of $x$ equals the square root of open parenthesis $36 - x2$ close parenthesis: 1) –7; 2) –6; 3) –5.",
+    "text": "Identify all of the following three numbers that are in the domain of the function $f$ of $x$ equals the square root of open parenthesis $36 - x^2$ close parenthesis: 1) –7; 2) –6; 3) –5.",
     "choices": null,
     "answer": "2 and 3 (ACCEPT: $-6$ and $-5$)",
     "letter": "",
@@ -5801,7 +5801,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5811,7 +5811,7 @@
     "format": "sa",
     "text": "For what temperature, in degrees Fahrenheit to the nearest integer, is the Celsius temperature numerically twice the Fahrenheit temperature?",
     "choices": null,
-    "answer": "$-12 2017$ Middle School Regional NSB® PAGE 5",
+    "answer": "$-12$",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -5819,7 +5819,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5837,7 +5837,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5855,7 +5855,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5873,7 +5873,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5883,7 +5883,7 @@
     "format": "sa",
     "text": "A star has two planets, one with an orbital period of 500 days, and the second with an orbital period of 1000 days. If the first is located $1 AU$ from the star, what is the distance, in AU, of the second planet?",
     "choices": null,
-    "answer": "CUBE ROOT OF 4 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "CUBE ROOT OF 4",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -5891,7 +5891,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5909,7 +5909,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114966,
     "year": "2017"
   },
   {
@@ -5927,7 +5927,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114967,
     "year": "2017"
   },
   {
@@ -5945,7 +5945,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114967,
     "year": "2017"
   },
   {
@@ -5955,7 +5955,7 @@
     "format": "sa",
     "text": "A 10-pound mass and a 100-pound mass are coupled by a compressed massless spring and rest motionless on a frictionless surface. After the spring is released you measure the speed of the 100-pound weight to be 1 foot per second. What would you measure as the speed, in feet per second, of the center of mass of the 10-pound and 100-pound system?",
     "choices": null,
-    "answer": "0 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "0",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -5963,7 +5963,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114967,
     "year": "2017"
   },
   {
@@ -5981,7 +5981,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114967,
     "year": "2017"
   },
   {
@@ -5999,7 +5999,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114968,
     "year": "2017"
   },
   {
@@ -6022,7 +6022,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114968,
     "year": "2017"
   },
   {
@@ -6032,7 +6032,7 @@
     "format": "sa",
     "text": "Sirius, the Sun, and Proxima Centauri are all found on what band of the Hertzsprung-Russell diagram?",
     "choices": null,
-    "answer": "MAIN SEQUENCE 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "MAIN SEQUENCE",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -6040,7 +6040,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114969,
     "year": "2017"
   },
   {
@@ -6058,7 +6058,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114969,
     "year": "2017"
   },
   {
@@ -6076,7 +6076,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607610,
+    "added": 1792648114969,
     "year": "2017"
   },
   {
@@ -6094,7 +6094,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114969,
     "year": "2017"
   },
   {
@@ -6104,7 +6104,7 @@
     "format": "sa",
     "text": "Lenticular galaxies have an intermediate structure between what two other types of galaxies?",
     "choices": null,
-    "answer": "SPIRAL AND ELLIPTICAL 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "SPIRAL AND ELLIPTICAL",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -6112,7 +6112,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114970,
     "year": "2017"
   },
   {
@@ -6120,7 +6120,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is 712?",
+    "text": "What is $71^2$?",
     "choices": null,
     "answer": "5041",
     "letter": "",
@@ -6130,7 +6130,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114970,
     "year": "2017"
   },
   {
@@ -6148,7 +6148,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114970,
     "year": "2017"
   },
   {
@@ -6171,7 +6171,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114971,
     "year": "2017"
   },
   {
@@ -6181,7 +6181,7 @@
     "format": "sa",
     "text": "Jupiter’s strong magnetosphere originates primarily from the rotation of what element?",
     "choices": null,
-    "answer": "HYDROGEN 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "HYDROGEN",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -6189,7 +6189,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114971,
     "year": "2017"
   },
   {
@@ -6207,7 +6207,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114971,
     "year": "2017"
   },
   {
@@ -6225,7 +6225,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114971,
     "year": "2017"
   },
   {
@@ -6243,7 +6243,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114971,
     "year": "2017"
   },
   {
@@ -6253,7 +6253,7 @@
     "format": "sa",
     "text": "What is the momentum, in newton-seconds, of a 30-gram body moving at 6 meters per second?",
     "choices": null,
-    "answer": "0.18 (ACCEPT: 9/50) 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "0.18 (ACCEPT: $9/50$)",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -6261,7 +6261,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114972,
     "year": "2017"
   },
   {
@@ -6279,7 +6279,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114972,
     "year": "2017"
   },
   {
@@ -6289,7 +6289,7 @@
     "format": "sa",
     "text": "A scientist dissolves 1 mole of a certain acid in 100 grams of water at 25 degrees Celsius and finds that the temperature increases by 7 degrees. In kilojoules [kill-oh-jools] per mole to two significant figures, what is the enthalpy [EN-thul-pee] of dissolution of the acid?",
     "choices": null,
-    "answer": "$-2.9 2017$ Middle School Regional NSB® PAGE 12",
+    "answer": "$-2.9$",
     "letter": "",
     "src": {
       "file": "MS_15A",
@@ -6297,7 +6297,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607611,
+    "added": 1792648114973,
     "year": "2017"
   },
   {
@@ -6315,7 +6315,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114976,
     "year": "2017"
   },
   {
@@ -6333,7 +6333,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114976,
     "year": "2017"
   },
   {
@@ -6351,7 +6351,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114976,
     "year": "2017"
   },
   {
@@ -6361,7 +6361,7 @@
     "format": "sa",
     "text": "What is the y-intercept of the line that contains the points $(-2, 3)$ and $(3, 10)$?",
     "choices": null,
-    "answer": "5.8 (ACCEPT: $29/5$, 5 4/5) 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "5.8 (ACCEPT: $29/5$, $5 4/5$)",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -6369,7 +6369,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114978,
     "year": "2017"
   },
   {
@@ -6387,7 +6387,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114978,
     "year": "2017"
   },
   {
@@ -6405,7 +6405,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114979,
     "year": "2017"
   },
   {
@@ -6428,7 +6428,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114979,
     "year": "2017"
   },
   {
@@ -6438,7 +6438,7 @@
     "format": "sa",
     "text": "In a biology lab, what machine is used to sterilize glassware via the application of very hot steam?",
     "choices": null,
-    "answer": "AUTOCLAVE 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "AUTOCLAVE",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -6446,7 +6446,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114979,
     "year": "2017"
   },
   {
@@ -6464,7 +6464,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114979,
     "year": "2017"
   },
   {
@@ -6472,7 +6472,7 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the coefficient of the ab2 term in the binomial expansion of open parenthesis $5a - 6b$ close parenthesis cubed?",
+    "text": "What is the coefficient of the ab^2 term in the binomial expansion of open parenthesis $5a - 6b$ close parenthesis cubed?",
     "choices": null,
     "answer": "540",
     "letter": "",
@@ -6482,7 +6482,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6500,7 +6500,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6515,7 +6515,7 @@
       "Y": "Both tides and currents are influenced by gravitational pull",
       "Z": "Tides and currents vary with the moon phases"
     },
-    "answer": "$Y$) BOTH TIDES AND CURRENTS ARE INFLUENCED BY GRAVITATIONAL PULL 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "$Y$) BOTH TIDES AND CURRENTS ARE INFLUENCED BY GRAVITATIONAL PULL",
     "letter": "Y",
     "src": {
       "file": "MS_16A",
@@ -6523,7 +6523,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6541,7 +6541,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6559,7 +6559,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6577,7 +6577,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114980,
     "year": "2017"
   },
   {
@@ -6592,7 +6592,7 @@
       "Y": "50%",
       "Z": "80%"
     },
-    "answer": "X) 20% 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "X) 20%",
     "letter": "X",
     "src": {
       "file": "MS_16A",
@@ -6600,7 +6600,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6618,7 +6618,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6636,7 +6636,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6654,7 +6654,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6664,7 +6664,7 @@
     "format": "sa",
     "text": "The radioisotope thermoelectric generators used by NASA to power spacecraft primarily use what radioactive element as a heat source?",
     "choices": null,
-    "answer": "PLUTONIUM 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "PLUTONIUM",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -6672,7 +6672,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6690,7 +6690,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114981,
     "year": "2017"
   },
   {
@@ -6708,7 +6708,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6726,7 +6726,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6741,7 +6741,7 @@
       "Y": "Particle",
       "Z": "Breccia [BRETCH-ee-ah]"
     },
-    "answer": "$X$) CLAST 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "$X$) CLAST",
     "letter": "X",
     "src": {
       "file": "MS_16A",
@@ -6749,7 +6749,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6767,7 +6767,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6775,7 +6775,7 @@
     "subject": "phys",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the oxidation number of sulfur in the sulfate ion, SO 2-? 4",
+    "text": "What is the oxidation number of sulfur in the sulfate ion, SO4^(2-)?",
     "choices": null,
     "answer": "+6 (must say the +)",
     "letter": "",
@@ -6785,7 +6785,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6808,7 +6808,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6823,7 +6823,7 @@
       "Y": "Age",
       "Z": "Temperature"
     },
-    "answer": "$X$) MASS 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$X$) MASS",
     "letter": "X",
     "src": {
       "file": "MS_16A",
@@ -6831,7 +6831,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114982,
     "year": "2017"
   },
   {
@@ -6849,7 +6849,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6867,7 +6867,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6890,7 +6890,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6900,7 +6900,7 @@
     "format": "sa",
     "text": "Which of the planets of the Solar System has the longest orbital period?",
     "choices": null,
-    "answer": "NEPTUNE 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "NEPTUNE",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -6908,7 +6908,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6926,7 +6926,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6944,7 +6944,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607612,
+    "added": 1792648114983,
     "year": "2017"
   },
   {
@@ -6962,7 +6962,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114984,
     "year": "2017"
   },
   {
@@ -6972,7 +6972,7 @@
     "format": "sa",
     "text": "A 5-digit palindrome has 3 different digits and is divisible by 3. What is the largest such number?",
     "choices": null,
-    "answer": "98,589 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "98,589",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -6980,7 +6980,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114984,
     "year": "2017"
   },
   {
@@ -6998,7 +6998,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114984,
     "year": "2017"
   },
   {
@@ -7016,7 +7016,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114984,
     "year": "2017"
   },
   {
@@ -7034,7 +7034,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7044,7 +7044,7 @@
     "format": "sa",
     "text": "In a particular year, if April 17 is on a Friday, on what day of the week is October 29?",
     "choices": null,
-    "answer": "THURSDAY 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "THURSDAY",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -7052,7 +7052,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7070,7 +7070,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7088,7 +7088,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7106,7 +7106,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7116,7 +7116,7 @@
     "format": "sa",
     "text": "In oceanography, what does the abreviation PSU stand for?",
     "choices": null,
-    "answer": "PRACTICAL SALINITY UNIT 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "PRACTICAL SALINITY UNIT",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -7124,7 +7124,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7142,7 +7142,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7152,7 +7152,7 @@
     "format": "sa",
     "text": "What kind of tropism in plants occurs as a result of touch?",
     "choices": null,
-    "answer": "THIGMOTROPISM 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "THIGMOTROPISM",
     "letter": "",
     "src": {
       "file": "MS_16A",
@@ -7160,7 +7160,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114985,
     "year": "2017"
   },
   {
@@ -7178,7 +7178,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114989,
     "year": "2017"
   },
   {
@@ -7196,7 +7196,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114990,
     "year": "2017"
   },
   {
@@ -7219,7 +7219,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114990,
     "year": "2017"
   },
   {
@@ -7229,7 +7229,7 @@
     "format": "sa",
     "text": "Neurons have very stereotyped electro-physiological activity that behaves in an \"all-ornone\" pattern. What is the name of this activity?",
     "choices": null,
-    "answer": "ACTION POTENTIAL 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "ACTION POTENTIAL",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7237,7 +7237,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114990,
     "year": "2017"
   },
   {
@@ -7260,7 +7260,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114990,
     "year": "2017"
   },
   {
@@ -7278,7 +7278,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114990,
     "year": "2017"
   },
   {
@@ -7296,7 +7296,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114991,
     "year": "2017"
   },
   {
@@ -7311,7 +7311,7 @@
       "Y": "Oxygen",
       "Z": "Aluminum"
     },
-    "answer": "$Y$) OXYGEN 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "$Y$) OXYGEN",
     "letter": "Y",
     "src": {
       "file": "MS_17A",
@@ -7319,7 +7319,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114992,
     "year": "2017"
   },
   {
@@ -7342,7 +7342,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607613,
+    "added": 1792648114992,
     "year": "2017"
   },
   {
@@ -7360,7 +7360,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7378,7 +7378,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7393,7 +7393,7 @@
       "Y": "Waves and tides",
       "Z": "Tidal phases and the Earth's rotation"
     },
-    "answer": "$X$) THERMOHALINE GRADIENTS AND WIND CURRENTS 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "$X$) THERMOHALINE GRADIENTS AND WIND CURRENTS",
     "letter": "X",
     "src": {
       "file": "MS_17A",
@@ -7401,7 +7401,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7419,7 +7419,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7442,7 +7442,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7460,7 +7460,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7470,7 +7470,7 @@
     "format": "sa",
     "text": "A sequence has the property that every term starting with the third is the sum of the previous two terms. If the tenth term is 157 and the eighth term is 60, what is the sixth term?",
     "choices": null,
-    "answer": "23 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "23",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7478,7 +7478,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7496,7 +7496,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114993,
     "year": "2017"
   },
   {
@@ -7514,7 +7514,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7532,7 +7532,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7542,7 +7542,7 @@
     "format": "sa",
     "text": "A 300-gram mass is experiencing a constant force of 6 newtons. In meters per second squared, what is its acceleration?",
     "choices": null,
-    "answer": "20 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "20",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7550,7 +7550,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7568,7 +7568,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7586,7 +7586,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7609,7 +7609,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114994,
     "year": "2017"
   },
   {
@@ -7619,7 +7619,7 @@
     "format": "sa",
     "text": "Rank the following types of vehicles in terms of increasing reliance on a battery to drive the vehicle: 1) Plug-in hybrid; 2) Clean diesel; 3) All-electric; 4) Hybrid",
     "choices": null,
-    "answer": "2, 4, 1, 3 (ACCEPT: CLEAN DIESEL, HYBRID, PLUG-IN HYBRID, ALL-ELECTRIC) 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "2, 4, 1, 3 (ACCEPT: CLEAN DIESEL, HYBRID, PLUG-IN HYBRID, ALL-ELECTRIC)",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7627,7 +7627,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114995,
     "year": "2017"
   },
   {
@@ -7645,7 +7645,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114995,
     "year": "2017"
   },
   {
@@ -7663,7 +7663,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114995,
     "year": "2017"
   },
   {
@@ -7681,7 +7681,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114995,
     "year": "2017"
   },
   {
@@ -7689,9 +7689,9 @@
     "subject": "phys",
     "type": "bonus",
     "format": "sa",
-    "text": "The tire on your unicycle is inflated to a pressure of $1.0 x 106$ pascals. The total weight of you and your unicycle is 1000 newtons. What is the area of the tire, in square meters, that is in contact with the road when you are riding?",
+    "text": "The tire on your unicycle is inflated to a pressure of $1.0 x 10^6$ pascals. The total weight of you and your unicycle is 1000 newtons. What is the area of the tire, in square meters, that is in contact with the road when you are riding?",
     "choices": null,
-    "answer": "0.001 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "0.001",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7699,7 +7699,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114995,
     "year": "2017"
   },
   {
@@ -7722,7 +7722,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114996,
     "year": "2017"
   },
   {
@@ -7745,7 +7745,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114996,
     "year": "2017"
   },
   {
@@ -7763,7 +7763,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114996,
     "year": "2017"
   },
   {
@@ -7773,7 +7773,7 @@
     "format": "sa",
     "text": "What phylum [FYE-lum] contains sponges?",
     "choices": null,
-    "answer": "PORIFERA 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "PORIFERA",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7781,7 +7781,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114996,
     "year": "2017"
   },
   {
@@ -7799,7 +7799,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114997,
     "year": "2017"
   },
   {
@@ -7817,7 +7817,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114997,
     "year": "2017"
   },
   {
@@ -7840,7 +7840,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114997,
     "year": "2017"
   },
   {
@@ -7855,7 +7855,7 @@
       "Y": "They survive weathering longer",
       "Z": "They are brighter when falling to Earth"
     },
-    "answer": "$Y$) THEY SURVIVE WEATHERING LONGER 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "$Y$) THEY SURVIVE WEATHERING LONGER",
     "letter": "Y",
     "src": {
       "file": "MS_17A",
@@ -7863,7 +7863,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114997,
     "year": "2017"
   },
   {
@@ -7881,7 +7881,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114998,
     "year": "2017"
   },
   {
@@ -7899,7 +7899,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114998,
     "year": "2017"
   },
   {
@@ -7917,7 +7917,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607614,
+    "added": 1792648114998,
     "year": "2017"
   },
   {
@@ -7927,7 +7927,7 @@
     "format": "sa",
     "text": "What is the name of the extinct animal from which modern birds are thought to have evolved?",
     "choices": null,
-    "answer": "ARCHAEOPTERYX 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "ARCHAEOPTERYX",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -7935,7 +7935,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648114998,
     "year": "2017"
   },
   {
@@ -7953,7 +7953,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648114998,
     "year": "2017"
   },
   {
@@ -7971,7 +7971,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115000,
     "year": "2017"
   },
   {
@@ -7989,7 +7989,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115000,
     "year": "2017"
   },
   {
@@ -7999,7 +7999,7 @@
     "format": "sa",
     "text": "In humans, what connects the pharynx to the stomach?",
     "choices": null,
-    "answer": "ESOPHAGUS 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "ESOPHAGUS",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -8007,7 +8007,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115000,
     "year": "2017"
   },
   {
@@ -8025,7 +8025,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115000,
     "year": "2017"
   },
   {
@@ -8035,7 +8035,7 @@
     "format": "sa",
     "text": "Name all of the following four tectonic features that result from seafloor spreading; 1) Left lateral fault; 2) Right lateral fault; 3) Divergent plate boundary; 4) Normal fault.",
     "choices": null,
-    "answer": "ALL (ACCEPT: 1, 2, 3, AND 4) 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "ALL (ACCEPT: 1, 2, 3, AND 4)",
     "letter": "",
     "src": {
       "file": "MS_17A",
@@ -8043,7 +8043,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115002,
     "year": "2017"
   },
   {
@@ -8066,7 +8066,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115011,
     "year": "2017"
   },
   {
@@ -8089,7 +8089,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115011,
     "year": "2017"
   },
   {
@@ -8112,7 +8112,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115012,
     "year": "2017"
   },
   {
@@ -8127,7 +8127,7 @@
       "Y": "The Earth",
       "Z": "The Solar System"
     },
-    "answer": "$W$) EARLIEST LIFE FORMS Middle School Regional NSB® PAGE 1",
+    "answer": "$W$) EARLIEST LIFE FORMS",
     "letter": "W",
     "src": {
       "file": "MS_2",
@@ -8135,7 +8135,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115012,
     "year": "2017"
   },
   {
@@ -8158,7 +8158,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115015,
     "year": "2017"
   },
   {
@@ -8181,7 +8181,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115015,
     "year": "2017"
   },
   {
@@ -8204,7 +8204,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607615,
+    "added": 1792648115015,
     "year": "2017"
   },
   {
@@ -8212,9 +8212,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What are the coordinates of the vertex of the parabola with equation $y = -3x2 + 4x - 10$?",
+    "text": "What are the coordinates of the vertex of the parabola with equation $y = -3x^2 + 4x - 10$?",
     "choices": null,
-    "answer": "$(2/3, -26/3)$ (ACCEPT: $(2/3, -8 2/3)$) Middle School Regional NSB® PAGE 2",
+    "answer": "$(2/3, -26/3)$ (ACCEPT: $(2/3, -8 2/3)$)",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8222,7 +8222,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115018,
     "year": "2017"
   },
   {
@@ -8245,7 +8245,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115019,
     "year": "2017"
   },
   {
@@ -8268,7 +8268,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115019,
     "year": "2017"
   },
   {
@@ -8291,7 +8291,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115020,
     "year": "2017"
   },
   {
@@ -8306,7 +8306,7 @@
       "Y": "Turgor",
       "Z": "Shrinking"
     },
-    "answer": "$Y$) TURGOR Middle School Regional NSB® PAGE 3",
+    "answer": "$Y$) TURGOR",
     "letter": "Y",
     "src": {
       "file": "MS_2",
@@ -8314,7 +8314,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115021,
     "year": "2017"
   },
   {
@@ -8337,7 +8337,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115023,
     "year": "2017"
   },
   {
@@ -8355,7 +8355,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115023,
     "year": "2017"
   },
   {
@@ -8373,7 +8373,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115023,
     "year": "2017"
   },
   {
@@ -8383,7 +8383,7 @@
     "format": "sa",
     "text": "What scientist used the data collected by Tycho Brahe [TEE-koh BRAH-hay] in order to formulate empirical laws regarding the motion of the planets?",
     "choices": null,
-    "answer": "JOHANNES KEPLER (ACCEPT: KEPLER) Middle School Regional NSB® PAGE 4",
+    "answer": "JOHANNES KEPLER (ACCEPT: KEPLER)",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8391,7 +8391,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115024,
     "year": "2017"
   },
   {
@@ -8414,7 +8414,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115024,
     "year": "2017"
   },
   {
@@ -8432,7 +8432,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115025,
     "year": "2017"
   },
   {
@@ -8450,7 +8450,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115025,
     "year": "2017"
   },
   {
@@ -8465,7 +8465,7 @@
       "Y": "Hypotonic [high-poh-tawnic]",
       "Z": "Hypertonic [high-pur-tawn-ik]"
     },
-    "answer": "$X$) ISOTONIC Middle School Regional NSB® PAGE 5",
+    "answer": "$X$) ISOTONIC",
     "letter": "X",
     "src": {
       "file": "MS_2",
@@ -8473,7 +8473,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115026,
     "year": "2017"
   },
   {
@@ -8496,7 +8496,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115026,
     "year": "2017"
   },
   {
@@ -8519,7 +8519,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115027,
     "year": "2017"
   },
   {
@@ -8537,7 +8537,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115027,
     "year": "2017"
   },
   {
@@ -8547,7 +8547,7 @@
     "format": "sa",
     "text": "Kaye makes widgets at a rate of 20 per hour and Jay makes them at a rate of 15 per hour. If Jay has a one-hour head start and they both then work continuously, after how many hours from the time she starts will Kaye have made the same number of widgets as Jay?",
     "choices": null,
-    "answer": "3 Middle School Regional NSB® PAGE 6",
+    "answer": "3",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8555,7 +8555,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607616,
+    "added": 1792648115027,
     "year": "2017"
   },
   {
@@ -8578,7 +8578,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115028,
     "year": "2017"
   },
   {
@@ -8601,7 +8601,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115028,
     "year": "2017"
   },
   {
@@ -8624,7 +8624,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115028,
     "year": "2017"
   },
   {
@@ -8639,7 +8639,7 @@
       "Y": "Phospholipid [faws-foe-lip-id]",
       "Z": "Nucleic [new-CLAY-ik] acid"
     },
-    "answer": "$Y$) PHOSPHOLIPID Middle School Regional NSB® PAGE 7",
+    "answer": "$Y$) PHOSPHOLIPID",
     "letter": "Y",
     "src": {
       "file": "MS_2",
@@ -8647,7 +8647,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115028,
     "year": "2017"
   },
   {
@@ -8670,7 +8670,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115028,
     "year": "2017"
   },
   {
@@ -8688,7 +8688,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115029,
     "year": "2017"
   },
   {
@@ -8711,7 +8711,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115029,
     "year": "2017"
   },
   {
@@ -8721,7 +8721,7 @@
     "format": "sa",
     "text": "What does the acronym OPEC stand for?",
     "choices": null,
-    "answer": "ORGANIZATION OF PETROLEUM EXPORTING COUNTRIES Middle School Regional NSB® PAGE 8",
+    "answer": "ORGANIZATION OF PETROLEUM EXPORTING COUNTRIES",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8729,7 +8729,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115029,
     "year": "2017"
   },
   {
@@ -8737,9 +8737,9 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Simplify the fraction with numerator $x5 y6$ and denominator $x -3 y5$.",
+    "text": "Simplify the fraction with numerator $x^5 y^6$ and denominator $x ^(-3) y^5$.",
     "choices": null,
-    "answer": "$x8 y$",
+    "answer": "$x^8 y$",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8747,7 +8747,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115031,
     "year": "2017"
   },
   {
@@ -8765,7 +8765,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115031,
     "year": "2017"
   },
   {
@@ -8788,7 +8788,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115031,
     "year": "2017"
   },
   {
@@ -8798,7 +8798,7 @@
     "format": "sa",
     "text": "Identify all of the following four rocks that would be considered well-sorted: 1) Breccia; 2) Arkose; 3) Shale; 4) Quartz sandstone.",
     "choices": null,
-    "answer": "2, 3, 4 (ACCEPT: ARKOSE, SHALE, QUARTZ SANDSTONE) Middle School Regional NSB® PAGE 9",
+    "answer": "2, 3, 4 (ACCEPT: ARKOSE, SHALE, QUARTZ SANDSTONE)",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8806,7 +8806,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115031,
     "year": "2017"
   },
   {
@@ -8824,7 +8824,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8842,7 +8842,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8865,7 +8865,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8875,7 +8875,7 @@
     "format": "sa",
     "text": "What type of elementary particle is thought not to exist in isolation because of color confinement?",
     "choices": null,
-    "answer": "QUARKS Middle School Regional NSB® PAGE 10",
+    "answer": "QUARKS",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8883,7 +8883,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8901,7 +8901,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8924,7 +8924,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8942,7 +8942,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8952,7 +8952,7 @@
     "format": "sa",
     "text": "What is the largest prime factor of 1035?",
     "choices": null,
-    "answer": "23 Middle School Regional NSB® PAGE 11",
+    "answer": "23",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8960,7 +8960,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115032,
     "year": "2017"
   },
   {
@@ -8978,7 +8978,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115033,
     "year": "2017"
   },
   {
@@ -8988,7 +8988,7 @@
     "format": "sa",
     "text": "Occultation of background stars was used to discover what feature of Uranus?",
     "choices": null,
-    "answer": "RINGS Middle School Regional NSB® PAGE 12",
+    "answer": "RINGS",
     "letter": "",
     "src": {
       "file": "MS_2",
@@ -8996,7 +8996,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607617,
+    "added": 1792648115033,
     "year": "2017"
   },
   {
@@ -9019,7 +9019,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115036,
     "year": "2017"
   },
   {
@@ -9037,7 +9037,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115037,
     "year": "2017"
   },
   {
@@ -9060,7 +9060,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115038,
     "year": "2017"
   },
   {
@@ -9075,7 +9075,7 @@
       "Y": "The genome is haploid [HA-ploid]",
       "Z": "The cell is in interphase"
     },
-    "answer": "$W$) THE CELL IS UNDERGOING MITOSIS 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$W$) THE CELL IS UNDERGOING MITOSIS",
     "letter": "W",
     "src": {
       "file": "MS_3A",
@@ -9083,7 +9083,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115039,
     "year": "2017"
   },
   {
@@ -9101,7 +9101,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115039,
     "year": "2017"
   },
   {
@@ -9119,7 +9119,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115039,
     "year": "2017"
   },
   {
@@ -9142,7 +9142,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115040,
     "year": "2017"
   },
   {
@@ -9152,7 +9152,7 @@
     "format": "sa",
     "text": "What principle of fluid mechanics describes the buoyant force?",
     "choices": null,
-    "answer": "ARCHIMEDES PRINCIPLE 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "ARCHIMEDES PRINCIPLE",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9160,7 +9160,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115040,
     "year": "2017"
   },
   {
@@ -9183,7 +9183,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115040,
     "year": "2017"
   },
   {
@@ -9206,7 +9206,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115040,
     "year": "2017"
   },
   {
@@ -9229,7 +9229,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9244,7 +9244,7 @@
       "Y": "Torino scale",
       "Z": "Saffir-Simpson scale"
     },
-    "answer": "$Z$) SAFFIR-SIMPSON SCALE 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "$Z$) SAFFIR-SIMPSON SCALE",
     "letter": "Z",
     "src": {
       "file": "MS_3A",
@@ -9252,7 +9252,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9260,7 +9260,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is 503?",
+    "text": "What is $50^3$?",
     "choices": null,
     "answer": "125,000",
     "letter": "",
@@ -9270,7 +9270,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9288,7 +9288,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9311,7 +9311,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9326,7 +9326,7 @@
       "Y": "Color blindness",
       "Z": "Freckles"
     },
-    "answer": "$Y$) COLOR BLINDNESS 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "$Y$) COLOR BLINDNESS",
     "letter": "Y",
     "src": {
       "file": "MS_3A",
@@ -9334,7 +9334,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9357,7 +9357,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115041,
     "year": "2017"
   },
   {
@@ -9380,7 +9380,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115042,
     "year": "2017"
   },
   {
@@ -9388,7 +9388,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "mc",
-    "text": "For which of the following x-values is x3 greater than or equal to x2?",
+    "text": "For which of the following x-values is $x^3$ greater than or equal to $x^2$?",
     "choices": {
       "W": "$-2$",
       "X": "–½",
@@ -9403,7 +9403,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115042,
     "year": "2017"
   },
   {
@@ -9411,9 +9411,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Express the following in scientific notation rounded to two significant digits: the fraction with numerator $4.5 * 105$ and denominator $3.5 * 10-2$.",
+    "text": "Express the following in scientific notation rounded to two significant digits: the fraction with numerator $4.5 * 10^5$ and denominator $3.5 * 10^(-2)$.",
     "choices": null,
-    "answer": "$1.3 * 107 2017$ Middle School Regional NSB® PAGE 5",
+    "answer": "$1.3 * 10^7$",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9421,7 +9421,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115043,
     "year": "2017"
   },
   {
@@ -9444,7 +9444,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115043,
     "year": "2017"
   },
   {
@@ -9462,7 +9462,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115043,
     "year": "2017"
   },
   {
@@ -9485,7 +9485,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115044,
     "year": "2017"
   },
   {
@@ -9500,7 +9500,7 @@
       "Y": "Hot spots, few earthquakes, trench",
       "Z": "Subduction, trench, volcanic activity, shallow to deep earthquakes"
     },
-    "answer": "$Z$) SUBDUCTION, TRENCH, VOLCANIC ACTIVITY, SHALLOW TO DEEP EARTHQUAKES 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "$Z$) SUBDUCTION, TRENCH, VOLCANIC ACTIVITY, SHALLOW TO DEEP EARTHQUAKES",
     "letter": "Z",
     "src": {
       "file": "MS_3A",
@@ -9508,7 +9508,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9531,7 +9531,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9554,7 +9554,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9572,7 +9572,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9580,9 +9580,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Solve the following equation for $x$: $x2 - 7x - 120 = 0$.",
+    "text": "Solve the following equation for $x$: $x^2 - 7x - 120 = 0$.",
     "choices": null,
-    "answer": "$-8$, 15 (must give both answers) 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$-8$, 15 (must give both answers)",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9590,7 +9590,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607618,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9608,7 +9608,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115045,
     "year": "2017"
   },
   {
@@ -9631,7 +9631,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9649,7 +9649,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9659,7 +9659,7 @@
     "format": "sa",
     "text": "What planet was not fully imaged until 2011 when it was visited by the MESSENGER spacecraft?",
     "choices": null,
-    "answer": "MERCURY 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "MERCURY",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9667,7 +9667,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9685,7 +9685,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9708,7 +9708,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9731,7 +9731,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9746,7 +9746,7 @@
       "Y": "Hardware installation",
       "Z": "Rebates"
     },
-    "answer": "$Y$) HARDWARE INSTALLATION 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "$Y$) HARDWARE INSTALLATION",
     "letter": "Y",
     "src": {
       "file": "MS_3A",
@@ -9754,7 +9754,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9772,7 +9772,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115046,
     "year": "2017"
   },
   {
@@ -9780,7 +9780,7 @@
     "subject": "phys",
     "type": "bonus",
     "format": "mc",
-    "text": "How many atoms of magnesium are present in two molecules of the compound Mg $N$ ? 3 2",
+    "text": "How many atoms of magnesium are present in two molecules of the compound Mg$3N2$?",
     "choices": {
       "W": "2",
       "X": "3",
@@ -9795,7 +9795,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9818,7 +9818,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9833,7 +9833,7 @@
       "Y": "Pyrite",
       "Z": "Quartz"
     },
-    "answer": "$Z$) QUARTZ 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$Z$) QUARTZ",
     "letter": "Z",
     "src": {
       "file": "MS_3A",
@@ -9841,7 +9841,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9859,7 +9859,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9877,7 +9877,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9895,7 +9895,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9905,7 +9905,7 @@
     "format": "sa",
     "text": "Identify all of the following three minerals that are silicates: 1) Calcite; 2) Halite; 3) Muscovite.",
     "choices": null,
-    "answer": "3 (ACCEPT: MUSCOVITE) 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "3 (ACCEPT: MUSCOVITE)",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9913,7 +9913,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115047,
     "year": "2017"
   },
   {
@@ -9931,7 +9931,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115048,
     "year": "2017"
   },
   {
@@ -9941,7 +9941,7 @@
     "format": "sa",
     "text": "Simplify the fraction with numerator $1 - √3$ and denominator $1 + √3$.",
     "choices": null,
-    "answer": "$-2 + √3$ (ACCEPT: √3 – 2) 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "$-2 + √3$ (ACCEPT: $√3 - 2$)",
     "letter": "",
     "src": {
       "file": "MS_3A",
@@ -9949,7 +9949,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607619,
+    "added": 1792648115049,
     "year": "2017"
   },
   {
@@ -9972,7 +9972,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115053,
     "year": "2017"
   },
   {
@@ -9995,7 +9995,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115054,
     "year": "2017"
   },
   {
@@ -10013,7 +10013,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115055,
     "year": "2017"
   },
   {
@@ -10023,7 +10023,7 @@
     "format": "sa",
     "text": "A triangle has two exterior angles that have degree measures of 115 and 120, respectively. What is the degree measure of their common remote interior angle?",
     "choices": null,
-    "answer": "55 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "55",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10031,7 +10031,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115055,
     "year": "2017"
   },
   {
@@ -10054,7 +10054,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115055,
     "year": "2017"
   },
   {
@@ -10077,7 +10077,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115056,
     "year": "2017"
   },
   {
@@ -10100,7 +10100,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115056,
     "year": "2017"
   },
   {
@@ -10115,7 +10115,7 @@
       "Y": "Bands",
       "Z": "Cliques"
     },
-    "answer": "$W$) ASTERISMS 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "$W$) ASTERISMS",
     "letter": "W",
     "src": {
       "file": "MS_4A",
@@ -10123,7 +10123,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115056,
     "year": "2017"
   },
   {
@@ -10133,12 +10133,12 @@
     "format": "mc",
     "text": "For which of the following molecules would elemental analysis give you the molecular formula?",
     "choices": {
-      "W": "C H O 3 6 9",
-      "X": "SiO 2",
-      "Y": "C H 6 14",
-      "Z": "H O 8 8"
+      "W": "$C3H6O9$",
+      "X": "SiO2",
+      "Y": "$C6H14$",
+      "Z": "$H8O8$"
     },
-    "answer": "$X$) SiO 2",
+    "answer": "$X$) SiO2",
     "letter": "X",
     "src": {
       "file": "MS_4A",
@@ -10146,7 +10146,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115057,
     "year": "2017"
   },
   {
@@ -10164,7 +10164,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115058,
     "year": "2017"
   },
   {
@@ -10187,7 +10187,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115058,
     "year": "2017"
   },
   {
@@ -10197,7 +10197,7 @@
     "format": "sa",
     "text": "Increasing the amount of thermal energy contained in an object also increases what quantifiable property of the object?",
     "choices": null,
-    "answer": "TEMPERATURE 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "TEMPERATURE",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10205,7 +10205,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115058,
     "year": "2017"
   },
   {
@@ -10213,9 +10213,9 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Simplify the following expression: a7 times a5",
+    "text": "Simplify the following expression: $a^7$ times $a^5$",
     "choices": null,
-    "answer": "a12",
+    "answer": "$a^12$",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10223,7 +10223,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115059,
     "year": "2017"
   },
   {
@@ -10241,7 +10241,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115059,
     "year": "2017"
   },
   {
@@ -10264,7 +10264,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115059,
     "year": "2017"
   },
   {
@@ -10279,7 +10279,7 @@
       "Y": "Fueling trains",
       "Z": "Smelting and steelmaking"
     },
-    "answer": "$Z$) SMELTING AND STEELMAKING 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "$Z$) SMELTING AND STEELMAKING",
     "letter": "Z",
     "src": {
       "file": "MS_4A",
@@ -10287,7 +10287,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115060,
     "year": "2017"
   },
   {
@@ -10310,7 +10310,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115060,
     "year": "2017"
   },
   {
@@ -10328,7 +10328,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115061,
     "year": "2017"
   },
   {
@@ -10346,7 +10346,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115061,
     "year": "2017"
   },
   {
@@ -10356,7 +10356,7 @@
     "format": "sa",
     "text": "A cell phone plan costs a fixed rate per month plus a charge per text message. One month, Sarah had 200 texts and her total bill was ＄34. The next month, she had 500 texts and her total bill was ＄52. In dollars, what is the fixed rate per month?",
     "choices": null,
-    "answer": "22 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "22",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10364,7 +10364,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115061,
     "year": "2017"
   },
   {
@@ -10387,7 +10387,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115062,
     "year": "2017"
   },
   {
@@ -10410,7 +10410,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607620,
+    "added": 1792648115062,
     "year": "2017"
   },
   {
@@ -10433,7 +10433,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115062,
     "year": "2017"
   },
   {
@@ -10443,7 +10443,7 @@
     "format": "sa",
     "text": "ENSO is an acronym for an irregular periodical variation in sea surface temperatures and winds in the eastern tropical Pacific Ocean. What does ENSO stand for?",
     "choices": null,
-    "answer": "EL NIÑO-SOUTHERN OSCILLATION 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "EL NIÑO-SOUTHERN OSCILLATION",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10451,7 +10451,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115062,
     "year": "2017"
   },
   {
@@ -10469,7 +10469,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115062,
     "year": "2017"
   },
   {
@@ -10492,7 +10492,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10515,7 +10515,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10530,7 +10530,7 @@
       "Y": "Virus",
       "Z": "Protist [PRO-tist]"
     },
-    "answer": "$Y$) VIRUS 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$Y$) VIRUS",
     "letter": "Y",
     "src": {
       "file": "MS_4A",
@@ -10538,7 +10538,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10556,7 +10556,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10579,7 +10579,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10602,7 +10602,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10612,7 +10612,7 @@
     "format": "sa",
     "text": "Identify all of the following four products that can be produced from the processing and refinement of petroleum: 1) Asphalt; 2) Paraffin; 3) Kerosene; 4) Propane.",
     "choices": null,
-    "answer": "ALL (1, 2, 3, 4) 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "ALL $(1, 2, 3, 4)$",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10620,7 +10620,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115063,
     "year": "2017"
   },
   {
@@ -10643,7 +10643,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115064,
     "year": "2017"
   },
   {
@@ -10661,7 +10661,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115064,
     "year": "2017"
   },
   {
@@ -10669,7 +10669,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "Find the value of the following expression: open parenthesis $492 + 49$ close parenthesis divided by 49.",
+    "text": "Find the value of the following expression: open parenthesis $49^2 + 49$ close parenthesis divided by 49.",
     "choices": null,
     "answer": "50",
     "letter": "",
@@ -10679,7 +10679,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115064,
     "year": "2017"
   },
   {
@@ -10689,7 +10689,7 @@
     "format": "sa",
     "text": "What is the slope of the line through $(-3, 3)$ and $(6, -4)$?",
     "choices": null,
-    "answer": "$-7/9 2017$ Middle School Regional NSB® PAGE 9",
+    "answer": "$-7/9$",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10697,7 +10697,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115064,
     "year": "2017"
   },
   {
@@ -10715,7 +10715,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115064,
     "year": "2017"
   },
   {
@@ -10738,7 +10738,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10761,7 +10761,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10776,7 +10776,7 @@
       "Y": "Coronal gas",
       "Z": "Intercloud medium"
     },
-    "answer": "$Y$) CORONAL GAS 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$Y$) CORONAL GAS",
     "letter": "Y",
     "src": {
       "file": "MS_4A",
@@ -10784,7 +10784,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10802,7 +10802,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10810,7 +10810,7 @@
     "subject": "bio",
     "type": "bonus",
     "format": "sa",
-    "text": "If 6 molecules of CO and 6 molecules of H O combine to form one glucose 2 2 molecule, how many molecules of $O$ are also produced? 2",
+    "text": "If 6 molecules of CO2 and 6 molecules of $H2O$ combine to form one glucose molecule, how many molecules of O2 are also produced?",
     "choices": null,
     "answer": "6",
     "letter": "",
@@ -10820,7 +10820,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10838,7 +10838,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10848,7 +10848,7 @@
     "format": "sa",
     "text": "Two dice are rolled. What is the probability that the product of the two numbers rolled is prime?",
     "choices": null,
-    "answer": "$1/6 2017$ Middle School Regional NSB® PAGE 11",
+    "answer": "$1/6$",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10856,7 +10856,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10874,7 +10874,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115065,
     "year": "2017"
   },
   {
@@ -10884,7 +10884,7 @@
     "format": "sa",
     "text": "Identify all of the following three rocks that are likely generated by rapid cooling of lava: 1) Obsidian; 2) Pumice; 3) Rhyolite.",
     "choices": null,
-    "answer": "ALL OF THEM (ACCEPT: 1, 2, AND 3) 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "ALL OF THEM (ACCEPT: 1, 2, AND 3)",
     "letter": "",
     "src": {
       "file": "MS_4A",
@@ -10892,7 +10892,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607621,
+    "added": 1792648115066,
     "year": "2017"
   },
   {
@@ -10915,7 +10915,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115071,
     "year": "2017"
   },
   {
@@ -10938,7 +10938,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115071,
     "year": "2017"
   },
   {
@@ -10961,7 +10961,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115072,
     "year": "2017"
   },
   {
@@ -10976,7 +10976,7 @@
       "Y": "Methane",
       "Z": "Nitrous oxide"
     },
-    "answer": "$W$) CARBON DIOXIDE 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$W$) CARBON DIOXIDE",
     "letter": "W",
     "src": {
       "file": "MS_5A",
@@ -10984,7 +10984,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115072,
     "year": "2017"
   },
   {
@@ -11007,7 +11007,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115072,
     "year": "2017"
   },
   {
@@ -11030,7 +11030,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115072,
     "year": "2017"
   },
   {
@@ -11048,7 +11048,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115072,
     "year": "2017"
   },
   {
@@ -11056,14 +11056,14 @@
     "subject": "math",
     "type": "bonus",
     "format": "mc",
-    "text": "What is the equation of the axis of symmetry for the graph of $x = y2 + 8y + 30$?",
+    "text": "What is the equation of the axis of symmetry for the graph of $x = y^2 + 8y + 30$?",
     "choices": {
       "W": "$y = -15$",
       "X": "$y = -4$",
       "Y": "$y = 4$",
       "Z": "$y = 15$"
     },
-    "answer": "X) y = –4 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "X) y = –4",
     "letter": "X",
     "src": {
       "file": "MS_5A",
@@ -11071,7 +11071,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115073,
     "year": "2017"
   },
   {
@@ -11089,7 +11089,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11107,7 +11107,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11130,7 +11130,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11145,7 +11145,7 @@
       "Y": "They are all purines [PURE-eens]",
       "Z": "They are all pyrimidines [pur-RIM-ih-deens]"
     },
-    "answer": "$Z$) THEY ARE ALL PYRIMIDINES 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "$Z$) THEY ARE ALL PYRIMIDINES",
     "letter": "Z",
     "src": {
       "file": "MS_5A",
@@ -11153,7 +11153,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11163,7 +11163,7 @@
     "format": "sa",
     "text": "What is the product of the two binomials $x + 2$ and $x - 5$?",
     "choices": null,
-    "answer": "$x2 - 3x - 10$",
+    "answer": "$x^2 - 3x - 10$",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11171,7 +11171,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11189,7 +11189,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607622,
+    "added": 1792648115074,
     "year": "2017"
   },
   {
@@ -11212,7 +11212,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115075,
     "year": "2017"
   },
   {
@@ -11222,7 +11222,7 @@
     "format": "sa",
     "text": "The power plant at Hoover Dam harvests what type of energy?",
     "choices": null,
-    "answer": "HYDROPOWER (ACCEPT: HYDRO, DO NOT ACCEPT: HYDROELECTRIC) 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "HYDROPOWER (ACCEPT: HYDRO, DO NOT ACCEPT: HYDROELECTRIC)",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11230,7 +11230,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115075,
     "year": "2017"
   },
   {
@@ -11253,7 +11253,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115076,
     "year": "2017"
   },
   {
@@ -11271,7 +11271,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115076,
     "year": "2017"
   },
   {
@@ -11294,7 +11294,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115076,
     "year": "2017"
   },
   {
@@ -11304,7 +11304,7 @@
     "format": "sa",
     "text": "What is the point on the surface above the focus of an earthquake?",
     "choices": null,
-    "answer": "EPICENTER 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "EPICENTER",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11312,7 +11312,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115076,
     "year": "2017"
   },
   {
@@ -11335,7 +11335,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115076,
     "year": "2017"
   },
   {
@@ -11358,7 +11358,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115077,
     "year": "2017"
   },
   {
@@ -11376,7 +11376,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115077,
     "year": "2017"
   },
   {
@@ -11391,7 +11391,7 @@
       "Y": "Buy 2 and get a third one free",
       "Z": "Buy 3 and get 20% off each"
     },
-    "answer": "Y) BUY 2 AND GET A THIRD ONE FREE 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "Y) BUY 2 AND GET A THIRD ONE FREE",
     "letter": "Y",
     "src": {
       "file": "MS_5A",
@@ -11399,7 +11399,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115077,
     "year": "2017"
   },
   {
@@ -11417,7 +11417,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115077,
     "year": "2017"
   },
   {
@@ -11435,7 +11435,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115077,
     "year": "2017"
   },
   {
@@ -11453,7 +11453,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115078,
     "year": "2017"
   },
   {
@@ -11463,7 +11463,7 @@
     "format": "sa",
     "text": "Lawrencium$-260$ [lah-REN-see-um two sixty] undergoes alpha decay with a half-life of 2.7 minutes. What is the mass number of the product atom?",
     "choices": null,
-    "answer": "256 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "256",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11471,7 +11471,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115078,
     "year": "2017"
   },
   {
@@ -11494,7 +11494,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115078,
     "year": "2017"
   },
   {
@@ -11517,7 +11517,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115078,
     "year": "2017"
   },
   {
@@ -11535,7 +11535,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115078,
     "year": "2017"
   },
   {
@@ -11543,9 +11543,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "What is the cube of open parenthesis $a3 + 4b$ close parenthesis when $a = 2$ and $b = -3$?",
+    "text": "What is the cube of open parenthesis $a^3 + 4b$ close parenthesis when $a = 2$ and $b = -3$?",
     "choices": null,
-    "answer": "$-64 2017$ Middle School Regional NSB® PAGE 8",
+    "answer": "$-64$",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11553,7 +11553,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11576,7 +11576,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11594,7 +11594,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11617,7 +11617,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11632,7 +11632,7 @@
       "Y": "Coal",
       "Z": "Kerosene"
     },
-    "answer": "$Y$) COAL 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "$Y$) COAL",
     "letter": "Y",
     "src": {
       "file": "MS_5A",
@@ -11640,7 +11640,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11658,7 +11658,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115079,
     "year": "2017"
   },
   {
@@ -11681,7 +11681,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115080,
     "year": "2017"
   },
   {
@@ -11704,7 +11704,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115080,
     "year": "2017"
   },
   {
@@ -11719,7 +11719,7 @@
       "Y": "Its atmosphere is primarily composed of light gases",
       "Z": "It is very cold"
     },
-    "answer": "$Z$) IT IS VERY COLD 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$Z$) IT IS VERY COLD",
     "letter": "Z",
     "src": {
       "file": "MS_5A",
@@ -11727,7 +11727,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115080,
     "year": "2017"
   },
   {
@@ -11745,7 +11745,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115080,
     "year": "2017"
   },
   {
@@ -11763,7 +11763,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115080,
     "year": "2017"
   },
   {
@@ -11781,7 +11781,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115081,
     "year": "2017"
   },
   {
@@ -11791,7 +11791,7 @@
     "format": "sa",
     "text": "What is the most abundant chemical sedimentary rock?",
     "choices": null,
-    "answer": "LIMESTONE 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "LIMESTONE",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11799,7 +11799,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115081,
     "year": "2017"
   },
   {
@@ -11817,7 +11817,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115081,
     "year": "2017"
   },
   {
@@ -11827,7 +11827,7 @@
     "format": "sa",
     "text": "A prism with 30 edges has how many vertices?",
     "choices": null,
-    "answer": "20 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "20",
     "letter": "",
     "src": {
       "file": "MS_5A",
@@ -11835,7 +11835,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607623,
+    "added": 1792648115081,
     "year": "2017"
   },
   {
@@ -11853,7 +11853,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115083,
     "year": "2017"
   },
   {
@@ -11876,7 +11876,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115084,
     "year": "2017"
   },
   {
@@ -11899,7 +11899,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115084,
     "year": "2017"
   },
   {
@@ -11909,7 +11909,7 @@
     "format": "sa",
     "text": "Identify all of the following four units that are commonly used for energy: 1) Kilowatt-hour; 2) British thermal unit; 3) Joule [jool]; 4) Horsepower.",
     "choices": null,
-    "answer": "1, 2, 3 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "1, 2, 3",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -11917,7 +11917,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115084,
     "year": "2017"
   },
   {
@@ -11940,7 +11940,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115084,
     "year": "2017"
   },
   {
@@ -11963,7 +11963,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115084,
     "year": "2017"
   },
   {
@@ -11986,7 +11986,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115085,
     "year": "2017"
   },
   {
@@ -11996,7 +11996,7 @@
     "format": "sa",
     "text": "The base-six numeral four-four-three is equivalent to what in base 10?",
     "choices": null,
-    "answer": "171 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "171",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12004,7 +12004,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115085,
     "year": "2017"
   },
   {
@@ -12027,7 +12027,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115085,
     "year": "2017"
   },
   {
@@ -12050,7 +12050,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115086,
     "year": "2017"
   },
   {
@@ -12073,7 +12073,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115087,
     "year": "2017"
   },
   {
@@ -12083,7 +12083,7 @@
     "format": "sa",
     "text": "When blood sugar levels rise, the pancreas releases what compound into the blood as a signal to the body’s cells to absorb the sugar?",
     "choices": null,
-    "answer": "INSULIN 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "INSULIN",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12091,7 +12091,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115087,
     "year": "2017"
   },
   {
@@ -12114,7 +12114,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115088,
     "year": "2017"
   },
   {
@@ -12132,7 +12132,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115088,
     "year": "2017"
   },
   {
@@ -12150,7 +12150,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607624,
+    "added": 1792648115088,
     "year": "2017"
   },
   {
@@ -12165,7 +12165,7 @@
       "Y": "$(10, -9)$",
       "Z": "$(12, -7)$"
     },
-    "answer": "Y) (10, –9) 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "Y) (10, $-9$)",
     "letter": "Y",
     "src": {
       "file": "MS_6A",
@@ -12173,7 +12173,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115089,
     "year": "2017"
   },
   {
@@ -12196,7 +12196,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12214,7 +12214,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12237,7 +12237,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12247,7 +12247,7 @@
     "format": "sa",
     "text": "What American astronomer first proved the existence of other galaxies?",
     "choices": null,
-    "answer": "EDWIN HUBBLE 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "EDWIN HUBBLE",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12255,7 +12255,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12273,7 +12273,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12291,7 +12291,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12309,7 +12309,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12319,7 +12319,7 @@
     "format": "sa",
     "text": "What is the volume of a rectangular pyramid with base dimensions 15 and 12 and height 13?",
     "choices": null,
-    "answer": "780 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "780",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12327,7 +12327,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12345,7 +12345,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115090,
     "year": "2017"
   },
   {
@@ -12363,7 +12363,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12386,7 +12386,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12401,7 +12401,7 @@
       "Y": "Electrical",
       "Z": "Potential"
     },
-    "answer": "$Z$) POTENTIAL 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "$Z$) POTENTIAL",
     "letter": "Z",
     "src": {
       "file": "MS_6A",
@@ -12409,7 +12409,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12432,7 +12432,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12455,7 +12455,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12478,7 +12478,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115091,
     "year": "2017"
   },
   {
@@ -12488,7 +12488,7 @@
     "format": "sa",
     "text": "What type of frictional force only acts upon a body that isn’t moving relative to the surface on which it sits?",
     "choices": null,
-    "answer": "STATIC FRICTION (ACCEPT: STATIC) 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "STATIC FRICTION (ACCEPT: STATIC)",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12496,7 +12496,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115092,
     "year": "2017"
   },
   {
@@ -12514,7 +12514,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115092,
     "year": "2017"
   },
   {
@@ -12532,7 +12532,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115093,
     "year": "2017"
   },
   {
@@ -12550,7 +12550,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115093,
     "year": "2017"
   },
   {
@@ -12560,7 +12560,7 @@
     "format": "sa",
     "text": "You throw a ball into the air. What type of energy is at a maximum when the ball reaches its highest point?",
     "choices": null,
-    "answer": "POTENTIAL (ACCEPT: GRAVITATIONAL POTENTIAL) 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "POTENTIAL (ACCEPT: GRAVITATIONAL POTENTIAL)",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12568,7 +12568,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12591,7 +12591,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12614,7 +12614,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12624,7 +12624,7 @@
     "format": "sa",
     "text": "Express the following number in scientific notation: 67,400",
     "choices": null,
-    "answer": "$6.74 X 104$",
+    "answer": "$6.74 X 10^4$",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12632,7 +12632,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12642,7 +12642,7 @@
     "format": "sa",
     "text": "If angle ABC is inscribed in a circle and measures 35 degrees, what is the degree measure of arc ABC?",
     "choices": null,
-    "answer": "290 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "290",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12650,7 +12650,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12668,7 +12668,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607625,
+    "added": 1792648115094,
     "year": "2017"
   },
   {
@@ -12691,7 +12691,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115095,
     "year": "2017"
   },
   {
@@ -12709,7 +12709,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115095,
     "year": "2017"
   },
   {
@@ -12719,7 +12719,7 @@
     "format": "sa",
     "text": "Scientists believe that the chloroplast was once a bacterial cell that was engulfed by an ancestral eukaryotic [YOU-care-ee-AW-tic] cell. What other organelle [organ-ELL] did the ancestral eukaryotic cell engulf?",
     "choices": null,
-    "answer": "MITOCHONDRION 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "MITOCHONDRION",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12727,7 +12727,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115095,
     "year": "2017"
   },
   {
@@ -12745,7 +12745,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115095,
     "year": "2017"
   },
   {
@@ -12755,7 +12755,7 @@
     "format": "sa",
     "text": "Identify all of the following three statements that are generally true of artesian wells: 1) They exist in areas where the water table has little to no incline; 2) They are sandwiched between aquitards; 3) They are characterized by groundwater rising to the surface.",
     "choices": null,
-    "answer": "2 AND 3 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "2 AND 3",
     "letter": "",
     "src": {
       "file": "MS_6A",
@@ -12763,7 +12763,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115095,
     "year": "2017"
   },
   {
@@ -12786,7 +12786,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12809,7 +12809,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12832,7 +12832,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12842,7 +12842,7 @@
     "format": "sa",
     "text": "In what organ does the female germ cell develop?",
     "choices": null,
-    "answer": "OVARY 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "OVARY",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -12850,7 +12850,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12868,7 +12868,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12891,7 +12891,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12909,7 +12909,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115098,
     "year": "2017"
   },
   {
@@ -12919,7 +12919,7 @@
     "format": "sa",
     "text": "If one parent is homozygous [homo-ZYE-gus] dominant for a trait and the other is homozygous recessive for that trait, what is the probability that the offspring will be homozygous recessive for that trait?",
     "choices": null,
-    "answer": "ZERO 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "ZERO",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -12927,7 +12927,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115099,
     "year": "2017"
   },
   {
@@ -12945,7 +12945,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115100,
     "year": "2017"
   },
   {
@@ -12963,7 +12963,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115100,
     "year": "2017"
   },
   {
@@ -12986,7 +12986,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115100,
     "year": "2017"
   },
   {
@@ -12996,7 +12996,7 @@
     "format": "sa",
     "text": "A 25-kilogram load is placed on a beam 1 meter from the fulcrum. How far away from the fulcrum, in meters, must a 5-kilogram mass be placed to keep the system in equilibrium?",
     "choices": null,
-    "answer": "5 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "5",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13004,7 +13004,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115100,
     "year": "2017"
   },
   {
@@ -13027,7 +13027,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115100,
     "year": "2017"
   },
   {
@@ -13045,7 +13045,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115101,
     "year": "2017"
   },
   {
@@ -13068,7 +13068,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607626,
+    "added": 1792648115101,
     "year": "2017"
   },
   {
@@ -13078,7 +13078,7 @@
     "format": "sa",
     "text": "What stage of cellular respiration involves the net conversion of glucose to two pyruvate [pie-ROO-vate] molecules?",
     "choices": null,
-    "answer": "GLYCOLYSIS 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "GLYCOLYSIS",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13086,7 +13086,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115102,
     "year": "2017"
   },
   {
@@ -13109,7 +13109,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115102,
     "year": "2017"
   },
   {
@@ -13132,7 +13132,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115103,
     "year": "2017"
   },
   {
@@ -13150,7 +13150,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115103,
     "year": "2017"
   },
   {
@@ -13160,7 +13160,7 @@
     "format": "sa",
     "text": "Who was the first American woman to fly in space?",
     "choices": null,
-    "answer": "SALLY RIDE 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "SALLY RIDE",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13168,7 +13168,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115103,
     "year": "2017"
   },
   {
@@ -13191,7 +13191,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115103,
     "year": "2017"
   },
   {
@@ -13209,7 +13209,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115104,
     "year": "2017"
   },
   {
@@ -13232,7 +13232,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115104,
     "year": "2017"
   },
   {
@@ -13242,7 +13242,7 @@
     "format": "sa",
     "text": "What antimatter particle will annihilate with an electron?",
     "choices": null,
-    "answer": "POSITRON (ACCEPT: ANTI-ELECTRON) 2017 Middle School Regional NSB® PAGE 6",
+    "answer": "POSITRON (ACCEPT: ANTI-ELECTRON)",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13250,7 +13250,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115104,
     "year": "2017"
   },
   {
@@ -13268,7 +13268,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115105,
     "year": "2017"
   },
   {
@@ -13286,7 +13286,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115105,
     "year": "2017"
   },
   {
@@ -13304,7 +13304,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115105,
     "year": "2017"
   },
   {
@@ -13314,7 +13314,7 @@
     "format": "sa",
     "text": "What is the area of a right triangle with hypotenuse of length 7 and one leg of length 5?",
     "choices": null,
-    "answer": "$5√6 2017$ Middle School Regional NSB® PAGE 7",
+    "answer": "$5√6$",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13322,7 +13322,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115106,
     "year": "2017"
   },
   {
@@ -13340,7 +13340,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115106,
     "year": "2017"
   },
   {
@@ -13358,7 +13358,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115106,
     "year": "2017"
   },
   {
@@ -13376,7 +13376,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115107,
     "year": "2017"
   },
   {
@@ -13386,7 +13386,7 @@
     "format": "sa",
     "text": "Short Answer What were the two metal components of the first battery designed by Alesandro Volta?",
     "choices": null,
-    "answer": "ZINC AND SILVER (DO NOT ACCEPT: ZINC AND COPPER) 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "ZINC AND SILVER (DO NOT ACCEPT: ZINC AND COPPER)",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13394,7 +13394,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115107,
     "year": "2017"
   },
   {
@@ -13402,7 +13402,7 @@
     "subject": "math",
     "type": "tossup",
     "format": "sa",
-    "text": "What is $52 - 25$?",
+    "text": "What is $5^2 - 2^5$?",
     "choices": null,
     "answer": "$-7$",
     "letter": "",
@@ -13412,7 +13412,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115108,
     "year": "2017"
   },
   {
@@ -13430,7 +13430,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115108,
     "year": "2017"
   },
   {
@@ -13453,7 +13453,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115108,
     "year": "2017"
   },
   {
@@ -13468,7 +13468,7 @@
       "Y": "Reducing agent",
       "Z": "Acceptor of high energy phosphate"
     },
-    "answer": "$Y$) REDUCING AGENT 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "$Y$) REDUCING AGENT",
     "letter": "Y",
     "src": {
       "file": "MS_7A",
@@ -13476,7 +13476,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115109,
     "year": "2017"
   },
   {
@@ -13494,7 +13494,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115109,
     "year": "2017"
   },
   {
@@ -13504,7 +13504,7 @@
     "format": "sa",
     "text": "What is the prime factorization of 294?",
     "choices": null,
-    "answer": "2∙3∙72",
+    "answer": "2∙3∙$7^2$",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13512,7 +13512,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115109,
     "year": "2017"
   },
   {
@@ -13530,7 +13530,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115109,
     "year": "2017"
   },
   {
@@ -13545,7 +13545,7 @@
       "Y": "6",
       "Z": "10"
     },
-    "answer": "Y) 6 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "Y) 6",
     "letter": "Y",
     "src": {
       "file": "MS_7A",
@@ -13553,7 +13553,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115109,
     "year": "2017"
   },
   {
@@ -13576,7 +13576,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115110,
     "year": "2017"
   },
   {
@@ -13599,7 +13599,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115110,
     "year": "2017"
   },
   {
@@ -13617,7 +13617,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115110,
     "year": "2017"
   },
   {
@@ -13627,7 +13627,7 @@
     "format": "sa",
     "text": "What eukaryotic [YOU-care-ee-AW-tic] cellular organelle [organ-ELL] is the location of the Krebs cycle?",
     "choices": null,
-    "answer": "MITOCHONDRION 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "MITOCHONDRION",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13635,7 +13635,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115110,
     "year": "2017"
   },
   {
@@ -13653,7 +13653,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115110,
     "year": "2017"
   },
   {
@@ -13663,7 +13663,7 @@
     "format": "sa",
     "text": "Meltwater streams leaving glaciers tend to be very cloudy. What is present in the water causing the cloudy appearance?",
     "choices": null,
-    "answer": "ROCK FLOUR (ACCEPT: GLACIAL FLOUR, DO NOT ACCEPT: SEDIMENT) 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "ROCK FLOUR (ACCEPT: GLACIAL FLOUR, DO NOT ACCEPT: SEDIMENT)",
     "letter": "",
     "src": {
       "file": "MS_7A",
@@ -13671,7 +13671,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607627,
+    "added": 1792648115111,
     "year": "2017"
   },
   {
@@ -13694,7 +13694,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13712,7 +13712,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13730,7 +13730,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13745,7 +13745,7 @@
       "Y": "Lignite",
       "Z": "Subbituminous [sub-bih-TOOM-in-us]"
     },
-    "answer": "$W$) ANTHRACITE 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "$W$) ANTHRACITE",
     "letter": "W",
     "src": {
       "file": "MS_8A",
@@ -13753,7 +13753,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13771,7 +13771,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13789,7 +13789,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13807,7 +13807,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13817,7 +13817,7 @@
     "format": "sa",
     "text": "What is the structure capable of transporting water only upward in plants?",
     "choices": null,
-    "answer": "XYLEM 2017 Middle School Regional NSB® PAGE 2",
+    "answer": "XYLEM",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -13825,7 +13825,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115114,
     "year": "2017"
   },
   {
@@ -13843,7 +13843,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115115,
     "year": "2017"
   },
   {
@@ -13861,7 +13861,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115115,
     "year": "2017"
   },
   {
@@ -13884,7 +13884,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115115,
     "year": "2017"
   },
   {
@@ -13894,7 +13894,7 @@
     "format": "sa",
     "text": "A 5-kilogram mass was held in place at a height of 2 meters above the ground. To the nearest newton, what force was required to hold it there?",
     "choices": null,
-    "answer": "49 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "49",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -13902,7 +13902,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -13920,7 +13920,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -13938,7 +13938,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -13961,7 +13961,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -13971,7 +13971,7 @@
     "format": "sa",
     "text": "What law relates the force applied by a spring to its deformation?",
     "choices": null,
-    "answer": "HOOKE'S LAW 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "HOOKE'S LAW",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -13979,7 +13979,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -13997,7 +13997,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -14015,7 +14015,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -14033,7 +14033,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115116,
     "year": "2017"
   },
   {
@@ -14048,7 +14048,7 @@
       "Y": "A rhombus that is not a parallelogram",
       "Z": "A parallelogram that is not a rhombus"
     },
-    "answer": "Y) A RHOMBUS THAT IS NOT A PARALLELOGRAM 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "Y) A RHOMBUS THAT IS NOT A PARALLELOGRAM",
     "letter": "Y",
     "src": {
       "file": "MS_8A",
@@ -14056,7 +14056,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115117,
     "year": "2017"
   },
   {
@@ -14074,7 +14074,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115117,
     "year": "2017"
   },
   {
@@ -14092,7 +14092,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115117,
     "year": "2017"
   },
   {
@@ -14110,7 +14110,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115118,
     "year": "2017"
   },
   {
@@ -14118,9 +14118,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Given $f$ of $x = 4x2 - 3$ and $g$ of $x = 4$ over open parenthesis $x - 5$ close parenthesis, calculate $g$ of $f$ of 3.",
+    "text": "Given $f$ of $x = 4x^2 - 3$ and $g$ of $x = 4$ over open parenthesis $x - 5$ close parenthesis, calculate $g$ of $f$ of 3.",
     "choices": null,
-    "answer": "$1/7 2017$ Middle School Regional NSB® PAGE 6",
+    "answer": "$1/7$",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14128,7 +14128,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607628,
+    "added": 1792648115119,
     "year": "2017"
   },
   {
@@ -14151,7 +14151,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115120,
     "year": "2017"
   },
   {
@@ -14174,7 +14174,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115120,
     "year": "2017"
   },
   {
@@ -14192,7 +14192,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14202,7 +14202,7 @@
     "format": "sa",
     "text": "Quiescent prominences observed on the Sun are long, thin, vertical sheets of what state of matter?",
     "choices": null,
-    "answer": "PLASMA 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "PLASMA",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14210,7 +14210,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14233,7 +14233,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14251,7 +14251,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14274,7 +14274,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14284,7 +14284,7 @@
     "format": "sa",
     "text": "What quantity is equal to the product of power and time?",
     "choices": null,
-    "answer": "ENERGY 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "ENERGY",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14292,7 +14292,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14310,7 +14310,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115121,
     "year": "2017"
   },
   {
@@ -14328,7 +14328,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14351,7 +14351,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14361,7 +14361,7 @@
     "format": "sa",
     "text": "When a superconductor becomes perfectly diamagnetic, what effect is it exhibiting?",
     "choices": null,
-    "answer": "MEISSNER EFFECT 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "MEISSNER EFFECT",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14369,7 +14369,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14387,7 +14387,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14405,7 +14405,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14428,7 +14428,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115122,
     "year": "2017"
   },
   {
@@ -14443,7 +14443,7 @@
       "Y": "The stream's discharge increases",
       "Z": "The gradient of the stream increases"
     },
-    "answer": "$W$) THE STREAM DEPOSITS SEDIMENT UPSTREAM OF THE DAM 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "$W$) THE STREAM DEPOSITS SEDIMENT UPSTREAM OF THE DAM",
     "letter": "W",
     "src": {
       "file": "MS_8A",
@@ -14451,7 +14451,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115123,
     "year": "2017"
   },
   {
@@ -14469,7 +14469,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115123,
     "year": "2017"
   },
   {
@@ -14487,7 +14487,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115123,
     "year": "2017"
   },
   {
@@ -14505,7 +14505,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115124,
     "year": "2017"
   },
   {
@@ -14515,7 +14515,7 @@
     "format": "sa",
     "text": "What is the least common multiple of 12, 16, and 22?",
     "choices": null,
-    "answer": "528 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "528",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14523,7 +14523,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115124,
     "year": "2017"
   },
   {
@@ -14541,7 +14541,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115124,
     "year": "2017"
   },
   {
@@ -14551,7 +14551,7 @@
     "format": "sa",
     "text": "Desert pavement is a feature created due to the action of what erosional agent?",
     "choices": null,
-    "answer": "WIND 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "WIND",
     "letter": "",
     "src": {
       "file": "MS_8A",
@@ -14559,7 +14559,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607629,
+    "added": 1792648115124,
     "year": "2017"
   },
   {
@@ -14582,7 +14582,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115127,
     "year": "2017"
   },
   {
@@ -14600,7 +14600,7 @@
       "num": 1
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115128,
     "year": "2017"
   },
   {
@@ -14623,7 +14623,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115128,
     "year": "2017"
   },
   {
@@ -14633,7 +14633,7 @@
     "format": "sa",
     "text": "Order the following three types of light bulb from least to most efficient: 1) LED; 2) Fluorescent; 3) Incandescent.",
     "choices": null,
-    "answer": "3, 2, 1 2017 Middle School Regional NSB® PAGE 1",
+    "answer": "3, 2, 1",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -14641,7 +14641,7 @@
       "num": 2
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115128,
     "year": "2017"
   },
   {
@@ -14659,7 +14659,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115129,
     "year": "2017"
   },
   {
@@ -14682,7 +14682,7 @@
       "num": 3
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115129,
     "year": "2017"
   },
   {
@@ -14700,7 +14700,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115129,
     "year": "2017"
   },
   {
@@ -14708,9 +14708,9 @@
     "subject": "math",
     "type": "bonus",
     "format": "sa",
-    "text": "Find the coordinates of all points of intersection of the parabola with equation $y = x2 + 7x + 10$ and the line with equation $y = -x - 6$.",
+    "text": "Find the coordinates of all points of intersection of the parabola with equation $y = x^2 + 7x + 10$ and the line with equation $y = -x - 6$.",
     "choices": null,
-    "answer": "$(-4, -2) 2017$ Middle School Regional NSB® PAGE 2",
+    "answer": "$(-4, -2)$",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -14718,7 +14718,7 @@
       "num": 4
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115130,
     "year": "2017"
   },
   {
@@ -14741,7 +14741,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115130,
     "year": "2017"
   },
   {
@@ -14759,7 +14759,7 @@
       "num": 5
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14782,7 +14782,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14792,7 +14792,7 @@
     "format": "sa",
     "text": "Maria went shopping in two stores with her birthday gift money. In the first store, she spent two-thirds of what she had plus ＄3. In the second store, she spent three-fifths of what was left plus ＄2. She then had ＄8 left. How many dollars did she begin with?",
     "choices": null,
-    "answer": "84 2017 Middle School Regional NSB® PAGE 3",
+    "answer": "84",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -14800,7 +14800,7 @@
       "num": 6
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14823,7 +14823,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14846,7 +14846,7 @@
       "num": 7
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14869,7 +14869,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115131,
     "year": "2017"
   },
   {
@@ -14879,7 +14879,7 @@
     "format": "sa",
     "text": "Titan is Saturn's satellite and shares similarities with Earth. However, it may become depressing during a long-term visit, due to the fact that, rounded to a single significant figure, Titan receives what percent of the sunlight Earth receives?",
     "choices": null,
-    "answer": "ONE 2017 Middle School Regional NSB® PAGE 4",
+    "answer": "ONE",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -14887,7 +14887,7 @@
       "num": 8
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -14905,7 +14905,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -14923,7 +14923,7 @@
       "num": 9
     },
     "tags": [],
-    "added": 1792257607630,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -14946,7 +14946,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -14956,7 +14956,7 @@
     "format": "sa",
     "text": "Identify all of the following three particles that would be deflected by a magnetic field: 1) Electron; 2) Neutron; 3) Proton.",
     "choices": null,
-    "answer": "1 AND 3 2017 Middle School Regional NSB® PAGE 5",
+    "answer": "1 AND 3",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -14964,7 +14964,7 @@
       "num": 10
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -14987,7 +14987,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115132,
     "year": "2017"
   },
   {
@@ -15010,7 +15010,7 @@
       "num": 11
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115133,
     "year": "2017"
   },
   {
@@ -15028,7 +15028,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115134,
     "year": "2017"
   },
   {
@@ -15038,7 +15038,7 @@
     "format": "sa",
     "text": "What is the perimeter of a square having the same area as a circle of radius 6?",
     "choices": null,
-    "answer": "$24√π 2017$ Middle School Regional NSB® PAGE 6",
+    "answer": "$24√π$",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15046,7 +15046,7 @@
       "num": 12
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115135,
     "year": "2017"
   },
   {
@@ -15064,7 +15064,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115135,
     "year": "2017"
   },
   {
@@ -15082,7 +15082,7 @@
       "num": 13
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115135,
     "year": "2017"
   },
   {
@@ -15105,7 +15105,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115135,
     "year": "2017"
   },
   {
@@ -15115,7 +15115,7 @@
     "format": "sa",
     "text": "A green light looks blue when seen in the reflection from the surface of a piece of non-absorbing glass. What color does the light appear when looking through the glass?",
     "choices": null,
-    "answer": "YELLOW 2017 Middle School Regional NSB® PAGE 7",
+    "answer": "YELLOW",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15123,7 +15123,7 @@
       "num": 14
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115136,
     "year": "2017"
   },
   {
@@ -15146,7 +15146,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115136,
     "year": "2017"
   },
   {
@@ -15164,7 +15164,7 @@
       "num": 15
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115136,
     "year": "2017"
   },
   {
@@ -15187,7 +15187,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115136,
     "year": "2017"
   },
   {
@@ -15197,7 +15197,7 @@
     "format": "sa",
     "text": "What is the SI unit for luminosity [loo-min-AW-sih-tee]?",
     "choices": null,
-    "answer": "CANDELA 2017 Middle School Regional NSB® PAGE 8",
+    "answer": "CANDELA",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15205,7 +15205,7 @@
       "num": 16
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115137,
     "year": "2017"
   },
   {
@@ -15228,7 +15228,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115139,
     "year": "2017"
   },
   {
@@ -15246,7 +15246,7 @@
       "num": 17
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115139,
     "year": "2017"
   },
   {
@@ -15264,7 +15264,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115140,
     "year": "2017"
   },
   {
@@ -15274,7 +15274,7 @@
     "format": "sa",
     "text": "Find the surface area of a square pyramid with slant height 5 whose base has sides of length 6.",
     "choices": null,
-    "answer": "96 2017 Middle School Regional NSB® PAGE 9",
+    "answer": "96",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15282,7 +15282,7 @@
       "num": 18
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115140,
     "year": "2017"
   },
   {
@@ -15305,7 +15305,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15323,7 +15323,7 @@
       "num": 19
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15346,7 +15346,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15356,7 +15356,7 @@
     "format": "sa",
     "text": "What type of reaction always has a product of carbon dioxide and water?",
     "choices": null,
-    "answer": "COMBUSTION 2017 Middle School Regional NSB® PAGE 10",
+    "answer": "COMBUSTION",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15364,7 +15364,7 @@
       "num": 20
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15382,7 +15382,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15400,7 +15400,7 @@
       "num": 21
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115141,
     "year": "2017"
   },
   {
@@ -15418,7 +15418,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115142,
     "year": "2017"
   },
   {
@@ -15428,7 +15428,7 @@
     "format": "sa",
     "text": "The average of a list of 9 numbers is 57. The average of the first 4 numbers is 53. What integer is nearest the average of the remaining 5 numbers?",
     "choices": null,
-    "answer": "60 2017 Middle School Regional NSB® PAGE 11",
+    "answer": "60",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15436,7 +15436,7 @@
       "num": 22
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115142,
     "year": "2017"
   },
   {
@@ -15454,7 +15454,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115142,
     "year": "2017"
   },
   {
@@ -15464,7 +15464,7 @@
     "format": "sa",
     "text": "At what specific area of the cell is rRNA transcribed?",
     "choices": null,
-    "answer": "NUCLEOLUS (DO NOT ACCEPT: NUCLEUS) 2017 Middle School Regional NSB® PAGE 12",
+    "answer": "NUCLEOLUS (DO NOT ACCEPT: NUCLEUS)",
     "letter": "",
     "src": {
       "file": "MS_9A",
@@ -15472,7 +15472,7 @@
       "num": 23
     },
     "tags": [],
-    "added": 1792257607631,
+    "added": 1792648115142,
     "year": "2017"
   }
 ]
