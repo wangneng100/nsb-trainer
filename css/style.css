@@ -114,6 +114,7 @@ body.in-drill .nav { display: none; }
 .btn.big { padding: 14px 24px; font-size: 17px; border-radius: 16px; }
 .btn.sm { padding: 6px 12px; font-size: 13.5px; border-radius: 10px; }
 .btn.ghost, :root .btn.ghost { background: var(--panel-2); color: var(--ink); box-shadow: none; border: 1px solid var(--line); }
+.btn.ghost.active, :root .btn.ghost.active { background: var(--brand-soft); border-color: var(--brand); color: var(--brand); }
 .btn.danger, :root .btn.danger { background: var(--bad-soft); color: var(--bad); box-shadow: none; }
 .btn.good { background: var(--ok); }
 .btn.bad { background: var(--bad); color: #fff; }

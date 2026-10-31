@@ -153,7 +153,11 @@
   let player = null;
   const sayReg = new Map();
   let sayN = 0;
-  const sayBtn = (toks, label = '🔊') => { const id = 's' + (++sayN); sayReg.set(id, toks); return `<button class="say" data-say="${id}" title="Listen">${label}</button>`; };
+  const sayBtn = (toks, label = '🔊', cd = false) => {
+    const id = 's' + (++sayN);
+    sayReg.set(id, toks);
+    return `<button class="say" data-say="${id}" ${cd ? 'data-cd="1"' : ''} title="Listen">${label}</button>`;
+  };
   const silentMode = () => !TTS.available();
   function chunkPairs(toks) {
     const out = [{ s: [], w: [] }];
@@ -170,6 +174,14 @@
     if (player) { player.cancel(); player = null; }
     $$('.say.playing').forEach(b => {
       b.classList.remove('playing');
+      if (b.dataset.orig) b.innerHTML = b.dataset.orig;
+    });
+    $$('.say.counting').forEach(b => {
+      if (b.dataset.cdIntv) {
+        clearInterval(b.dataset.cdIntv);
+        delete b.dataset.cdIntv;
+      }
+      b.classList.remove('counting');
       if (b.dataset.orig) b.innerHTML = b.dataset.orig;
     });
   }
@@ -220,6 +232,7 @@
   let view = 'home';
   const VIEWS = {};
   function route() {
+    stopAudio();
     const v = location.hash.slice(1) || 'home';
     if (v !== 'drill' && sess) endSession();
     view = VIEWS[v] ? v : 'home';
@@ -935,14 +948,20 @@
   }
   function qCard(q) {
     const b = S.bstats[q.id];
-    return `<div class="qcard" data-qid="${q.id}">
+    const inMistakes = (S.mistakes || []).some(m => m.q === q.id);
+    return `<div class="qcard" data-qid="${q.id}" data-type="${q.type}">
       <div class="meta">${typeTag(q)}<span class="tag subj">${esc(subjName(q.subject))}</span><span class="tag">${q.format === 'mc' ? 'MCQ' : 'SA'}</span><span class="tag">${esc(srcName(q))}</span>
         ${(q.tags || []).map(t => C.CAT[t] ? `<span class="tag">${esc(C.CAT[t].zh)}</span>` : '').join('')}
         ${b ? `<span class="tag ${b.lastOk ? 'ok' : 'bad'}">Attempted ${b.n} times · Correct ${b.ok}</span>` : ''}</div>
       <div class="qtext">${T.toHTML(q.text)}</div>${choicesHTML(q)}
       <div class="ans"><b>ANSWER:</b> ${T.toHTML(q.answer)}</div>
-      <div class="acts">${sayBtn(bankToks(q), '🔊 Listen')}<button class="btn sm ghost" data-practice="${q.id}">▶ Drill this</button>
-        <button class="btn sm ghost" data-edit="${q.id}">✏️ Edit</button><button class="btn sm danger" data-del="${q.id}">Delete</button></div>
+      <div class="acts">
+        ${sayBtn(bankToks(q), '🔊 Listen', true)}
+        <button class="btn sm ghost ${inMistakes ? 'active' : ''}" data-mistake-q="${q.id}" title="Toggle in mistakes list">${inMistakes ? '✓ In Mistakes' : '📕 Add to Mistakes'}</button>
+        <button class="btn sm ghost" data-practice="${q.id}">▶ Drill this</button>
+        <button class="btn sm ghost" data-edit="${q.id}">✏️ Edit</button>
+        <button class="btn sm danger" data-del="${q.id}">Delete</button>
+      </div>
     </div>`;
   }
   VIEWS.bank = () => {
@@ -977,6 +996,8 @@
   document.addEventListener('change', e => {
     const f = e.target.closest('[data-bf]');
     if (f) { bankF[f.dataset.bf] = f.type === 'checkbox' ? f.checked : f.value; bankF.shown = 30; route(); }
+    const mf = e.target.closest('[data-mf]');
+    if (mf) { mistakeF[mf.dataset.mf] = mf.value; route(); }
   });
 
   function exportData() {
@@ -1200,34 +1221,86 @@
   };
 
   // ───────── mistakes ─────────
-  const ago = t => { const m = (Date.now() - t) / 6e4; return m < 60 ? `${Math.max(1, Math.round(m))}  mins ago` : m < 1440 ? `${Math.round(m / 60)}  hours ago` : `${Math.round(m / 1440)}  days ago`; };
+  const ago = t => { const m = (Date.now() - t) / 6e4; return m < 60 ? `${Math.max(1, Math.round(m))} mins ago` : m < 1440 ? `${Math.round(m / 60)} hours ago` : `${Math.round(m / 1440)} days ago`; };
+  const mistakeF = { subject: 'all', type: 'all' };
+
+  function getMistakeSubject(m) {
+    if (m.m === 'bank') {
+      const q = qById(m.q);
+      return q ? (q.subject || 'math') : 'math';
+    }
+    return 'math';
+  }
+
+  function getMistakeType(m) {
+    if (m.m === 'bank') {
+      const q = qById(m.q);
+      return q ? (q.type || 'tossup') : 'tossup';
+    }
+    return 'tossup';
+  }
+
+  function filteredMistakes() {
+    return (S.mistakes || []).filter(m => {
+      if (mistakeF.subject !== 'all' && getMistakeSubject(m) !== mistakeF.subject) return false;
+      if (mistakeF.type !== 'all' && getMistakeType(m) !== mistakeF.type) return false;
+      return true;
+    });
+  }
+
   VIEWS.mistakes = () => {
-    const M = S.mistakes;
-    const cats = [...new Set(M.slice(0, 30).map(m => m.c).filter(c => C.CAT[c]))];
-    const bankIds = [...new Set(M.filter(m => m.q && qById(m.q)).map(m => m.q))];
+    const list = filteredMistakes();
+    const cats = [...new Set(list.slice(0, 30).map(m => m.c).filter(c => C.CAT[c]))];
+    const bankIds = [...new Set(list.filter(m => m.q && qById(m.q)).map(m => m.q))];
+    const opt = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? 'selected' : ''}>${esc(l)}</option>`;
+
     main.innerHTML = `<div class="card"><div class="row"><h2 style="margin:0">📕 Mistakes</h2><span class="spacer"></span>
         ${cats.length ? `<button class="btn" data-start="smart" data-cats="${cats.join(',')}">▶ Redo recently missed ${cats.length} categories</button>` : ''}
-        ${bankIds.length ? `<button class="btn ghost" data-act="redo-bank">▶ Redo missed official Qs (${bankIds.length}）</button>` : ''}</div>
-        <p class="muted small">Every wrong question can be replayed. Dictation and Math modes will generate new questions of the same type instead of letting you memorize answers.</p></div>
-      ${M.length ? M.slice(0, 80).map((m, i) => mistakeCard(m, i)).join('') : '<div class="card muted">No mistakes yet.</div>'}`;
+        ${bankIds.length ? `<button class="btn ghost" data-act="redo-bank" data-bank-ids="${bankIds.join(',')}">▶ Redo missed official Qs (${bankIds.length})</button>` : ''}</div>
+        <p class="muted small">Every wrong question can be replayed. Dictation and Math modes will generate new questions of the same type instead of letting you memorize answers.</p>
+        <div class="toolbar" style="margin-top:12px">
+          <select data-mf="subject">${SUBJECTS.map(s => opt(s.id, s.name, mistakeF.subject)).join('')}</select>
+          <select data-mf="type">
+            ${opt('all', 'All Types', mistakeF.type)}
+            ${opt('tossup', 'Toss-up', mistakeF.type)}
+            ${opt('bonus', 'Bonus', mistakeF.type)}
+          </select>
+          <span class="muted small" style="align-self:center;margin-left:auto">${list.length} question${list.length === 1 ? '' : 's'}</span>
+        </div>
+      </div>
+      <div id="mlist">
+        ${list.length ? list.slice(0, 80).map(m => mistakeCard(m)).join('') : '<div class="card muted">No matching mistakes.</div>'}
+      </div>`;
   };
-  function mistakeCard(m, i) {
+
+  function mistakeCard(m) {
     let body = '';
+    const q = m.q ? qById(m.q) : null;
+    const subj = getMistakeSubject(m);
+    const type = getMistakeType(m);
+    const typeBadge = type === 'bonus' ? '<span class="tag bo">Bonus</span>' : '<span class="tag tu">Toss-up</span>';
+    const subjBadge = `<span class="tag subj">${esc(subjName(subj))}</span>`;
+
     if (m.m === 'dict') {
-      body = `<div class="kv"><span>Read</span><div class="m">${texN(m.target)}</div>${sayBtn(m.toks)}</div>` +
-        (m.chosen ? `<div class="kv"><span>You answered</span><div class="m">${texN(m.chosen)}</div>${sayBtn(E.speak(m.chosen))}</div>` : `<div class="kv"><span>You answered</span><div><code>${esc(m.got || '')}</code></div><span></span></div>`) +
-        `<div class="transcript small">${trHTML(m.toks)}</div>`;
+      body = `<div class="kv"><span>Read</span><div class="m">${texN(m.target)}</div><span></span></div>` +
+        (m.chosen ? `<div class="kv"><span>You answered</span><div class="m">${texN(m.chosen)}</div>${sayBtn(E.speak(m.chosen), '🔊 Listen', false)}</div>` : `<div class="kv"><span>You answered</span><div><code>${esc(m.got || '')}</code></div><span></span></div>`) +
+        `<div class="transcript small">${trHTML(m.toks)}</div>
+        <div class="acts" style="margin-top:10px">${sayBtn(m.toks, '🔊 Listen', true)}</div>`;
     } else if (m.m === 'calc') {
       body = `<div class="transcript small">${trHTML(m.toks)}</div>
-        <div class="kv"><span>Correct Answer</span><div>${esc(String(m.answer))}</div>${sayBtn(m.toks)}</div>
-        <div class="kv"><span>You answered</span><div>${esc(m.got || '—')}${m.diag ? ` <span class="small muted">= ${texN(m.diag)} value (misheard ${texN(m.target)} as this)</span>` : ''}</div><span></span></div>`;
+        <div class="kv"><span>Correct Answer</span><div>${esc(String(m.answer))}</div><span></span></div>
+        <div class="kv"><span>You answered</span><div>${esc(m.got || '—')}${m.diag ? ` <span class="small muted">= ${texN(m.diag)} value (misheard ${texN(m.target)} as this)</span>` : ''}</div><span></span></div>
+        <div class="acts" style="margin-top:10px">${sayBtn(m.toks, '🔊 Listen', true)}</div>`;
     } else {
-      const q = qById(m.q);
-      body = q ? `<div class="qtext small">${T.toHTML(q.text)}</div>${choicesHTML(q)}<div class="kv"><span>Official Answer</span><div>${T.toHTML(q.answer)}</div>${sayBtn(bankToks(q))}</div>
-        <div class="kv"><span>You answered</span><div>${esc(m.got || '—')}</div><span></span></div>` : '<p class="muted">(Question deleted from bank)</p>';
+      body = q ? `<div class="qtext small">${T.toHTML(q.text)}</div>${choicesHTML(q)}
+        <div class="kv"><span>Official Answer</span><div>${T.toHTML(q.answer)}</div><span></span></div>
+        <div class="kv"><span>${m.manual ? 'Note' : 'You answered'}</span><div>${m.manual ? 'Added manually during practice' : esc(m.got || '—')}</div><span></span></div>
+        <div class="acts" style="margin-top:10px">${sayBtn(bankToks(q), '🔊 Listen', true)}<button class="btn sm ghost" data-practice="${q.id}">▶ Drill this</button></div>`
+        : '<p class="muted">(Question deleted from bank)</p>';
     }
-    return `<div class="qcard"><div class="meta"><span class="tag">${MODE[m.m]}</span>${C.CAT[m.c] ? `<span class="tag">${esc(C.CAT[m.c].zh)}${m.l ? ' · L' + m.l : ''}</span>` : ''}<span class="muted small">${ago(m.t)}</span>
-      <span class="spacer"></span><button class="btn sm ghost" data-rm-mistake="${i}" title="Remove from mistakes">✕</button></div>${body}</div>`;
+    return `<div class="qcard" data-qid="${m.q || ''}" data-type="${type}">
+      <div class="meta">${typeBadge}${subjBadge}<span class="tag">${MODE[m.m] || 'Bank'}</span>${C.CAT[m.c] ? `<span class="tag">${esc(C.CAT[m.c].zh)}${m.l ? ' · L' + m.l : ''}</span>` : ''}<span class="muted small">${ago(m.t)}</span>
+        <span class="spacer"></span><button class="btn sm ghost" data-rm-mistake="${m.t}" title="Remove from mistakes">✕</button></div>${body}</div>`;
   }
 
   // ───────── reading guide ─────────
@@ -1322,29 +1395,28 @@
             return;
           }
           const qcard = say.closest('.qcard');
-          if (qcard) {
-            const q = (S.customBank || []).concat(S.bank || []).find(x => x.id === qcard.dataset.qid);
-            if (q) {
-              const secs = q.type === 'tossup' ? S.settings.buzz : S.settings.bonus;
-              let left = secs;
-              say.classList.add('counting');
-              say.innerHTML = `⏳ ${left.toFixed(1)}s`;
-              const t0 = performance.now();
-              const intv = setInterval(() => {
-                left = secs - (performance.now() - t0)/1000;
-                if (left <= 0) {
-                  clearInterval(intv);
-                  delete say.dataset.cdIntv;
-                  say.classList.remove('counting');
-                  if (say.dataset.orig) say.innerHTML = say.dataset.orig;
-                  sfx('no');
-                } else {
-                  say.innerHTML = `⏳ ${left.toFixed(1)}s`;
-                }
-              }, 100);
-              say.dataset.cdIntv = intv;
-              return;
-            }
+          if (qcard && (say.dataset.cd === '1' || say.closest('.acts') || !say.closest('.kv')?.querySelector('span')?.textContent.toLowerCase().includes('answered'))) {
+            const q = qcard.dataset.qid ? (S.customBank || []).concat(S.bank || []).find(x => x.id === qcard.dataset.qid) : null;
+            const type = q ? q.type : (qcard.dataset.type || 'tossup');
+            const secs = type === 'bonus' ? S.settings.bonus : S.settings.buzz;
+            let left = secs;
+            say.classList.add('counting');
+            say.innerHTML = `⏳ ${left.toFixed(1)}s`;
+            const t0 = performance.now();
+            const intv = setInterval(() => {
+              left = secs - (performance.now() - t0)/1000;
+              if (left <= 0) {
+                clearInterval(intv);
+                delete say.dataset.cdIntv;
+                say.classList.remove('counting');
+                if (say.dataset.orig) say.innerHTML = say.dataset.orig;
+                sfx('buzz');
+              } else {
+                say.innerHTML = `⏳ ${left.toFixed(1)}s`;
+              }
+            }, 100);
+            say.dataset.cdIntv = intv;
+            return;
           }
           if (say.dataset.orig) say.innerHTML = say.dataset.orig;
         }); 
@@ -1383,7 +1455,45 @@
       return; 
     }
     const pr = e.target.closest('[data-practice]'); if (pr) { startSession({ kind: 'bank', bankIds: [pr.dataset.practice], len: 1 }); return; }
-    const rm = e.target.closest('[data-rm-mistake]'); if (rm) { S.mistakes.splice(+rm.dataset.rmMistake, 1); save(); route(); return; }
+    const mq = e.target.closest('[data-mistake-q]');
+    if (mq) {
+      const qid = mq.dataset.mistakeQ;
+      const q = qById(qid);
+      if (!q) return;
+      if (!S.mistakes) S.mistakes = [];
+      const idx = S.mistakes.findIndex(m => m.q === qid);
+      if (idx >= 0) {
+        S.mistakes.splice(idx, 1);
+        mq.classList.remove('active');
+        mq.innerHTML = '📕 Add to Mistakes';
+        toast('Removed from mistakes');
+      } else {
+        S.mistakes.unshift({
+          t: Date.now(),
+          m: 'bank',
+          q: q.id,
+          c: (q.tags || [])[0] || null,
+          toks: bankToks(q),
+          got: '—',
+          manual: true
+        });
+        if (S.mistakes.length > 300) S.mistakes.length = 300;
+        mq.classList.add('active');
+        mq.innerHTML = '✓ In Mistakes';
+        toast('✓ Added to mistakes');
+      }
+      save();
+      return;
+    }
+    const rm = e.target.closest('[data-rm-mistake]');
+    if (rm) {
+      const t = +rm.dataset.rmMistake;
+      const idx = (S.mistakes || []).findIndex(m => m.t === t);
+      if (idx >= 0) S.mistakes.splice(idx, 1);
+      save();
+      route();
+      return;
+    }
     const a = e.target.closest('[data-act]');
     if (!a) return;
     const act = a.dataset.act;
@@ -1397,7 +1507,10 @@
       import: openImport, 'new-q': () => openEdit(null), export: exportData, restore: restoreData,
       more: () => { bankF.shown += 30; route(); },
       'bank-practice': () => { const l = filteredBank(); startSession({ kind: 'bank', bankIds: l.map(q => q.id), len: l.length }); },
-      'redo-bank': () => { const ids = [...new Set(S.mistakes.filter(m => m.q && qById(m.q)).map(m => m.q))]; startSession({ kind: 'bank', bankIds: ids, len: ids.length }); },
+      'redo-bank': () => {
+        const ids = (a.dataset.bankIds ? a.dataset.bankIds.split(',').filter(Boolean) : [...new Set(S.mistakes.filter(m => m.q && qById(m.q)).map(m => m.q))]);
+        startSession({ kind: 'bank', bankIds: ids, len: ids.length });
+      },
       'imp-text': () => { const t = $('#imp-text').value; if (!t.trim()) return; addParsed(I.parseNSB(t, { file: 'pasted' }), 'Pasted text'); renderImport(); },
       'imp-all': () => { imp.items.forEach(x => x.on = true); renderImport(); },
       'imp-none': () => { imp.items.forEach(x => x.on = false); renderImport(); },
