@@ -1,4 +1,4 @@
-import os, re, glob, json, subprocess
+import os, re, sys, glob, json, subprocess
 from concurrent.futures import ThreadPoolExecutor
 import pdfplumber
 
@@ -11,12 +11,18 @@ SET_YEAR_MAP = {
     'set-15': '2021',
     'set-16': '2022',
 }
+# High-school sample sets go to their own banks (banks/hs-<year>.json): their years overlap the middle-school ones.
+HS_SET_YEAR_MAP = {
+    'high-school/Sample-Set-15': '2020',
+    'high-school/Sample-Set-16': '2021',
+    'high-school/Sample-Set-17': '2022',
+}
 
 def get_round(fname):
     m = (re.search(r'Set-(\d+)', fname, re.I) or
          re.search(r'Round-(\d+)', fname, re.I) or
          re.search(r'Rd\s*(\d+)', fname, re.I) or
-         re.search(r'MS[_-](\d+)', fname, re.I) or
+         re.search(r'[MH]S[_-](\d+)', fname, re.I) or
          re.search(r'^(\d+)A?_', fname, re.I))
     return m.group(1) if m else ''
 
@@ -118,7 +124,7 @@ def strip_repeated_lines(pages):
             k = key_fn(l)
             if counts.get(k, 0) >= threshold and not re.match(r'^(TOSS|BONUS|ANSWER)', l, re.I) and len(l) <= 90:
                 continue
-            if re.search(r'^(?:20\d\d\s+.*Page\s+\d+|.*National Science Bowl.*Page\s+\d+|.*Middle School Regional.*PAGE\s+\d+|.*Middle School.*Page\s+\d+|.*Regional Science Bowl.*Page\s+\d+|PAGE\s+\d+|Page\s+\d+)$', l, re.I):
+            if re.search(r'^(?:20\d\d\s+.*Page\s+\d+|.*National Science Bowl.*Page\s+\d+|.*Middle School Regional.*PAGE\s+\d+|.*Middle School.*Page\s+\d+|.*High School.*Page\s+\d+|.*Regional Science Bowl.*Page\s+\d+|PAGE\s+\d+|Page\s+\d+)$', l, re.I):
                 continue
             clean_p.append(l)
         clean_pages.append(clean_p)
@@ -137,15 +143,16 @@ def extract_pdf(path):
         print(f"Error extracting {path}: {e}")
         return None
 
-def process_year(set_dir, year):
-    print(f"\nProcessing {set_dir} -> {year}...")
+def process_year(set_dir, year, level='ms'):
+    bank_name = year if level == 'ms' else f'hs-{year}'
+    print(f"\nProcessing {set_dir} -> banks/{bank_name}.json ({level})...")
     pdf_paths = sorted(glob.glob(f"problem_sets/{set_dir}/*.pdf"))
     if not pdf_paths:
         print(f"No PDFs found in problem_sets/{set_dir}")
         return
 
     # Load existing questions to preserve IDs
-    existing_bank_path = f"banks/{year}.json"
+    existing_bank_path = f"banks/{bank_name}.json"
     existing_id_map = {}
     if os.path.exists(existing_bank_path):
         try:
@@ -170,17 +177,18 @@ const I = require('./js/importer.js');
 let raw = '';
 process.stdin.on('data', c => raw += c);
 process.stdin.on('end', () => {
-  const { extracted, existing_id_map, year } = JSON.parse(raw);
+  const { extracted, existing_id_map, year, level } = JSON.parse(raw);
   const out = [];
   const counts = {};
 
   for (const item of extracted) {
     const res = I.parseNSB(item.text, { file: item.file, round: item.round });
     for (const q of res.questions) {
-      q.answer = q.answer.replace(/\\s*(?:20\\d\\d\\s+.*Page\\s+\\d+|.*National Science Bowl.*Page\\s+\\d+|.*Middle School Regional.*PAGE\\s+\\d+|.*Middle School.*Page\\s+\\d+|.*Regional Science Bowl.*Page\\s+\\d+|PAGE\\s+\\d+|Page\\s+\\d+)\\s*$/i, '').trim();
+      q.answer = q.answer.replace(/\\s*(?:20\\d\\d\\s+.*Page\\s+\\d+|.*National Science Bowl.*Page\\s+\\d+|.*Middle School Regional.*PAGE\\s+\\d+|.*Middle School.*Page\\s+\\d+|.*High School.*Page\\s+\\d+|.*Regional Science Bowl.*Page\\s+\\d+|PAGE\\s+\\d+|Page\\s+\\d+)\\s*$/i, '').trim();
 
       const bankItem = I.toBankItem(q);
       bankItem.year = String(year);
+      bankItem.level = level;
 
       if (q.subject !== 'math') {
         bankItem.tags = [];
@@ -204,7 +212,7 @@ process.stdin.on('end', () => {
 });
 '''
     p = subprocess.Popen(['node', '-e', node_code], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    input_data = json.dumps({'extracted': extracted, 'existing_id_map': existing_id_map, 'year': year})
+    input_data = json.dumps({'extracted': extracted, 'existing_id_map': existing_id_map, 'year': year, 'level': level})
     stdout, stderr = p.communicate(input=input_data)
 
     if stderr:
@@ -214,16 +222,22 @@ process.stdin.on('end', () => {
     questions = res['questions']
     counts = res['counts']
 
-    with open(f"banks/{year}.json", 'w', encoding='utf-8') as f:
+    with open(f"banks/{bank_name}.json", 'w', encoding='utf-8') as f:
         json.dump(questions, f, ensure_ascii=False, indent=2)
 
-    print(f"Saved {len(questions)} questions to banks/{year}.json:")
+    print(f"Saved {len(questions)} questions to banks/{bank_name}.json:")
     for subj, cnt in sorted(counts.items()):
         print(f"  {subj}: {cnt}")
 
 def main():
-    for set_dir, year in sorted(SET_YEAR_MAP.items()):
-        process_year(set_dir, year)
+    # python3 reparse_all.py [ms|hs] — default rebuilds both levels
+    which = sys.argv[1] if len(sys.argv) > 1 else 'all'
+    if which in ('all', 'ms'):
+        for set_dir, year in sorted(SET_YEAR_MAP.items()):
+            process_year(set_dir, year, 'ms')
+    if which in ('all', 'hs'):
+        for set_dir, year in sorted(HS_SET_YEAR_MAP.items()):
+            process_year(set_dir, year, 'hs')
     print("\nAll years successfully parsed and saved!")
 
 if __name__ == '__main__':

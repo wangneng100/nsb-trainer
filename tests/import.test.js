@@ -98,6 +98,16 @@ test('judge compares answers numerically and by text', () => {
   assert.deepEqual(T.judge('negative two', '$-2$'), { ok: true, sure: true });
   assert.deepEqual(T.judge('mitochondria', 'MITOCHONDRION (ACCEPT: MITOCHONDRIA)'), { ok: true, sure: true });
   assert.equal(T.judge('isosceles right', 'RIGHT ISOSCELES').sure, false);
+  // real HS answer lines
+  assert.deepEqual(T.judge('4pi/15', '$4π/15$ (ACCEPT: $(4/15)π$)'), { ok: true, sure: true });
+  assert.deepEqual(T.splitAnswer('π/10 (ACCEPT: (1/10)π, 0.1π)'), { main: 'π/10', accept: ['(1/10)π', '0.1π'] });
+  assert.deepEqual(T.judge('9sqrt3 pi', '$9π√3$ [any order of factors]'), { ok: true, sure: true });
+  assert.deepEqual(T.judge('-7, 11', '11 AND $-7$'), { ok: true, sure: true });
+  assert.deepEqual(T.judge('-7 and -3', '$-3$ AND $-7$ (must give both answers)'), { ok: true, sure: true });
+  assert.deepEqual(T.judge('-3', '$-3$ AND $-7$ (must give both answers)'), { ok: false, sure: true });
+  assert.deepEqual(T.judge('(-2, 7)', '$(-2, 7)$ (ACCEPT: x = –2 AND y = 7)'), { ok: true, sure: true });
+  assert.deepEqual(T.judge('(7, -2)', '$(-2, 7)$'), { ok: false, sure: true });
+  assert.deepEqual(T.judge('3', 'METHIONINE (ACCEPT: MET, M; DO NOT ACCEPT: F-MET, FORMYLMETHIONINE)').ok, false);
 });
 
 test('linesFromItems rebuilds superscripts and subscripts', () => {
@@ -129,4 +139,40 @@ test('toBankItem marks math and tags structures', () => {
   assert.deepEqual(b.tags, ['exp-scope']);
   const mc = I.toBankItem(r.questions.find(x => x.format === 'mc' && x.subject === 'math'));
   assert.deepEqual(mc.tags, ['neg-pow']);
+});
+
+test('answers keep wrapped ACCEPT lists but stop at the moderator script', () => {
+  const txt = `TOSS-UP
+1) MATH Short Answer What is the volume?
+ANSWER: π/10 (ACCEPT: (1/10)π,
+0.1π)
+BONUS
+1) MATH Short Answer What is 2 + 2?
+ANSWER: 4
+Before we leave, let’s confirm the team’s score. What score does the Official Scorekeeper have?`;
+  const r = I.parseNSB(txt);
+  assert.equal(r.questions[0].answer, 'π/10 (ACCEPT: (1/10)π, 0.1π)');
+  assert.equal(r.questions[1].answer, '4');
+  const mc = I.parseNSB(`TOSS-UP
+2) BIOLOGY Multiple Choice Which?
+W) A
+X) B
+Y) C
+Z) D
+ANSWER: X) THE SECOND LAW STATES THAT PLANETS MOVE EQUAL DISTANCES IN
+EQUAL TIMES`);
+  assert.equal(mc.questions[0].answer, 'X) THE SECOND LAW STATES THAT PLANETS MOVE EQUAL DISTANCES IN EQUAL TIMES');
+});
+
+test('detectLevel reads DOE file names, then the text', () => {
+  assert.equal(I.detectLevel('2020-HS-Rd1.pdf', ''), 'hs');
+  assert.equal(I.detectLevel('Set-3-HS-2021.pdf', ''), 'hs');
+  assert.equal(I.detectLevel('2022-MS-4.pdf', ''), 'ms');
+  assert.equal(I.detectLevel('round.pdf', 'Middle School Round 3'), 'ms');
+  assert.equal(I.detectLevel('round.pdf', 'TOSS-UP 1) MATH'), '');
+  assert.equal(I.detectLevel('THIS.pdf', ''), '');
+});
+
+test('short letter runs before ^ are variables', () => {
+  assert.equal(T.autoMath('what is the coefficient of the ab^2 term?'), 'what is the coefficient of the $ab^2$ term?');
 });

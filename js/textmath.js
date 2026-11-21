@@ -88,6 +88,8 @@
       else if (m[8]) k = 'comma';
       out.push({ s, k });
     }
+    // "the ab^2 term": a short letter run right before ^ is a product of variables, not a word
+    out.forEach((t, i) => { if (t.k === 'word' && /^[a-z]{2,3}$/.test(t.s) && out[i + 1] && out[i + 1].s === '^') t.k = 'caps'; });
     return out;
   }
   const MATHY = new Set(['num', 'var', 'op', 'fn', 'caps', 'const']);
@@ -152,11 +154,57 @@
   }
 
   // ───────── answers ─────────
+  // split on ; , OR (or AND, when asked) outside brackets; "1,000" stays one number
+  function splitTop(str, and = false) {
+    const out = [];
+    let depth = 0, cur = '';
+    for (let i = 0; i < str.length; i++) {
+      const c = str[i];
+      if ('([{'.includes(c)) depth++;
+      if (')]}'.includes(c)) depth--;
+      const rest = str.slice(i);
+      const sep = depth === 0 && (c === ';' || (c === ',' && !/^,\d{3}\b/.test(rest)));
+      const word = depth === 0 && /^\s/.test(c) && (and ? /^\s+(OR|AND)\s+/i : /^\s+OR\s+/i).exec(rest);
+      if (sep) { out.push(cur); cur = ''; continue; }
+      if (word) { out.push(cur); cur = ''; i += word[0].length - 1; continue; }
+      cur += c;
+    }
+    out.push(cur);
+    return out.map(x => x.trim()).filter(Boolean);
+  }
+  // "π/10 (ACCEPT: (1/10)π, 0.1π) [any order]" → main + accepted alternatives; brackets are balanced, not regexed
   function splitAnswer(ans) {
+    const s = String(ans || '').replace(/\[[^\]]*\]/g, ' ');
     const accept = [];
-    let main = String(ans || '').replace(/\((?:MUST\s+|ALSO\s+)?ACCEPTS?:?\s*([^)]*)\)/gi, (_, a) => { accept.push(...a.split(/\s*(?:;|\bOR\b|,(?!\d{3}))\s*/i)); return ' '; })
-      .replace(/\(DO NOT ACCEPT[^)]*\)/gi, ' ').replace(/\s+/g, ' ').trim();
-    return { main, accept: accept.map(a => a.trim()).filter(Boolean) };
+    let main = '', i = 0;
+    while (i < s.length) {
+      if (s[i] !== '(') { main += s[i++]; continue; }
+      let d = 0, j = i;
+      for (; j < s.length; j++) { if (s[j] === '(') d++; else if (s[j] === ')' && --d === 0) break; }
+      const inner = s.slice(i + 1, j);
+      const m = /^\s*(?:MUST\s+|ALSO\s+)?ACCEPTS?\s*:?\s*([\s\S]*)$/i.exec(inner);
+      if (m) accept.push(...splitTop(m[1]));
+      // drop DO NOT ACCEPT and moderator notes in plain words: "(must give both answers)"
+      else if (!/^\s*DO NOT ACCEPT/i.test(inner) && !/^\s*[A-Za-z]+(\s+[A-Za-z,]+)+\s*$/.test(inner)) main += s.slice(i, j + 1);
+      i = j + 1;
+    }
+    return { main: main.replace(/\s+/g, ' ').trim(), accept };
+  }
+  // several values: a coordinate "(–2, 7)" (order matters) or "11 AND –7" (any order)
+  function listValues(s) {
+    s = String(s || '').replace(/\$/g, '').trim();
+    const t = E.tryParse(s);
+    if (t && t.k === 'tuple') { const v = t.xs.map(x => E.ev(x.k === 'rel' ? x.b : x)); return v.every(isFinite) ? { ordered: true, v } : null; }
+    const parts = splitTop(s, true);
+    if (parts.length < 2) return null;
+    const v = parts.map(p => { const a = answerAst(p); return a && !E.vars(a).size ? E.ev(a) : NaN; });
+    return v.every(isFinite) ? { ordered: false, v } : null;
+  }
+  function sameList(a, b) {
+    if (!a || !b || a.v.length !== b.v.length) return false;
+    const x = a.ordered && b.ordered ? a.v : a.v.slice().sort((p, q) => p - q);
+    const y = a.ordered && b.ordered ? b.v : b.v.slice().sort((p, q) => p - q);
+    return x.every((v, i) => E.close(v, y[i]));
   }
   const NUMWORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
   const KNOWN = new Set(['sqrt', 'cbrt', 'sin', 'cos', 'tan', 'sec', 'csc', 'cot', 'log', 'abs', 'theta']);
@@ -196,6 +244,8 @@
         else if (E.equiv(ua, ca)) return { ok: true, sure: true };
       }
       if (normText(user) && normText(user) === normText(c)) return { ok: true, sure: true };
+      const cl = listValues(c);
+      if (cl) { officialParses = true; if (sameList(listValues(user), cl)) return { ok: true, sure: true }; }
     }
     if (!ua && cands.some(c => normText(c).length > 2 && normText(user).includes(normText(c)))) return { ok: true, sure: false };
     return { ok: false, sure: officialParses };
