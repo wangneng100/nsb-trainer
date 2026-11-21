@@ -57,3 +57,9 @@ node --test tests/*.test.js
 ```
 
 `tests/fixtures/sample-round.pdf` is built from `sample-round.html` with headless Chrome. The command is in that file.
+
+## Levels (Middle School / High School)
+- `banks/2016.json` … `banks/2022.json` are the middle-school sets (`problem_sets/set-10` … `set-16`).
+- `banks/hs-2020.json`, `hs-2021.json`, `hs-2022.json` are the DOE high-school sample sets 15–17 (`problem_sets/high-school/Sample-Set-15` … `17`). Every question in them has `level: "hs"`. Questions without a level count as middle school.
+- Rebuild with `python3 reparse_all.py` (both levels), `python3 reparse_all.py ms`, or `python3 reparse_all.py hs`.
+- The Bank page, Math → Official Questions, and Mistakes can all filter by level.

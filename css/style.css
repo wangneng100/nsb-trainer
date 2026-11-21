@@ -124,6 +124,8 @@ body.in-drill .nav { display: none; }
 .tag { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); font-size: 12.5px; font-weight: 800; color: var(--muted); white-space: nowrap; }
 .tag.tu { background: var(--brand-soft); border-color: transparent; color: var(--brand); }
 .tag.bo { background: var(--warn-soft); border-color: transparent; color: var(--warn); }
+.tag.lv-ms { background: var(--panel-2); color: var(--muted); }
+.tag.lv-hs { background: var(--bad-soft); border-color: transparent; color: var(--bad); }
 .tag.warn { background: var(--warn-soft); border-color: transparent; color: var(--warn); }
 .tag.ok { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
 .tag.bad { background: var(--bad-soft); border-color: transparent; color: var(--bad); }
@@ -272,7 +274,9 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .lvl { font-weight: 900; color: var(--brand); }
 
 /* ——— bank ——— */
-.toolbar { display: grid; grid-template-columns: 1fr auto auto auto; gap: 8px; align-items: center; margin-bottom: 12px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+.toolbar input[type=search] { flex: 1 1 220px; width: auto; }
+.toolbar select { width: auto; flex: 0 1 auto; }
 .qcard { padding: 14px 16px; border-radius: 16px; background: var(--panel); box-shadow: var(--shadow); margin-bottom: 10px; }
 .qcard .meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 6px; }
 .qcard .ans { margin-top: 6px; font-size: 14.5px; }

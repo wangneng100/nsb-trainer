@@ -31,7 +31,7 @@
   const KEY = 'nsb-trainer-v1';
   const defaults = () => ({
     settings: { voice: '', rate: 0.95, pause: 380, len: 10, buzz: 5, bonus: 20, mic: true, showOpts: false, captions: false, sfx: true, theme: 'auto' },
-    prefs: { dict: { cats: [], lvl: 'auto', style: 'choice', len: 10 }, calc: { src: 'gen', cats: [], lvl: 'auto', type: 'all', len: 10, years: [], rounds: [] }, bank: { years: [] } },
+    prefs: { dict: { cats: [], lvl: 'auto', style: 'choice', len: 10 }, calc: { src: 'gen', cats: [], lvl: 'auto', type: 'all', len: 10, years: [], rounds: [], level: 'all' }, bank: { years: [] } },
     cats: {}, log: [], mistakes: [], customBank: [], deletedIds: [], bstats: {}, streak: { n: 0, last: null },
   });
   function load() {
@@ -64,6 +64,7 @@
 
   // ───────── Dynamic Banks ─────────
   const YEARS = ['2016', '2017', '2018', '2019', '2020', '2021', '2022'];
+  const HS_YEARS = ['2020', '2021', '2022']; // banks/hs-<year>.json, built by reparse_all.py hs
   const ROUNDS = Array.from({length: 17}, (_, i) => String(i + 1));
   const SUBJECTS = [
     { id: 'all', name: 'All Subjects' },
@@ -82,7 +83,8 @@
   async function loadBanks() {
     try {
       const v = Date.now();
-      const promises = YEARS.map(y => fetch(`banks/${y}.json?v=${v}`).then(r => r.json()).catch(() => []));
+      const files = [...YEARS.map(y => `banks/${y}.json`), ...HS_YEARS.map(y => `banks/hs-${y}.json`)];
+      const promises = files.map(f => fetch(`${f}?v=${v}`).then(r => r.json()).catch(() => []));
       const arrays = await Promise.all(promises);
       loadedBanks = arrays.flat();
       applyBank();
@@ -102,6 +104,10 @@
   loadBanks();
   
   const qById = id => S.bank.find(q => q.id === id);
+  // Middle-school banks and custom questions predate levels, so anything not marked 'hs' is middle school.
+  const levelOf = q => q && q.level === 'hs' ? 'hs' : 'ms';
+  const LEVELS = [['all', 'All Levels'], ['ms', 'Middle School'], ['hs', 'High School']];
+  const levelTag = q => `<span class="tag lv-${levelOf(q)}">${levelOf(q) === 'hs' ? 'HS' : 'MS'}</span>`;
 
   // ───────── stats model ─────────
   const catRec = id => S.cats[id] || (S.cats[id] = { lvl: 1, n: 0, ok: 0, h: [] });
@@ -339,6 +345,7 @@
         ${P.src === 'gen' ? `
           <label class="field">Category</label>${catChips('calc', P.cats)}
           <label class="field">Difficulty</label>${segHTML('calc.lvl', P.lvl, [['auto', 'Auto'], [1, 'L1'], [2, 'L2'], [3, 'L3']])}` : `
+          <label class="field">Level</label>${segHTML('calc.level', P.level || 'all', LEVELS.map(([v, l]) => [v, `${l} (${v === 'all' ? totalQ : S.bank.filter(q => levelOf(q) === v).length})`]))}
           <label class="field">Subject</label>${subjectChips('calc', P.subjects || ['all'])}
           <label class="field">Type</label>${segHTML('calc.type', P.type, [['all', 'All'], ['tossup', 'Toss-up Only'], ['bonus', 'Bonus Only']])}
           <label class="field">Year</label>${yearChips('calc', P.years)}
@@ -400,7 +407,7 @@
     stopAudio();
     sess = { kind: o.kind, cats: o.cats || [], lvl: o.lvl || 'auto', style: o.style || 'choice', bankIds: o.bankIds || null, btype: o.btype || 'all',
       subjects: o.subjects || (S.prefs.calc && S.prefs.calc.subjects) || ['all'],
-      years: o.years || [], rounds: o.rounds || [], len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
+      years: o.years || [], rounds: o.rounds || [], level: o.level || 'all', len: o.len || S.settings.len, i: 0, results: [], retry: [], seen: new Set(), item: null, phase: null, opts: o };
     if (location.hash === '#drill') route(); else location.hash = '#drill';
   }
   let activeRec = null;
@@ -423,6 +430,7 @@
     if (sess.subjects && sess.subjects.length && !sess.subjects.includes('all')) {
       pool = pool.filter(q => sess.subjects.includes(q.subject));
     }
+    if (sess.level && sess.level !== 'all') pool = pool.filter(q => levelOf(q) === sess.level);
     if (sess.btype !== 'all') pool = pool.filter(q => q.type === sess.btype);
     if (sess.years && sess.years.length) pool = pool.filter(q => sess.years.includes(q.year));
     if (sess.rounds && sess.rounds.length) pool = pool.filter(q => q.src && sess.rounds.includes(String(q.src.round)));
@@ -772,7 +780,7 @@
   function stageHead(it) {
     if (it.mode === 'bank') {
       const q = it.q;
-      return `<div class="stage-head"><span class="mode">${MODE.bank}</span><span class="tag subj">${esc(subjName(q.subject))}</span>${typeTag(q)}<span class="tag">${q.format === 'mc' ? 'Multiple Choice' : 'Short Answer'}</span>${it.retry ? '<span class="tag warn">Retry</span>' : ''}</div>`;
+      return `<div class="stage-head"><span class="mode">${MODE.bank}</span>${levelTag(q)}<span class="tag subj">${esc(subjName(q.subject))}</span>${typeTag(q)}<span class="tag">${q.format === 'mc' ? 'Multiple Choice' : 'Short Answer'}</span>${it.retry ? '<span class="tag warn">Retry</span>' : ''}</div>`;
     }
     return `<div class="stage-head"><span class="mode">${MODE[it.mode]}</span><span class="tag">${esc(C.CAT[it.cat].name || C.CAT[it.cat].zh)} · L${it.lvl}</span>${it.retry ? '<span class="tag warn">Retry</span>' : ''}${it.mode === 'calc' ? '<span class="tag tu">toss-up</span>' : ''}</div>`;
   }
@@ -933,11 +941,12 @@
   }
 
   // ───────── bank ─────────
-  const bankF = { q: '', subject: 'all', type: 'all', src: 'all', tag: 'all', year: 'all', round: 'all', missed: false, shown: 30 };
+  const bankF = { q: '', level: 'all', subject: 'all', type: 'all', src: 'all', tag: 'all', year: 'all', round: 'all', missed: false, shown: 30 };
   const srcName = q => q.src && q.src.file ? q.src.file + (q.src.round ? ` · R${q.src.round}` : '') : 'Manually added';
   function filteredBank() {
     const s = bankF.q.trim().toLowerCase();
-    return S.bank.filter(q => (bankF.subject === 'all' || q.subject === bankF.subject)
+    return S.bank.filter(q => (bankF.level === 'all' || levelOf(q) === bankF.level)
+      && (bankF.subject === 'all' || q.subject === bankF.subject)
       && (bankF.type === 'all' || q.type === bankF.type)
       && (bankF.src === 'all' || srcName(q) === bankF.src)
       && (bankF.year === 'all' || q.year === bankF.year)
@@ -950,7 +959,7 @@
     const b = S.bstats[q.id];
     const inMistakes = (S.mistakes || []).some(m => m.q === q.id);
     return `<div class="qcard" data-qid="${q.id}" data-type="${q.type}">
-      <div class="meta">${typeTag(q)}<span class="tag subj">${esc(subjName(q.subject))}</span><span class="tag">${q.format === 'mc' ? 'MCQ' : 'SA'}</span><span class="tag">${esc(srcName(q))}</span>
+      <div class="meta">${levelTag(q)}${typeTag(q)}<span class="tag subj">${esc(subjName(q.subject))}</span><span class="tag">${q.format === 'mc' ? 'MCQ' : 'SA'}</span><span class="tag">${esc(srcName(q))}</span>
         ${(q.tags || []).map(t => C.CAT[t] ? `<span class="tag">${esc(C.CAT[t].zh)}</span>` : '').join('')}
         ${b ? `<span class="tag ${b.lastOk ? 'ok' : 'bad'}">Attempted ${b.n} times · Correct ${b.ok}</span>` : ''}</div>
       <div class="qtext">${T.toHTML(q.text)}</div>${choicesHTML(q)}
@@ -976,6 +985,7 @@
         <p class="muted small">Total ${S.bank.length} questions (${subjBreakdown}). Official: ${S.bank.filter(q => q.year).length} · Custom: ${S.customBank.length}.</p>
         <div class="toolbar">
           <input type="search" id="bq" placeholder="Search questions or answers" value="${esc(bankF.q)}">
+          <select data-bf="level">${LEVELS.map(([v, l]) => opt(v, l, bankF.level)).join('')}</select>
           <select data-bf="subject">${SUBJECTS.map(s => opt(s.id, s.name, bankF.subject)).join('')}</select>
           <select data-bf="year">${opt('all', 'All Years', bankF.year)}${YEARS.map(y => opt(y, y, bankF.year)).join('')}</select>
           <select data-bf="round">${opt('all', 'All Rounds', bankF.round)}${ROUNDS.map(r => opt(r, 'Round ' + r, bankF.round)).join('')}</select>
@@ -1222,7 +1232,7 @@
 
   // ───────── mistakes ─────────
   const ago = t => { const m = (Date.now() - t) / 6e4; return m < 60 ? `${Math.max(1, Math.round(m))} mins ago` : m < 1440 ? `${Math.round(m / 60)} hours ago` : `${Math.round(m / 1440)} days ago`; };
-  const mistakeF = { subject: 'all', type: 'all' };
+  const mistakeF = { level: 'all', subject: 'all', type: 'all' };
 
   function getMistakeSubject(m) {
     if (m.m === 'bank') {
@@ -1242,6 +1252,8 @@
 
   function filteredMistakes() {
     return (S.mistakes || []).filter(m => {
+      // generated drills have no level; a level filter shows only official-question mistakes of that level
+      if (mistakeF.level !== 'all' && !(m.m === 'bank' && qById(m.q) && levelOf(qById(m.q)) === mistakeF.level)) return false;
       if (mistakeF.subject !== 'all' && getMistakeSubject(m) !== mistakeF.subject) return false;
       if (mistakeF.type !== 'all' && getMistakeType(m) !== mistakeF.type) return false;
       return true;
@@ -1259,6 +1271,7 @@
         ${bankIds.length ? `<button class="btn ghost" data-act="redo-bank" data-bank-ids="${bankIds.join(',')}">▶ Redo missed official Qs (${bankIds.length})</button>` : ''}</div>
         <p class="muted small">Every wrong question can be replayed. Dictation and Math modes will generate new questions of the same type instead of letting you memorize answers.</p>
         <div class="toolbar" style="margin-top:12px">
+          <select data-mf="level">${LEVELS.map(([v, l]) => opt(v, l, mistakeF.level)).join('')}</select>
           <select data-mf="subject">${SUBJECTS.map(s => opt(s.id, s.name, mistakeF.subject)).join('')}</select>
           <select data-mf="type">
             ${opt('all', 'All Types', mistakeF.type)}
@@ -1279,7 +1292,7 @@
     const subj = getMistakeSubject(m);
     const type = getMistakeType(m);
     const typeBadge = type === 'bonus' ? '<span class="tag bo">Bonus</span>' : '<span class="tag tu">Toss-up</span>';
-    const subjBadge = `<span class="tag subj">${esc(subjName(subj))}</span>`;
+    const subjBadge = (m.m === 'bank' && qById(m.q) ? levelTag(qById(m.q)) : '') + `<span class="tag subj">${esc(subjName(subj))}</span>`;
 
     if (m.m === 'dict') {
       body = `<div class="kv"><span>Read</span><div class="m">${texN(m.target)}</div><span></span></div>` +
@@ -1434,7 +1447,7 @@
     const go = e.target.closest('[data-go]');
     if (go) {
       if (go.dataset.go === 'dict') { const P = S.prefs.dict; startSession({ kind: 'dict', cats: P.cats, lvl: P.lvl, style: P.style, len: P.len }); }
-      else { const P = S.prefs.calc; startSession(P.src === 'bank' ? { kind: 'bank', btype: P.type, len: P.len, years: P.years, rounds: P.rounds } : { kind: 'calc', cats: P.cats, lvl: P.lvl, len: P.len }); }
+      else { const P = S.prefs.calc; startSession(P.src === 'bank' ? { kind: 'bank', btype: P.type, len: P.len, years: P.years, rounds: P.rounds, level: P.level } : { kind: 'calc', cats: P.cats, lvl: P.lvl, len: P.len }); }
       return;
     }
     const opt = e.target.closest('[data-opt]'); if (opt) { choose(+opt.dataset.opt); return; }

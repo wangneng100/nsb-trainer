@@ -99,6 +99,29 @@
   const clean = s => String(s || '').replace(/(\w)-\n(\w)/g, '$1$2').replace(/\s*\n\s*/g, ' ').replace(/\s+/g, ' ').trim();
   const HEAD = /(^|\n)[ \t]*(?:(TOSS[ \t]*-?[ \t]*UP|BONUS)[ \t]*(?:\n[ \t]*)?)?(\d{1,2})[ \t]*[).][ \t]*([A-Za-z][A-Za-z &/,]*?)[ \t]*[–—\-:]?[ \t]*(Short[ \t]+Answer|Multiple[ \t]+Choice)\b[ \t]*[:.\-–]?/gi;
 
+  // DOE answers are in capitals and sometimes wrap ("…(ACCEPT: X, ⏎ Y)"). The last answer of a round is followed
+  // by the moderator's closing script in normal case, which must not become part of the answer.
+  function answerLines(s) {
+    const lines = s.split('\n');
+    const out = [lines[0]];
+    for (const l of lines.slice(1)) {
+      const so = out.join(' '), open = (so.match(/[([]/g) || []).length > (so.match(/[)\]]/g) || []).length;
+      const letters = l.replace(/[^A-Za-z]/g, ''), upper = l.replace(/[^A-Z]/g, '').length;
+      if (!l.trim() || !(open || (letters.length && upper / letters.length > 0.7))) break;
+      out.push(l);
+    }
+    return out.join('\n');
+  }
+  // 'hs' / 'ms' from the file name (DOE names them 2020-HS-Rd1, Set-1-MS-2021 …) or the text; '' if unknown
+  function detectLevel(name, text) {
+    const n = String(name || '');
+    if (/(^|[^A-Za-z])HS([^A-Za-z]|$)|high[\s_-]*school/i.test(n)) return 'hs';
+    if (/(^|[^A-Za-z])MS([^A-Za-z]|$)|middle[\s_-]*school/i.test(n)) return 'ms';
+    const t = String(text || '').slice(0, 4000);
+    if (/high\s*school/i.test(t)) return 'hs';
+    if (/middle\s*school/i.test(t)) return 'ms';
+    return '';
+  }
   function parseNSB(raw, meta = {}) {
     const text = String(raw || '').replace(/\r/g, '').replace(/[ \t ]+/g, ' ').replace(/\$/g, '＄');
     const heads = [];
@@ -121,7 +144,7 @@
       const ai = body.search(/\bANSWER\s*:/i);
       if (ai < 0) { warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num} (${subj.name}) No ANSWER found, skipped`); return; }
       let stem = body.slice(0, ai);
-      const ans = clean(body.slice(ai).replace(/^ANSWER\s*:\s*/i, ''));
+      const ans = clean(answerLines(body.slice(ai).replace(/^ANSWER\s*:\s*/i, '')));
       const isMC = /multiple/i.test(h.fmt);
       let choices = null;
       if (isMC) {
@@ -130,7 +153,7 @@
         else warnings.push(`${type === 'bonus' ? 'Bonus' : 'Toss-up'} ${h.num} marked as multiple choice, but no W) X) Y) Z) options found`);
       }
       const letter = isMC ? ((/^\(?([WXYZ])\b/.exec(ans) || [])[1] || '') : '';
-      out.push({ subject: subj.key, subjectName: subj.name, type, num: h.num, format: isMC && choices ? 'mc' : 'sa', stem: clean(stem), choices, answer: ans, letter, src: { file: meta.file || '', round: meta.round || '' } });
+      out.push({ subject: subj.key, subjectName: subj.name, type, num: h.num, format: isMC && choices ? 'mc' : 'sa', stem: clean(stem), choices, answer: ans, letter, level: meta.level || '', src: { file: meta.file || '', round: meta.round || '' } });
     });
     return { questions: out, counts, warnings, found: heads.length };
   }
@@ -142,13 +165,13 @@
     const answer = T.autoMath(q.answer);
     return {
       id: 'q' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7),
-      subject: q.subject, type: q.type, format: q.format, text, choices, answer, letter: q.letter || '',
+      subject: q.subject, level: q.level || 'ms', type: q.type, format: q.format, text, choices, answer, letter: q.letter || '',
       src: { ...q.src, num: q.num }, tags: T.tagsOfText(text, ...(choices ? Object.values(choices) : [])), added: Date.now(),
     };
   }
   const dupKey = text => String(text || '').replace(/\$/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
-  const I = { pdfToText, linesFromItems, stripRepeated, parseNSB, toBankItem, dupKey };
+  const I = { pdfToText, linesFromItems, stripRepeated, parseNSB, toBankItem, dupKey, detectLevel };
   G.NSBI = I;
   if (typeof module !== 'undefined' && module.exports) module.exports = I;
 })(typeof window !== 'undefined' ? window : globalThis);
